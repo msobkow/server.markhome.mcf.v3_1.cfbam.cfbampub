@@ -817,7 +817,7 @@ extends ICFSecPubSchema$commaPubNewlinePubPackageSchemaName$
 		}
 		
 		public static void setBackingCFBamPubSchema(ICFBamPubSchema backingSchema) {
-			ICFBamPubSchema.backingCFBamPub.set(backingSchema);
+			ICFBamPubSchema.backingCFBamPubSchema.set(backingSchema);
 		}
 		
 		public ICFBamPubSchema getCFBamPubSchema();
@@ -1461,32 +1461,32 @@ extends ICFSecPubSchema$commaPubNewlinePubPackageSchemaName$
 	/**
 	 *	Get the factory for CFSecPub data objects.
 	 */
-	public ICFSecPubFactory getCFSecPubFactory();
+	// public ICFSecPubFactory getCFSecPubFactory();
 
 	/**
 	 *	Get the buffer factory for CFSecPub data buffers.
 	 */
-	public CFSecPubBuffFactoryService getCFSecPubBuffFactory();
+	// public CFSecPubBuffFactoryService getCFSecPubBuffFactory();
 
 	/**
 	 *	Get the factory for CFIntPub data objects.
 	 */
-	public ICFIntPubFactory getCFIntPubFactory();
+	// public ICFIntPubFactory getCFIntPubFactory();
 
 	/**
 	 *	Get the buffer factory for CFIntPub data buffers.
 	 */
-	public CFIntPubBuffFactoryService getCFIntPubBuffFactory();
+	// public CFIntPubBuffFactoryService getCFIntPubBuffFactory();
 
 	/**
 	 *	Get the factory for CFBamPub data objects.
 	 */
-	public ICFBamPubFactory getCFBamPubFactory();
+	// public ICFBamPubFactory getCFBamPubFactory();
 
 	/**
 	 *	Get the buffer factory for CFBamPub data buffers.
 	 */
-	public CFBamPubBuffFactoryService getCFBamPubBuffFactory();
+	// public CFBamPubBuffFactoryService getCFBamPubBuffFactory();
 
 	/**
 	 *	Get the Atom Table interface for the schema.
