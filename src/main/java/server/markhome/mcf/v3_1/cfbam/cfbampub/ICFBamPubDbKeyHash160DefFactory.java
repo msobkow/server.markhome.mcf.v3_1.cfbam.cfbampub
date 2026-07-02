@@ -70,13 +70,13 @@ public interface ICFBamPubDbKeyHash160DefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash160Def newRec();
+	public ICFBamPubDbKeyHash160Def newPubRec();
 
 	/**
 	 *	Allocate a public DbKeyHash160Def history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash160DefH newHRec();
+	public ICFBamPubDbKeyHash160DefH newPubHRec();
 
 }

@@ -70,13 +70,13 @@ public interface ICFBamPubBlobDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubBlobDef newRec();
+	public ICFBamPubBlobDef newPubRec();
 
 	/**
 	 *	Allocate a public BlobDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubBlobDefH newHRec();
+	public ICFBamPubBlobDefH newPubHRec();
 
 }

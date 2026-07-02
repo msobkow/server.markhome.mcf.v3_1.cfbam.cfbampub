@@ -78,7 +78,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubNumberDef createNumberDef( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef pubcreateNumberDef( ICFSecPubAuthorization Authorization,
 		ICFBamPubNumberDef rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubNumberDef updateNumberDef( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef pubupdateNumberDef( ICFSecPubAuthorization Authorization,
 		ICFBamPubNumberDef rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteNumberDef( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDef( ICFSecPubAuthorization Authorization,
 		ICFBamPubNumberDef rec );
 	/**
 	 *	Delete the NumberDef instance identified by the primary key.
@@ -110,7 +110,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteNumberDefByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the NumberDef instances identified by the key UNameIdx.
@@ -121,7 +121,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	Name	The NumberDef key attribute of the instance generating the id.
 	 */
-	void deleteNumberDefByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -132,7 +132,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteNumberDefByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the NumberDef instances identified by the key ScopeIdx.
@@ -141,7 +141,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	ScopeId	The NumberDef key attribute of the instance generating the id.
 	 */
-	void deleteNumberDefByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -151,7 +151,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteNumberDefByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the NumberDef instances identified by the key DefSchemaIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	DefSchemaId	The NumberDef key attribute of the instance generating the id.
 	 */
-	void deleteNumberDefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteNumberDefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the NumberDef instances identified by the key PrevIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	PrevId	The NumberDef key attribute of the instance generating the id.
 	 */
-	void deleteNumberDefByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteNumberDefByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the NumberDef instances identified by the key NextIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	NextId	The NumberDef key attribute of the instance generating the id.
 	 */
-	void deleteNumberDefByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteNumberDefByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the NumberDef instances identified by the key ContPrevIdx.
@@ -219,7 +219,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	PrevId	The NumberDef key attribute of the instance generating the id.
 	 */
-	void deleteNumberDefByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -230,7 +230,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteNumberDefByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the NumberDef instances identified by the key ContNextIdx.
@@ -241,7 +241,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	NextId	The NumberDef key attribute of the instance generating the id.
 	 */
-	void deleteNumberDefByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -252,7 +252,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteNumberDefByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteNumberDefByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -266,7 +266,7 @@ public interface ICFBamPubNumberDefTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubNumberDef readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -279,7 +279,7 @@ public interface ICFBamPubNumberDefTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubNumberDef lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -289,7 +289,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubNumberDef[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubNumberDef[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived NumberDef record instance identified by the unique key IdIdx.
@@ -301,7 +301,7 @@ public interface ICFBamPubNumberDefTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubNumberDef readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -316,7 +316,7 @@ public interface ICFBamPubNumberDefTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubNumberDef readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -329,7 +329,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubNumberDef[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -341,7 +341,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubNumberDef[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -353,7 +353,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubNumberDef[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -365,7 +365,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubNumberDef[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -379,7 +379,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubNumberDef[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -394,7 +394,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubNumberDef[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -410,7 +410,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -425,7 +425,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -435,7 +435,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return All the specific NumberDef instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubNumberDef[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubNumberDef[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific NumberDef record instance identified by the unique key IdIdx.
@@ -449,7 +449,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -481,7 +481,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -495,7 +495,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -509,7 +509,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -523,7 +523,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -539,7 +539,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -556,7 +556,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubNumberDef[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -565,7 +565,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubNumberDef moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNumberDef pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -574,7 +574,7 @@ public interface ICFBamPubNumberDefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamNumberDef moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamNumberDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

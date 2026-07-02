@@ -112,13 +112,13 @@ public interface ICFBamPubSchemaDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubSchemaDef newRec();
+	public ICFBamPubSchemaDef newPubRec();
 
 	/**
 	 *	Allocate a public SchemaDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubSchemaDefH newHRec();
+	public ICFBamPubSchemaDefH newPubHRec();
 
 }

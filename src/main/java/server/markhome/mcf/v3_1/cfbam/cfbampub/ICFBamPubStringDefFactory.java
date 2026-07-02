@@ -70,13 +70,13 @@ public interface ICFBamPubStringDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubStringDef newRec();
+	public ICFBamPubStringDef newPubRec();
 
 	/**
 	 *	Allocate a public StringDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubStringDefH newHRec();
+	public ICFBamPubStringDefH newPubHRec();
 
 }

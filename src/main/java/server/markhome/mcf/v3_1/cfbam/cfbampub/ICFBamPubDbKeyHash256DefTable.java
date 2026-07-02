@@ -78,7 +78,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubDbKeyHash256Def createDbKeyHash256Def( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def pubcreateDbKeyHash256Def( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash256Def rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubDbKeyHash256Def updateDbKeyHash256Def( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def pubupdateDbKeyHash256Def( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash256Def rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteDbKeyHash256Def( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256Def( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash256Def rec );
 	/**
 	 *	Delete the DbKeyHash256Def instance identified by the primary key.
@@ -110,7 +110,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteDbKeyHash256DefByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the DbKeyHash256Def instances identified by the key UNameIdx.
@@ -121,7 +121,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	Name	The DbKeyHash256Def key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256DefByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -132,7 +132,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256DefByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Def instances identified by the key ScopeIdx.
@@ -141,7 +141,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	ScopeId	The DbKeyHash256Def key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256DefByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -151,7 +151,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256DefByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Def instances identified by the key DefSchemaIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	DefSchemaId	The DbKeyHash256Def key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256DefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256DefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Def instances identified by the key PrevIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	PrevId	The DbKeyHash256Def key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256DefByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256DefByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Def instances identified by the key NextIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	NextId	The DbKeyHash256Def key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256DefByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256DefByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Def instances identified by the key ContPrevIdx.
@@ -219,7 +219,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	PrevId	The DbKeyHash256Def key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256DefByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -230,7 +230,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256DefByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Def instances identified by the key ContNextIdx.
@@ -241,7 +241,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	NextId	The DbKeyHash256Def key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256DefByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -252,7 +252,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256DefByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256DefByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -266,7 +266,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash256Def readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -279,7 +279,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash256Def lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -289,7 +289,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Def[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDbKeyHash256Def[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived DbKeyHash256Def record instance identified by the unique key IdIdx.
@@ -301,7 +301,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash256Def readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -316,7 +316,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash256Def readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -329,7 +329,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Def[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -341,7 +341,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Def[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -353,7 +353,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Def[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -365,7 +365,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Def[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -379,7 +379,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Def[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -394,7 +394,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Def[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -410,7 +410,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -425,7 +425,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -435,7 +435,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return All the specific DbKeyHash256Def instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubDbKeyHash256Def[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDbKeyHash256Def[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific DbKeyHash256Def record instance identified by the unique key IdIdx.
@@ -449,7 +449,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -481,7 +481,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -495,7 +495,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -509,7 +509,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -523,7 +523,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -539,7 +539,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -556,7 +556,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Def[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -565,7 +565,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubDbKeyHash256Def moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Def pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -574,7 +574,7 @@ public interface ICFBamPubDbKeyHash256DefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamDbKeyHash256Def moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamDbKeyHash256Def pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

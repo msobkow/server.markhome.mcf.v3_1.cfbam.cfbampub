@@ -78,7 +78,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubAtom createAtom( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom pubcreateAtom( ICFSecPubAuthorization Authorization,
 		ICFBamPubAtom rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubAtom updateAtom( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom pubupdateAtom( ICFSecPubAuthorization Authorization,
 		ICFBamPubAtom rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteAtom( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtom( ICFSecPubAuthorization Authorization,
 		ICFBamPubAtom rec );
 	/**
 	 *	Delete the Atom instance identified by the primary key.
@@ -110,7 +110,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteAtomByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the Atom instances identified by the key UNameIdx.
@@ -121,7 +121,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	Name	The Atom key attribute of the instance generating the id.
 	 */
-	void deleteAtomByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -132,7 +132,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteAtomByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the Atom instances identified by the key ScopeIdx.
@@ -141,7 +141,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	ScopeId	The Atom key attribute of the instance generating the id.
 	 */
-	void deleteAtomByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -151,7 +151,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteAtomByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the Atom instances identified by the key DefSchemaIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	DefSchemaId	The Atom key attribute of the instance generating the id.
 	 */
-	void deleteAtomByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteAtomByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the Atom instances identified by the key PrevIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	PrevId	The Atom key attribute of the instance generating the id.
 	 */
-	void deleteAtomByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteAtomByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the Atom instances identified by the key NextIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	NextId	The Atom key attribute of the instance generating the id.
 	 */
-	void deleteAtomByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteAtomByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the Atom instances identified by the key ContPrevIdx.
@@ -219,7 +219,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	PrevId	The Atom key attribute of the instance generating the id.
 	 */
-	void deleteAtomByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -230,7 +230,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteAtomByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the Atom instances identified by the key ContNextIdx.
@@ -241,7 +241,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	NextId	The Atom key attribute of the instance generating the id.
 	 */
-	void deleteAtomByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -252,7 +252,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteAtomByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteAtomByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -266,7 +266,7 @@ public interface ICFBamPubAtomTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubAtom readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -279,7 +279,7 @@ public interface ICFBamPubAtomTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubAtom lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -289,7 +289,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubAtom[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubAtom[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived Atom record instance identified by the unique key IdIdx.
@@ -301,7 +301,7 @@ public interface ICFBamPubAtomTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubAtom readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -316,7 +316,7 @@ public interface ICFBamPubAtomTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubAtom readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -329,7 +329,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubAtom[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -341,7 +341,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubAtom[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -353,7 +353,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubAtom[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -365,7 +365,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubAtom[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -379,7 +379,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubAtom[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -394,7 +394,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubAtom[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -410,7 +410,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -425,7 +425,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -435,7 +435,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return All the specific Atom instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubAtom[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubAtom[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific Atom record instance identified by the unique key IdIdx.
@@ -449,7 +449,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -481,7 +481,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -495,7 +495,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -509,7 +509,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -523,7 +523,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -539,7 +539,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -556,7 +556,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubAtom[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -565,7 +565,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubAtom moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubAtom pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -574,7 +574,7 @@ public interface ICFBamPubAtomTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamAtom moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamAtom pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

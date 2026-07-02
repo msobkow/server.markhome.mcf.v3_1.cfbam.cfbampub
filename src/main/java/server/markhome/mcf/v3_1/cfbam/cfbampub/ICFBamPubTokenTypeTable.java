@@ -78,7 +78,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubTokenType createTokenType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType pubcreateTokenType( ICFSecPubAuthorization Authorization,
 		ICFBamPubTokenType rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubTokenType updateTokenType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType pubupdateTokenType( ICFSecPubAuthorization Authorization,
 		ICFBamPubTokenType rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteTokenType( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenType( ICFSecPubAuthorization Authorization,
 		ICFBamPubTokenType rec );
 	/**
 	 *	Delete the TokenType instances identified by the key SchemaIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	SchemaDefId	The TokenType key attribute of the instance generating the id.
 	 */
-	void deleteTokenTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argSchemaDefId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTokenTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubTokenTypeBySchemaIdxKey argKey );
 	/**
 	 *	Delete the TokenType instance identified by the primary key.
@@ -129,7 +129,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteTokenTypeByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the TokenType instances identified by the key UNameIdx.
@@ -140,7 +140,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	Name	The TokenType key attribute of the instance generating the id.
 	 */
-	void deleteTokenTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -151,7 +151,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTokenTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the TokenType instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	ScopeId	The TokenType key attribute of the instance generating the id.
 	 */
-	void deleteTokenTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTokenTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the TokenType instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	DefSchemaId	The TokenType key attribute of the instance generating the id.
 	 */
-	void deleteTokenTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTokenTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the TokenType instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	PrevId	The TokenType key attribute of the instance generating the id.
 	 */
-	void deleteTokenTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTokenTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the TokenType instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	NextId	The TokenType key attribute of the instance generating the id.
 	 */
-	void deleteTokenTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTokenTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the TokenType instances identified by the key ContPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	PrevId	The TokenType key attribute of the instance generating the id.
 	 */
-	void deleteTokenTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTokenTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the TokenType instances identified by the key ContNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	NextId	The TokenType key attribute of the instance generating the id.
 	 */
-	void deleteTokenTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTokenTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTokenTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubTokenTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTokenType readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubTokenTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTokenType lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTokenType[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubTokenType[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived TokenType record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubTokenTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTokenType readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubTokenTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTokenType readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTokenType[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTokenType[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTokenType[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTokenType[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTokenType[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -413,7 +413,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTokenType[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -426,7 +426,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTokenType[] readDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -441,7 +441,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return All the specific TokenType instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubTokenType[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubTokenType[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific TokenType record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -570,7 +570,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -587,7 +587,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -602,7 +602,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTokenType[] readRecBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType[] pubreadRecBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -610,7 +610,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubTokenType moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTokenType pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubTokenTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamTokenType moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamTokenType pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

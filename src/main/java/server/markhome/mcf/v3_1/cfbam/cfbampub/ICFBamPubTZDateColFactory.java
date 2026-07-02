@@ -77,13 +77,13 @@ public interface ICFBamPubTZDateColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTZDateCol newRec();
+	public ICFBamPubTZDateCol newPubRec();
 
 	/**
 	 *	Allocate a public TZDateCol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTZDateColH newHRec();
+	public ICFBamPubTZDateColH newPubHRec();
 
 }

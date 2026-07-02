@@ -78,7 +78,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubDbKeyHash256Gen createDbKeyHash256Gen( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen pubcreateDbKeyHash256Gen( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash256Gen rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubDbKeyHash256Gen updateDbKeyHash256Gen( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen pubupdateDbKeyHash256Gen( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash256Gen rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteDbKeyHash256Gen( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256Gen( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash256Gen rec );
 	/**
 	 *	Delete the DbKeyHash256Gen instances identified by the key SchemaIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	SchemaDefId	The DbKeyHash256Gen key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256GenBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argSchemaDefId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256GenBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenBySchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash256TypeBySchemaIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Gen instance identified by the primary key.
@@ -129,7 +129,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteDbKeyHash256GenByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the DbKeyHash256Gen instances identified by the key UNameIdx.
@@ -140,7 +140,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	Name	The DbKeyHash256Gen key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256GenByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -151,7 +151,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256GenByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Gen instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	ScopeId	The DbKeyHash256Gen key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256GenByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256GenByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Gen instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	DefSchemaId	The DbKeyHash256Gen key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256GenByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256GenByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Gen instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	PrevId	The DbKeyHash256Gen key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256GenByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256GenByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Gen instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	NextId	The DbKeyHash256Gen key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256GenByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256GenByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Gen instances identified by the key ContPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	PrevId	The DbKeyHash256Gen key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256GenByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256GenByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash256Gen instances identified by the key ContNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	NextId	The DbKeyHash256Gen key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash256GenByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash256GenByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash256GenByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash256Gen readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash256Gen lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDbKeyHash256Gen[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived DbKeyHash256Gen record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash256Gen readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash256Gen readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -413,7 +413,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -426,7 +426,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -441,7 +441,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return All the specific DbKeyHash256Gen instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDbKeyHash256Gen[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific DbKeyHash256Gen record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -570,7 +570,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -587,7 +587,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -602,7 +602,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash256Gen[] readRecBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen[] pubreadRecBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -610,7 +610,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubDbKeyHash256Gen moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash256Gen pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubDbKeyHash256GenTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamDbKeyHash256Gen moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamDbKeyHash256Gen pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

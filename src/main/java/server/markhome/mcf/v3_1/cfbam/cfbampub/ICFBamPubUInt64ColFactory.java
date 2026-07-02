@@ -77,13 +77,13 @@ public interface ICFBamPubUInt64ColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUInt64Col newRec();
+	public ICFBamPubUInt64Col newPubRec();
 
 	/**
 	 *	Allocate a public UInt64Col history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUInt64ColH newHRec();
+	public ICFBamPubUInt64ColH newPubHRec();
 
 }

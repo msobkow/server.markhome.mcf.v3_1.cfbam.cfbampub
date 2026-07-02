@@ -78,7 +78,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubBlobDef createBlobDef( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef pubcreateBlobDef( ICFSecPubAuthorization Authorization,
 		ICFBamPubBlobDef rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubBlobDef updateBlobDef( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef pubupdateBlobDef( ICFSecPubAuthorization Authorization,
 		ICFBamPubBlobDef rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteBlobDef( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDef( ICFSecPubAuthorization Authorization,
 		ICFBamPubBlobDef rec );
 	/**
 	 *	Delete the BlobDef instance identified by the primary key.
@@ -110,7 +110,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteBlobDefByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the BlobDef instances identified by the key UNameIdx.
@@ -121,7 +121,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	Name	The BlobDef key attribute of the instance generating the id.
 	 */
-	void deleteBlobDefByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -132,7 +132,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBlobDefByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the BlobDef instances identified by the key ScopeIdx.
@@ -141,7 +141,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	ScopeId	The BlobDef key attribute of the instance generating the id.
 	 */
-	void deleteBlobDefByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -151,7 +151,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBlobDefByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the BlobDef instances identified by the key DefSchemaIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	DefSchemaId	The BlobDef key attribute of the instance generating the id.
 	 */
-	void deleteBlobDefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBlobDefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the BlobDef instances identified by the key PrevIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	PrevId	The BlobDef key attribute of the instance generating the id.
 	 */
-	void deleteBlobDefByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBlobDefByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the BlobDef instances identified by the key NextIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	NextId	The BlobDef key attribute of the instance generating the id.
 	 */
-	void deleteBlobDefByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBlobDefByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the BlobDef instances identified by the key ContPrevIdx.
@@ -219,7 +219,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	PrevId	The BlobDef key attribute of the instance generating the id.
 	 */
-	void deleteBlobDefByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -230,7 +230,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBlobDefByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the BlobDef instances identified by the key ContNextIdx.
@@ -241,7 +241,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	NextId	The BlobDef key attribute of the instance generating the id.
 	 */
-	void deleteBlobDefByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -252,7 +252,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBlobDefByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBlobDefByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -266,7 +266,7 @@ public interface ICFBamPubBlobDefTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubBlobDef readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -279,7 +279,7 @@ public interface ICFBamPubBlobDefTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubBlobDef lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -289,7 +289,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBlobDef[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubBlobDef[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived BlobDef record instance identified by the unique key IdIdx.
@@ -301,7 +301,7 @@ public interface ICFBamPubBlobDefTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubBlobDef readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -316,7 +316,7 @@ public interface ICFBamPubBlobDefTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubBlobDef readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -329,7 +329,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBlobDef[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -341,7 +341,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBlobDef[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -353,7 +353,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBlobDef[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -365,7 +365,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBlobDef[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -379,7 +379,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBlobDef[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -394,7 +394,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBlobDef[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -410,7 +410,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -425,7 +425,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -435,7 +435,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return All the specific BlobDef instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubBlobDef[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubBlobDef[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific BlobDef record instance identified by the unique key IdIdx.
@@ -449,7 +449,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -481,7 +481,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -495,7 +495,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -509,7 +509,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -523,7 +523,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -539,7 +539,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -556,7 +556,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBlobDef[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -565,7 +565,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubBlobDef moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBlobDef pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -574,7 +574,7 @@ public interface ICFBamPubBlobDefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamBlobDef moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamBlobDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

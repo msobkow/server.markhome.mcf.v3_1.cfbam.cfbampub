@@ -70,13 +70,13 @@ public interface ICFBamPubInt16DefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubInt16Def newRec();
+	public ICFBamPubInt16Def newPubRec();
 
 	/**
 	 *	Allocate a public Int16Def history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubInt16DefH newHRec();
+	public ICFBamPubInt16DefH newPubHRec();
 
 }

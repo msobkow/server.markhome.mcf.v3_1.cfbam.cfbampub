@@ -78,7 +78,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubDbKeyHash128Col createDbKeyHash128Col( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col pubcreateDbKeyHash128Col( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash128Col rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubDbKeyHash128Col updateDbKeyHash128Col( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col pubupdateDbKeyHash128Col( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash128Col rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteDbKeyHash128Col( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128Col( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash128Col rec );
 	/**
 	 *	Delete the DbKeyHash128Col instances identified by the key TableIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	TableId	The DbKeyHash128Col key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash128ColByTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash128ColByTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByTableIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubDbKeyHash128ColByTableIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash128Col instance identified by the primary key.
@@ -129,7 +129,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteDbKeyHash128ColByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the DbKeyHash128Col instances identified by the key UNameIdx.
@@ -140,7 +140,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	Name	The DbKeyHash128Col key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash128ColByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -151,7 +151,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash128ColByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash128Col instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	ScopeId	The DbKeyHash128Col key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash128ColByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash128ColByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash128Col instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	DefSchemaId	The DbKeyHash128Col key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash128ColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash128ColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash128Col instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	PrevId	The DbKeyHash128Col key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash128ColByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash128ColByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash128Col instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	NextId	The DbKeyHash128Col key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash128ColByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash128ColByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash128Col instances identified by the key ContPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	PrevId	The DbKeyHash128Col key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash128ColByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash128ColByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the DbKeyHash128Col instances identified by the key ContNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	NextId	The DbKeyHash128Col key attribute of the instance generating the id.
 	 */
-	void deleteDbKeyHash128ColByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDbKeyHash128ColByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDbKeyHash128ColByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash128Col readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash128Col lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash128Col[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDbKeyHash128Col[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived DbKeyHash128Col record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash128Col readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDbKeyHash128Col readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash128Col[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash128Col[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash128Col[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash128Col[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash128Col[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -413,7 +413,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash128Col[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -426,7 +426,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDbKeyHash128Col[] readDerivedByTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadDerivedByTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -441,7 +441,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return All the specific DbKeyHash128Col instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubDbKeyHash128Col[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDbKeyHash128Col[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific DbKeyHash128Col record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -570,7 +570,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -587,7 +587,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -602,7 +602,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDbKeyHash128Col[] readRecByTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col[] pubreadRecByTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -610,7 +610,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubDbKeyHash128Col moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash128Col pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamDbKeyHash128Col moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamDbKeyHash128Col pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

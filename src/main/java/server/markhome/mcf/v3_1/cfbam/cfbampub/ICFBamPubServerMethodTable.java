@@ -78,7 +78,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubServerMethod createServerMethod( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod pubcreateServerMethod( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethod rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubServerMethod updateServerMethod( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod pubupdateServerMethod( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethod rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteServerMethod( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethod( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethod rec );
 	/**
 	 *	Delete the ServerMethod instances identified by the key UNameIdx.
@@ -112,7 +112,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	Name	The ServerMethod key attribute of the instance generating the id.
 	 */
-	void deleteServerMethodByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId,
 		String argName );
 
@@ -123,7 +123,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerMethodByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByUNameIdxKey argKey );
 	/**
 	 *	Delete the ServerMethod instances identified by the key MethTableIdx.
@@ -132,7 +132,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	TableId	The ServerMethod key attribute of the instance generating the id.
 	 */
-	void deleteServerMethodByMethTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByMethTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId );
 
 	/**
@@ -142,7 +142,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerMethodByMethTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByMethTableIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByMethTableIdxKey argKey );
 	/**
 	 *	Delete the ServerMethod instances identified by the key MethCodeVisIdx.
@@ -151,7 +151,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	CodeVis	The ServerMethod key attribute of the instance generating the id.
 	 */
-	void deleteServerMethodByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchema.CodeVisibilityEnum argCodeVis );
 
 	/**
@@ -161,7 +161,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerMethodByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByMethCodeVisIdxKey argKey );
 	/**
 	 *	Delete the ServerMethod instances identified by the key MethTableVisIdx.
@@ -172,7 +172,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	CodeVis	The ServerMethod key attribute of the instance generating the id.
 	 */
-	void deleteServerMethodByMethTableVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByMethTableVisIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId,
 		ICFBamPubSchema.CodeVisibilityEnum argCodeVis );
 
@@ -183,7 +183,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerMethodByMethTableVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByMethTableVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByMethTableVisIdxKey argKey );
 	/**
 	 *	Delete the ServerMethod instances identified by the key DefSchemaIdx.
@@ -192,7 +192,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	DefSchemaId	The ServerMethod key attribute of the instance generating the id.
 	 */
-	void deleteServerMethodByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -202,7 +202,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerMethodByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the ServerMethod instance identified by the primary key.
@@ -211,7 +211,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteServerMethodByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the ServerMethod instances identified by the key TenantIdx.
@@ -220,7 +220,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	TenantId	The ServerMethod key attribute of the instance generating the id.
 	 */
-	void deleteServerMethodByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -230,7 +230,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerMethodByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerMethodByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubScopeByTenantIdxKey argKey );
 
 
@@ -244,7 +244,7 @@ public interface ICFBamPubServerMethodTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubServerMethod readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -257,7 +257,7 @@ public interface ICFBamPubServerMethodTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubServerMethod lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -267,7 +267,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerMethod[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubServerMethod[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived ServerMethod record instance identified by the unique key IdIdx.
@@ -279,7 +279,7 @@ public interface ICFBamPubServerMethodTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubServerMethod readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -291,7 +291,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerMethod[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -306,7 +306,7 @@ public interface ICFBamPubServerMethodTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubServerMethod readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		String Name );
 
@@ -319,7 +319,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerMethod[] readDerivedByMethTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadDerivedByMethTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -331,7 +331,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerMethod[] readDerivedByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadDerivedByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
 	/**
@@ -345,7 +345,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerMethod[] readDerivedByMethTableVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadDerivedByMethTableVisIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
@@ -358,7 +358,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerMethod[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -373,7 +373,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerMethod readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -388,7 +388,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerMethod lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@return All the specific ServerMethod instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubServerMethod[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubServerMethod[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific ServerMethod record instance identified by the unique key IdIdx.
@@ -412,7 +412,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerMethod readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -426,7 +426,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerMethod[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -443,7 +443,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerMethod readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		String Name );
 
@@ -458,7 +458,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerMethod[] readRecByMethTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadRecByMethTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -472,7 +472,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerMethod[] readRecByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadRecByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
 	/**
@@ -488,7 +488,7 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerMethod[] readRecByMethTableVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadRecByMethTableVisIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
@@ -503,6 +503,6 @@ public interface ICFBamPubServerMethodTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerMethod[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerMethod[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 }

@@ -77,13 +77,13 @@ public interface ICFBamPubTimeColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTimeCol newRec();
+	public ICFBamPubTimeCol newPubRec();
 
 	/**
 	 *	Allocate a public TimeCol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTimeColH newHRec();
+	public ICFBamPubTimeColH newPubHRec();
 
 }

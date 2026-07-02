@@ -78,7 +78,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubDoubleCol createDoubleCol( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol pubcreateDoubleCol( ICFSecPubAuthorization Authorization,
 		ICFBamPubDoubleCol rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubDoubleCol updateDoubleCol( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol pubupdateDoubleCol( ICFSecPubAuthorization Authorization,
 		ICFBamPubDoubleCol rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteDoubleCol( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleCol( ICFSecPubAuthorization Authorization,
 		ICFBamPubDoubleCol rec );
 	/**
 	 *	Delete the DoubleCol instances identified by the key TableIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	TableId	The DoubleCol key attribute of the instance generating the id.
 	 */
-	void deleteDoubleColByTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDoubleColByTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByTableIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubDoubleColByTableIdxKey argKey );
 	/**
 	 *	Delete the DoubleCol instance identified by the primary key.
@@ -129,7 +129,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteDoubleColByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the DoubleCol instances identified by the key UNameIdx.
@@ -140,7 +140,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	Name	The DoubleCol key attribute of the instance generating the id.
 	 */
-	void deleteDoubleColByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -151,7 +151,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDoubleColByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the DoubleCol instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	ScopeId	The DoubleCol key attribute of the instance generating the id.
 	 */
-	void deleteDoubleColByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDoubleColByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the DoubleCol instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	DefSchemaId	The DoubleCol key attribute of the instance generating the id.
 	 */
-	void deleteDoubleColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDoubleColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the DoubleCol instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	PrevId	The DoubleCol key attribute of the instance generating the id.
 	 */
-	void deleteDoubleColByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDoubleColByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the DoubleCol instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	NextId	The DoubleCol key attribute of the instance generating the id.
 	 */
-	void deleteDoubleColByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDoubleColByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the DoubleCol instances identified by the key ContPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	PrevId	The DoubleCol key attribute of the instance generating the id.
 	 */
-	void deleteDoubleColByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDoubleColByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the DoubleCol instances identified by the key ContNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	NextId	The DoubleCol key attribute of the instance generating the id.
 	 */
-	void deleteDoubleColByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDoubleColByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDoubleColByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubDoubleColTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDoubleCol readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubDoubleColTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDoubleCol lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDoubleCol[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDoubleCol[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived DoubleCol record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubDoubleColTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDoubleCol readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubDoubleColTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDoubleCol readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDoubleCol[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDoubleCol[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDoubleCol[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDoubleCol[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDoubleCol[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -413,7 +413,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDoubleCol[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -426,7 +426,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDoubleCol[] readDerivedByTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadDerivedByTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -441,7 +441,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return All the specific DoubleCol instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubDoubleCol[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDoubleCol[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific DoubleCol record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -570,7 +570,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -587,7 +587,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -602,7 +602,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDoubleCol[] readRecByTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol[] pubreadRecByTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -610,7 +610,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubDoubleCol moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleCol pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubDoubleColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamDoubleCol moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamDoubleCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

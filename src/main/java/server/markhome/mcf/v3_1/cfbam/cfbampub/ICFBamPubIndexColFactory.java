@@ -133,13 +133,13 @@ public interface ICFBamPubIndexColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubIndexCol newRec();
+	public ICFBamPubIndexCol newPubRec();
 
 	/**
 	 *	Allocate a public IndexCol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubIndexColH newHRec();
+	public ICFBamPubIndexColH newPubHRec();
 
 }

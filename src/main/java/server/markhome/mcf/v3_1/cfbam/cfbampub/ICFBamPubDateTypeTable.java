@@ -78,7 +78,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubDateType createDateType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType pubcreateDateType( ICFSecPubAuthorization Authorization,
 		ICFBamPubDateType rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubDateType updateDateType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType pubupdateDateType( ICFSecPubAuthorization Authorization,
 		ICFBamPubDateType rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteDateType( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateType( ICFSecPubAuthorization Authorization,
 		ICFBamPubDateType rec );
 	/**
 	 *	Delete the DateType instances identified by the key SchemaIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	SchemaDefId	The DateType key attribute of the instance generating the id.
 	 */
-	void deleteDateTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argSchemaDefId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDateTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubDateTypeBySchemaIdxKey argKey );
 	/**
 	 *	Delete the DateType instance identified by the primary key.
@@ -129,7 +129,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteDateTypeByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the DateType instances identified by the key UNameIdx.
@@ -140,7 +140,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	Name	The DateType key attribute of the instance generating the id.
 	 */
-	void deleteDateTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -151,7 +151,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDateTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the DateType instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	ScopeId	The DateType key attribute of the instance generating the id.
 	 */
-	void deleteDateTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDateTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the DateType instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	DefSchemaId	The DateType key attribute of the instance generating the id.
 	 */
-	void deleteDateTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDateTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the DateType instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	PrevId	The DateType key attribute of the instance generating the id.
 	 */
-	void deleteDateTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDateTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the DateType instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	NextId	The DateType key attribute of the instance generating the id.
 	 */
-	void deleteDateTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDateTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the DateType instances identified by the key ContPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	PrevId	The DateType key attribute of the instance generating the id.
 	 */
-	void deleteDateTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDateTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the DateType instances identified by the key ContNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	NextId	The DateType key attribute of the instance generating the id.
 	 */
-	void deleteDateTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDateTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDateTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubDateTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDateType readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubDateTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDateType lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDateType[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDateType[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived DateType record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubDateTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDateType readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubDateTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDateType readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDateType[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDateType[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDateType[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDateType[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDateType[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -413,7 +413,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDateType[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -426,7 +426,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDateType[] readDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -441,7 +441,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return All the specific DateType instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubDateType[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDateType[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific DateType record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -570,7 +570,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -587,7 +587,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -602,7 +602,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDateType[] readRecBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType[] pubreadRecBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -610,7 +610,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubDateType moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDateType pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubDateTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamDateType moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamDateType pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

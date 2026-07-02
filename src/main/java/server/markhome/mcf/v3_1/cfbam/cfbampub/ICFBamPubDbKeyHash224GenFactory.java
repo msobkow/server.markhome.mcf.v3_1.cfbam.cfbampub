@@ -70,13 +70,13 @@ public interface ICFBamPubDbKeyHash224GenFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash224Gen newRec();
+	public ICFBamPubDbKeyHash224Gen newPubRec();
 
 	/**
 	 *	Allocate a public DbKeyHash224Gen history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash224GenH newHRec();
+	public ICFBamPubDbKeyHash224GenH newPubHRec();
 
 }

@@ -70,13 +70,13 @@ public interface ICFBamPubId16GenFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubId16Gen newRec();
+	public ICFBamPubId16Gen newPubRec();
 
 	/**
 	 *	Allocate a public Id16Gen history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubId16GenH newHRec();
+	public ICFBamPubId16GenH newPubHRec();
 
 }

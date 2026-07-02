@@ -70,13 +70,13 @@ public interface ICFBamPubFloatDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubFloatDef newRec();
+	public ICFBamPubFloatDef newPubRec();
 
 	/**
 	 *	Allocate a public FloatDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubFloatDefH newHRec();
+	public ICFBamPubFloatDefH newPubHRec();
 
 }

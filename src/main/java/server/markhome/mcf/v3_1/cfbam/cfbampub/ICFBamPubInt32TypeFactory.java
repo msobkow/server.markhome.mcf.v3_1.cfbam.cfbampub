@@ -77,13 +77,13 @@ public interface ICFBamPubInt32TypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubInt32Type newRec();
+	public ICFBamPubInt32Type newPubRec();
 
 	/**
 	 *	Allocate a public Int32Type history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubInt32TypeH newHRec();
+	public ICFBamPubInt32TypeH newPubHRec();
 
 }

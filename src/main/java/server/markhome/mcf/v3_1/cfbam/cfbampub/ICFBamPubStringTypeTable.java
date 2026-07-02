@@ -78,7 +78,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubStringType createStringType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType pubcreateStringType( ICFSecPubAuthorization Authorization,
 		ICFBamPubStringType rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubStringType updateStringType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType pubupdateStringType( ICFSecPubAuthorization Authorization,
 		ICFBamPubStringType rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteStringType( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringType( ICFSecPubAuthorization Authorization,
 		ICFBamPubStringType rec );
 	/**
 	 *	Delete the StringType instances identified by the key SchemaIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	SchemaDefId	The StringType key attribute of the instance generating the id.
 	 */
-	void deleteStringTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argSchemaDefId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteStringTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubStringTypeBySchemaIdxKey argKey );
 	/**
 	 *	Delete the StringType instance identified by the primary key.
@@ -129,7 +129,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteStringTypeByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the StringType instances identified by the key UNameIdx.
@@ -140,7 +140,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	Name	The StringType key attribute of the instance generating the id.
 	 */
-	void deleteStringTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -151,7 +151,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteStringTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the StringType instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	ScopeId	The StringType key attribute of the instance generating the id.
 	 */
-	void deleteStringTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteStringTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the StringType instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	DefSchemaId	The StringType key attribute of the instance generating the id.
 	 */
-	void deleteStringTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteStringTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the StringType instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	PrevId	The StringType key attribute of the instance generating the id.
 	 */
-	void deleteStringTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteStringTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the StringType instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	NextId	The StringType key attribute of the instance generating the id.
 	 */
-	void deleteStringTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteStringTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the StringType instances identified by the key ContPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	PrevId	The StringType key attribute of the instance generating the id.
 	 */
-	void deleteStringTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteStringTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the StringType instances identified by the key ContNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	NextId	The StringType key attribute of the instance generating the id.
 	 */
-	void deleteStringTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteStringTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteStringTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubStringTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubStringType readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubStringTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubStringType lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubStringType[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubStringType[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived StringType record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubStringTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubStringType readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubStringTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubStringType readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubStringType[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubStringType[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubStringType[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubStringType[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubStringType[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -413,7 +413,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubStringType[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -426,7 +426,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubStringType[] readDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -441,7 +441,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return All the specific StringType instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubStringType[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubStringType[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific StringType record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -570,7 +570,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -587,7 +587,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -602,7 +602,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubStringType[] readRecBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType[] pubreadRecBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -610,7 +610,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubStringType moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringType pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubStringTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamStringType moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamStringType pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

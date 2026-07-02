@@ -78,7 +78,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubTZTimeType createTZTimeType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType pubcreateTZTimeType( ICFSecPubAuthorization Authorization,
 		ICFBamPubTZTimeType rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubTZTimeType updateTZTimeType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType pubupdateTZTimeType( ICFSecPubAuthorization Authorization,
 		ICFBamPubTZTimeType rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteTZTimeType( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeType( ICFSecPubAuthorization Authorization,
 		ICFBamPubTZTimeType rec );
 	/**
 	 *	Delete the TZTimeType instances identified by the key SchemaIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	SchemaDefId	The TZTimeType key attribute of the instance generating the id.
 	 */
-	void deleteTZTimeTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argSchemaDefId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimeTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubTZTimeTypeBySchemaIdxKey argKey );
 	/**
 	 *	Delete the TZTimeType instance identified by the primary key.
@@ -129,7 +129,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteTZTimeTypeByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the TZTimeType instances identified by the key UNameIdx.
@@ -140,7 +140,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	Name	The TZTimeType key attribute of the instance generating the id.
 	 */
-	void deleteTZTimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -151,7 +151,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the TZTimeType instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	ScopeId	The TZTimeType key attribute of the instance generating the id.
 	 */
-	void deleteTZTimeTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimeTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the TZTimeType instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	DefSchemaId	The TZTimeType key attribute of the instance generating the id.
 	 */
-	void deleteTZTimeTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimeTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the TZTimeType instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	PrevId	The TZTimeType key attribute of the instance generating the id.
 	 */
-	void deleteTZTimeTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimeTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the TZTimeType instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	NextId	The TZTimeType key attribute of the instance generating the id.
 	 */
-	void deleteTZTimeTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimeTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the TZTimeType instances identified by the key ContPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	PrevId	The TZTimeType key attribute of the instance generating the id.
 	 */
-	void deleteTZTimeTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimeTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the TZTimeType instances identified by the key ContNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	NextId	The TZTimeType key attribute of the instance generating the id.
 	 */
-	void deleteTZTimeTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimeTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimeTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTZTimeType readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTZTimeType lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimeType[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubTZTimeType[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived TZTimeType record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTZTimeType readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTZTimeType readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimeType[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimeType[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimeType[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimeType[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimeType[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -413,7 +413,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimeType[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -426,7 +426,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimeType[] readDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -441,7 +441,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return All the specific TZTimeType instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubTZTimeType[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubTZTimeType[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific TZTimeType record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -570,7 +570,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -587,7 +587,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -602,7 +602,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimeType[] readRecBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType[] pubreadRecBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -610,7 +610,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubTZTimeType moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeType pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubTZTimeTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamTZTimeType moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamTZTimeType pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

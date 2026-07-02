@@ -78,7 +78,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubIndex createIndex( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex pubcreateIndex( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndex rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubIndex updateIndex( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex pubupdateIndex( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndex rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteIndex( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndex( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndex rec );
 	/**
 	 *	Delete the Index instances identified by the key UNameIdx.
@@ -112,7 +112,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	Name	The Index key attribute of the instance generating the id.
 	 */
-	void deleteIndexByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId,
 		String argName );
 
@@ -123,7 +123,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexByUNameIdxKey argKey );
 	/**
 	 *	Delete the Index instances identified by the key IdxTableIdx.
@@ -132,7 +132,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	TableId	The Index key attribute of the instance generating the id.
 	 */
-	void deleteIndexByIdxTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByIdxTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId );
 
 	/**
@@ -142,7 +142,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexByIdxTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByIdxTableIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexByIdxTableIdxKey argKey );
 	/**
 	 *	Delete the Index instances identified by the key IdxCodeVisIdx.
@@ -151,7 +151,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	CodeVis	The Index key attribute of the instance generating the id.
 	 */
-	void deleteIndexByIdxCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByIdxCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchema.CodeVisibilityEnum argCodeVis );
 
 	/**
@@ -161,7 +161,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexByIdxCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByIdxCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexByIdxCodeVisIdxKey argKey );
 	/**
 	 *	Delete the Index instances identified by the key IdxTblCdVisX.
@@ -172,7 +172,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	CodeVis	The Index key attribute of the instance generating the id.
 	 */
-	void deleteIndexByIdxTblCdVisX( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByIdxTblCdVisX( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId,
 		ICFBamPubSchema.CodeVisibilityEnum argCodeVis );
 
@@ -183,7 +183,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexByIdxTblCdVisX( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByIdxTblCdVisX( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexByIdxTblCdVisXKey argKey );
 	/**
 	 *	Delete the Index instances identified by the key DefSchemaIdx.
@@ -192,7 +192,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	DefSchemaId	The Index key attribute of the instance generating the id.
 	 */
-	void deleteIndexByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -202,7 +202,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the Index instance identified by the primary key.
@@ -211,7 +211,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteIndexByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the Index instances identified by the key TenantIdx.
@@ -220,7 +220,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	TenantId	The Index key attribute of the instance generating the id.
 	 */
-	void deleteIndexByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -230,7 +230,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubScopeByTenantIdxKey argKey );
 
 
@@ -244,7 +244,7 @@ public interface ICFBamPubIndexTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubIndex readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -257,7 +257,7 @@ public interface ICFBamPubIndexTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubIndex lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -267,7 +267,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndex[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubIndex[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived Index record instance identified by the unique key IdIdx.
@@ -279,7 +279,7 @@ public interface ICFBamPubIndexTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubIndex readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -291,7 +291,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndex[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -306,7 +306,7 @@ public interface ICFBamPubIndexTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubIndex readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		String Name );
 
@@ -319,7 +319,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndex[] readDerivedByIdxTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadDerivedByIdxTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -331,7 +331,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndex[] readDerivedByIdxCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadDerivedByIdxCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
 	/**
@@ -345,7 +345,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndex[] readDerivedByIdxTblCdVisX( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadDerivedByIdxTblCdVisX( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
@@ -358,7 +358,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndex[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -373,7 +373,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndex readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -388,7 +388,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndex lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@return All the specific Index instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubIndex[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubIndex[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific Index record instance identified by the unique key IdIdx.
@@ -412,7 +412,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndex readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -426,7 +426,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndex[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -443,7 +443,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndex readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		String Name );
 
@@ -458,7 +458,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndex[] readRecByIdxTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadRecByIdxTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -472,7 +472,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndex[] readRecByIdxCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadRecByIdxCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
 	/**
@@ -488,7 +488,7 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndex[] readRecByIdxTblCdVisX( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadRecByIdxTblCdVisX( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
@@ -503,6 +503,6 @@ public interface ICFBamPubIndexTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndex[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndex[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 }

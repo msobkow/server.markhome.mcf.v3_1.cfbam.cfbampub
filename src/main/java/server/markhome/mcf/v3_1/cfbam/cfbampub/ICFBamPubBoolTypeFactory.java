@@ -77,13 +77,13 @@ public interface ICFBamPubBoolTypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubBoolType newRec();
+	public ICFBamPubBoolType newPubRec();
 
 	/**
 	 *	Allocate a public BoolType history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubBoolTypeH newHRec();
+	public ICFBamPubBoolTypeH newPubHRec();
 
 }

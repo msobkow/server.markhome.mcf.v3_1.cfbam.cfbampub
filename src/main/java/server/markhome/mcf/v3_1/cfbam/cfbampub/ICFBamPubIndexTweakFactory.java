@@ -77,13 +77,13 @@ public interface ICFBamPubIndexTweakFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubIndexTweak newRec();
+	public ICFBamPubIndexTweak newPubRec();
 
 	/**
 	 *	Allocate a public IndexTweak history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubIndexTweakH newHRec();
+	public ICFBamPubIndexTweakH newPubHRec();
 
 }

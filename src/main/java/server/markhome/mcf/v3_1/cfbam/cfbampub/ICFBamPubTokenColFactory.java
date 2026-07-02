@@ -77,13 +77,13 @@ public interface ICFBamPubTokenColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTokenCol newRec();
+	public ICFBamPubTokenCol newPubRec();
 
 	/**
 	 *	Allocate a public TokenCol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTokenColH newHRec();
+	public ICFBamPubTokenColH newPubHRec();
 
 }

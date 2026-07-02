@@ -91,13 +91,13 @@ public interface ICFBamPubSchemaRoleFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubSchemaRole newRec();
+	public ICFBamPubSchemaRole newPubRec();
 
 	/**
 	 *	Allocate a public SchemaRole history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubSchemaRoleH newHRec();
+	public ICFBamPubSchemaRoleH newPubHRec();
 
 }

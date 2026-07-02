@@ -84,13 +84,13 @@ public interface ICFBamPubScopeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubScope newRec();
+	public ICFBamPubScope newPubRec();
 
 	/**
 	 *	Allocate a public Scope history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubScopeH newHRec();
+	public ICFBamPubScopeH newPubHRec();
 
 }

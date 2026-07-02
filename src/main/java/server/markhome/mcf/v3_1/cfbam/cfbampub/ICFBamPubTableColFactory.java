@@ -84,13 +84,13 @@ public interface ICFBamPubTableColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTableCol newRec();
+	public ICFBamPubTableCol newPubRec();
 
 	/**
 	 *	Allocate a public TableCol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTableColH newHRec();
+	public ICFBamPubTableColH newPubHRec();
 
 }

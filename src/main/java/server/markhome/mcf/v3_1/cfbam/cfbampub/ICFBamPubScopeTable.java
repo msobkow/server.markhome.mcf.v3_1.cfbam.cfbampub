@@ -78,7 +78,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubScope createScope( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope pubcreateScope( ICFSecPubAuthorization Authorization,
 		ICFBamPubScope rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubScope updateScope( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope pubupdateScope( ICFSecPubAuthorization Authorization,
 		ICFBamPubScope rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteScope( ICFSecPubAuthorization Authorization,
+	public void pubdeleteScope( ICFSecPubAuthorization Authorization,
 		ICFBamPubScope rec );
 	/**
 	 *	Delete the Scope instance identified by the primary key.
@@ -110,7 +110,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteScopeByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteScopeByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the Scope instances identified by the key TenantIdx.
@@ -119,7 +119,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@param	TenantId	The Scope key attribute of the instance generating the id.
 	 */
-	void deleteScopeByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteScopeByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -129,7 +129,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteScopeByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteScopeByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubScopeByTenantIdxKey argKey );
 
 
@@ -143,7 +143,7 @@ public interface ICFBamPubScopeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubScope readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -156,7 +156,7 @@ public interface ICFBamPubScopeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubScope lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -166,7 +166,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubScope[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubScope[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived Scope record instance identified by the unique key IdIdx.
@@ -178,7 +178,7 @@ public interface ICFBamPubScopeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubScope readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -190,7 +190,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubScope[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -205,7 +205,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubScope readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -220,7 +220,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubScope lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -230,7 +230,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@return All the specific Scope instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubScope[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubScope[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific Scope record instance identified by the unique key IdIdx.
@@ -244,7 +244,7 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubScope readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -258,6 +258,6 @@ public interface ICFBamPubScopeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubScope[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubScope[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 }

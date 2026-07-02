@@ -77,13 +77,13 @@ public interface ICFBamPubTZTimestampTypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTZTimestampType newRec();
+	public ICFBamPubTZTimestampType newPubRec();
 
 	/**
 	 *	Allocate a public TZTimestampType history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTZTimestampTypeH newHRec();
+	public ICFBamPubTZTimestampTypeH newPubHRec();
 
 }

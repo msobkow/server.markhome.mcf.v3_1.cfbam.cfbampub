@@ -70,13 +70,13 @@ public interface ICFBamPubDbKeyHash384GenFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash384Gen newRec();
+	public ICFBamPubDbKeyHash384Gen newPubRec();
 
 	/**
 	 *	Allocate a public DbKeyHash384Gen history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash384GenH newHRec();
+	public ICFBamPubDbKeyHash384GenH newPubHRec();
 
 }

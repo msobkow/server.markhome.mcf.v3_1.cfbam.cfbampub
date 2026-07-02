@@ -70,13 +70,13 @@ public interface ICFBamPubAtomFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubAtom newRec();
+	public ICFBamPubAtom newPubRec();
 
 	/**
 	 *	Allocate a public Atom history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubAtomH newHRec();
+	public ICFBamPubAtomH newPubHRec();
 
 }

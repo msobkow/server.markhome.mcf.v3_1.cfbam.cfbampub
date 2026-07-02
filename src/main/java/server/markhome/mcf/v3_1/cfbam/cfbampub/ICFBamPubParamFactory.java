@@ -133,13 +133,13 @@ public interface ICFBamPubParamFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubParam newRec();
+	public ICFBamPubParam newPubRec();
 
 	/**
 	 *	Allocate a public Param history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubParamH newHRec();
+	public ICFBamPubParamH newPubHRec();
 
 }

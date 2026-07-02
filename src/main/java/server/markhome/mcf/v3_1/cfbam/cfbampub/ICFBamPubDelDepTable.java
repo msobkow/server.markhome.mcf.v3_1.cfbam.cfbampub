@@ -78,7 +78,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubDelDep createDelDep( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep pubcreateDelDep( ICFSecPubAuthorization Authorization,
 		ICFBamPubDelDep rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubDelDep updateDelDep( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep pubupdateDelDep( ICFSecPubAuthorization Authorization,
 		ICFBamPubDelDep rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteDelDep( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDelDep( ICFSecPubAuthorization Authorization,
 		ICFBamPubDelDep rec );
 	/**
 	 *	Delete the DelDep instances identified by the key DefSchemaIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	DefSchemaId	The DelDep key attribute of the instance generating the id.
 	 */
-	void deleteDelDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDelDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDelDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDelDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubDelDepByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the DelDep instances identified by the key DelDepIdx.
@@ -129,7 +129,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	RelationId	The DelDep key attribute of the instance generating the id.
 	 */
-	void deleteDelDepByDelDepIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDelDepByDelDepIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argRelationId );
 
 	/**
@@ -139,7 +139,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDelDepByDelDepIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDelDepByDelDepIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubDelDepByDelDepIdxKey argKey );
 	/**
 	 *	Delete the DelDep instance identified by the primary key.
@@ -148,7 +148,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteDelDepByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDelDepByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the DelDep instances identified by the key TenantIdx.
@@ -157,7 +157,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	TenantId	The DelDep key attribute of the instance generating the id.
 	 */
-	void deleteDelDepByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDelDepByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -167,7 +167,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteDelDepByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteDelDepByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubScopeByTenantIdxKey argKey );
 
 
@@ -181,7 +181,7 @@ public interface ICFBamPubDelDepTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDelDep readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -194,7 +194,7 @@ public interface ICFBamPubDelDepTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDelDep lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -204,7 +204,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDelDep[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDelDep[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived DelDep record instance identified by the unique key IdIdx.
@@ -216,7 +216,7 @@ public interface ICFBamPubDelDepTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubDelDep readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -228,7 +228,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDelDep[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -240,7 +240,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDelDep[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -252,7 +252,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubDelDep[] readDerivedByDelDepIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep[] pubreadDerivedByDelDepIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 RelationId );
 
 	/**
@@ -267,7 +267,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDelDep readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -282,7 +282,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDelDep lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -292,7 +292,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@return All the specific DelDep instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubDelDep[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubDelDep[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific DelDep record instance identified by the unique key IdIdx.
@@ -306,7 +306,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDelDep readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -320,7 +320,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDelDep[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -334,7 +334,7 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDelDep[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -348,6 +348,6 @@ public interface ICFBamPubDelDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubDelDep[] readRecByDelDepIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelDep[] pubreadRecByDelDepIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 RelationId );
 }

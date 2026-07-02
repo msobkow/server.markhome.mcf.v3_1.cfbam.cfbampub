@@ -70,13 +70,13 @@ public interface ICFBamPubUInt64DefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUInt64Def newRec();
+	public ICFBamPubUInt64Def newPubRec();
 
 	/**
 	 *	Allocate a public UInt64Def history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUInt64DefH newHRec();
+	public ICFBamPubUInt64DefH newPubHRec();
 
 }

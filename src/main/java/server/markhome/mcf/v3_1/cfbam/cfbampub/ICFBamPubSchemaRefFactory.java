@@ -105,13 +105,13 @@ public interface ICFBamPubSchemaRefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubSchemaRef newRec();
+	public ICFBamPubSchemaRef newPubRec();
 
 	/**
 	 *	Allocate a public SchemaRef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubSchemaRefH newHRec();
+	public ICFBamPubSchemaRefH newPubHRec();
 
 }

@@ -77,13 +77,13 @@ public interface ICFBamPubDbKeyHash224ColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash224Col newRec();
+	public ICFBamPubDbKeyHash224Col newPubRec();
 
 	/**
 	 *	Allocate a public DbKeyHash224Col history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash224ColH newHRec();
+	public ICFBamPubDbKeyHash224ColH newPubHRec();
 
 }

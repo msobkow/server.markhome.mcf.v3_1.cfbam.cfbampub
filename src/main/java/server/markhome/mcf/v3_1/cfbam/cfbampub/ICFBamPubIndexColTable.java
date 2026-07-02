@@ -78,7 +78,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubIndexCol createIndexCol( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol pubcreateIndexCol( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexCol rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubIndexCol updateIndexCol( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol pubupdateIndexCol( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexCol rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteIndexCol( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexCol( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexCol rec );
 	/**
 	 *	Delete the IndexCol instance identified by the primary key.
@@ -110,7 +110,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteIndexColByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the IndexCol instances identified by the key UNameIdx.
@@ -121,7 +121,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	Name	The IndexCol key attribute of the instance generating the id.
 	 */
-	void deleteIndexColByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argIndexId,
 		String argName );
 
@@ -132,7 +132,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexColByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexColByUNameIdxKey argKey );
 	/**
 	 *	Delete the IndexCol instances identified by the key IndexIdx.
@@ -141,7 +141,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	IndexId	The IndexCol key attribute of the instance generating the id.
 	 */
-	void deleteIndexColByIndexIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByIndexIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argIndexId );
 
 	/**
@@ -151,7 +151,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexColByIndexIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByIndexIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexColByIndexIdxKey argKey );
 	/**
 	 *	Delete the IndexCol instances identified by the key DefSchemaIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	DefSchemaId	The IndexCol key attribute of the instance generating the id.
 	 */
-	void deleteIndexColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexColByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the IndexCol instances identified by the key ColIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	ColumnId	The IndexCol key attribute of the instance generating the id.
 	 */
-	void deleteIndexColByColIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByColIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argColumnId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexColByColIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByColIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexColByColIdxKey argKey );
 	/**
 	 *	Delete the IndexCol instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	PrevId	The IndexCol key attribute of the instance generating the id.
 	 */
-	void deleteIndexColByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexColByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexColByPrevIdxKey argKey );
 	/**
 	 *	Delete the IndexCol instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	NextId	The IndexCol key attribute of the instance generating the id.
 	 */
-	void deleteIndexColByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexColByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexColByNextIdxKey argKey );
 	/**
 	 *	Delete the IndexCol instances identified by the key IdxPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	PrevId	The IndexCol key attribute of the instance generating the id.
 	 */
-	void deleteIndexColByIdxPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByIdxPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argIndexId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexColByIdxPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByIdxPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexColByIdxPrevIdxKey argKey );
 	/**
 	 *	Delete the IndexCol instances identified by the key IdxNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	NextId	The IndexCol key attribute of the instance generating the id.
 	 */
-	void deleteIndexColByIdxNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByIdxNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argIndexId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteIndexColByIdxNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteIndexColByIdxNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubIndexColByIdxNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubIndexColTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubIndexCol readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubIndexColTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubIndexCol lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndexCol[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubIndexCol[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived IndexCol record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubIndexColTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubIndexCol readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubIndexColTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubIndexCol readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 IndexId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndexCol[] readDerivedByIndexIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadDerivedByIndexIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 IndexId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndexCol[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndexCol[] readDerivedByColIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadDerivedByColIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ColumnId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndexCol[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -396,7 +396,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndexCol[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -410,7 +410,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndexCol[] readDerivedByIdxPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadDerivedByIdxPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 IndexId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -425,7 +425,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubIndexCol[] readDerivedByIdxNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadDerivedByIdxNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 IndexId,
 		CFLibDbKeyHash256 NextId );
 
@@ -441,7 +441,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return All the specific IndexCol instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubIndexCol[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubIndexCol[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific IndexCol record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 IndexId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol[] readRecByIndexIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadRecByIndexIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 IndexId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol[] readRecByColIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadRecByColIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ColumnId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -568,7 +568,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -584,7 +584,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol[] readRecByIdxPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadRecByIdxPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 IndexId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -601,7 +601,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubIndexCol[] readRecByIdxNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol[] pubreadRecByIdxNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 IndexId,
 		CFLibDbKeyHash256 NextId );
 
@@ -610,7 +610,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubIndexCol moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubIndexCol pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubIndexColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamIndexCol moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamIndexCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

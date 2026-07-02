@@ -70,13 +70,13 @@ public interface ICFBamPubUuidGenFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUuidGen newRec();
+	public ICFBamPubUuidGen newPubRec();
 
 	/**
 	 *	Allocate a public UuidGen history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUuidGenH newHRec();
+	public ICFBamPubUuidGenH newPubHRec();
 
 }

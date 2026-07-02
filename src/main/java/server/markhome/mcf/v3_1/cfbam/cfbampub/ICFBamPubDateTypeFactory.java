@@ -77,13 +77,13 @@ public interface ICFBamPubDateTypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDateType newRec();
+	public ICFBamPubDateType newPubRec();
 
 	/**
 	 *	Allocate a public DateType history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDateTypeH newHRec();
+	public ICFBamPubDateTypeH newPubHRec();
 
 }

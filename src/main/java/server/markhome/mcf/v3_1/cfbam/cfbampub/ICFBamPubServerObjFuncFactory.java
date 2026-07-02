@@ -77,13 +77,13 @@ public interface ICFBamPubServerObjFuncFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubServerObjFunc newRec();
+	public ICFBamPubServerObjFunc newPubRec();
 
 	/**
 	 *	Allocate a public ServerObjFunc history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubServerObjFuncH newHRec();
+	public ICFBamPubServerObjFuncH newPubHRec();
 
 }

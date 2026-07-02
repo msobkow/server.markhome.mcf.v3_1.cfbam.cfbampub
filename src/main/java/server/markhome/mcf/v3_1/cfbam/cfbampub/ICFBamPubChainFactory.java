@@ -112,13 +112,13 @@ public interface ICFBamPubChainFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubChain newRec();
+	public ICFBamPubChain newPubRec();
 
 	/**
 	 *	Allocate a public Chain history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubChainH newHRec();
+	public ICFBamPubChainH newPubHRec();
 
 }

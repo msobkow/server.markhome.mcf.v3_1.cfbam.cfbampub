@@ -105,13 +105,13 @@ public interface ICFBamPubIndexFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubIndex newRec();
+	public ICFBamPubIndex newPubRec();
 
 	/**
 	 *	Allocate a public Index history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubIndexH newHRec();
+	public ICFBamPubIndexH newPubHRec();
 
 }

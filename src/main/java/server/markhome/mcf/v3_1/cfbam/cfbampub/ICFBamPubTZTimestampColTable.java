@@ -78,7 +78,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubTZTimestampCol createTZTimestampCol( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol pubcreateTZTimestampCol( ICFSecPubAuthorization Authorization,
 		ICFBamPubTZTimestampCol rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubTZTimestampCol updateTZTimestampCol( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol pubupdateTZTimestampCol( ICFSecPubAuthorization Authorization,
 		ICFBamPubTZTimestampCol rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteTZTimestampCol( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampCol( ICFSecPubAuthorization Authorization,
 		ICFBamPubTZTimestampCol rec );
 	/**
 	 *	Delete the TZTimestampCol instances identified by the key TableIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	TableId	The TZTimestampCol key attribute of the instance generating the id.
 	 */
-	void deleteTZTimestampColByTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimestampColByTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByTableIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubTZTimestampColByTableIdxKey argKey );
 	/**
 	 *	Delete the TZTimestampCol instance identified by the primary key.
@@ -129,7 +129,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteTZTimestampColByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the TZTimestampCol instances identified by the key UNameIdx.
@@ -140,7 +140,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	Name	The TZTimestampCol key attribute of the instance generating the id.
 	 */
-	void deleteTZTimestampColByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -151,7 +151,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimestampColByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the TZTimestampCol instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	ScopeId	The TZTimestampCol key attribute of the instance generating the id.
 	 */
-	void deleteTZTimestampColByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimestampColByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the TZTimestampCol instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	DefSchemaId	The TZTimestampCol key attribute of the instance generating the id.
 	 */
-	void deleteTZTimestampColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimestampColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the TZTimestampCol instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	PrevId	The TZTimestampCol key attribute of the instance generating the id.
 	 */
-	void deleteTZTimestampColByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimestampColByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the TZTimestampCol instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	NextId	The TZTimestampCol key attribute of the instance generating the id.
 	 */
-	void deleteTZTimestampColByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimestampColByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the TZTimestampCol instances identified by the key ContPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	PrevId	The TZTimestampCol key attribute of the instance generating the id.
 	 */
-	void deleteTZTimestampColByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimestampColByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the TZTimestampCol instances identified by the key ContNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	NextId	The TZTimestampCol key attribute of the instance generating the id.
 	 */
-	void deleteTZTimestampColByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTZTimestampColByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTZTimestampColByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTZTimestampCol readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTZTimestampCol lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimestampCol[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubTZTimestampCol[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived TZTimestampCol record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTZTimestampCol readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTZTimestampCol readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimestampCol[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimestampCol[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimestampCol[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimestampCol[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimestampCol[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -413,7 +413,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimestampCol[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -426,7 +426,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTZTimestampCol[] readDerivedByTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadDerivedByTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -441,7 +441,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return All the specific TZTimestampCol instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubTZTimestampCol[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubTZTimestampCol[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific TZTimestampCol record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -570,7 +570,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -587,7 +587,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -602,7 +602,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTZTimestampCol[] readRecByTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol[] pubreadRecByTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -610,7 +610,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubTZTimestampCol moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimestampCol pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubTZTimestampColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamTZTimestampCol moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamTZTimestampCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

@@ -112,13 +112,13 @@ public interface ICFBamPubTweakFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTweak newRec();
+	public ICFBamPubTweak newPubRec();
 
 	/**
 	 *	Allocate a public Tweak history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTweakH newHRec();
+	public ICFBamPubTweakH newPubHRec();
 
 }

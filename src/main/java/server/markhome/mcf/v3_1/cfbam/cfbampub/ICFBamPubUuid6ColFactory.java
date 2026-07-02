@@ -77,13 +77,13 @@ public interface ICFBamPubUuid6ColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUuid6Col newRec();
+	public ICFBamPubUuid6Col newPubRec();
 
 	/**
 	 *	Allocate a public Uuid6Col history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUuid6ColH newHRec();
+	public ICFBamPubUuid6ColH newPubHRec();
 
 }

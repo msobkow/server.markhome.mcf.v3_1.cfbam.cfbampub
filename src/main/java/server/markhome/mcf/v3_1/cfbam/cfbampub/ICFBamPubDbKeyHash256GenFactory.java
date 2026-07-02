@@ -70,13 +70,13 @@ public interface ICFBamPubDbKeyHash256GenFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash256Gen newRec();
+	public ICFBamPubDbKeyHash256Gen newPubRec();
 
 	/**
 	 *	Allocate a public DbKeyHash256Gen history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash256GenH newHRec();
+	public ICFBamPubDbKeyHash256GenH newPubHRec();
 
 }

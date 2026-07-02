@@ -77,13 +77,13 @@ public interface ICFBamPubBlobColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubBlobCol newRec();
+	public ICFBamPubBlobCol newPubRec();
 
 	/**
 	 *	Allocate a public BlobCol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubBlobColH newHRec();
+	public ICFBamPubBlobColH newPubHRec();
 
 }

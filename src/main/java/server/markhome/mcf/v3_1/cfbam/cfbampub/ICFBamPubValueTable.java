@@ -78,7 +78,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubValue createValue( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue pubcreateValue( ICFSecPubAuthorization Authorization,
 		ICFBamPubValue rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubValue updateValue( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue pubupdateValue( ICFSecPubAuthorization Authorization,
 		ICFBamPubValue rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteValue( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValue( ICFSecPubAuthorization Authorization,
 		ICFBamPubValue rec );
 	/**
 	 *	Delete the Value instance identified by the primary key.
@@ -110,7 +110,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteValueByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the Value instances identified by the key UNameIdx.
@@ -121,7 +121,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	Name	The Value key attribute of the instance generating the id.
 	 */
-	void deleteValueByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -132,7 +132,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteValueByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the Value instances identified by the key ScopeIdx.
@@ -141,7 +141,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	ScopeId	The Value key attribute of the instance generating the id.
 	 */
-	void deleteValueByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -151,7 +151,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteValueByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the Value instances identified by the key DefSchemaIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	DefSchemaId	The Value key attribute of the instance generating the id.
 	 */
-	void deleteValueByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteValueByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the Value instances identified by the key PrevIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	PrevId	The Value key attribute of the instance generating the id.
 	 */
-	void deleteValueByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteValueByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the Value instances identified by the key NextIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	NextId	The Value key attribute of the instance generating the id.
 	 */
-	void deleteValueByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteValueByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the Value instances identified by the key ContPrevIdx.
@@ -219,7 +219,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	PrevId	The Value key attribute of the instance generating the id.
 	 */
-	void deleteValueByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -230,7 +230,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteValueByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the Value instances identified by the key ContNextIdx.
@@ -241,7 +241,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	NextId	The Value key attribute of the instance generating the id.
 	 */
-	void deleteValueByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -252,7 +252,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteValueByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteValueByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -266,7 +266,7 @@ public interface ICFBamPubValueTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubValue readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -279,7 +279,7 @@ public interface ICFBamPubValueTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubValue lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -289,7 +289,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubValue[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubValue[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived Value record instance identified by the unique key IdIdx.
@@ -301,7 +301,7 @@ public interface ICFBamPubValueTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubValue readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -316,7 +316,7 @@ public interface ICFBamPubValueTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubValue readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -329,7 +329,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubValue[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -341,7 +341,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubValue[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -353,7 +353,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubValue[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -365,7 +365,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubValue[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -379,7 +379,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubValue[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -394,7 +394,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubValue[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -410,7 +410,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -425,7 +425,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -435,7 +435,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return All the specific Value instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubValue[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubValue[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific Value record instance identified by the unique key IdIdx.
@@ -449,7 +449,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -481,7 +481,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -495,7 +495,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -509,7 +509,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -523,7 +523,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -539,7 +539,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -556,7 +556,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubValue[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -565,7 +565,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubValue moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubValue pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -574,7 +574,7 @@ public interface ICFBamPubValueTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamValue moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamValue pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

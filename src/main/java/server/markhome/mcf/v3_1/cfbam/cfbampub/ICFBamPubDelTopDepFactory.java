@@ -98,13 +98,13 @@ public interface ICFBamPubDelTopDepFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDelTopDep newRec();
+	public ICFBamPubDelTopDep newPubRec();
 
 	/**
 	 *	Allocate a public DelTopDep history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDelTopDepH newHRec();
+	public ICFBamPubDelTopDepH newPubHRec();
 
 }

@@ -70,13 +70,13 @@ public interface ICFBamPubNumberDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubNumberDef newRec();
+	public ICFBamPubNumberDef newPubRec();
 
 	/**
 	 *	Allocate a public NumberDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubNumberDefH newHRec();
+	public ICFBamPubNumberDefH newPubHRec();
 
 }

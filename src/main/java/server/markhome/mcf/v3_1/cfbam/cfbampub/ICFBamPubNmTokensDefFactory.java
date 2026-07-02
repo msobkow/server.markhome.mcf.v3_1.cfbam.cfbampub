@@ -70,13 +70,13 @@ public interface ICFBamPubNmTokensDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubNmTokensDef newRec();
+	public ICFBamPubNmTokensDef newPubRec();
 
 	/**
 	 *	Allocate a public NmTokensDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubNmTokensDefH newHRec();
+	public ICFBamPubNmTokensDefH newPubHRec();
 
 }

@@ -77,13 +77,13 @@ public interface ICFBamPubInt16ColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubInt16Col newRec();
+	public ICFBamPubInt16Col newPubRec();
 
 	/**
 	 *	Allocate a public Int16Col history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubInt16ColH newHRec();
+	public ICFBamPubInt16ColH newPubHRec();
 
 }

@@ -84,13 +84,13 @@ public interface ICFBamPubClearDepFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubClearDep newRec();
+	public ICFBamPubClearDep newPubRec();
 
 	/**
 	 *	Allocate a public ClearDep history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubClearDepH newHRec();
+	public ICFBamPubClearDepH newPubHRec();
 
 }

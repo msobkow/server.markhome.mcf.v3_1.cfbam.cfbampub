@@ -77,13 +77,13 @@ public interface ICFBamPubDbKeyHash160TypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash160Type newRec();
+	public ICFBamPubDbKeyHash160Type newPubRec();
 
 	/**
 	 *	Allocate a public DbKeyHash160Type history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash160TypeH newHRec();
+	public ICFBamPubDbKeyHash160TypeH newPubHRec();
 
 }

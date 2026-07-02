@@ -77,13 +77,13 @@ public interface ICFBamPubDbKeyHash512TypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash512Type newRec();
+	public ICFBamPubDbKeyHash512Type newPubRec();
 
 	/**
 	 *	Allocate a public DbKeyHash512Type history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDbKeyHash512TypeH newHRec();
+	public ICFBamPubDbKeyHash512TypeH newPubHRec();
 
 }

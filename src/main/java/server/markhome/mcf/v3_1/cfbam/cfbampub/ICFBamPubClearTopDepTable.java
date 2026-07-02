@@ -78,7 +78,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubClearTopDep createClearTopDep( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubcreateClearTopDep( ICFSecPubAuthorization Authorization,
 		ICFBamPubClearTopDep rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubClearTopDep updateClearTopDep( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubupdateClearTopDep( ICFSecPubAuthorization Authorization,
 		ICFBamPubClearTopDep rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteClearTopDep( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDep( ICFSecPubAuthorization Authorization,
 		ICFBamPubClearTopDep rec );
 	/**
 	 *	Delete the ClearTopDep instances identified by the key ClrTopDepTblIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	TableId	The ClearTopDep key attribute of the instance generating the id.
 	 */
-	void deleteClearTopDepByClrTopDepTblIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByClrTopDepTblIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteClearTopDepByClrTopDepTblIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByClrTopDepTblIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubClearTopDepByClrTopDepTblIdxKey argKey );
 	/**
 	 *	Delete the ClearTopDep instances identified by the key UNameIdx.
@@ -131,7 +131,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	Name	The ClearTopDep key attribute of the instance generating the id.
 	 */
-	void deleteClearTopDepByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId,
 		String argName );
 
@@ -142,7 +142,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteClearTopDepByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubClearTopDepByUNameIdxKey argKey );
 	/**
 	 *	Delete the ClearTopDep instances identified by the key PrevIdx.
@@ -151,7 +151,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	PrevId	The ClearTopDep key attribute of the instance generating the id.
 	 */
-	void deleteClearTopDepByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -161,7 +161,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteClearTopDepByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubClearTopDepByPrevIdxKey argKey );
 	/**
 	 *	Delete the ClearTopDep instances identified by the key NextIdx.
@@ -170,7 +170,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	NextId	The ClearTopDep key attribute of the instance generating the id.
 	 */
-	void deleteClearTopDepByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -180,7 +180,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteClearTopDepByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubClearTopDepByNextIdxKey argKey );
 	/**
 	 *	Delete the ClearTopDep instances identified by the key ClearDepIdx.
@@ -189,7 +189,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	RelationId	The ClearTopDep key attribute of the instance generating the id.
 	 */
-	void deleteClearTopDepByClearDepIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByClearDepIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argRelationId );
 
 	/**
@@ -199,7 +199,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteClearTopDepByClearDepIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByClearDepIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubClearDepByClearDepIdxKey argKey );
 	/**
 	 *	Delete the ClearTopDep instances identified by the key DefSchemaIdx.
@@ -208,7 +208,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	DefSchemaId	The ClearTopDep key attribute of the instance generating the id.
 	 */
-	void deleteClearTopDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -218,7 +218,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteClearTopDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubClearDepByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the ClearTopDep instance identified by the primary key.
@@ -227,7 +227,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteClearTopDepByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the ClearTopDep instances identified by the key TenantIdx.
@@ -236,7 +236,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	TenantId	The ClearTopDep key attribute of the instance generating the id.
 	 */
-	void deleteClearTopDepByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -246,7 +246,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteClearTopDepByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClearTopDepByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubScopeByTenantIdxKey argKey );
 
 
@@ -260,7 +260,7 @@ public interface ICFBamPubClearTopDepTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubClearTopDep readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -273,7 +273,7 @@ public interface ICFBamPubClearTopDepTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubClearTopDep lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -283,7 +283,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubClearTopDep[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubClearTopDep[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived ClearTopDep record instance identified by the unique key IdIdx.
@@ -295,7 +295,7 @@ public interface ICFBamPubClearTopDepTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubClearTopDep readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -307,7 +307,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubClearTopDep[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -319,7 +319,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubClearTopDep[] readDerivedByClearDepIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadDerivedByClearDepIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 RelationId );
 
 	/**
@@ -331,7 +331,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubClearTopDep[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -343,7 +343,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubClearTopDep[] readDerivedByClrTopDepTblIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadDerivedByClrTopDepTblIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -358,7 +358,7 @@ public interface ICFBamPubClearTopDepTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubClearTopDep readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		String Name );
 
@@ -371,7 +371,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubClearTopDep[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -383,7 +383,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubClearTopDep[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -413,7 +413,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -423,7 +423,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return All the specific ClearTopDep instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubClearTopDep[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubClearTopDep[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific ClearTopDep record instance identified by the unique key IdIdx.
@@ -437,7 +437,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -451,7 +451,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -465,7 +465,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep[] readRecByClearDepIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadRecByClearDepIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 RelationId );
 
 	/**
@@ -479,7 +479,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -493,7 +493,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep[] readRecByClrTopDepTblIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadRecByClrTopDepTblIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -510,7 +510,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		String Name );
 
@@ -525,7 +525,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -539,7 +539,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubClearTopDep[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -547,7 +547,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubClearTopDep moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -556,7 +556,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamClearTopDep moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamClearTopDep pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

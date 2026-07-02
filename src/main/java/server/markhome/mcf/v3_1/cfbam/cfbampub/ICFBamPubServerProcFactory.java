@@ -70,13 +70,13 @@ public interface ICFBamPubServerProcFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubServerProc newRec();
+	public ICFBamPubServerProc newPubRec();
 
 	/**
 	 *	Allocate a public ServerProc history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubServerProcH newHRec();
+	public ICFBamPubServerProcH newPubHRec();
 
 }

@@ -77,13 +77,13 @@ public interface ICFBamPubTextTypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTextType newRec();
+	public ICFBamPubTextType newPubRec();
 
 	/**
 	 *	Allocate a public TextType history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTextTypeH newHRec();
+	public ICFBamPubTextTypeH newPubHRec();
 
 }

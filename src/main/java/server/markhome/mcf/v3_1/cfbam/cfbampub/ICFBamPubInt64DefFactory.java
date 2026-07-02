@@ -70,13 +70,13 @@ public interface ICFBamPubInt64DefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubInt64Def newRec();
+	public ICFBamPubInt64Def newPubRec();
 
 	/**
 	 *	Allocate a public Int64Def history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubInt64DefH newHRec();
+	public ICFBamPubInt64DefH newPubHRec();
 
 }

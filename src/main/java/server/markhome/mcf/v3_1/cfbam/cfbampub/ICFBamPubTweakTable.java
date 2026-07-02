@@ -78,7 +78,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubTweak createTweak( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubcreateTweak( ICFSecPubAuthorization Authorization,
 		ICFBamPubTweak rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubTweak updateTweak( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubupdateTweak( ICFSecPubAuthorization Authorization,
 		ICFBamPubTweak rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteTweak( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweak( ICFSecPubAuthorization Authorization,
 		ICFBamPubTweak rec );
 	/**
 	 *	Delete the Tweak instance identified by the primary key.
@@ -110,7 +110,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteTweakByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the Tweak instances identified by the key UNameIdx.
@@ -121,7 +121,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	Name	The Tweak key attribute of the instance generating the id.
 	 */
-	void deleteTweakByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -132,7 +132,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTweakByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubTweakByUNameIdxKey argKey );
 	/**
 	 *	Delete the Tweak instances identified by the key ValTentIdx.
@@ -141,7 +141,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	TenantId	The Tweak key attribute of the instance generating the id.
 	 */
-	void deleteTweakByValTentIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByValTentIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -151,7 +151,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTweakByValTentIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByValTentIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubTweakByValTentIdxKey argKey );
 	/**
 	 *	Delete the Tweak instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	ScopeId	The Tweak key attribute of the instance generating the id.
 	 */
-	void deleteTweakByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTweakByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubTweakByScopeIdxKey argKey );
 	/**
 	 *	Delete the Tweak instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	DefSchemaId	The Tweak key attribute of the instance generating the id.
 	 */
-	void deleteTweakByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTweakByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubTweakByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the Tweak instances identified by the key UDefIdx.
@@ -206,7 +206,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	Name	The Tweak key attribute of the instance generating the id.
 	 */
-	void deleteTweakByUDefIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByUDefIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argDefSchemaTenantId,
@@ -220,7 +220,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTweakByUDefIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTweakByUDefIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubTweakByUDefIdxKey argKey );
 
 
@@ -234,7 +234,7 @@ public interface ICFBamPubTweakTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTweak readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -247,7 +247,7 @@ public interface ICFBamPubTweakTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTweak lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -257,7 +257,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTweak[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubTweak[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived Tweak record instance identified by the unique key IdIdx.
@@ -269,7 +269,7 @@ public interface ICFBamPubTweakTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTweak readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -284,7 +284,7 @@ public interface ICFBamPubTweakTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTweak readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -297,7 +297,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTweak[] readDerivedByValTentIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak[] pubreadDerivedByValTentIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -309,7 +309,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTweak[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -321,7 +321,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubTweak[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -342,7 +342,7 @@ public interface ICFBamPubTweakTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubTweak readDerivedByUDefIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubreadDerivedByUDefIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 DefSchemaTenantId,
@@ -361,7 +361,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTweak readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -376,7 +376,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTweak lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -386,7 +386,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@return All the specific Tweak instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubTweak[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubTweak[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific Tweak record instance identified by the unique key IdIdx.
@@ -400,7 +400,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTweak readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -417,7 +417,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTweak readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -432,7 +432,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTweak[] readRecByValTentIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak[] pubreadRecByValTentIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -446,7 +446,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTweak[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -460,7 +460,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTweak[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -483,7 +483,7 @@ public interface ICFBamPubTweakTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubTweak readRecByUDefIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTweak pubreadRecByUDefIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 DefSchemaTenantId,

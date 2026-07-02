@@ -77,13 +77,13 @@ public interface ICFBamPubFloatColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubFloatCol newRec();
+	public ICFBamPubFloatCol newPubRec();
 
 	/**
 	 *	Allocate a public FloatCol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubFloatColH newHRec();
+	public ICFBamPubFloatColH newPubHRec();
 
 }

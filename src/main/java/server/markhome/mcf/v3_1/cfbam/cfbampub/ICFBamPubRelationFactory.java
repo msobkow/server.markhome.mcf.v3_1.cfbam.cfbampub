@@ -133,13 +133,13 @@ public interface ICFBamPubRelationFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubRelation newRec();
+	public ICFBamPubRelation newPubRec();
 
 	/**
 	 *	Allocate a public Relation history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubRelationH newHRec();
+	public ICFBamPubRelationH newPubHRec();
 
 }

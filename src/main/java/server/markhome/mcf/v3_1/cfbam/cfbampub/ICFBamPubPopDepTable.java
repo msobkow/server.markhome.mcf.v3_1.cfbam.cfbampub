@@ -78,7 +78,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubPopDep createPopDep( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep pubcreatePopDep( ICFSecPubAuthorization Authorization,
 		ICFBamPubPopDep rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubPopDep updatePopDep( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep pubupdatePopDep( ICFSecPubAuthorization Authorization,
 		ICFBamPubPopDep rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deletePopDep( ICFSecPubAuthorization Authorization,
+	public void pubdeletePopDep( ICFSecPubAuthorization Authorization,
 		ICFBamPubPopDep rec );
 	/**
 	 *	Delete the PopDep instances identified by the key RelationIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	RelationId	The PopDep key attribute of the instance generating the id.
 	 */
-	void deletePopDepByRelationIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeletePopDepByRelationIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argRelationId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deletePopDepByRelationIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeletePopDepByRelationIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubPopDepByRelationIdxKey argKey );
 	/**
 	 *	Delete the PopDep instances identified by the key DefSchemaIdx.
@@ -129,7 +129,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	DefSchemaId	The PopDep key attribute of the instance generating the id.
 	 */
-	void deletePopDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeletePopDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -139,7 +139,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deletePopDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeletePopDepByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubPopDepByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the PopDep instance identified by the primary key.
@@ -148,7 +148,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deletePopDepByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeletePopDepByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the PopDep instances identified by the key TenantIdx.
@@ -157,7 +157,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	TenantId	The PopDep key attribute of the instance generating the id.
 	 */
-	void deletePopDepByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeletePopDepByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -167,7 +167,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deletePopDepByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeletePopDepByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubScopeByTenantIdxKey argKey );
 
 
@@ -181,7 +181,7 @@ public interface ICFBamPubPopDepTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubPopDep readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -194,7 +194,7 @@ public interface ICFBamPubPopDepTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubPopDep lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -204,7 +204,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubPopDep[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubPopDep[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived PopDep record instance identified by the unique key IdIdx.
@@ -216,7 +216,7 @@ public interface ICFBamPubPopDepTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubPopDep readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -228,7 +228,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubPopDep[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -240,7 +240,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubPopDep[] readDerivedByRelationIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep[] pubreadDerivedByRelationIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 RelationId );
 
 	/**
@@ -252,7 +252,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubPopDep[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -267,7 +267,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubPopDep readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -282,7 +282,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubPopDep lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -292,7 +292,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@return All the specific PopDep instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubPopDep[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubPopDep[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific PopDep record instance identified by the unique key IdIdx.
@@ -306,7 +306,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubPopDep readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -320,7 +320,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubPopDep[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -334,7 +334,7 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubPopDep[] readRecByRelationIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep[] pubreadRecByRelationIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 RelationId );
 
 	/**
@@ -348,6 +348,6 @@ public interface ICFBamPubPopDepTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubPopDep[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubPopDep[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 }

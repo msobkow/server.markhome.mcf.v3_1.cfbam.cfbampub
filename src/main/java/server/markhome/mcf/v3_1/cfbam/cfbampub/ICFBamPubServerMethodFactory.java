@@ -105,13 +105,13 @@ public interface ICFBamPubServerMethodFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubServerMethod newRec();
+	public ICFBamPubServerMethod newPubRec();
 
 	/**
 	 *	Allocate a public ServerMethod history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubServerMethodH newHRec();
+	public ICFBamPubServerMethodH newPubHRec();
 
 }

@@ -77,13 +77,13 @@ public interface ICFBamPubEnumTypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubEnumType newRec();
+	public ICFBamPubEnumType newPubRec();
 
 	/**
 	 *	Allocate a public EnumType history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubEnumTypeH newHRec();
+	public ICFBamPubEnumTypeH newPubHRec();
 
 }

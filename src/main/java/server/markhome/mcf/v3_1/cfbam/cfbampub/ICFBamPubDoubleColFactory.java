@@ -77,13 +77,13 @@ public interface ICFBamPubDoubleColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDoubleCol newRec();
+	public ICFBamPubDoubleCol newPubRec();
 
 	/**
 	 *	Allocate a public DoubleCol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDoubleColH newHRec();
+	public ICFBamPubDoubleColH newPubHRec();
 
 }

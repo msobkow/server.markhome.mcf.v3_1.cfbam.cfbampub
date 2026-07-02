@@ -78,7 +78,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubServerListFunc createServerListFunc( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc pubcreateServerListFunc( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerListFunc rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubServerListFunc updateServerListFunc( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc pubupdateServerListFunc( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerListFunc rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteServerListFunc( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFunc( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerListFunc rec );
 	/**
 	 *	Delete the ServerListFunc instances identified by the key RetTblIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	RetTableId	The ServerListFunc key attribute of the instance generating the id.
 	 */
-	void deleteServerListFuncByRetTblIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByRetTblIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argRetTableId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerListFuncByRetTblIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByRetTblIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerListFuncByRetTblIdxKey argKey );
 	/**
 	 *	Delete the ServerListFunc instances identified by the key UNameIdx.
@@ -131,7 +131,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	Name	The ServerListFunc key attribute of the instance generating the id.
 	 */
-	void deleteServerListFuncByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId,
 		String argName );
 
@@ -142,7 +142,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerListFuncByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByUNameIdxKey argKey );
 	/**
 	 *	Delete the ServerListFunc instances identified by the key MethTableIdx.
@@ -151,7 +151,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	TableId	The ServerListFunc key attribute of the instance generating the id.
 	 */
-	void deleteServerListFuncByMethTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByMethTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId );
 
 	/**
@@ -161,7 +161,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerListFuncByMethTableIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByMethTableIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByMethTableIdxKey argKey );
 	/**
 	 *	Delete the ServerListFunc instances identified by the key MethCodeVisIdx.
@@ -170,7 +170,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	CodeVis	The ServerListFunc key attribute of the instance generating the id.
 	 */
-	void deleteServerListFuncByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchema.CodeVisibilityEnum argCodeVis );
 
 	/**
@@ -180,7 +180,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerListFuncByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByMethCodeVisIdxKey argKey );
 	/**
 	 *	Delete the ServerListFunc instances identified by the key MethTableVisIdx.
@@ -191,7 +191,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	CodeVis	The ServerListFunc key attribute of the instance generating the id.
 	 */
-	void deleteServerListFuncByMethTableVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByMethTableVisIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTableId,
 		ICFBamPubSchema.CodeVisibilityEnum argCodeVis );
 
@@ -202,7 +202,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerListFuncByMethTableVisIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByMethTableVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByMethTableVisIdxKey argKey );
 	/**
 	 *	Delete the ServerListFunc instances identified by the key DefSchemaIdx.
@@ -211,7 +211,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	DefSchemaId	The ServerListFunc key attribute of the instance generating the id.
 	 */
-	void deleteServerListFuncByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -221,7 +221,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerListFuncByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubServerMethodByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the ServerListFunc instance identified by the primary key.
@@ -230,7 +230,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteServerListFuncByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the ServerListFunc instances identified by the key TenantIdx.
@@ -239,7 +239,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	TenantId	The ServerListFunc key attribute of the instance generating the id.
 	 */
-	void deleteServerListFuncByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -249,7 +249,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteServerListFuncByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteServerListFuncByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubScopeByTenantIdxKey argKey );
 
 
@@ -263,7 +263,7 @@ public interface ICFBamPubServerListFuncTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubServerListFunc readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -276,7 +276,7 @@ public interface ICFBamPubServerListFuncTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubServerListFunc lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -286,7 +286,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerListFunc[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubServerListFunc[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived ServerListFunc record instance identified by the unique key IdIdx.
@@ -298,7 +298,7 @@ public interface ICFBamPubServerListFuncTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubServerListFunc readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -310,7 +310,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerListFunc[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -325,7 +325,7 @@ public interface ICFBamPubServerListFuncTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubServerListFunc readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		String Name );
 
@@ -338,7 +338,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerListFunc[] readDerivedByMethTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadDerivedByMethTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -350,7 +350,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerListFunc[] readDerivedByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadDerivedByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
 	/**
@@ -364,7 +364,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerListFunc[] readDerivedByMethTableVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadDerivedByMethTableVisIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
@@ -377,7 +377,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerListFunc[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -389,7 +389,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubServerListFunc[] readDerivedByRetTblIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadDerivedByRetTblIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 RetTableId );
 
 	/**
@@ -404,7 +404,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -419,7 +419,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -429,7 +429,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@return All the specific ServerListFunc instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubServerListFunc[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubServerListFunc[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific ServerListFunc record instance identified by the unique key IdIdx.
@@ -443,7 +443,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -457,7 +457,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -474,7 +474,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		String Name );
 
@@ -489,7 +489,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc[] readRecByMethTableIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadRecByMethTableIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId );
 
 	/**
@@ -503,7 +503,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc[] readRecByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadRecByMethCodeVisIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
 	/**
@@ -519,7 +519,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc[] readRecByMethTableVisIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadRecByMethTableVisIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TableId,
 		ICFBamPubSchema.CodeVisibilityEnum CodeVis );
 
@@ -534,7 +534,7 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -548,6 +548,6 @@ public interface ICFBamPubServerListFuncTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubServerListFunc[] readRecByRetTblIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubServerListFunc[] pubreadRecByRetTblIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 RetTableId );
 }

@@ -78,7 +78,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFBamPubBoolType createBoolType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType pubcreateBoolType( ICFSecPubAuthorization Authorization,
 		ICFBamPubBoolType rec );
 
 
@@ -90,7 +90,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFBamPubBoolType updateBoolType( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType pubupdateBoolType( ICFSecPubAuthorization Authorization,
 		ICFBamPubBoolType rec );
 
 
@@ -101,7 +101,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteBoolType( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolType( ICFSecPubAuthorization Authorization,
 		ICFBamPubBoolType rec );
 	/**
 	 *	Delete the BoolType instances identified by the key SchemaIdx.
@@ -110,7 +110,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	SchemaDefId	The BoolType key attribute of the instance generating the id.
 	 */
-	void deleteBoolTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argSchemaDefId );
 
 	/**
@@ -120,7 +120,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBoolTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeBySchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubBoolTypeBySchemaIdxKey argKey );
 	/**
 	 *	Delete the BoolType instance identified by the primary key.
@@ -129,7 +129,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteBoolTypeByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the BoolType instances identified by the key UNameIdx.
@@ -140,7 +140,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	Name	The BoolType key attribute of the instance generating the id.
 	 */
-	void deleteBoolTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		String argName );
 
@@ -151,7 +151,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBoolTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByUNameIdxKey argKey );
 	/**
 	 *	Delete the BoolType instances identified by the key ScopeIdx.
@@ -160,7 +160,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	ScopeId	The BoolType key attribute of the instance generating the id.
 	 */
-	void deleteBoolTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId );
 
 	/**
@@ -170,7 +170,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBoolTypeByScopeIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByScopeIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByScopeIdxKey argKey );
 	/**
 	 *	Delete the BoolType instances identified by the key DefSchemaIdx.
@@ -179,7 +179,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	DefSchemaId	The BoolType key attribute of the instance generating the id.
 	 */
-	void deleteBoolTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argDefSchemaId );
 
 	/**
@@ -189,7 +189,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBoolTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByDefSchemaIdxKey argKey );
 	/**
 	 *	Delete the BoolType instances identified by the key PrevIdx.
@@ -198,7 +198,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	PrevId	The BoolType key attribute of the instance generating the id.
 	 */
-	void deleteBoolTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argPrevId );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBoolTypeByPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByPrevIdxKey argKey );
 	/**
 	 *	Delete the BoolType instances identified by the key NextIdx.
@@ -217,7 +217,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	NextId	The BoolType key attribute of the instance generating the id.
 	 */
-	void deleteBoolTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argNextId );
 
 	/**
@@ -227,7 +227,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBoolTypeByNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByNextIdxKey argKey );
 	/**
 	 *	Delete the BoolType instances identified by the key ContPrevIdx.
@@ -238,7 +238,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	PrevId	The BoolType key attribute of the instance generating the id.
 	 */
-	void deleteBoolTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argPrevId );
 
@@ -249,7 +249,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBoolTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByContPrevIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContPrevIdxKey argKey );
 	/**
 	 *	Delete the BoolType instances identified by the key ContNextIdx.
@@ -260,7 +260,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	NextId	The BoolType key attribute of the instance generating the id.
 	 */
-	void deleteBoolTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argScopeId,
 		CFLibDbKeyHash256 argNextId );
 
@@ -271,7 +271,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteBoolTypeByContNextIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteBoolTypeByContNextIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubValueByContNextIdxKey argKey );
 
 
@@ -285,7 +285,7 @@ public interface ICFBamPubBoolTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubBoolType readDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -298,7 +298,7 @@ public interface ICFBamPubBoolTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubBoolType lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -308,7 +308,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBoolType[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFBamPubBoolType[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived BoolType record instance identified by the unique key IdIdx.
@@ -320,7 +320,7 @@ public interface ICFBamPubBoolTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubBoolType readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -335,7 +335,7 @@ public interface ICFBamPubBoolTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFBamPubBoolType readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -348,7 +348,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBoolType[] readDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadDerivedByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -360,7 +360,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBoolType[] readDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadDerivedByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -372,7 +372,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBoolType[] readDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadDerivedByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -384,7 +384,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBoolType[] readDerivedByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadDerivedByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -398,7 +398,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBoolType[] readDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadDerivedByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -413,7 +413,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBoolType[] readDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadDerivedByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -426,7 +426,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFBamPubBoolType[] readDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadDerivedBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -441,7 +441,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType readRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -456,7 +456,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType lockRec( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -466,7 +466,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return All the specific BoolType instances in the database accessible for the Authorization.
 	 */
-	ICFBamPubBoolType[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFBamPubBoolType[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific BoolType record instance identified by the unique key IdIdx.
@@ -480,7 +480,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -497,7 +497,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		String Name );
 
@@ -512,7 +512,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType[] readRecByScopeIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadRecByScopeIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId );
 
 	/**
@@ -526,7 +526,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType[] readRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
@@ -540,7 +540,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType[] readRecByPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadRecByPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PrevId );
 
 	/**
@@ -554,7 +554,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType[] readRecByNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadRecByNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 NextId );
 
 	/**
@@ -570,7 +570,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType[] readRecByContPrevIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadRecByContPrevIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 PrevId );
 
@@ -587,7 +587,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType[] readRecByContNextIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadRecByContNextIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ScopeId,
 		CFLibDbKeyHash256 NextId );
 
@@ -602,7 +602,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFBamPubBoolType[] readRecBySchemaIdx( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType[] pubreadRecBySchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId );
 
 	/**
@@ -610,7 +610,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamPubBoolType moveRecUp( ICFSecPubAuthorization Authorization,
+	public ICFBamPubBoolType pubmoveRecUp( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 
@@ -619,7 +619,7 @@ public interface ICFBamPubBoolTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	ICFBamBoolType moveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamBoolType pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

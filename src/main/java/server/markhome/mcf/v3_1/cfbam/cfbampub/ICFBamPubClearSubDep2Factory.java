@@ -84,13 +84,13 @@ public interface ICFBamPubClearSubDep2Factory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubClearSubDep2 newRec();
+	public ICFBamPubClearSubDep2 newPubRec();
 
 	/**
 	 *	Allocate a public ClearSubDep2 history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubClearSubDep2H newHRec();
+	public ICFBamPubClearSubDep2H newPubHRec();
 
 }

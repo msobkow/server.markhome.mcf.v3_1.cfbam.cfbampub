@@ -112,13 +112,13 @@ public interface ICFBamPubEnumTagFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubEnumTag newRec();
+	public ICFBamPubEnumTag newPubRec();
 
 	/**
 	 *	Allocate a public EnumTag history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubEnumTagH newHRec();
+	public ICFBamPubEnumTagH newPubHRec();
 
 }

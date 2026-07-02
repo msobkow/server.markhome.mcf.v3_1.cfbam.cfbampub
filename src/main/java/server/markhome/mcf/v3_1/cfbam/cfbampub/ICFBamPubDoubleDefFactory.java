@@ -70,13 +70,13 @@ public interface ICFBamPubDoubleDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDoubleDef newRec();
+	public ICFBamPubDoubleDef newPubRec();
 
 	/**
 	 *	Allocate a public DoubleDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDoubleDefH newHRec();
+	public ICFBamPubDoubleDefH newPubHRec();
 
 }

@@ -77,13 +77,13 @@ public interface ICFBamPubNumberColFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubNumberCol newRec();
+	public ICFBamPubNumberCol newPubRec();
 
 	/**
 	 *	Allocate a public NumberCol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubNumberColH newHRec();
+	public ICFBamPubNumberColH newPubHRec();
 
 }

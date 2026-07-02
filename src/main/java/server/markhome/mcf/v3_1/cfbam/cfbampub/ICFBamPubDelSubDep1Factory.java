@@ -84,13 +84,13 @@ public interface ICFBamPubDelSubDep1Factory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDelSubDep1 newRec();
+	public ICFBamPubDelSubDep1 newPubRec();
 
 	/**
 	 *	Allocate a public DelSubDep1 history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDelSubDep1H newHRec();
+	public ICFBamPubDelSubDep1H newPubHRec();
 
 }

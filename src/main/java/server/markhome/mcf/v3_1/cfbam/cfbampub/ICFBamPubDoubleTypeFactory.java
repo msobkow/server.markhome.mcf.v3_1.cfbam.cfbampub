@@ -77,13 +77,13 @@ public interface ICFBamPubDoubleTypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDoubleType newRec();
+	public ICFBamPubDoubleType newPubRec();
 
 	/**
 	 *	Allocate a public DoubleType history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubDoubleTypeH newHRec();
+	public ICFBamPubDoubleTypeH newPubHRec();
 
 }

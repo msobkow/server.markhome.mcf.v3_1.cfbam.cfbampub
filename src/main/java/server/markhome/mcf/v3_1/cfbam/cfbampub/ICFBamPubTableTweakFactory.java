@@ -77,13 +77,13 @@ public interface ICFBamPubTableTweakFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTableTweak newRec();
+	public ICFBamPubTableTweak newPubRec();
 
 	/**
 	 *	Allocate a public TableTweak history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTableTweakH newHRec();
+	public ICFBamPubTableTweakH newPubHRec();
 
 }

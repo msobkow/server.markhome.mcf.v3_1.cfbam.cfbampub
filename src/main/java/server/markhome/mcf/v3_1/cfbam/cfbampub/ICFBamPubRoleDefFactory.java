@@ -105,13 +105,13 @@ public interface ICFBamPubRoleDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubRoleDef newRec();
+	public ICFBamPubRoleDef newPubRec();
 
 	/**
 	 *	Allocate a public RoleDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubRoleDefH newHRec();
+	public ICFBamPubRoleDefH newPubHRec();
 
 }

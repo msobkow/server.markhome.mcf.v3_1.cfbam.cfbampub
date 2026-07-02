@@ -70,13 +70,13 @@ public interface ICFBamPubTimestampDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTimestampDef newRec();
+	public ICFBamPubTimestampDef newPubRec();
 
 	/**
 	 *	Allocate a public TimestampDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTimestampDefH newHRec();
+	public ICFBamPubTimestampDefH newPubHRec();
 
 }

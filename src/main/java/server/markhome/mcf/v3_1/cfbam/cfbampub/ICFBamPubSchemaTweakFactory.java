@@ -77,13 +77,13 @@ public interface ICFBamPubSchemaTweakFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubSchemaTweak newRec();
+	public ICFBamPubSchemaTweak newPubRec();
 
 	/**
 	 *	Allocate a public SchemaTweak history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubSchemaTweakH newHRec();
+	public ICFBamPubSchemaTweakH newPubHRec();
 
 }

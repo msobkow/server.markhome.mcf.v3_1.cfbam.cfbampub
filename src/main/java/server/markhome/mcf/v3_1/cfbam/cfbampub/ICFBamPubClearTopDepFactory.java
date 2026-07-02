@@ -98,13 +98,13 @@ public interface ICFBamPubClearTopDepFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubClearTopDep newRec();
+	public ICFBamPubClearTopDep newPubRec();
 
 	/**
 	 *	Allocate a public ClearTopDep history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubClearTopDepH newHRec();
+	public ICFBamPubClearTopDepH newPubHRec();
 
 }

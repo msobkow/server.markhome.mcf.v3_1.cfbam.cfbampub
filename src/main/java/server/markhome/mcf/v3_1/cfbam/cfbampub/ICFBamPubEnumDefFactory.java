@@ -70,13 +70,13 @@ public interface ICFBamPubEnumDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubEnumDef newRec();
+	public ICFBamPubEnumDef newPubRec();
 
 	/**
 	 *	Allocate a public EnumDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubEnumDefH newHRec();
+	public ICFBamPubEnumDefH newPubHRec();
 
 }

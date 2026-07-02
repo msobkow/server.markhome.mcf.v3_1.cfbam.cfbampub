@@ -77,13 +77,13 @@ public interface ICFBamPubUInt16TypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUInt16Type newRec();
+	public ICFBamPubUInt16Type newPubRec();
 
 	/**
 	 *	Allocate a public UInt16Type history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubUInt16TypeH newHRec();
+	public ICFBamPubUInt16TypeH newPubHRec();
 
 }

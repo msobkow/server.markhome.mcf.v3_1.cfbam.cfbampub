@@ -70,13 +70,13 @@ public interface ICFBamPubTZDateDefFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTZDateDef newRec();
+	public ICFBamPubTZDateDef newPubRec();
 
 	/**
 	 *	Allocate a public TZDateDef history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubTZDateDefH newHRec();
+	public ICFBamPubTZDateDefH newPubHRec();
 
 }

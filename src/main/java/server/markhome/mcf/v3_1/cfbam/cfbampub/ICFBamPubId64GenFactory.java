@@ -70,13 +70,13 @@ public interface ICFBamPubId64GenFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubId64Gen newRec();
+	public ICFBamPubId64Gen newPubRec();
 
 	/**
 	 *	Allocate a public Id64Gen history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubId64GenH newHRec();
+	public ICFBamPubId64GenH newPubHRec();
 
 }

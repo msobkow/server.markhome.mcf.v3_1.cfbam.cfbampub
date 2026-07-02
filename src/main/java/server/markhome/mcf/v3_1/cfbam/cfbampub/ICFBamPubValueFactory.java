@@ -126,13 +126,13 @@ public interface ICFBamPubValueFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubValue newRec();
+	public ICFBamPubValue newPubRec();
 
 	/**
 	 *	Allocate a public Value history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubValueH newHRec();
+	public ICFBamPubValueH newPubHRec();
 
 }

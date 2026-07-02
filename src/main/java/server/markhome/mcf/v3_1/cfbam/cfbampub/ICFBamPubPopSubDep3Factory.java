@@ -84,13 +84,13 @@ public interface ICFBamPubPopSubDep3Factory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubPopSubDep3 newRec();
+	public ICFBamPubPopSubDep3 newPubRec();
 
 	/**
 	 *	Allocate a public PopSubDep3 history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFBamPubPopSubDep3H newHRec();
+	public ICFBamPubPopSubDep3H newPubHRec();
 
 }
