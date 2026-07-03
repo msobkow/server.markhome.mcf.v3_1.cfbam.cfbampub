@@ -64,9 +64,9 @@ import org.springframework.context.ApplicationContextAware;
 import server.markhome.mcf.v3_1.cfsec.cfsecpub.*;
 import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 
-		import server.markhome.mcf.v3_1.cfsec.cfsecpub.buff.CFSecPubBuffFactoryService;
-		import server.markhome.mcf.v3_1.cfint.cfintpub.buff.CFIntPubBuffFactoryService;
-		import server.markhome.mcf.v3_1.cfbam.cfbampub.buff.CFBamPubBuffFactoryService;
+//import server.markhome.mcf.v3_1.cfsec.cfsecpub.buff.CFSecPubBuffFactoryService;
+//import server.markhome.mcf.v3_1.cfint.cfintpub.buff.CFIntPubBuffFactoryService;
+//import server.markhome.mcf.v3_1.cfbam.cfbampub.buff.CFBamPubBuffFactoryService;
 
 public interface ICFBamPubSchema
 extends IcfsecpubSchema$commaPubNewlinePubPackageSchemaName$
