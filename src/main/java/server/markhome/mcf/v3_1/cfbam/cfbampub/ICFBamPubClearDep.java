@@ -88,7 +88,7 @@ public interface ICFBamPubClearDep extends ICFBamPubScope
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubClearDep( ICFBamPubClearDep src );
+	public void setClearDep( ICFBamPubClearDep src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubClearDep( ICFBamPubClearDepH src );
+	public void setClearDep( ICFBamPubClearDepH src );
 }

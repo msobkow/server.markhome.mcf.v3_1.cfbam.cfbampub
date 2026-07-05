@@ -619,7 +619,7 @@ public interface ICFBamPubUuidGenTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamUuidGen pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubUuidGen pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

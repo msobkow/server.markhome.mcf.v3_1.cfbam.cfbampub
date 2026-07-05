@@ -619,7 +619,7 @@ public interface ICFBamPubTimestampTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamTimestampType pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTimestampType pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

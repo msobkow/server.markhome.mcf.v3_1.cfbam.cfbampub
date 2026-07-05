@@ -92,8 +92,8 @@ public interface ICFBamPubChain
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
@@ -138,9 +138,9 @@ public interface ICFBamPubChain
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubChain src );
-	public void setPubChain( ICFBamPubChain src );
+	public void setChain( ICFBamPubChain src );
 	public void set( ICFBamPubChainH src );
-	public void setPubChain( ICFBamPubChainH src );
+	public void setChain( ICFBamPubChainH src );
 
 	public String getXmlAttrFragment();
 

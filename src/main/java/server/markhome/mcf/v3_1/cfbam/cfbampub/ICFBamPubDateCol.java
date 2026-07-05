@@ -82,7 +82,7 @@ public interface ICFBamPubDateCol extends ICFBamPubDateDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDateCol( ICFBamPubDateCol src );
+	public void setDateCol( ICFBamPubDateCol src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDateCol( ICFBamPubDateColH src );
+	public void setDateCol( ICFBamPubDateColH src );
 }

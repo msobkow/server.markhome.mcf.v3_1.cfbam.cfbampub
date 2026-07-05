@@ -86,7 +86,7 @@ public interface ICFBamPubId32Gen extends ICFBamPubInt32Type
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubId32Gen( ICFBamPubId32Gen src );
+	public void setId32Gen( ICFBamPubId32Gen src );
 	public void set( ICFBamPubValueH src );
-	public void setPubId32Gen( ICFBamPubId32GenH src );
+	public void setId32Gen( ICFBamPubId32GenH src );
 }

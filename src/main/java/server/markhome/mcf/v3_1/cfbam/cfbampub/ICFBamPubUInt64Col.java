@@ -82,7 +82,7 @@ public interface ICFBamPubUInt64Col extends ICFBamPubUInt64Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubUInt64Col( ICFBamPubUInt64Col src );
+	public void setUInt64Col( ICFBamPubUInt64Col src );
 	public void set( ICFBamPubValueH src );
-	public void setPubUInt64Col( ICFBamPubUInt64ColH src );
+	public void setUInt64Col( ICFBamPubUInt64ColH src );
 }

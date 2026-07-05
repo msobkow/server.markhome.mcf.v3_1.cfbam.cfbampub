@@ -82,7 +82,7 @@ public interface ICFBamPubTableTweak extends ICFBamPubTweak
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubTweak src );
-	public void setPubTableTweak( ICFBamPubTableTweak src );
+	public void setTableTweak( ICFBamPubTableTweak src );
 	public void set( ICFBamPubTweakH src );
-	public void setPubTableTweak( ICFBamPubTableTweakH src );
+	public void setTableTweak( ICFBamPubTableTweakH src );
 }

@@ -664,7 +664,7 @@ public interface ICFBamPubRelationColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamRelationCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubRelationCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

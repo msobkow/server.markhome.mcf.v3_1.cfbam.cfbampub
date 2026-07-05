@@ -82,7 +82,7 @@ public interface ICFBamPubBoolCol extends ICFBamPubBoolDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubBoolCol( ICFBamPubBoolCol src );
+	public void setBoolCol( ICFBamPubBoolCol src );
 	public void set( ICFBamPubValueH src );
-	public void setPubBoolCol( ICFBamPubBoolColH src );
+	public void setBoolCol( ICFBamPubBoolColH src );
 }

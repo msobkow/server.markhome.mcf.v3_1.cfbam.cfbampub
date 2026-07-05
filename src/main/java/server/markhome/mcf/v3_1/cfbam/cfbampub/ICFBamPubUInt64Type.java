@@ -82,7 +82,7 @@ public interface ICFBamPubUInt64Type extends ICFBamPubUInt64Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubUInt64Type( ICFBamPubUInt64Type src );
+	public void setUInt64Type( ICFBamPubUInt64Type src );
 	public void set( ICFBamPubValueH src );
-	public void setPubUInt64Type( ICFBamPubUInt64TypeH src );
+	public void setUInt64Type( ICFBamPubUInt64TypeH src );
 }

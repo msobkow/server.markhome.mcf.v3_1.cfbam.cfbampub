@@ -82,7 +82,7 @@ public interface ICFBamPubTZTimeCol extends ICFBamPubTZTimeDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubTZTimeCol( ICFBamPubTZTimeCol src );
+	public void setTZTimeCol( ICFBamPubTZTimeCol src );
 	public void set( ICFBamPubValueH src );
-	public void setPubTZTimeCol( ICFBamPubTZTimeColH src );
+	public void setTZTimeCol( ICFBamPubTZTimeColH src );
 }

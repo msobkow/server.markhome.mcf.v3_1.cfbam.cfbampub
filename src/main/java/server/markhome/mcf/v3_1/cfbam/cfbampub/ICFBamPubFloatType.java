@@ -82,7 +82,7 @@ public interface ICFBamPubFloatType extends ICFBamPubFloatDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubFloatType( ICFBamPubFloatType src );
+	public void setFloatType( ICFBamPubFloatType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubFloatType( ICFBamPubFloatTypeH src );
+	public void setFloatType( ICFBamPubFloatTypeH src );
 }

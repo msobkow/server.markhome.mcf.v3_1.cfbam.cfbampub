@@ -619,7 +619,7 @@ public interface ICFBamPubId16GenTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamId16Gen pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubId16Gen pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

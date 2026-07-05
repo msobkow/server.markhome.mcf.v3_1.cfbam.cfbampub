@@ -85,7 +85,7 @@ public interface ICFBamPubPopSubDep1 extends ICFBamPubPopDep
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubPopSubDep1( ICFBamPubPopSubDep1 src );
+	public void setPopSubDep1( ICFBamPubPopSubDep1 src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubPopSubDep1( ICFBamPubPopSubDep1H src );
+	public void setPopSubDep1( ICFBamPubPopSubDep1H src );
 }

@@ -82,7 +82,7 @@ public interface ICFBamPubTextType extends ICFBamPubTextDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubTextType( ICFBamPubTextType src );
+	public void setTextType( ICFBamPubTextType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubTextType( ICFBamPubTextTypeH src );
+	public void setTextType( ICFBamPubTextTypeH src );
 }

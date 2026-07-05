@@ -82,7 +82,7 @@ public interface ICFBamPubNmTokensType extends ICFBamPubNmTokensDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubNmTokensType( ICFBamPubNmTokensType src );
+	public void setNmTokensType( ICFBamPubNmTokensType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubNmTokensType( ICFBamPubNmTokensTypeH src );
+	public void setNmTokensType( ICFBamPubNmTokensTypeH src );
 }

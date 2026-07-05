@@ -619,7 +619,7 @@ public interface ICFBamPubDbKeyHash384TypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamDbKeyHash384Type pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDbKeyHash384Type pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

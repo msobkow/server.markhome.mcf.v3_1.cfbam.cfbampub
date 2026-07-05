@@ -83,7 +83,7 @@ public interface ICFBamPubTokenDef extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubTokenDef( ICFBamPubTokenDef src );
+	public void setTokenDef( ICFBamPubTokenDef src );
 	public void set( ICFBamPubValueH src );
-	public void setPubTokenDef( ICFBamPubTokenDefH src );
+	public void setTokenDef( ICFBamPubTokenDefH src );
 }

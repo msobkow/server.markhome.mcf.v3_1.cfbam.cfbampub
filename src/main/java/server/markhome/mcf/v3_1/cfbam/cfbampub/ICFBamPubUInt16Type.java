@@ -82,7 +82,7 @@ public interface ICFBamPubUInt16Type extends ICFBamPubUInt16Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubUInt16Type( ICFBamPubUInt16Type src );
+	public void setUInt16Type( ICFBamPubUInt16Type src );
 	public void set( ICFBamPubValueH src );
-	public void setPubUInt16Type( ICFBamPubUInt16TypeH src );
+	public void setUInt16Type( ICFBamPubUInt16TypeH src );
 }

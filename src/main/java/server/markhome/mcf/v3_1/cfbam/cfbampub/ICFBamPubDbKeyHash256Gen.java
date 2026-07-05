@@ -86,7 +86,7 @@ public interface ICFBamPubDbKeyHash256Gen extends ICFBamPubDbKeyHash256Type
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDbKeyHash256Gen( ICFBamPubDbKeyHash256Gen src );
+	public void setDbKeyHash256Gen( ICFBamPubDbKeyHash256Gen src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDbKeyHash256Gen( ICFBamPubDbKeyHash256GenH src );
+	public void setDbKeyHash256Gen( ICFBamPubDbKeyHash256GenH src );
 }

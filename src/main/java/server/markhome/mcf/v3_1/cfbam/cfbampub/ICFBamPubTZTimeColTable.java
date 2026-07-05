@@ -619,7 +619,7 @@ public interface ICFBamPubTZTimeColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamTZTimeCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

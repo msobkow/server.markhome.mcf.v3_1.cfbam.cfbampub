@@ -88,7 +88,7 @@ public interface ICFBamPubDelDep extends ICFBamPubScope
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubDelDep( ICFBamPubDelDep src );
+	public void setDelDep( ICFBamPubDelDep src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubDelDep( ICFBamPubDelDepH src );
+	public void setDelDep( ICFBamPubDelDepH src );
 }

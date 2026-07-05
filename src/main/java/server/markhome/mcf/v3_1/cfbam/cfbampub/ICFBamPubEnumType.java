@@ -82,7 +82,7 @@ public interface ICFBamPubEnumType extends ICFBamPubEnumDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubEnumType( ICFBamPubEnumType src );
+	public void setEnumType( ICFBamPubEnumType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubEnumType( ICFBamPubEnumTypeH src );
+	public void setEnumType( ICFBamPubEnumTypeH src );
 }

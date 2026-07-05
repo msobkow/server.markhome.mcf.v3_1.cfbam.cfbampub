@@ -82,7 +82,7 @@ public interface ICFBamPubDbKeyHash384Col extends ICFBamPubDbKeyHash384Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDbKeyHash384Col( ICFBamPubDbKeyHash384Col src );
+	public void setDbKeyHash384Col( ICFBamPubDbKeyHash384Col src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDbKeyHash384Col( ICFBamPubDbKeyHash384ColH src );
+	public void setDbKeyHash384Col( ICFBamPubDbKeyHash384ColH src );
 }

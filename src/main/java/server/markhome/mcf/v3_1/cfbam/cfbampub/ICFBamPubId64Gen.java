@@ -86,7 +86,7 @@ public interface ICFBamPubId64Gen extends ICFBamPubInt64Type
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubId64Gen( ICFBamPubId64Gen src );
+	public void setId64Gen( ICFBamPubId64Gen src );
 	public void set( ICFBamPubValueH src );
-	public void setPubId64Gen( ICFBamPubId64GenH src );
+	public void setId64Gen( ICFBamPubId64GenH src );
 }

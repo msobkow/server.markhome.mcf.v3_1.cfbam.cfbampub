@@ -94,8 +94,8 @@ public interface ICFBamPubValue
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public List<ICFBamPubTableCol> getOptionalChildrenRefTableCol();
 	public List<ICFBamPubIndexCol> getOptionalChildrenRefIndexCol();
@@ -148,9 +148,9 @@ public interface ICFBamPubValue
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubValue( ICFBamPubValue src );
+	public void setValue( ICFBamPubValue src );
 	public void set( ICFBamPubValueH src );
-	public void setPubValue( ICFBamPubValueH src );
+	public void setValue( ICFBamPubValueH src );
 
 	public String getXmlAttrFragment();
 

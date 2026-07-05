@@ -82,7 +82,7 @@ public interface ICFBamPubTZDateType extends ICFBamPubTZDateDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubTZDateType( ICFBamPubTZDateType src );
+	public void setTZDateType( ICFBamPubTZDateType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubTZDateType( ICFBamPubTZDateTypeH src );
+	public void setTZDateType( ICFBamPubTZDateTypeH src );
 }

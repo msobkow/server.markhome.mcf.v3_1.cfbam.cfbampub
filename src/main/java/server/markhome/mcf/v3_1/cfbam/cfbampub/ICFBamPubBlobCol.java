@@ -82,7 +82,7 @@ public interface ICFBamPubBlobCol extends ICFBamPubBlobDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubBlobCol( ICFBamPubBlobCol src );
+	public void setBlobCol( ICFBamPubBlobCol src );
 	public void set( ICFBamPubValueH src );
-	public void setPubBlobCol( ICFBamPubBlobColH src );
+	public void setBlobCol( ICFBamPubBlobColH src );
 }

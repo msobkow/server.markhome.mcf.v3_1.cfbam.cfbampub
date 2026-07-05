@@ -85,8 +85,8 @@ public interface ICFBamPubScope
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
@@ -107,9 +107,9 @@ public interface ICFBamPubScope
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubScope( ICFBamPubScope src );
+	public void setScope( ICFBamPubScope src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubScope( ICFBamPubScopeH src );
+	public void setScope( ICFBamPubScopeH src );
 
 	public String getXmlAttrFragment();
 

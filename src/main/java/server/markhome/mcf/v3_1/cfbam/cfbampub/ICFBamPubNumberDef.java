@@ -95,7 +95,7 @@ public interface ICFBamPubNumberDef extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubNumberDef( ICFBamPubNumberDef src );
+	public void setNumberDef( ICFBamPubNumberDef src );
 	public void set( ICFBamPubValueH src );
-	public void setPubNumberDef( ICFBamPubNumberDefH src );
+	public void setNumberDef( ICFBamPubNumberDefH src );
 }

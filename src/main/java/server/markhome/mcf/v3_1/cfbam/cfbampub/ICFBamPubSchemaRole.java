@@ -87,7 +87,7 @@ public interface ICFBamPubSchemaRole extends ICFBamPubRoleDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubRoleDef src );
-	public void setPubSchemaRole( ICFBamPubSchemaRole src );
+	public void setSchemaRole( ICFBamPubSchemaRole src );
 	public void set( ICFBamPubRoleDefH src );
-	public void setPubSchemaRole( ICFBamPubSchemaRoleH src );
+	public void setSchemaRole( ICFBamPubSchemaRoleH src );
 }

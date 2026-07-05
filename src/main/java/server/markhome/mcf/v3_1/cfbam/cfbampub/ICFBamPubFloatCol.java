@@ -82,7 +82,7 @@ public interface ICFBamPubFloatCol extends ICFBamPubFloatDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubFloatCol( ICFBamPubFloatCol src );
+	public void setFloatCol( ICFBamPubFloatCol src );
 	public void set( ICFBamPubValueH src );
-	public void setPubFloatCol( ICFBamPubFloatColH src );
+	public void setFloatCol( ICFBamPubFloatColH src );
 }

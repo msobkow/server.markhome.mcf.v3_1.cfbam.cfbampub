@@ -574,7 +574,7 @@ public interface ICFBamPubEnumDefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamEnumDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubEnumDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

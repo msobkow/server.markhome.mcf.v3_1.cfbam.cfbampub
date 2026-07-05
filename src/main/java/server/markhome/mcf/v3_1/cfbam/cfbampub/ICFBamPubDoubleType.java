@@ -82,7 +82,7 @@ public interface ICFBamPubDoubleType extends ICFBamPubDoubleDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDoubleType( ICFBamPubDoubleType src );
+	public void setDoubleType( ICFBamPubDoubleType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDoubleType( ICFBamPubDoubleTypeH src );
+	public void setDoubleType( ICFBamPubDoubleTypeH src );
 }

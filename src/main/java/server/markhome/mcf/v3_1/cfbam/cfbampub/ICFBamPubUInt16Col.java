@@ -82,7 +82,7 @@ public interface ICFBamPubUInt16Col extends ICFBamPubUInt16Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubUInt16Col( ICFBamPubUInt16Col src );
+	public void setUInt16Col( ICFBamPubUInt16Col src );
 	public void set( ICFBamPubValueH src );
-	public void setPubUInt16Col( ICFBamPubUInt16ColH src );
+	public void setUInt16Col( ICFBamPubUInt16ColH src );
 }

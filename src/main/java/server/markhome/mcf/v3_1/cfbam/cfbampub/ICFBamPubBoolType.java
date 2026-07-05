@@ -82,7 +82,7 @@ public interface ICFBamPubBoolType extends ICFBamPubBoolDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubBoolType( ICFBamPubBoolType src );
+	public void setBoolType( ICFBamPubBoolType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubBoolType( ICFBamPubBoolTypeH src );
+	public void setBoolType( ICFBamPubBoolTypeH src );
 }

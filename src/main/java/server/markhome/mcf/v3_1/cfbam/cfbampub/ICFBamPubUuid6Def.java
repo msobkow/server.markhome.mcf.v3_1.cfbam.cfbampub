@@ -78,7 +78,7 @@ public interface ICFBamPubUuid6Def extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubUuid6Def( ICFBamPubUuid6Def src );
+	public void setUuid6Def( ICFBamPubUuid6Def src );
 	public void set( ICFBamPubValueH src );
-	public void setPubUuid6Def( ICFBamPubUuid6DefH src );
+	public void setUuid6Def( ICFBamPubUuid6DefH src );
 }

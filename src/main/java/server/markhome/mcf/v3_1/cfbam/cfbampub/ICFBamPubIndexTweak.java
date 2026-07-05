@@ -82,7 +82,7 @@ public interface ICFBamPubIndexTweak extends ICFBamPubTweak
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubTweak src );
-	public void setPubIndexTweak( ICFBamPubIndexTweak src );
+	public void setIndexTweak( ICFBamPubIndexTweak src );
 	public void set( ICFBamPubTweakH src );
-	public void setPubIndexTweak( ICFBamPubIndexTweakH src );
+	public void setIndexTweak( ICFBamPubIndexTweakH src );
 }

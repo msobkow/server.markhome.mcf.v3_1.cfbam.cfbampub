@@ -619,7 +619,7 @@ public interface ICFBamPubNmTokensColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamNmTokensCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubNmTokensCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

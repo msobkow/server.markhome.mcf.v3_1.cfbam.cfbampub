@@ -149,7 +149,7 @@ public interface ICFBamPubRelation extends ICFBamPubScope
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubRelation( ICFBamPubRelation src );
+	public void setRelation( ICFBamPubRelation src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubRelation( ICFBamPubRelationH src );
+	public void setRelation( ICFBamPubRelationH src );
 }

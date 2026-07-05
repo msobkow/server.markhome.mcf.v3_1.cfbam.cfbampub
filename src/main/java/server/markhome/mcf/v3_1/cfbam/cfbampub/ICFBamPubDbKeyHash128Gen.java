@@ -86,7 +86,7 @@ public interface ICFBamPubDbKeyHash128Gen extends ICFBamPubDbKeyHash128Type
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDbKeyHash128Gen( ICFBamPubDbKeyHash128Gen src );
+	public void setDbKeyHash128Gen( ICFBamPubDbKeyHash128Gen src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDbKeyHash128Gen( ICFBamPubDbKeyHash128GenH src );
+	public void setDbKeyHash128Gen( ICFBamPubDbKeyHash128GenH src );
 }

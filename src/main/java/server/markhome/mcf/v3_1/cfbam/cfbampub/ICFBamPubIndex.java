@@ -114,7 +114,7 @@ public interface ICFBamPubIndex extends ICFBamPubScope
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubIndex( ICFBamPubIndex src );
+	public void setIndex( ICFBamPubIndex src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubIndex( ICFBamPubIndexH src );
+	public void setIndex( ICFBamPubIndexH src );
 }

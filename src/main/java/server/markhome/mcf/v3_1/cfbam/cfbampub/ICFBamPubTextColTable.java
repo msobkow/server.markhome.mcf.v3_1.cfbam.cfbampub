@@ -619,7 +619,7 @@ public interface ICFBamPubTextColTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamTextCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTextCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

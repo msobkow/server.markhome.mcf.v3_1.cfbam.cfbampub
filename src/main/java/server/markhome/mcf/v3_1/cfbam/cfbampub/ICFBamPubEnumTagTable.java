@@ -466,7 +466,7 @@ public interface ICFBamPubEnumTagTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamEnumTag pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubEnumTag pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

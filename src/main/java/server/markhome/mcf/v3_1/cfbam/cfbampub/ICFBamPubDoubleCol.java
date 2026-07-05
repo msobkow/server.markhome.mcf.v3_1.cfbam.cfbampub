@@ -82,7 +82,7 @@ public interface ICFBamPubDoubleCol extends ICFBamPubDoubleDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDoubleCol( ICFBamPubDoubleCol src );
+	public void setDoubleCol( ICFBamPubDoubleCol src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDoubleCol( ICFBamPubDoubleColH src );
+	public void setDoubleCol( ICFBamPubDoubleColH src );
 }

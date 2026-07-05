@@ -82,7 +82,7 @@ public interface ICFBamPubNmTokenCol extends ICFBamPubNmTokenDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubNmTokenCol( ICFBamPubNmTokenCol src );
+	public void setNmTokenCol( ICFBamPubNmTokenCol src );
 	public void set( ICFBamPubValueH src );
-	public void setPubNmTokenCol( ICFBamPubNmTokenColH src );
+	public void setNmTokenCol( ICFBamPubNmTokenColH src );
 }

@@ -85,7 +85,7 @@ public interface ICFBamPubClearSubDep3 extends ICFBamPubClearDep
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubClearSubDep3( ICFBamPubClearSubDep3 src );
+	public void setClearSubDep3( ICFBamPubClearSubDep3 src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubClearSubDep3( ICFBamPubClearSubDep3H src );
+	public void setClearSubDep3( ICFBamPubClearSubDep3H src );
 }

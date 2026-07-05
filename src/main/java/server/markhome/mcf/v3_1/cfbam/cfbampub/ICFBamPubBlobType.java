@@ -82,7 +82,7 @@ public interface ICFBamPubBlobType extends ICFBamPubBlobDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubBlobType( ICFBamPubBlobType src );
+	public void setBlobType( ICFBamPubBlobType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubBlobType( ICFBamPubBlobTypeH src );
+	public void setBlobType( ICFBamPubBlobTypeH src );
 }

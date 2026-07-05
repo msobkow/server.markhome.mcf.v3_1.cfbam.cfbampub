@@ -88,7 +88,7 @@ public interface ICFBamPubDoubleDef extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDoubleDef( ICFBamPubDoubleDef src );
+	public void setDoubleDef( ICFBamPubDoubleDef src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDoubleDef( ICFBamPubDoubleDefH src );
+	public void setDoubleDef( ICFBamPubDoubleDefH src );
 }

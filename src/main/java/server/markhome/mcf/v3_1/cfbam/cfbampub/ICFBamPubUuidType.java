@@ -82,7 +82,7 @@ public interface ICFBamPubUuidType extends ICFBamPubUuidDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubUuidType( ICFBamPubUuidType src );
+	public void setUuidType( ICFBamPubUuidType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubUuidType( ICFBamPubUuidTypeH src );
+	public void setUuidType( ICFBamPubUuidTypeH src );
 }

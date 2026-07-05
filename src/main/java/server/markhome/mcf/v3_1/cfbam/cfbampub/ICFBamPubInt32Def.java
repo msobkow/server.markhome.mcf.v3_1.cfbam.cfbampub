@@ -91,7 +91,7 @@ public interface ICFBamPubInt32Def extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubInt32Def( ICFBamPubInt32Def src );
+	public void setInt32Def( ICFBamPubInt32Def src );
 	public void set( ICFBamPubValueH src );
-	public void setPubInt32Def( ICFBamPubInt32DefH src );
+	public void setInt32Def( ICFBamPubInt32DefH src );
 }

@@ -86,7 +86,7 @@ public interface ICFBamPubId16Gen extends ICFBamPubInt16Type
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubId16Gen( ICFBamPubId16Gen src );
+	public void setId16Gen( ICFBamPubId16Gen src );
 	public void set( ICFBamPubValueH src );
-	public void setPubId16Gen( ICFBamPubId16GenH src );
+	public void setId16Gen( ICFBamPubId16GenH src );
 }

@@ -76,7 +76,7 @@ public interface ICFBamPubEnumDef extends ICFBamPubInt16Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubEnumDef( ICFBamPubEnumDef src );
+	public void setEnumDef( ICFBamPubEnumDef src );
 	public void set( ICFBamPubValueH src );
-	public void setPubEnumDef( ICFBamPubEnumDefH src );
+	public void setEnumDef( ICFBamPubEnumDefH src );
 }

@@ -574,7 +574,7 @@ public interface ICFBamPubUInt32DefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamUInt32Def pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubUInt32Def pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

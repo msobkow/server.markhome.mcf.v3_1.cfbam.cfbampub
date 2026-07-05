@@ -574,7 +574,7 @@ public interface ICFBamPubStringDefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamStringDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubStringDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

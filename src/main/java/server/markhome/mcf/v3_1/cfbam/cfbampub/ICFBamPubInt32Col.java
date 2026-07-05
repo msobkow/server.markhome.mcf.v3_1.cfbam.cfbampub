@@ -82,7 +82,7 @@ public interface ICFBamPubInt32Col extends ICFBamPubInt32Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubInt32Col( ICFBamPubInt32Col src );
+	public void setInt32Col( ICFBamPubInt32Col src );
 	public void set( ICFBamPubValueH src );
-	public void setPubInt32Col( ICFBamPubInt32ColH src );
+	public void setInt32Col( ICFBamPubInt32ColH src );
 }

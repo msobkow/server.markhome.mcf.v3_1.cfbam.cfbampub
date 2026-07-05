@@ -116,7 +116,7 @@ public interface ICFBamPubSchemaDef extends ICFBamPubScope
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubSchemaDef( ICFBamPubSchemaDef src );
+	public void setSchemaDef( ICFBamPubSchemaDef src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubSchemaDef( ICFBamPubSchemaDefH src );
+	public void setSchemaDef( ICFBamPubSchemaDefH src );
 }

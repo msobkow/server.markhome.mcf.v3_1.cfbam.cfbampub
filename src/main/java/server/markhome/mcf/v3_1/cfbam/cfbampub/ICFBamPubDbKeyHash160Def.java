@@ -78,7 +78,7 @@ public interface ICFBamPubDbKeyHash160Def extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDbKeyHash160Def( ICFBamPubDbKeyHash160Def src );
+	public void setDbKeyHash160Def( ICFBamPubDbKeyHash160Def src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDbKeyHash160Def( ICFBamPubDbKeyHash160DefH src );
+	public void setDbKeyHash160Def( ICFBamPubDbKeyHash160DefH src );
 }

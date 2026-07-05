@@ -78,7 +78,7 @@ public interface ICFBamPubTimeDef extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubTimeDef( ICFBamPubTimeDef src );
+	public void setTimeDef( ICFBamPubTimeDef src );
 	public void set( ICFBamPubValueH src );
-	public void setPubTimeDef( ICFBamPubTimeDefH src );
+	public void setTimeDef( ICFBamPubTimeDefH src );
 }

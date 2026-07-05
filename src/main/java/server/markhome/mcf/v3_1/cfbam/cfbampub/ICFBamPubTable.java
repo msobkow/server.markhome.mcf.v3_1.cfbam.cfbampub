@@ -161,7 +161,7 @@ public interface ICFBamPubTable extends ICFBamPubScope
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubTable( ICFBamPubTable src );
+	public void setTable( ICFBamPubTable src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubTable( ICFBamPubTableH src );
+	public void setTable( ICFBamPubTableH src );
 }

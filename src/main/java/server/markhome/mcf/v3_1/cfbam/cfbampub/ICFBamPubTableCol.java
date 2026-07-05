@@ -93,7 +93,7 @@ public interface ICFBamPubTableCol extends ICFBamPubValue
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubTableCol( ICFBamPubTableCol src );
+	public void setTableCol( ICFBamPubTableCol src );
 	public void set( ICFBamPubValueH src );
-	public void setPubTableCol( ICFBamPubTableColH src );
+	public void setTableCol( ICFBamPubTableColH src );
 }

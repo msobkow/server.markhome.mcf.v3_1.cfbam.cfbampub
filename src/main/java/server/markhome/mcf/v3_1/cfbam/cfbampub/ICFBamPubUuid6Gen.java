@@ -86,7 +86,7 @@ public interface ICFBamPubUuid6Gen extends ICFBamPubUuid6Type
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubUuid6Gen( ICFBamPubUuid6Gen src );
+	public void setUuid6Gen( ICFBamPubUuid6Gen src );
 	public void set( ICFBamPubValueH src );
-	public void setPubUuid6Gen( ICFBamPubUuid6GenH src );
+	public void setUuid6Gen( ICFBamPubUuid6GenH src );
 }

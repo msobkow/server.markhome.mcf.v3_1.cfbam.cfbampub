@@ -556,7 +556,7 @@ public interface ICFBamPubDelTopDepTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamDelTopDep pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDelTopDep pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

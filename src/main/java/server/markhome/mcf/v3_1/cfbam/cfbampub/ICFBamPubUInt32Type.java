@@ -82,7 +82,7 @@ public interface ICFBamPubUInt32Type extends ICFBamPubUInt32Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubUInt32Type( ICFBamPubUInt32Type src );
+	public void setUInt32Type( ICFBamPubUInt32Type src );
 	public void set( ICFBamPubValueH src );
-	public void setPubUInt32Type( ICFBamPubUInt32TypeH src );
+	public void setUInt32Type( ICFBamPubUInt32TypeH src );
 }

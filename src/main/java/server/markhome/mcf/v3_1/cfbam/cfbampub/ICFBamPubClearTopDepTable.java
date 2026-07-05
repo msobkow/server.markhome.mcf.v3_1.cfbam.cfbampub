@@ -556,7 +556,7 @@ public interface ICFBamPubClearTopDepTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamClearTopDep pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubClearTopDep pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

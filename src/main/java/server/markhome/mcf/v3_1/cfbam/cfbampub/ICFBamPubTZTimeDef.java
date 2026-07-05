@@ -78,7 +78,7 @@ public interface ICFBamPubTZTimeDef extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubTZTimeDef( ICFBamPubTZTimeDef src );
+	public void setTZTimeDef( ICFBamPubTZTimeDef src );
 	public void set( ICFBamPubValueH src );
-	public void setPubTZTimeDef( ICFBamPubTZTimeDefH src );
+	public void setTZTimeDef( ICFBamPubTZTimeDefH src );
 }

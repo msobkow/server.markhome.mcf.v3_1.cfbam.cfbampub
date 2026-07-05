@@ -82,7 +82,7 @@ public interface ICFBamPubDbKeyHash512Col extends ICFBamPubDbKeyHash512Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDbKeyHash512Col( ICFBamPubDbKeyHash512Col src );
+	public void setDbKeyHash512Col( ICFBamPubDbKeyHash512Col src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDbKeyHash512Col( ICFBamPubDbKeyHash512ColH src );
+	public void setDbKeyHash512Col( ICFBamPubDbKeyHash512ColH src );
 }

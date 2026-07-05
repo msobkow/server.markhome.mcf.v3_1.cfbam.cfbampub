@@ -82,7 +82,7 @@ public interface ICFBamPubTextCol extends ICFBamPubTextDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubTextCol( ICFBamPubTextCol src );
+	public void setTextCol( ICFBamPubTextCol src );
 	public void set( ICFBamPubValueH src );
-	public void setPubTextCol( ICFBamPubTextColH src );
+	public void setTextCol( ICFBamPubTextColH src );
 }

@@ -619,7 +619,7 @@ public interface ICFBamPubEnumTypeTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamEnumType pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubEnumType pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

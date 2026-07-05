@@ -82,7 +82,7 @@ public interface ICFBamPubNumberType extends ICFBamPubNumberDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubNumberType( ICFBamPubNumberType src );
+	public void setNumberType( ICFBamPubNumberType src );
 	public void set( ICFBamPubValueH src );
-	public void setPubNumberType( ICFBamPubNumberTypeH src );
+	public void setNumberType( ICFBamPubNumberTypeH src );
 }

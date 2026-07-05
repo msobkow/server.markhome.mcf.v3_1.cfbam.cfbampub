@@ -94,8 +94,8 @@ public interface ICFBamPubTweak
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
@@ -130,9 +130,9 @@ public interface ICFBamPubTweak
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubTweak src );
-	public void setPubTweak( ICFBamPubTweak src );
+	public void setTweak( ICFBamPubTweak src );
 	public void set( ICFBamPubTweakH src );
-	public void setPubTweak( ICFBamPubTweakH src );
+	public void setTweak( ICFBamPubTweakH src );
 
 	public String getXmlAttrFragment();
 

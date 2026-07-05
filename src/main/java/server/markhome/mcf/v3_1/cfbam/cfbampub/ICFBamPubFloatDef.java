@@ -88,7 +88,7 @@ public interface ICFBamPubFloatDef extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubFloatDef( ICFBamPubFloatDef src );
+	public void setFloatDef( ICFBamPubFloatDef src );
 	public void set( ICFBamPubValueH src );
-	public void setPubFloatDef( ICFBamPubFloatDefH src );
+	public void setFloatDef( ICFBamPubFloatDefH src );
 }

@@ -574,7 +574,7 @@ public interface ICFBamPubTZTimeDefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamTZTimeDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubTZTimeDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

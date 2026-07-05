@@ -86,7 +86,7 @@ public interface ICFBamPubTextDef extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubTextDef( ICFBamPubTextDef src );
+	public void setTextDef( ICFBamPubTextDef src );
 	public void set( ICFBamPubValueH src );
-	public void setPubTextDef( ICFBamPubTextDefH src );
+	public void setTextDef( ICFBamPubTextDefH src );
 }

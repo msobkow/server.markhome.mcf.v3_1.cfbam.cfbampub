@@ -78,7 +78,7 @@ public interface ICFBamPubDbKeyHash384Def extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDbKeyHash384Def( ICFBamPubDbKeyHash384Def src );
+	public void setDbKeyHash384Def( ICFBamPubDbKeyHash384Def src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDbKeyHash384Def( ICFBamPubDbKeyHash384DefH src );
+	public void setDbKeyHash384Def( ICFBamPubDbKeyHash384DefH src );
 }

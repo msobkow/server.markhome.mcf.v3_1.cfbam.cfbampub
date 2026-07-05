@@ -90,8 +90,8 @@ public interface ICFBamPubRoleDef
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
@@ -122,9 +122,9 @@ public interface ICFBamPubRoleDef
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubRoleDef src );
-	public void setPubRoleDef( ICFBamPubRoleDef src );
+	public void setRoleDef( ICFBamPubRoleDef src );
 	public void set( ICFBamPubRoleDefH src );
-	public void setPubRoleDef( ICFBamPubRoleDefH src );
+	public void setRoleDef( ICFBamPubRoleDefH src );
 
 	public String getXmlAttrFragment();
 

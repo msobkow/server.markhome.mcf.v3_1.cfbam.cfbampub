@@ -84,7 +84,7 @@ public interface ICFBamPubBoolDef extends ICFBamPubAtom
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubBoolDef( ICFBamPubBoolDef src );
+	public void setBoolDef( ICFBamPubBoolDef src );
 	public void set( ICFBamPubValueH src );
-	public void setPubBoolDef( ICFBamPubBoolDefH src );
+	public void setBoolDef( ICFBamPubBoolDefH src );
 }

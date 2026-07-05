@@ -82,7 +82,7 @@ public interface ICFBamPubDbKeyHash256Col extends ICFBamPubDbKeyHash256Def
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
-	public void setPubDbKeyHash256Col( ICFBamPubDbKeyHash256Col src );
+	public void setDbKeyHash256Col( ICFBamPubDbKeyHash256Col src );
 	public void set( ICFBamPubValueH src );
-	public void setPubDbKeyHash256Col( ICFBamPubDbKeyHash256ColH src );
+	public void setDbKeyHash256Col( ICFBamPubDbKeyHash256ColH src );
 }

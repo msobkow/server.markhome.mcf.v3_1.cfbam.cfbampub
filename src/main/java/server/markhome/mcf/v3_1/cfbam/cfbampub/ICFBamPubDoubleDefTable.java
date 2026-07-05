@@ -574,7 +574,7 @@ public interface ICFBamPubDoubleDefTable
 	 *
 	 *	@return	The refreshed record after it has been moved
 	 */
-	public ICFBamDoubleDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
+	public ICFBamPubDoubleDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id,
 		int revision );
 }

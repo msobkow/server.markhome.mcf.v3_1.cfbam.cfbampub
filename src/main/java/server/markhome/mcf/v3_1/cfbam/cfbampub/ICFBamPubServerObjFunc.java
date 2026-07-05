@@ -82,7 +82,7 @@ public interface ICFBamPubServerObjFunc extends ICFBamPubServerMethod
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
-	public void setPubServerObjFunc( ICFBamPubServerObjFunc src );
+	public void setServerObjFunc( ICFBamPubServerObjFunc src );
 	public void set( ICFBamPubScopeH src );
-	public void setPubServerObjFunc( ICFBamPubServerObjFuncH src );
+	public void setServerObjFunc( ICFBamPubServerObjFuncH src );
 }
