@@ -69,7 +69,7 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 //import server.markhome.mcf.v3_1.cfbam.cfbampub.buff.CFBamPubBuffFactoryService;
 
 public interface ICFBamPubSchema
-extends IcfsecpubSchema$commaPubNewlinePubPackageSchemaName$
+extends ICFSecPubSchema$commaPubNewlinePubPackageSchemaName$
 {
 
 	public static final String SCHEMA_NAME = "CFBam";
