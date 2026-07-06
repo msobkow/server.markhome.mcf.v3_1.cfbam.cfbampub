@@ -426,12 +426,4 @@ public interface ICFBamPubRelationColObj
 	 */
 	void copyRecToPKey();
 
-	ICFBamSubProjectObj getProject();
-	ICFBamTopDomainObj getCompany();
-	ICFBamSchemaDefObj getSchemaDef();
-	ICFBamMinorVersionObj getVersion();
-	String getVersionString();
-	String getPackedVersionString();
-	Boolean isColumnInOwnerRelation();
-
 }

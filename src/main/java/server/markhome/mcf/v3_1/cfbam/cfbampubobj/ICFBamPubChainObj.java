@@ -377,10 +377,10 @@ public interface ICFBamPubChainObj
 	 */
 	void copyRecToPKey();
 
-	ICFBamSubProjectObj getProject();
-	ICFBamTopDomainObj getCompany();
-	ICFBamSchemaDefObj getSchemaDef();
-	ICFBamMinorVersionObj getVersion();
+	ICFIntPubSubProjectObj getProject();
+	ICFIntPubTopDomainObj getCompany();
+	ICFBamPubSchemaDefObj getSchemaDef();
+	ICFIntPubMinorVersionObj getVersion();
 	String getVersionString();
 	String getPackedVersionString();
 	Boolean isColumnInOwnerRelation();

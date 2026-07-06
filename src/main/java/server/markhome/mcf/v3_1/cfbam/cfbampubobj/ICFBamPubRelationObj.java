@@ -339,12 +339,4 @@ public interface ICFBamPubRelationObj
 	 */
 	ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 
-	ICFBamSubProjectObj getProject();
-	ICFBamTopDomainObj getCompany();
-	ICFBamSchemaDefObj getSchemaDef();
-	ICFBamMinorVersionObj getVersion();
-	String getVersionString();
-	String getPackedVersionString();
-	Boolean isColumnInOwnerRelation();
-
 }
