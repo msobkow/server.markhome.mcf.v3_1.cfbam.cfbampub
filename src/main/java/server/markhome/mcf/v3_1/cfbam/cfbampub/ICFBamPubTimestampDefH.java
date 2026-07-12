@@ -63,6 +63,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubTimestampDefH extends ICFBamPubAtomH
 {
+	public String getOptionalDummy();
+	public void setOptionalDummy( String value );
 	@Override
 	public boolean equals( Object obj );
 

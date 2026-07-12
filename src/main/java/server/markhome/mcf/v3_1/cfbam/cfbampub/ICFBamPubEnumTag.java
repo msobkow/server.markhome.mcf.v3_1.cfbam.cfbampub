@@ -63,6 +63,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubEnumTag
 {
+	public static final short ENUMCODE_MIN_VALUE = (short)0;
+	public static final short ENUMCODE_MAX_VALUE = (short)32767;
 	public static final String S_INIT_CREATED_BY = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 INIT_CREATED_BY = CFLibDbKeyHash256.fromHex(S_INIT_CREATED_BY);
 	public static final String S_INIT_UPDATED_BY = "0000000000000000000000000000000000000000000000000000000000000000";
@@ -73,6 +75,8 @@ public interface ICFBamPubEnumTag
 	public static final CFLibDbKeyHash256 DEFSCHEMAID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_DEFSCHEMAID_INIT_VALUE );
 	public static final String S_ENUMID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 ENUMID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_ENUMID_INIT_VALUE );
+	public static final short ENUMCODE_INIT_VALUE = (short)0;
+	public static final String NAME_INIT_VALUE = new String( "" );
 	public static final String S_PREVID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 PREVID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_PREVID_INIT_VALUE );
 	public static final String S_NEXTID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
@@ -113,6 +117,10 @@ public interface ICFBamPubEnumTag
 	public void setOptionalLookupNext(CFLibDbKeyHash256 argNextId);
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public CFLibDbKeyHash256 getRequiredEnumId();
+	public Short getOptionalEnumCode();
+	public void setOptionalEnumCode( Short value );
+	public String getRequiredName();
+	public void setRequiredName( String value );
 	public CFLibDbKeyHash256 getOptionalPrevId();
 	public CFLibDbKeyHash256 getOptionalNextId();
 	@Override

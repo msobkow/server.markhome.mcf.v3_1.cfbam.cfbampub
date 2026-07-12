@@ -74,6 +74,8 @@ public interface ICFBamPubRoleDef
 	public static final String S_DEFSCHEMAID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 DEFSCHEMAID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_DEFSCHEMAID_INIT_VALUE );
 	public static final String NAME_INIT_VALUE = new String( "" );
+	public static final String ENABLES_INIT_VALUE = new String( "" );
+	public static final String INCLUDES_INIT_VALUE = new String( "" );
 	public final static int CLASS_CODE = 0xa88e;
 	public final static String S_CLASS_CODE = "a88e";
 
@@ -106,6 +108,10 @@ public interface ICFBamPubRoleDef
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
 	public void setRequiredName( String value );
+	public String getRequiredEnables();
+	public void setRequiredEnables( String value );
+	public String getRequiredIncludes();
+	public void setRequiredIncludes( String value );
 	@Override
 	public boolean equals( Object obj );
 	

@@ -63,6 +63,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubAtomH extends ICFBamPubValueH
 {
+	public String getOptionalDbName();
+	public void setOptionalDbName( String value );
 	@Override
 	public boolean equals( Object obj );
 

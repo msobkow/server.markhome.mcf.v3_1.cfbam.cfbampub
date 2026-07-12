@@ -94,4 +94,11 @@ public interface ICFBamPubTimeDefObj
 	 */
 	CFLibDbKeyHash256 getRequiredId();
 
+	/**
+	 *	Get the optional String attribute Dummy.
+	 *
+	 *	@return	The optional String attribute Dummy.
+	 */
+	String getOptionalDummy();
+
 }

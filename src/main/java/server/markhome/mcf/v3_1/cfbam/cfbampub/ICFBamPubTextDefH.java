@@ -63,6 +63,10 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubTextDefH extends ICFBamPubAtomH
 {
+	public int getRequiredMaxLen();
+	public void setRequiredMaxLen( int value );
+	public String getOptionalInitValue();
+	public void setOptionalInitValue( String value );
 	public String getOptionalXmlElementName();
 	public void setOptionalXmlElementName( String value );
 	@Override

@@ -63,6 +63,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubDbKeyHash512DefH extends ICFBamPubAtomH
 {
+	public String getOptionalInitValue();
+	public void setOptionalInitValue( String value );
 	@Override
 	public boolean equals( Object obj );
 

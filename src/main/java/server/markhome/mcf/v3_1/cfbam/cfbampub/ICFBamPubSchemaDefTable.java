@@ -164,6 +164,72 @@ public interface ICFBamPubSchemaDefTable
 	public void pubdeleteSchemaDefByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubSchemaDefByUNameIdxKey argKey );
 	/**
+	 *	Delete the SchemaDef instances identified by the key AuthEMailIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	CTenantId	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@param	AuthorEMail	The SchemaDef key attribute of the instance generating the id.
+	 */
+	public void pubdeleteSchemaDefByAuthEMailIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 argCTenantId,
+		String argAuthorEMail );
+
+	/**
+	 *	Delete the SchemaDef instances identified by the key AuthEMailIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteSchemaDefByAuthEMailIdx( ICFSecPubAuthorization Authorization,
+		ICFBamPubSchemaDefByAuthEMailIdxKey argKey );
+	/**
+	 *	Delete the SchemaDef instances identified by the key ProjectURLIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	CTenantId	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@param	ProjectURL	The SchemaDef key attribute of the instance generating the id.
+	 */
+	public void pubdeleteSchemaDefByProjectURLIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 argCTenantId,
+		String argProjectURL );
+
+	/**
+	 *	Delete the SchemaDef instances identified by the key ProjectURLIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteSchemaDefByProjectURLIdx( ICFSecPubAuthorization Authorization,
+		ICFBamPubSchemaDefByProjectURLIdxKey argKey );
+	/**
+	 *	Delete the SchemaDef instances identified by the key PubURIIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	CTenantId	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@param	PublishURI	The SchemaDef key attribute of the instance generating the id.
+	 */
+	public void pubdeleteSchemaDefByPubURIIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 argCTenantId,
+		String argPublishURI );
+
+	/**
+	 *	Delete the SchemaDef instances identified by the key PubURIIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteSchemaDefByPubURIIdx( ICFSecPubAuthorization Authorization,
+		ICFBamPubSchemaDefByPubURIIdxKey argKey );
+	/**
 	 *	Delete the SchemaDef instance identified by the primary key.
 	 *
 	 *	@param	Authorization	The session authorization information.
@@ -294,6 +360,52 @@ public interface ICFBamPubSchemaDefTable
 		String Name );
 
 	/**
+	 *	Read an array of the derived SchemaDef record instances identified by the duplicate key AuthEMailIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	CTenantId	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@param	AuthorEMail	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
+	 */
+	public ICFBamPubSchemaDef[] pubreadDerivedByAuthEMailIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 CTenantId,
+		String AuthorEMail );
+
+	/**
+	 *	Read an array of the derived SchemaDef record instances identified by the duplicate key ProjectURLIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	CTenantId	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@param	ProjectURL	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
+	 */
+	public ICFBamPubSchemaDef[] pubreadDerivedByProjectURLIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 CTenantId,
+		String ProjectURL );
+
+	/**
+	 *	Read the derived SchemaDef record instance identified by the unique key PubURIIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	CTenantId	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@param	PublishURI	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 */
+	public ICFBamPubSchemaDef pubreadDerivedByPubURIIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 CTenantId,
+		String PublishURI );
+
+	/**
 	 *	Read the specific SchemaDef record instance identified by the primary key.
 	 *
 	 *	@param	Authorization	The session authorization information.
@@ -406,4 +518,56 @@ public interface ICFBamPubSchemaDefTable
 	public ICFBamPubSchemaDef pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 MinorVersionId,
 		String Name );
+
+	/**
+	 *	Read an array of the specific SchemaDef record instances identified by the duplicate key AuthEMailIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	CTenantId	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@param	AuthorEMail	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived record instances for the specified key, potentially with 0 elements in the set.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFBamPubSchemaDef[] pubreadRecByAuthEMailIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 CTenantId,
+		String AuthorEMail );
+
+	/**
+	 *	Read an array of the specific SchemaDef record instances identified by the duplicate key ProjectURLIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	CTenantId	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@param	ProjectURL	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived record instances for the specified key, potentially with 0 elements in the set.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFBamPubSchemaDef[] pubreadRecByProjectURLIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 CTenantId,
+		String ProjectURL );
+
+	/**
+	 *	Read the specific SchemaDef record instance identified by the unique key PubURIIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	CTenantId	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@param	PublishURI	The SchemaDef key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFBamPubSchemaDef pubreadRecByPubURIIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 CTenantId,
+		String PublishURI );
 }

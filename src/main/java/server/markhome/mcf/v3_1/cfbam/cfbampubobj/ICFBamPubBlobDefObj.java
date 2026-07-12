@@ -94,4 +94,18 @@ public interface ICFBamPubBlobDefObj
 	 */
 	CFLibDbKeyHash256 getRequiredId();
 
+	/**
+	 *	Get the required int attribute MaxLen.
+	 *
+	 *	@return	The required int attribute MaxLen.
+	 */
+	int getRequiredMaxLen();
+
+	/**
+	 *	Get the optional byte[] attribute InitValue.
+	 *
+	 *	@return	The optional byte[] attribute InitValue.
+	 */
+	byte[] getOptionalInitValue();
+
 }

@@ -63,9 +63,24 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubInt16Def extends ICFBamPubAtom
 {
+	public static final short INITVALUE_MIN_VALUE = (short)-32768;
+	public static final short MINVALUE_MIN_VALUE = (short)-32768;
+	public static final short MAXVALUE_MIN_VALUE = (short)-32768;
+	public static final short INITVALUE_MAX_VALUE = (short)32767;
+	public static final short MINVALUE_MAX_VALUE = (short)32767;
+	public static final short MAXVALUE_MAX_VALUE = (short)32767;
+	public static final short INITVALUE_INIT_VALUE = (short)0;
+	public static final short MINVALUE_INIT_VALUE = (short)0;
+	public static final short MAXVALUE_INIT_VALUE = (short)0;
 	public final static int CLASS_CODE = 0xa827;
 	public final static String S_CLASS_CODE = "a827";
 
+	public Short getOptionalInitValue();
+	public void setOptionalInitValue( Short value );
+	public Short getOptionalMinValue();
+	public void setOptionalMinValue( Short value );
+	public Short getOptionalMaxValue();
+	public void setOptionalMaxValue( Short value );
 	@Override
 	public boolean equals( Object obj );
 	

@@ -70,4 +70,18 @@ public interface ICFBamPubDbKeyHash128DefEditObj
 	 */
 	ICFBamPubDbKeyHash128DefObj getOrigAsDbKeyHash128Def();
 
+	/**
+	 *	Get the optional String attribute InitValue.
+	 *
+	 *	@return	The optional String attribute InitValue.
+	 */
+	String getOptionalInitValue();
+
+	/**
+	 *	Set the optional String attribute InitValue.
+	 *
+	 *	@param value The optional String attribute InitValue value to be applied.
+	 */
+	void setOptionalInitValue(String value);
+
 }

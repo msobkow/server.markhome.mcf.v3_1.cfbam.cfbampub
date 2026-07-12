@@ -66,6 +66,8 @@ public interface ICFBamPubDbKeyHash160Def extends ICFBamPubAtom
 	public final static int CLASS_CODE = 0xa840;
 	public final static String S_CLASS_CODE = "a840";
 
+	public String getOptionalInitValue();
+	public void setOptionalInitValue( String value );
 	@Override
 	public boolean equals( Object obj );
 	

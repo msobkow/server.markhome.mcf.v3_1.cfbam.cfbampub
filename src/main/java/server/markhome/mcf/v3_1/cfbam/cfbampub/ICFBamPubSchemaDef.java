@@ -68,6 +68,11 @@ public interface ICFBamPubSchemaDef extends ICFBamPubScope
 	public static final String S_MINORVERSIONID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 MINORVERSIONID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_MINORVERSIONID_INIT_VALUE );
 	public static final String NAME_INIT_VALUE = new String( "" );
+	public static final String COPYRIGHTPERIOD_INIT_VALUE = new String( "2020" );
+	public static final String COPYRIGHTHOLDER_INIT_VALUE = new String( "YourNameHere" );
+	public static final String AUTHOREMAIL_INIT_VALUE = new String( "" );
+	public static final String PROJECTURL_INIT_VALUE = new String( "" );
+	public static final String PUBLISHURI_INIT_VALUE = new String( "" );
 	public final static int CLASS_CODE = 0xa802;
 	public final static String S_CLASS_CODE = "a802";
 
@@ -81,6 +86,26 @@ public interface ICFBamPubSchemaDef extends ICFBamPubScope
 	public CFLibDbKeyHash256 getRequiredMinorVersionId();
 	public String getRequiredName();
 	public void setRequiredName( String value );
+	public String getOptionalDbName();
+	public void setOptionalDbName( String value );
+	public String getOptionalShortName();
+	public void setOptionalShortName( String value );
+	public String getOptionalLabel();
+	public void setOptionalLabel( String value );
+	public String getOptionalShortDescription();
+	public void setOptionalShortDescription( String value );
+	public String getOptionalDescription();
+	public void setOptionalDescription( String value );
+	public String getRequiredCopyrightPeriod();
+	public void setRequiredCopyrightPeriod( String value );
+	public String getRequiredCopyrightHolder();
+	public void setRequiredCopyrightHolder( String value );
+	public String getRequiredAuthorEMail();
+	public void setRequiredAuthorEMail( String value );
+	public String getRequiredProjectURL();
+	public void setRequiredProjectURL( String value );
+	public String getRequiredPublishURI();
+	public void setRequiredPublishURI( String value );
 	@Override
 	public boolean equals( Object obj );
 	

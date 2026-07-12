@@ -101,6 +101,13 @@ public interface ICFBamPubTableFactory
 	public ICFBamPubTableByUNameIdxKey newPubByUNameIdxKey();
 
 	/**
+	 *	Allocate a public SchemaCdIdx key over public Table instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFBamPubTableBySchemaCdIdxKey newPubBySchemaCdIdxKey();
+
+	/**
 	 *	Allocate a public PrimaryIndexIdx key over public Table instances.
 	 *
 	 *	@return	The new instance.

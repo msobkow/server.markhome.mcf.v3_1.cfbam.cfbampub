@@ -63,6 +63,12 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubFloatDefH extends ICFBamPubAtomH
 {
+	public Float getOptionalInitValue();
+	public void setOptionalInitValue( Float value );
+	public Float getOptionalMinValue();
+	public void setOptionalMinValue( Float value );
+	public Float getOptionalMaxValue();
+	public void setOptionalMaxValue( Float value );
 	@Override
 	public boolean equals( Object obj );
 

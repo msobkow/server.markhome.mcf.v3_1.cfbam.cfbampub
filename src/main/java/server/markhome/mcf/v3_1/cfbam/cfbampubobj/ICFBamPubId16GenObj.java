@@ -94,4 +94,18 @@ public interface ICFBamPubId16GenObj
 	 */
 	CFLibDbKeyHash256 getRequiredId();
 
+	/**
+	 *	Get the required short attribute Slice.
+	 *
+	 *	@return	The required short attribute Slice.
+	 */
+	short getRequiredSlice();
+
+	/**
+	 *	Get the required short attribute BlockSize.
+	 *
+	 *	@return	The required short attribute BlockSize.
+	 */
+	short getRequiredBlockSize();
+
 }

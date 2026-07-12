@@ -63,6 +63,10 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubDbKeyHash160GenH extends ICFBamPubDbKeyHash160TypeH
 {
+	public short getRequiredSlice();
+	public void setRequiredSlice( short value );
+	public int getRequiredBlockSize();
+	public void setRequiredBlockSize( int value );
 	@Override
 	public boolean equals( Object obj );
 

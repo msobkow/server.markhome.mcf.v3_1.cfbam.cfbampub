@@ -224,6 +224,33 @@ public interface ICFBamPubEnumTagTableObj
 		boolean forceRead );
 
 	/**
+	 *	Get the CFBamPubEnumTagObj instance for the unique EnumNameIdx key.
+	 *
+	 *	@param	EnumId	The EnumTag key attribute of the instance generating the id.
+	 *
+	 *	@param	Name	The EnumTag key attribute of the instance generating the id.
+	 *
+	 *	@return	CFBamPubEnumTagObj cached instance for the unique EnumNameIdx key, or
+	 *		null if no such instance exists.
+	 */
+	ICFBamPubEnumTagObj readEnumTagByEnumNameIdx(CFLibDbKeyHash256 EnumId,
+		String Name );
+
+	/**
+	 *	Get the CFBamPubEnumTagObj instance for the unique EnumNameIdx key.
+	 *
+	 *	@param	EnumId	The EnumTag key attribute of the instance generating the id.
+	 *
+	 *	@param	Name	The EnumTag key attribute of the instance generating the id.
+	 *
+	 *	@return	CFBamPubEnumTagObj refreshed instance for the unique EnumNameIdx key, or
+	 *		null if no such instance exists.
+	 */
+	ICFBamPubEnumTagObj readEnumTagByEnumNameIdx(CFLibDbKeyHash256 EnumId,
+		String Name,
+		boolean forceRead );
+
+	/**
 	 *	Get the map of CFBamPubEnumTagObj instances sorted by their primary keys for the duplicate PrevIdx key.
 	 *
 	 *	@param	PrevId	The EnumTag key attribute of the instance generating the id.
@@ -271,6 +298,9 @@ public interface ICFBamPubEnumTagTableObj
 
 	List<ICFBamPubEnumTagObj> readCachedEnumTagByDefSchemaIdx( CFLibDbKeyHash256 DefSchemaId );
 
+	ICFBamPubEnumTagObj readCachedEnumTagByEnumNameIdx( CFLibDbKeyHash256 EnumId,
+		String Name );
+
 	List<ICFBamPubEnumTagObj> readCachedEnumTagByPrevIdx( CFLibDbKeyHash256 PrevId );
 
 	List<ICFBamPubEnumTagObj> readCachedEnumTagByNextIdx( CFLibDbKeyHash256 NextId );
@@ -280,6 +310,9 @@ public interface ICFBamPubEnumTagTableObj
 	void deepDisposeEnumTagByEnumIdx( CFLibDbKeyHash256 EnumId );
 
 	void deepDisposeEnumTagByDefSchemaIdx( CFLibDbKeyHash256 DefSchemaId );
+
+	void deepDisposeEnumTagByEnumNameIdx( CFLibDbKeyHash256 EnumId,
+		String Name );
 
 	void deepDisposeEnumTagByPrevIdx( CFLibDbKeyHash256 PrevId );
 
@@ -315,6 +348,16 @@ public interface ICFBamPubEnumTagTableObj
 	 *	@param	DefSchemaId	The EnumTag key attribute of the instance generating the id.
 	 */
 	void deleteEnumTagByDefSchemaIdx( CFLibDbKeyHash256 DefSchemaId );
+
+	/**
+	 *	Internal use only.
+	 *
+	 *	@param	EnumId	The EnumTag key attribute of the instance generating the id.
+	 *
+	 *	@param	Name	The EnumTag key attribute of the instance generating the id.
+	 */
+	void deleteEnumTagByEnumNameIdx(CFLibDbKeyHash256 EnumId,
+		String Name );
 
 	/**
 	 *	Internal use only.

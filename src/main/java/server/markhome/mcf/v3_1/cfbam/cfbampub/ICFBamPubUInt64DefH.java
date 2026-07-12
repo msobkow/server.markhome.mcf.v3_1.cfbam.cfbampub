@@ -63,6 +63,12 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubUInt64DefH extends ICFBamPubAtomH
 {
+	public BigDecimal getOptionalInitValue();
+	public void setOptionalInitValue( BigDecimal value );
+	public BigDecimal getOptionalMinValue();
+	public void setOptionalMinValue( BigDecimal value );
+	public BigDecimal getOptionalMaxValue();
+	public void setOptionalMaxValue( BigDecimal value );
 	@Override
 	public boolean equals( Object obj );
 

@@ -70,4 +70,18 @@ public interface ICFBamPubUuidDefEditObj
 	 */
 	ICFBamPubUuidDefObj getOrigAsUuidDef();
 
+	/**
+	 *	Get the optional UUID attribute InitValue.
+	 *
+	 *	@return	The optional UUID attribute InitValue.
+	 */
+	UUID getOptionalInitValue();
+
+	/**
+	 *	Set the optional UUID attribute InitValue.
+	 *
+	 *	@param value The optional UUID attribute InitValue value to be applied.
+	 */
+	void setOptionalInitValue(UUID value);
+
 }

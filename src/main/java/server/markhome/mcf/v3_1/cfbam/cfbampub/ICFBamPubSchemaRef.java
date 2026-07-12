@@ -66,6 +66,8 @@ public interface ICFBamPubSchemaRef extends ICFBamPubScope
 	public static final String S_SCHEMAID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 SCHEMAID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_SCHEMAID_INIT_VALUE );
 	public static final String NAME_INIT_VALUE = new String( "" );
+	public static final String REFMODELNAME_INIT_VALUE = new String( "" );
+	public static final String INCLUDEROOT_INIT_VALUE = new String( "" );
 	public static final String S_REFSCHEMAID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 REFSCHEMAID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_REFSCHEMAID_INIT_VALUE );
 	public static final String S_PREVID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
@@ -90,6 +92,10 @@ public interface ICFBamPubSchemaRef extends ICFBamPubScope
 	public CFLibDbKeyHash256 getRequiredSchemaId();
 	public String getRequiredName();
 	public void setRequiredName( String value );
+	public String getRequiredRefModelName();
+	public void setRequiredRefModelName( String value );
+	public String getRequiredIncludeRoot();
+	public void setRequiredIncludeRoot( String value );
 	public CFLibDbKeyHash256 getOptionalRefSchemaId();
 	public CFLibDbKeyHash256 getOptionalPrevId();
 	public CFLibDbKeyHash256 getOptionalNextId();

@@ -67,6 +67,10 @@ public interface ICFBamPubSchemaRefH extends ICFBamPubScopeH
 	public void setRequiredSchemaId( CFLibDbKeyHash256 value );
 	public String getRequiredName();
 	public void setRequiredName( String value );
+	public String getRequiredRefModelName();
+	public void setRequiredRefModelName( String value );
+	public String getRequiredIncludeRoot();
+	public void setRequiredIncludeRoot( String value );
 	public CFLibDbKeyHash256 getOptionalRefSchemaId();
 	public void setOptionalRefSchemaId( CFLibDbKeyHash256 value );
 	public CFLibDbKeyHash256 getOptionalPrevId();

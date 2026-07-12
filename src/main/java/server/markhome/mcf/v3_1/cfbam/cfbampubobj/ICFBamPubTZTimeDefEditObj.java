@@ -70,4 +70,18 @@ public interface ICFBamPubTZTimeDefEditObj
 	 */
 	ICFBamPubTZTimeDefObj getOrigAsTZTimeDef();
 
+	/**
+	 *	Get the optional String attribute Dummy.
+	 *
+	 *	@return	The optional String attribute Dummy.
+	 */
+	String getOptionalDummy();
+
+	/**
+	 *	Set the optional String attribute Dummy.
+	 *
+	 *	@param value The optional String attribute Dummy value to be applied.
+	 */
+	void setOptionalDummy(String value);
+
 }

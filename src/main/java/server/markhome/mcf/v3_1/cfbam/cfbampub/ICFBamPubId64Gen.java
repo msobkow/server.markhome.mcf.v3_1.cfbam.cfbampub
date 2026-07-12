@@ -63,9 +63,19 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubId64Gen extends ICFBamPubInt64Type
 {
+	public static final short SLICE_MIN_VALUE = (short)0;
+	public static final long BLOCKSIZE_MIN_VALUE = 1L;
+	public static final short SLICE_MAX_VALUE = (short)32767;
+	public static final long BLOCKSIZE_MAX_VALUE = 9223372036854775807L;
+	public static final short SLICE_INIT_VALUE = (short)0;
+	public static final long BLOCKSIZE_INIT_VALUE = 1L;
 	public final static int CLASS_CODE = 0xa878;
 	public final static String S_CLASS_CODE = "a878";
 
+	public short getRequiredSlice();
+	public void setRequiredSlice( short value );
+	public long getRequiredBlockSize();
+	public void setRequiredBlockSize( long value );
 	@Override
 	public boolean equals( Object obj );
 	

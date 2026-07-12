@@ -63,6 +63,10 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubTokenDefH extends ICFBamPubAtomH
 {
+	public int getRequiredMaxLen();
+	public void setRequiredMaxLen( int value );
+	public String getOptionalInitValue();
+	public void setOptionalInitValue( String value );
 	@Override
 	public boolean equals( Object obj );
 

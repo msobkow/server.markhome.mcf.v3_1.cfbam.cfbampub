@@ -74,6 +74,7 @@ public interface ICFBamPubParam
 	public static final String S_DEFSCHEMAID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 DEFSCHEMAID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_DEFSCHEMAID_INIT_VALUE );
 	public static final String NAME_INIT_VALUE = new String( "" );
+	public final static boolean ISNULLABLE_INIT_VALUE = false;
 	public static final String S_TYPEID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 TYPEID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_TYPEID_INIT_VALUE );
 	public static final String S_PREVID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
@@ -121,6 +122,12 @@ public interface ICFBamPubParam
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
 	public void setRequiredName( String value );
+	public String getOptionalShortDescription();
+	public void setOptionalShortDescription( String value );
+	public String getOptionalDescription();
+	public void setOptionalDescription( String value );
+	public boolean getRequiredIsNullable();
+	public void setRequiredIsNullable( boolean value );
 	public CFLibDbKeyHash256 getOptionalTypeId();
 	public CFLibDbKeyHash256 getOptionalPrevId();
 	public CFLibDbKeyHash256 getOptionalNextId();

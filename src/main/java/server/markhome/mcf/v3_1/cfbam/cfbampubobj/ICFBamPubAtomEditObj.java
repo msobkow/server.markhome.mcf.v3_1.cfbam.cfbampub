@@ -70,4 +70,18 @@ public interface ICFBamPubAtomEditObj
 	 */
 	ICFBamPubAtomObj getOrigAsAtom();
 
+	/**
+	 *	Get the optional String attribute DbName.
+	 *
+	 *	@return	The optional String attribute DbName.
+	 */
+	String getOptionalDbName();
+
+	/**
+	 *	Set the optional String attribute DbName.
+	 *
+	 *	@param value The optional String attribute DbName value to be applied.
+	 */
+	void setOptionalDbName(String value);
+
 }
