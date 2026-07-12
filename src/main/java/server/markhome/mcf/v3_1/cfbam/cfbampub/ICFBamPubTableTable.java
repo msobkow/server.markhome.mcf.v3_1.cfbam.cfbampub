@@ -205,28 +205,6 @@ public interface ICFBamPubTableTable
 	public void pubdeleteTableByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubTableByUNameIdxKey argKey );
 	/**
-	 *	Delete the Table instances identified by the key SchemaCdIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	SchemaDefId	The Table key attribute of the instance generating the id.
-	 *
-	 *	@param	TableClassCode	The Table key attribute of the instance generating the id.
-	 */
-	public void pubdeleteTableBySchemaCdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argSchemaDefId,
-		String argTableClassCode );
-
-	/**
-	 *	Delete the Table instances identified by the key SchemaCdIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	argKey	The key identifying the instances to be deleted.
-	 */
-	public void pubdeleteTableBySchemaCdIdx( ICFSecPubAuthorization Authorization,
-		ICFBamPubTableBySchemaCdIdxKey argKey );
-	/**
 	 *	Delete the Table instances identified by the key PrimaryIndexIdx.
 	 *
 	 *	@param	Authorization	The session authorization information.
@@ -460,22 +438,6 @@ public interface ICFBamPubTableTable
 		String Name );
 
 	/**
-	 *	Read the derived Table record instance identified by the unique key SchemaCdIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	SchemaDefId	The Table key attribute of the instance generating the id.
-	 *
-	 *	@param	TableClassCode	The Table key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 */
-	public ICFBamPubTable pubreadDerivedBySchemaCdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 SchemaDefId,
-		String TableClassCode );
-
-	/**
 	 *	Read an array of the derived Table record instances identified by the duplicate key PrimaryIndexIdx.
 	 *
 	 *	@param	Authorization	The session authorization information.
@@ -667,24 +629,6 @@ public interface ICFBamPubTableTable
 	public ICFBamPubTable pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SchemaDefId,
 		String Name );
-
-	/**
-	 *	Read the specific Table record instance identified by the unique key SchemaCdIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	SchemaDefId	The Table key attribute of the instance generating the id.
-	 *
-	 *	@param	TableClassCode	The Table key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 *
-	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
-	 */
-	public ICFBamPubTable pubreadRecBySchemaCdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 SchemaDefId,
-		String TableClassCode );
 
 	/**
 	 *	Read an array of the specific Table record instances identified by the duplicate key PrimaryIndexIdx.

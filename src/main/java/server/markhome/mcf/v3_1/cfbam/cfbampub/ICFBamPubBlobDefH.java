@@ -63,10 +63,6 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubBlobDefH extends ICFBamPubAtomH
 {
-	public int getRequiredMaxLen();
-	public void setRequiredMaxLen( int value );
-	public byte[] getOptionalInitValue();
-	public void setOptionalInitValue( byte[] value );
 	@Override
 	public boolean equals( Object obj );
 

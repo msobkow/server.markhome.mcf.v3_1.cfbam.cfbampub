@@ -94,11 +94,4 @@ public interface ICFBamPubAtomObj
 	 */
 	CFLibDbKeyHash256 getRequiredId();
 
-	/**
-	 *	Get the optional String attribute DbName.
-	 *
-	 *	@return	The optional String attribute DbName.
-	 */
-	String getOptionalDbName();
-
 }

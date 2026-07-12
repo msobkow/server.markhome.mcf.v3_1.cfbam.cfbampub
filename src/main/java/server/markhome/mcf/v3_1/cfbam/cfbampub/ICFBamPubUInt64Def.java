@@ -63,21 +63,9 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubUInt64Def extends ICFBamPubAtom
 {
-	public static final BigDecimal INITVALUE_MIN_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.InitValue", "CFBamPub.UInt64Def.InitValue", 19, 0, "0" );
-	public static final BigDecimal MINVALUE_MIN_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.MinValue", "CFBamPub.UInt64Def.MinValue", 19, 0, "0" );
-	public static final BigDecimal MAXVALUE_MIN_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.MaxValue", "CFBamPub.UInt64Def.MaxValue", 19, 0, "0" );
-	public static final BigDecimal INITVALUE_INIT_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.InitValue", "CFBamPub.UInt64Def.InitValue", 19, 0, "0" );
-	public static final BigDecimal MINVALUE_INIT_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.MinValue", "CFBamPub.UInt64Def.MinValue", 19, 0, "0" );
-	public static final BigDecimal MAXVALUE_INIT_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.MaxValue", "CFBamPub.UInt64Def.MaxValue", 19, 0, "0" );
 	public final static int CLASS_CODE = 0xa869;
 	public final static String S_CLASS_CODE = "a869";
 
-	public BigDecimal getOptionalInitValue();
-	public void setOptionalInitValue( BigDecimal value );
-	public BigDecimal getOptionalMinValue();
-	public void setOptionalMinValue( BigDecimal value );
-	public BigDecimal getOptionalMaxValue();
-	public void setOptionalMaxValue( BigDecimal value );
 	@Override
 	public boolean equals( Object obj );
 	

@@ -87,13 +87,6 @@ public interface ICFBamPubEnumTagFactory
 	public ICFBamPubEnumTagByDefSchemaIdxKey newPubByDefSchemaIdxKey();
 
 	/**
-	 *	Allocate a public EnumNameIdx key over public EnumTag instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFBamPubEnumTagByEnumNameIdxKey newPubByEnumNameIdxKey();
-
-	/**
 	 *	Allocate a public PrevIdx key over public EnumTag instances.
 	 *
 	 *	@return	The new instance.

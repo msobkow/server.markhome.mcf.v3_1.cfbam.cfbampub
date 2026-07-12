@@ -70,12 +70,7 @@ public interface ICFBamPubServerMethod extends ICFBamPubScope
 	public static final String S_DEFSCHEMAID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 DEFSCHEMAID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_DEFSCHEMAID_INIT_VALUE );
 	public static final String NAME_INIT_VALUE = new String( "" );
-	public final static boolean ISINSTANCEMETHOD_INIT_VALUE = true;
-	public final static boolean ISSERVERONLY_INIT_VALUE = false;
 	public static final ICFBamPubSchema.CodeVisibilityEnum CODEVIS_INIT_VALUE = ICFBamPubSchema.ordinalToCodeVisibilityEnum( 0 );
-	public static final String JMETHODBODY_INIT_VALUE = new String( "" );
-	public static final String CPPMETHODBODY_INIT_VALUE = new String( "" );
-	public static final String CSMETHODBODY_INIT_VALUE = new String( "" );
 	public final static int CLASS_CODE = 0xa804;
 	public final static String S_CLASS_CODE = "a804";
 
@@ -89,28 +84,8 @@ public interface ICFBamPubServerMethod extends ICFBamPubScope
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
 	public void setRequiredName( String value );
-	public String getOptionalShortName();
-	public void setOptionalShortName( String value );
-	public String getOptionalLabel();
-	public void setOptionalLabel( String value );
-	public String getOptionalShortDescription();
-	public void setOptionalShortDescription( String value );
-	public String getOptionalDescription();
-	public void setOptionalDescription( String value );
-	public String getOptionalSuffix();
-	public void setOptionalSuffix( String value );
-	public boolean getRequiredIsInstanceMethod();
-	public void setRequiredIsInstanceMethod( boolean value );
-	public boolean getRequiredIsServerOnly();
-	public void setRequiredIsServerOnly( boolean value );
 	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
-	public String getRequiredJMethodBody();
-	public void setRequiredJMethodBody( String value );
-	public String getRequiredCppMethodBody();
-	public void setRequiredCppMethodBody( String value );
-	public String getRequiredCsMethodBody();
-	public void setRequiredCsMethodBody( String value );
 	@Override
 	public boolean equals( Object obj );
 	

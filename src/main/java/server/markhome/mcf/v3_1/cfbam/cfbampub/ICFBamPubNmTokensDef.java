@@ -63,16 +63,9 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubNmTokensDef extends ICFBamPubAtom
 {
-	public static final int MAXLEN_MIN_VALUE = 0;
-	public static final int MAXLEN_MAX_VALUE = 2147483647;
-	public static final int MAXLEN_INIT_VALUE = 0;
 	public final static int CLASS_CODE = 0xa82f;
 	public final static String S_CLASS_CODE = "a82f";
 
-	public int getRequiredMaxLen();
-	public void setRequiredMaxLen( int value );
-	public String getOptionalInitValue();
-	public void setOptionalInitValue( String value );
 	@Override
 	public boolean equals( Object obj );
 	

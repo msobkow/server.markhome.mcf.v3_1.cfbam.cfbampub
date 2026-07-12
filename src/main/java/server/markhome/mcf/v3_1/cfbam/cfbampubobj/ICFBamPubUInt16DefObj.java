@@ -94,25 +94,4 @@ public interface ICFBamPubUInt16DefObj
 	 */
 	CFLibDbKeyHash256 getRequiredId();
 
-	/**
-	 *	Get the optional Integer attribute InitValue.
-	 *
-	 *	@return	The optional Integer attribute InitValue.
-	 */
-	Integer getOptionalInitValue();
-
-	/**
-	 *	Get the optional Integer attribute MinValue.
-	 *
-	 *	@return	The optional Integer attribute MinValue.
-	 */
-	Integer getOptionalMinValue();
-
-	/**
-	 *	Get the optional Integer attribute MaxValue.
-	 *
-	 *	@return	The optional Integer attribute MaxValue.
-	 */
-	Integer getOptionalMaxValue();
-
 }

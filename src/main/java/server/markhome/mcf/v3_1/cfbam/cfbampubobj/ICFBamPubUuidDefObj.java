@@ -94,11 +94,4 @@ public interface ICFBamPubUuidDefObj
 	 */
 	CFLibDbKeyHash256 getRequiredId();
 
-	/**
-	 *	Get the optional UUID attribute InitValue.
-	 *
-	 *	@return	The optional UUID attribute InitValue.
-	 */
-	UUID getOptionalInitValue();
-
 }

@@ -151,28 +151,6 @@ public interface ICFBamPubEnumTagTable
 	public void pubdeleteEnumTagByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		ICFBamPubEnumTagByDefSchemaIdxKey argKey );
 	/**
-	 *	Delete the EnumTag instances identified by the key EnumNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	EnumId	The EnumTag key attribute of the instance generating the id.
-	 *
-	 *	@param	Name	The EnumTag key attribute of the instance generating the id.
-	 */
-	public void pubdeleteEnumTagByEnumNameIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argEnumId,
-		String argName );
-
-	/**
-	 *	Delete the EnumTag instances identified by the key EnumNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	argKey	The key identifying the instances to be deleted.
-	 */
-	public void pubdeleteEnumTagByEnumNameIdx( ICFSecPubAuthorization Authorization,
-		ICFBamPubEnumTagByEnumNameIdxKey argKey );
-	/**
 	 *	Delete the EnumTag instances identified by the key PrevIdx.
 	 *
 	 *	@param	Authorization	The session authorization information.
@@ -285,22 +263,6 @@ public interface ICFBamPubEnumTagTable
 		CFLibDbKeyHash256 DefSchemaId );
 
 	/**
-	 *	Read the derived EnumTag record instance identified by the unique key EnumNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	EnumId	The EnumTag key attribute of the instance generating the id.
-	 *
-	 *	@param	Name	The EnumTag key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 */
-	public ICFBamPubEnumTag pubreadDerivedByEnumNameIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 EnumId,
-		String Name );
-
-	/**
 	 *	Read an array of the derived EnumTag record instances identified by the duplicate key PrevIdx.
 	 *
 	 *	@param	Authorization	The session authorization information.
@@ -405,24 +367,6 @@ public interface ICFBamPubEnumTagTable
 	 */
 	public ICFBamPubEnumTag[] pubreadRecByDefSchemaIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 DefSchemaId );
-
-	/**
-	 *	Read the specific EnumTag record instance identified by the unique key EnumNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	EnumId	The EnumTag key attribute of the instance generating the id.
-	 *
-	 *	@param	Name	The EnumTag key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 *
-	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
-	 */
-	public ICFBamPubEnumTag pubreadRecByEnumNameIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 EnumId,
-		String Name );
 
 	/**
 	 *	Read an array of the specific EnumTag record instances identified by the duplicate key PrevIdx.

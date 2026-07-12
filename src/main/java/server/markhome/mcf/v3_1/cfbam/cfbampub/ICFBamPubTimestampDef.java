@@ -66,8 +66,6 @@ public interface ICFBamPubTimestampDef extends ICFBamPubAtom
 	public final static int CLASS_CODE = 0xa861;
 	public final static String S_CLASS_CODE = "a861";
 
-	public String getOptionalDummy();
-	public void setOptionalDummy( String value );
 	@Override
 	public boolean equals( Object obj );
 	

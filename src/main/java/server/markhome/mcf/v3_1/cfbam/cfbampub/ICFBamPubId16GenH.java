@@ -63,10 +63,6 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubId16GenH extends ICFBamPubInt16TypeH
 {
-	public short getRequiredSlice();
-	public void setRequiredSlice( short value );
-	public short getRequiredBlockSize();
-	public void setRequiredBlockSize( short value );
 	@Override
 	public boolean equals( Object obj );
 

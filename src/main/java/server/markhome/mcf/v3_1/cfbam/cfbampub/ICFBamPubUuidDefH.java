@@ -63,8 +63,6 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
  */
 public interface ICFBamPubUuidDefH extends ICFBamPubAtomH
 {
-	public UUID getOptionalInitValue();
-	public void setOptionalInitValue( UUID value );
 	@Override
 	public boolean equals( Object obj );
 

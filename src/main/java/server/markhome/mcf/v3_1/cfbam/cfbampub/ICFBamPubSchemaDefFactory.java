@@ -87,27 +87,6 @@ public interface ICFBamPubSchemaDefFactory
 	public ICFBamPubSchemaDefByUNameIdxKey newPubByUNameIdxKey();
 
 	/**
-	 *	Allocate a public AuthEMailIdx key over public SchemaDef instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFBamPubSchemaDefByAuthEMailIdxKey newPubByAuthEMailIdxKey();
-
-	/**
-	 *	Allocate a public ProjectURLIdx key over public SchemaDef instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFBamPubSchemaDefByProjectURLIdxKey newPubByProjectURLIdxKey();
-
-	/**
-	 *	Allocate a public PubURIIdx key over public SchemaDef instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFBamPubSchemaDefByPubURIIdxKey newPubByPubURIIdxKey();
-
-	/**
 	 *	Allocate a public SchemaDef interface implementation.
 	 *
 	 *	@return	The new instance.

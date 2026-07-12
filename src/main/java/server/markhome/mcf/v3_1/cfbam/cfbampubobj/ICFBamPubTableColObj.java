@@ -130,13 +130,6 @@ public interface ICFBamPubTableColObj
 	CFLibDbKeyHash256 getRequiredTableId();
 
 	/**
-	 *	Get the optional String attribute DbName.
-	 *
-	 *	@return	The optional String attribute DbName.
-	 */
-	String getOptionalDbName();
-
-	/**
 	 *	Get the optional CFLibDbKeyHash256 attribute DataId.
 	 *
 	 *	@return	The optional CFLibDbKeyHash256 attribute DataId.
