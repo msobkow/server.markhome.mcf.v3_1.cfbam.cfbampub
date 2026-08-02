@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubIndex persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubIndex extends ICFBamPubScope
+public interface ICFBamPubIndex
+	extends ICFBamPubScope
 {
 	public static final ICFBamPubSchema.CodeVisibilityEnum CODEVIS_MIN_VALUE = ICFBamPubSchema.CodeVisibilityEnum.Public;
 	public static final ICFBamPubSchema.CodeVisibilityEnum CODEVIS_MAX_VALUE = ICFBamPubSchema.CodeVisibilityEnum.Private;
@@ -77,13 +78,19 @@ public interface ICFBamPubIndex extends ICFBamPubScope
 	public final static String S_CLASS_CODE = "a825";
 
 	public ICFBamPubTable getRequiredContainerTable();
-	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
-	public List<ICFBamPubIndexCol> getOptionalComponentsColumns();
-	public List<ICFBamPubIndexTweak> getOptionalComponentsTweaks();
+
 	public void setRequiredContainerTable(ICFBamPubTable argObj);
 	public void setRequiredContainerTable(CFLibDbKeyHash256 argTableId);
+
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
+
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+
+	public List<ICFBamPubIndexCol> getOptionalComponentsColumns();
+
+	public List<ICFBamPubIndexTweak> getOptionalComponentsTweaks();
+
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
@@ -106,17 +113,21 @@ public interface ICFBamPubIndex extends ICFBamPubScope
 	public void setRequiredIsDbMapped( boolean value );
 	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
+
 	public void setIndex( ICFBamPubIndex src );
+
 	public void set( ICFBamPubScopeH src );
+
 	public void setIndex( ICFBamPubIndexH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

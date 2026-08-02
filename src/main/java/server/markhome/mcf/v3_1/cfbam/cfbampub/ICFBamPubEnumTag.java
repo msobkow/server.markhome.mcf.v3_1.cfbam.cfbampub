@@ -87,34 +87,48 @@ public interface ICFBamPubEnumTag
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredId);
-	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
 	public ICFBamPubEnumDef getRequiredContainerEnumDef();
-	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
-	public ICFBamPubEnumTag getOptionalLookupPrev();
-	public ICFBamPubEnumTag getOptionalLookupNext();
+
 	public void setRequiredContainerEnumDef(ICFBamPubEnumDef argObj);
 	public void setRequiredContainerEnumDef(CFLibDbKeyHash256 argEnumId);
+
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
+
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+
+	public ICFBamPubEnumTag getOptionalLookupPrev();
+
 	public void setOptionalLookupPrev(ICFBamPubEnumTag argObj);
 	public void setOptionalLookupPrev(CFLibDbKeyHash256 argPrevId);
+
+	public ICFBamPubEnumTag getOptionalLookupNext();
+
 	public void setOptionalLookupNext(ICFBamPubEnumTag argObj);
 	public void setOptionalLookupNext(CFLibDbKeyHash256 argNextId);
+
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public CFLibDbKeyHash256 getRequiredEnumId();
 	public Short getOptionalEnumCode();
@@ -123,22 +137,21 @@ public interface ICFBamPubEnumTag
 	public void setRequiredName( String value );
 	public CFLibDbKeyHash256 getOptionalPrevId();
 	public CFLibDbKeyHash256 getOptionalNextId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubEnumTag src );
+
 	public void setEnumTag( ICFBamPubEnumTag src );
+
 	public void set( ICFBamPubEnumTagH src );
+
 	public void setEnumTag( ICFBamPubEnumTagH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

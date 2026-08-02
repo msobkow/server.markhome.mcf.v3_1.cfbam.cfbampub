@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubSchemaRef persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubSchemaRef extends ICFBamPubScope
+public interface ICFBamPubSchemaRef
+	extends ICFBamPubScope
 {
 	public static final String S_SCHEMAID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 SCHEMAID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_SCHEMAID_INIT_VALUE );
@@ -78,17 +79,25 @@ public interface ICFBamPubSchemaRef extends ICFBamPubScope
 	public final static String S_CLASS_CODE = "a803";
 
 	public ICFBamPubSchemaDef getRequiredContainerSchema();
-	public ICFBamPubSchemaDef getOptionalLookupRefSchema();
-	public ICFBamPubSchemaRef getOptionalLookupPrev();
-	public ICFBamPubSchemaRef getOptionalLookupNext();
+
 	public void setRequiredContainerSchema(ICFBamPubSchemaDef argObj);
 	public void setRequiredContainerSchema(CFLibDbKeyHash256 argSchemaId);
+
+	public ICFBamPubSchemaDef getOptionalLookupRefSchema();
+
 	public void setOptionalLookupRefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupRefSchema(CFLibDbKeyHash256 argRefSchemaId);
+
+	public ICFBamPubSchemaRef getOptionalLookupPrev();
+
 	public void setOptionalLookupPrev(ICFBamPubSchemaRef argObj);
 	public void setOptionalLookupPrev(CFLibDbKeyHash256 argPrevId);
+
+	public ICFBamPubSchemaRef getOptionalLookupNext();
+
 	public void setOptionalLookupNext(ICFBamPubSchemaRef argObj);
 	public void setOptionalLookupNext(CFLibDbKeyHash256 argNextId);
+
 	public CFLibDbKeyHash256 getRequiredSchemaId();
 	public String getRequiredName();
 	public void setRequiredName( String value );
@@ -99,17 +108,21 @@ public interface ICFBamPubSchemaRef extends ICFBamPubScope
 	public CFLibDbKeyHash256 getOptionalRefSchemaId();
 	public CFLibDbKeyHash256 getOptionalPrevId();
 	public CFLibDbKeyHash256 getOptionalNextId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
+
 	public void setSchemaRef( ICFBamPubSchemaRef src );
+
 	public void set( ICFBamPubScopeH src );
+
 	public void setSchemaRef( ICFBamPubSchemaRefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

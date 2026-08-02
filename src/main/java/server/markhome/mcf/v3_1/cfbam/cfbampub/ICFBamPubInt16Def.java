@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubInt16Def persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubInt16Def extends ICFBamPubAtom
+public interface ICFBamPubInt16Def
+	extends ICFBamPubAtom
 {
 	public static final short INITVALUE_MIN_VALUE = (short)-32768;
 	public static final short MINVALUE_MIN_VALUE = (short)-32768;
@@ -81,17 +82,21 @@ public interface ICFBamPubInt16Def extends ICFBamPubAtom
 	public void setOptionalMinValue( Short value );
 	public Short getOptionalMaxValue();
 	public void setOptionalMaxValue( Short value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setInt16Def( ICFBamPubInt16Def src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setInt16Def( ICFBamPubInt16DefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubUuid6Gen persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubUuid6Gen extends ICFBamPubUuid6Type
+public interface ICFBamPubUuid6Gen
+	extends ICFBamPubUuid6Type
 {
 	public static final short SLICE_MIN_VALUE = (short)0;
 	public static final int BLOCKSIZE_MIN_VALUE = 1;
@@ -76,17 +77,21 @@ public interface ICFBamPubUuid6Gen extends ICFBamPubUuid6Type
 	public void setRequiredSlice( short value );
 	public int getRequiredBlockSize();
 	public void setRequiredBlockSize( int value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setUuid6Gen( ICFBamPubUuid6Gen src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setUuid6Gen( ICFBamPubUuid6GenH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

@@ -61,14 +61,15 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubUInt64Def persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubUInt64Def extends ICFBamPubAtom
+public interface ICFBamPubUInt64Def
+	extends ICFBamPubAtom
 {
-	public static final BigDecimal INITVALUE_MIN_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.InitValue", "CFBamPub.UInt64Def.InitValue", 19, 0, "0" );
-	public static final BigDecimal MINVALUE_MIN_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.MinValue", "CFBamPub.UInt64Def.MinValue", 19, 0, "0" );
-	public static final BigDecimal MAXVALUE_MIN_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.MaxValue", "CFBamPub.UInt64Def.MaxValue", 19, 0, "0" );
-	public static final BigDecimal INITVALUE_INIT_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.InitValue", "CFBamPub.UInt64Def.InitValue", 19, 0, "0" );
-	public static final BigDecimal MINVALUE_INIT_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.MinValue", "CFBamPub.UInt64Def.MinValue", 19, 0, "0" );
-	public static final BigDecimal MAXVALUE_INIT_VALUE = CFLibBigDecimalUtil.parse( "CFBamPub.UInt64Def.MaxValue", "CFBamPub.UInt64Def.MaxValue", 19, 0, "0" );
+	public static final BigDecimal INITVALUE_MIN_VALUE = CFLibBigDecimalUtil.parse( "CFBam.UInt64Def.InitValue", "CFBam.UInt64Def.InitValue", 19, 0, "0" );
+	public static final BigDecimal MINVALUE_MIN_VALUE = CFLibBigDecimalUtil.parse( "CFBam.UInt64Def.MinValue", "CFBam.UInt64Def.MinValue", 19, 0, "0" );
+	public static final BigDecimal MAXVALUE_MIN_VALUE = CFLibBigDecimalUtil.parse( "CFBam.UInt64Def.MaxValue", "CFBam.UInt64Def.MaxValue", 19, 0, "0" );
+	public static final BigDecimal INITVALUE_INIT_VALUE = CFLibBigDecimalUtil.parse( "CFBam.UInt64Def.InitValue", "CFBam.UInt64Def.InitValue", 19, 0, "0" );
+	public static final BigDecimal MINVALUE_INIT_VALUE = CFLibBigDecimalUtil.parse( "CFBam.UInt64Def.MinValue", "CFBam.UInt64Def.MinValue", 19, 0, "0" );
+	public static final BigDecimal MAXVALUE_INIT_VALUE = CFLibBigDecimalUtil.parse( "CFBam.UInt64Def.MaxValue", "CFBam.UInt64Def.MaxValue", 19, 0, "0" );
 	public final static int CLASS_CODE = 0xa869;
 	public final static String S_CLASS_CODE = "a869";
 
@@ -78,17 +79,21 @@ public interface ICFBamPubUInt64Def extends ICFBamPubAtom
 	public void setOptionalMinValue( BigDecimal value );
 	public BigDecimal getOptionalMaxValue();
 	public void setOptionalMaxValue( BigDecimal value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setUInt64Def( ICFBamPubUInt64Def src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setUInt64Def( ICFBamPubUInt64DefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

@@ -84,34 +84,48 @@ public interface ICFBamPubChain
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredId);
-	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
 	public ICFBamPubTable getRequiredContainerTable();
-	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
-	public ICFBamPubRelation getRequiredLookupPrevRel();
-	public ICFBamPubRelation getRequiredLookupNextRel();
+
 	public void setRequiredContainerTable(ICFBamPubTable argObj);
 	public void setRequiredContainerTable(CFLibDbKeyHash256 argTableId);
+
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
+
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+
+	public ICFBamPubRelation getRequiredLookupPrevRel();
+
 	public void setRequiredLookupPrevRel(ICFBamPubRelation argObj);
 	public void setRequiredLookupPrevRel(CFLibDbKeyHash256 argPrevRelationId);
+
+	public ICFBamPubRelation getRequiredLookupNextRel();
+
 	public void setRequiredLookupNextRel(ICFBamPubRelation argObj);
 	public void setRequiredLookupNextRel(CFLibDbKeyHash256 argNextRelationId);
+
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
 	public void setRequiredName( String value );
@@ -128,22 +142,21 @@ public interface ICFBamPubChain
 	public void setOptionalSuffix( String value );
 	public CFLibDbKeyHash256 getRequiredPrevRelationId();
 	public CFLibDbKeyHash256 getRequiredNextRelationId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubChain src );
+
 	public void setChain( ICFBamPubChain src );
+
 	public void set( ICFBamPubChainH src );
+
 	public void setChain( ICFBamPubChainH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubId64Gen persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubId64Gen extends ICFBamPubInt64Type
+public interface ICFBamPubId64Gen
+	extends ICFBamPubInt64Type
 {
 	public static final short SLICE_MIN_VALUE = (short)0;
 	public static final long BLOCKSIZE_MIN_VALUE = 1L;
@@ -76,17 +77,21 @@ public interface ICFBamPubId64Gen extends ICFBamPubInt64Type
 	public void setRequiredSlice( short value );
 	public long getRequiredBlockSize();
 	public void setRequiredBlockSize( long value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setId64Gen( ICFBamPubId64Gen src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setId64Gen( ICFBamPubId64GenH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

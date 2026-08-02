@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubTable persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubTable extends ICFBamPubScope
+public interface ICFBamPubTable
+	extends ICFBamPubScope
 {
 	public static final ICFBamPubSchema.LoaderBehaviourEnum LOADERBEHAVIOUR_MIN_VALUE = ICFBamPubSchema.LoaderBehaviourEnum.Insert;
 	public static final ICFBamPubSchema.SecScopeEnum SECSCOPE_MIN_VALUE = ICFBamPubSchema.SecScopeEnum.None;
@@ -96,32 +97,53 @@ public interface ICFBamPubTable extends ICFBamPubScope
 	public final static String S_CLASS_CODE = "a807";
 
 	public ICFBamPubSchemaDef getRequiredContainerSchemaDef();
-	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
-	public List<ICFBamPubRelation> getOptionalComponentsRelation();
-	public ICFBamPubIndex getOptionalLookupLookupIndex();
-	public ICFBamPubIndex getOptionalLookupAltIndex();
-	public ICFBamPubTable getOptionalLookupQualTable();
-	public List<ICFBamPubIndex> getOptionalComponentsIndex();
-	public ICFBamPubIndex getOptionalLookupPrimaryIndex();
-	public List<ICFBamPubValue> getOptionalComponentsColumns();
-	public List<ICFBamPubRelation> getOptionalChildrenReverseRelations();
-	public List<ICFBamPubChain> getOptionalComponentsChains();
-	public List<ICFBamPubDelTopDep> getOptionalComponentsDelDep();
-	public List<ICFBamPubClearTopDep> getOptionalComponentsClearDep();
-	public List<ICFBamPubServerMethod> getOptionalComponentsServerMethods();
-	public List<ICFBamPubTweak> getOptionalComponentsTweaks();
+
 	public void setRequiredContainerSchemaDef(ICFBamPubSchemaDef argObj);
 	public void setRequiredContainerSchemaDef(CFLibDbKeyHash256 argSchemaDefId);
+
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
+
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+
+	public ICFBamPubIndex getOptionalLookupLookupIndex();
+
 	public void setOptionalLookupLookupIndex(ICFBamPubIndex argObj);
 	public void setOptionalLookupLookupIndex(CFLibDbKeyHash256 argLookupIndexId);
+
+	public ICFBamPubIndex getOptionalLookupAltIndex();
+
 	public void setOptionalLookupAltIndex(ICFBamPubIndex argObj);
 	public void setOptionalLookupAltIndex(CFLibDbKeyHash256 argAltIndexId);
+
+	public ICFBamPubTable getOptionalLookupQualTable();
+
 	public void setOptionalLookupQualTable(ICFBamPubTable argObj);
 	public void setOptionalLookupQualTable(CFLibDbKeyHash256 argQualifyingTableId);
+
+	public ICFBamPubIndex getOptionalLookupPrimaryIndex();
+
 	public void setOptionalLookupPrimaryIndex(ICFBamPubIndex argObj);
 	public void setOptionalLookupPrimaryIndex(CFLibDbKeyHash256 argPrimaryIndexId);
+
+	public List<ICFBamPubRelation> getOptionalComponentsRelation();
+
+	public List<ICFBamPubIndex> getOptionalComponentsIndex();
+
+	public List<ICFBamPubValue> getOptionalComponentsColumns();
+
+	public List<ICFBamPubRelation> getOptionalChildrenReverseRelations();
+
+	public List<ICFBamPubChain> getOptionalComponentsChains();
+
+	public List<ICFBamPubDelTopDep> getOptionalComponentsDelDep();
+
+	public List<ICFBamPubClearTopDep> getOptionalComponentsClearDep();
+
+	public List<ICFBamPubServerMethod> getOptionalComponentsServerMethods();
+
+	public List<ICFBamPubTweak> getOptionalComponentsTweaks();
+
 	public CFLibDbKeyHash256 getRequiredSchemaDefId();
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
@@ -160,17 +182,21 @@ public interface ICFBamPubTable extends ICFBamPubScope
 	public void setRequiredSecScope( ICFBamPubSchema.SecScopeEnum value );
 	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
+
 	public void setTable( ICFBamPubTable src );
+
 	public void set( ICFBamPubScopeH src );
+
 	public void setTable( ICFBamPubTableH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

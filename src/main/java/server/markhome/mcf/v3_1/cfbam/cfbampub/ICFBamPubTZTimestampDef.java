@@ -61,24 +61,29 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubTZTimestampDef persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubTZTimestampDef extends ICFBamPubAtom
+public interface ICFBamPubTZTimestampDef
+	extends ICFBamPubAtom
 {
 	public final static int CLASS_CODE = 0xa85a;
 	public final static String S_CLASS_CODE = "a85a";
 
 	public String getOptionalDummy();
 	public void setOptionalDummy( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setTZTimestampDef( ICFBamPubTZTimestampDef src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setTZTimestampDef( ICFBamPubTZTimestampDefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubServerListFunc persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubServerListFunc extends ICFBamPubServerMethod
+public interface ICFBamPubServerListFunc
+	extends ICFBamPubServerMethod
 {
 	public static final String S_RETTABLEID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 RETTABLEID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_RETTABLEID_INIT_VALUE );
@@ -69,20 +70,26 @@ public interface ICFBamPubServerListFunc extends ICFBamPubServerMethod
 	public final static String S_CLASS_CODE = "a83b";
 
 	public ICFBamPubTable getOptionalLookupRetTable();
+
 	public void setOptionalLookupRetTable(ICFBamPubTable argObj);
 	public void setOptionalLookupRetTable(CFLibDbKeyHash256 argRetTableId);
+
 	public CFLibDbKeyHash256 getOptionalRetTableId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
+
 	public void setServerListFunc( ICFBamPubServerListFunc src );
+
 	public void set( ICFBamPubScopeH src );
+
 	public void setServerListFunc( ICFBamPubServerListFuncH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

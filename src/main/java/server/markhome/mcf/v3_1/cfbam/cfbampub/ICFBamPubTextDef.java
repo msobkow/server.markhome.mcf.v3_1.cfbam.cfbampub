@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubTextDef persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubTextDef extends ICFBamPubAtom
+public interface ICFBamPubTextDef
+	extends ICFBamPubAtom
 {
 	public static final int MAXLEN_MIN_VALUE = 0;
 	public static final int MAXLEN_MAX_VALUE = 2147483647;
@@ -76,17 +77,21 @@ public interface ICFBamPubTextDef extends ICFBamPubAtom
 	public void setOptionalInitValue( String value );
 	public String getOptionalXmlElementName();
 	public void setOptionalXmlElementName( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setTextDef( ICFBamPubTextDef src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setTextDef( ICFBamPubTextDefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

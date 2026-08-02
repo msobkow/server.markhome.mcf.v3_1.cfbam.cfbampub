@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubSchemaRole persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubSchemaRole extends ICFBamPubRoleDef
+public interface ICFBamPubSchemaRole
+	extends ICFBamPubRoleDef
 {
 	public static final ICFBamPubSchema.RoleScopeEnum ROLESCOPE_MIN_VALUE = ICFBamPubSchema.RoleScopeEnum.SysRole;
 	public static final ICFBamPubSchema.RoleScopeEnum ROLESCOPE_MAX_VALUE = ICFBamPubSchema.RoleScopeEnum.TentRole;
@@ -72,22 +73,28 @@ public interface ICFBamPubSchemaRole extends ICFBamPubRoleDef
 	public final static String S_CLASS_CODE = "a88f";
 
 	public ICFBamPubSchemaDef getRequiredContainerSchemaDef();
+
 	public void setRequiredContainerSchemaDef(ICFBamPubSchemaDef argObj);
 	public void setRequiredContainerSchemaDef(CFLibDbKeyHash256 argSchemaDefId);
+
 	public CFLibDbKeyHash256 getRequiredSchemaDefId();
 	public ICFBamPubSchema.RoleScopeEnum getRequiredRoleScope();
 	public void setRequiredRoleScope( ICFBamPubSchema.RoleScopeEnum value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubRoleDef src );
+
 	public void setSchemaRole( ICFBamPubSchemaRole src );
+
 	public void set( ICFBamPubRoleDefH src );
+
 	public void setSchemaRole( ICFBamPubSchemaRoleH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

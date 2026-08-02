@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubFloatDef persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubFloatDef extends ICFBamPubAtom
+public interface ICFBamPubFloatDef
+	extends ICFBamPubAtom
 {
 	public static final float INITVALUE_MIN_VALUE = (float)-1.174E37;
 	public static final float MINVALUE_MIN_VALUE = (float)-1.174E37;
@@ -78,17 +79,21 @@ public interface ICFBamPubFloatDef extends ICFBamPubAtom
 	public void setOptionalMinValue( Float value );
 	public Float getOptionalMaxValue();
 	public void setOptionalMaxValue( Float value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setFloatDef( ICFBamPubFloatDef src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setFloatDef( ICFBamPubFloatDefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

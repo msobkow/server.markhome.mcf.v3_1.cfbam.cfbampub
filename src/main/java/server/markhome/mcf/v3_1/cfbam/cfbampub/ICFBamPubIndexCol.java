@@ -87,39 +87,57 @@ public interface ICFBamPubIndexCol
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredId);
-	
 	public List<ICFBamPubRelationCol> getOptionalChildrenRefRelFromCol();
+
 	public List<ICFBamPubRelationCol> getOptionalChildrenRefRelToCol();
+
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
 	public ICFBamPubIndex getRequiredContainerIndex();
-	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
-	public ICFBamPubIndexCol getOptionalLookupPrev();
-	public ICFBamPubIndexCol getOptionalLookupNext();
-	public ICFBamPubValue getRequiredLookupColumn();
+
 	public void setRequiredContainerIndex(ICFBamPubIndex argObj);
 	public void setRequiredContainerIndex(CFLibDbKeyHash256 argIndexId);
+
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
+
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+
+	public ICFBamPubIndexCol getOptionalLookupPrev();
+
 	public void setOptionalLookupPrev(ICFBamPubIndexCol argObj);
 	public void setOptionalLookupPrev(CFLibDbKeyHash256 argPrevId);
+
+	public ICFBamPubIndexCol getOptionalLookupNext();
+
 	public void setOptionalLookupNext(ICFBamPubIndexCol argObj);
 	public void setOptionalLookupNext(CFLibDbKeyHash256 argNextId);
+
+	public ICFBamPubValue getRequiredLookupColumn();
+
 	public void setRequiredLookupColumn(ICFBamPubValue argObj);
 	public void setRequiredLookupColumn(CFLibDbKeyHash256 argColumnId);
+
 	public CFLibDbKeyHash256 getRequiredIndexId();
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
@@ -137,22 +155,21 @@ public interface ICFBamPubIndexCol
 	public void setRequiredIsAscending( boolean value );
 	public CFLibDbKeyHash256 getOptionalPrevId();
 	public CFLibDbKeyHash256 getOptionalNextId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubIndexCol src );
+
 	public void setIndexCol( ICFBamPubIndexCol src );
+
 	public void set( ICFBamPubIndexColH src );
+
 	public void setIndexCol( ICFBamPubIndexColH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

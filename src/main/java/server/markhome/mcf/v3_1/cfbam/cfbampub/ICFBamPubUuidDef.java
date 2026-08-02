@@ -61,24 +61,29 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubUuidDef persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubUuidDef extends ICFBamPubAtom
+public interface ICFBamPubUuidDef
+	extends ICFBamPubAtom
 {
 	public final static int CLASS_CODE = 0xa86b;
 	public final static String S_CLASS_CODE = "a86b";
 
 	public UUID getOptionalInitValue();
 	public void setOptionalInitValue( UUID value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setUuidDef( ICFBamPubUuidDef src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setUuidDef( ICFBamPubUuidDefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubNmTokensDef persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubNmTokensDef extends ICFBamPubAtom
+public interface ICFBamPubNmTokensDef
+	extends ICFBamPubAtom
 {
 	public static final int MAXLEN_MIN_VALUE = 0;
 	public static final int MAXLEN_MAX_VALUE = 2147483647;
@@ -73,17 +74,21 @@ public interface ICFBamPubNmTokensDef extends ICFBamPubAtom
 	public void setRequiredMaxLen( int value );
 	public String getOptionalInitValue();
 	public void setOptionalInitValue( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setNmTokensDef( ICFBamPubNmTokensDef src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setNmTokensDef( ICFBamPubNmTokensDefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

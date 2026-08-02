@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubBoolCol persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubBoolCol extends ICFBamPubBoolDef
+public interface ICFBamPubBoolCol
+	extends ICFBamPubBoolDef
 {
 	public static final String S_TABLEID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 TABLEID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_TABLEID_INIT_VALUE );
@@ -69,20 +70,26 @@ public interface ICFBamPubBoolCol extends ICFBamPubBoolDef
 	public final static String S_CLASS_CODE = "a870";
 
 	public ICFBamPubTable getRequiredContainerTable();
+
 	public void setRequiredContainerTable(ICFBamPubTable argObj);
 	public void setRequiredContainerTable(CFLibDbKeyHash256 argTableId);
+
 	public CFLibDbKeyHash256 getRequiredTableId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setBoolCol( ICFBamPubBoolCol src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setBoolCol( ICFBamPubBoolColH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

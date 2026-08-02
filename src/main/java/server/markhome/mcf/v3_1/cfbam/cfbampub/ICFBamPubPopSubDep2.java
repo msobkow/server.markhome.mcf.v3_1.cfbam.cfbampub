@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubPopSubDep2 persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubPopSubDep2 extends ICFBamPubPopDep
+public interface ICFBamPubPopSubDep2
+	extends ICFBamPubPopDep
 {
 	public static final String S_POPSUBDEP1ID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 POPSUBDEP1ID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_POPSUBDEP1ID_INIT_VALUE );
@@ -70,23 +71,30 @@ public interface ICFBamPubPopSubDep2 extends ICFBamPubPopDep
 	public final static String S_CLASS_CODE = "a836";
 
 	public ICFBamPubPopSubDep1 getRequiredContainerPopSubDep1();
-	public List<ICFBamPubPopSubDep3> getOptionalComponentsPopDep();
+
 	public void setRequiredContainerPopSubDep1(ICFBamPubPopSubDep1 argObj);
 	public void setRequiredContainerPopSubDep1(CFLibDbKeyHash256 argPopSubDep1Id);
+
+	public List<ICFBamPubPopSubDep3> getOptionalComponentsPopDep();
+
 	public CFLibDbKeyHash256 getRequiredPopSubDep1Id();
 	public String getRequiredName();
 	public void setRequiredName( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
+
 	public void setPopSubDep2( ICFBamPubPopSubDep2 src );
+
 	public void set( ICFBamPubScopeH src );
+
 	public void setPopSubDep2( ICFBamPubPopSubDep2H src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

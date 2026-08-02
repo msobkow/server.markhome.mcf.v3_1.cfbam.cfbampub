@@ -61,23 +61,29 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubEnumDef persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubEnumDef extends ICFBamPubInt16Def
+public interface ICFBamPubEnumDef
+	extends ICFBamPubInt16Def
 {
 	public final static int CLASS_CODE = 0xa873;
 	public final static String S_CLASS_CODE = "a873";
 
 	public List<ICFBamPubEnumTag> getRequiredComponentsTag();
-	@Override
+
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setEnumDef( ICFBamPubEnumDef src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setEnumDef( ICFBamPubEnumDefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

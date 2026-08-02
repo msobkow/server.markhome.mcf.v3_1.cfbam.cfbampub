@@ -87,37 +87,53 @@ public interface ICFBamPubParam
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredId);
-	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
 	public ICFBamPubServerMethod getRequiredContainerServerMeth();
-	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
-	public ICFBamPubParam getOptionalLookupPrev();
-	public ICFBamPubParam getOptionalLookupNext();
-	public ICFBamPubValue getRequiredLookupType();
+
 	public void setRequiredContainerServerMeth(ICFBamPubServerMethod argObj);
 	public void setRequiredContainerServerMeth(CFLibDbKeyHash256 argServerMethodId);
+
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
+
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+
+	public ICFBamPubParam getOptionalLookupPrev();
+
 	public void setOptionalLookupPrev(ICFBamPubParam argObj);
 	public void setOptionalLookupPrev(CFLibDbKeyHash256 argPrevId);
+
+	public ICFBamPubParam getOptionalLookupNext();
+
 	public void setOptionalLookupNext(ICFBamPubParam argObj);
 	public void setOptionalLookupNext(CFLibDbKeyHash256 argNextId);
+
+	public ICFBamPubValue getRequiredLookupType();
+
 	public void setRequiredLookupType(ICFBamPubValue argObj);
 	public void setRequiredLookupType(CFLibDbKeyHash256 argTypeId);
+
 	public CFLibDbKeyHash256 getRequiredServerMethodId();
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
@@ -131,22 +147,21 @@ public interface ICFBamPubParam
 	public CFLibDbKeyHash256 getOptionalTypeId();
 	public CFLibDbKeyHash256 getOptionalPrevId();
 	public CFLibDbKeyHash256 getOptionalNextId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubParam src );
+
 	public void setParam( ICFBamPubParam src );
+
 	public void set( ICFBamPubParamH src );
+
 	public void setParam( ICFBamPubParamH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

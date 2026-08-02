@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubSchemaDef persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubSchemaDef extends ICFBamPubScope
+public interface ICFBamPubSchemaDef
+	extends ICFBamPubScope
 {
 	public static final String S_CTENANTID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 CTENANTID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_CTENANTID_INIT_VALUE );
@@ -77,16 +78,23 @@ public interface ICFBamPubSchemaDef extends ICFBamPubScope
 	public final static String S_CLASS_CODE = "a802";
 
 	public ICFIntPubMinorVersion getRequiredContainerMinorVersion();
-	public List<ICFBamPubTable> getOptionalComponentsTables();
-	public List<ICFBamPubValue> getOptionalComponentsTypes();
-	public List<ICFBamPubSchemaRef> getOptionalComponentsSchemaRefs();
-	public List<ICFBamPubTweak> getOptionalComponentsTweaks();
-	public List<ICFBamPubSchemaRole> getOptionalComponentsRoles();
-	public ICFSecPubTenant getRequiredOwnerCTenant();
-	public void setRequiredContainerMinorVersion(ICFIntPubMinorVersion argObj);
+
 	public void setRequiredContainerMinorVersion(CFLibDbKeyHash256 argMinorVersionId);
-	public void setRequiredOwnerCTenant(ICFSecPubTenant argObj);
+
+	public ICFSecPubTenant getRequiredOwnerCTenant();
+
 	public void setRequiredOwnerCTenant(CFLibDbKeyHash256 argCTenantId);
+
+	public List<ICFBamPubTable> getOptionalComponentsTables();
+
+	public List<ICFBamPubValue> getOptionalComponentsTypes();
+
+	public List<ICFBamPubSchemaRef> getOptionalComponentsSchemaRefs();
+
+	public List<ICFBamPubTweak> getOptionalComponentsTweaks();
+
+	public List<ICFBamPubSchemaRole> getOptionalComponentsRoles();
+
 	public CFLibDbKeyHash256 getRequiredCTenantId();
 	public CFLibDbKeyHash256 getRequiredMinorVersionId();
 	public String getRequiredName();
@@ -111,17 +119,21 @@ public interface ICFBamPubSchemaDef extends ICFBamPubScope
 	public void setRequiredProjectURL( String value );
 	public String getRequiredPublishURI();
 	public void setRequiredPublishURI( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
+
 	public void setSchemaDef( ICFBamPubSchemaDef src );
+
 	public void set( ICFBamPubScopeH src );
+
 	public void setSchemaDef( ICFBamPubSchemaDefH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubRelation persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubRelation extends ICFBamPubScope
+public interface ICFBamPubRelation
+	extends ICFBamPubScope
 {
 	public static final ICFBamPubSchema.RelationTypeEnum RELATIONTYPE_MIN_VALUE = ICFBamPubSchema.RelationTypeEnum.Unknown;
 	public static final ICFBamPubSchema.CodeVisibilityEnum CODEVIS_MIN_VALUE = ICFBamPubSchema.CodeVisibilityEnum.Public;
@@ -90,25 +91,39 @@ public interface ICFBamPubRelation extends ICFBamPubScope
 	public final static String S_CLASS_CODE = "a839";
 
 	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
-	public ICFBamPubTable getRequiredContainerFromTable();
-	public List<ICFBamPubRelationCol> getOptionalComponentsColumns();
-	public List<ICFBamPubPopTopDep> getOptionalComponentsPopDep();
-	public ICFBamPubIndex getRequiredLookupFromIndex();
-	public ICFBamPubTable getRequiredLookupToTable();
-	public ICFBamPubIndex getRequiredLookupToIndex();
-	public ICFBamPubRelation getOptionalLookupNarrowed();
+
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+
+	public ICFBamPubTable getRequiredContainerFromTable();
+
 	public void setRequiredContainerFromTable(ICFBamPubTable argObj);
 	public void setRequiredContainerFromTable(CFLibDbKeyHash256 argTableId);
+
+	public ICFBamPubIndex getRequiredLookupFromIndex();
+
 	public void setRequiredLookupFromIndex(ICFBamPubIndex argObj);
 	public void setRequiredLookupFromIndex(CFLibDbKeyHash256 argFromIndexId);
+
+	public ICFBamPubTable getRequiredLookupToTable();
+
 	public void setRequiredLookupToTable(ICFBamPubTable argObj);
 	public void setRequiredLookupToTable(CFLibDbKeyHash256 argToTableId);
+
+	public ICFBamPubIndex getRequiredLookupToIndex();
+
 	public void setRequiredLookupToIndex(ICFBamPubIndex argObj);
 	public void setRequiredLookupToIndex(CFLibDbKeyHash256 argToIndexId);
+
+	public ICFBamPubRelation getOptionalLookupNarrowed();
+
 	public void setOptionalLookupNarrowed(ICFBamPubRelation argObj);
 	public void setOptionalLookupNarrowed(CFLibDbKeyHash256 argNarrowedId);
+
+	public List<ICFBamPubRelationCol> getOptionalComponentsColumns();
+
+	public List<ICFBamPubPopTopDep> getOptionalComponentsPopDep();
+
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
@@ -141,17 +156,21 @@ public interface ICFBamPubRelation extends ICFBamPubScope
 	public CFLibDbKeyHash256 getOptionalNarrowedId();
 	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
+
 	public void setRelation( ICFBamPubRelation src );
+
 	public void set( ICFBamPubScopeH src );
+
 	public void setRelation( ICFBamPubRelationH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

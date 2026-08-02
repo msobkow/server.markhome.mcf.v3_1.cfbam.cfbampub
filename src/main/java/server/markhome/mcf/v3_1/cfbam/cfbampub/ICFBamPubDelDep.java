@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubDelDep persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubDelDep extends ICFBamPubScope
+public interface ICFBamPubDelDep
+	extends ICFBamPubScope
 {
 	public static final String S_DEFSCHEMAID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 DEFSCHEMAID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_DEFSCHEMAID_INIT_VALUE );
@@ -71,24 +72,32 @@ public interface ICFBamPubDelDep extends ICFBamPubScope
 	public final static String S_CLASS_CODE = "a81b";
 
 	public ICFBamPubRelation getRequiredLookupRelation();
-	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
+
 	public void setRequiredLookupRelation(ICFBamPubRelation argObj);
 	public void setRequiredLookupRelation(CFLibDbKeyHash256 argRelationId);
+
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
+
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public CFLibDbKeyHash256 getRequiredRelationId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
+
 	public void setDelDep( ICFBamPubDelDep src );
+
 	public void set( ICFBamPubScopeH src );
+
 	public void setDelDep( ICFBamPubDelDepH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

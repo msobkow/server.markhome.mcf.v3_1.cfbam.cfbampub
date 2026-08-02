@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubTableCol persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubTableCol extends ICFBamPubValue
+public interface ICFBamPubTableCol
+	extends ICFBamPubValue
 {
 	public static final String S_TABLEID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 TABLEID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_TABLEID_INIT_VALUE );
@@ -72,28 +73,36 @@ public interface ICFBamPubTableCol extends ICFBamPubValue
 	public final static String S_CLASS_CODE = "a85c";
 
 	public ICFBamPubTable getRequiredContainerTable();
-	public ICFBamPubValue getRequiredParentDataType();
+
 	public void setRequiredContainerTable(ICFBamPubTable argObj);
 	public void setRequiredContainerTable(CFLibDbKeyHash256 argTableId);
+
+	public ICFBamPubValue getRequiredParentDataType();
+
 	public void setRequiredParentDataType(ICFBamPubValue argObj);
 	public void setRequiredParentDataType(CFLibDbKeyHash256 argDataId);
+
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public String getOptionalDbName();
 	public void setOptionalDbName( String value );
 	public CFLibDbKeyHash256 getOptionalDataId();
 	public String getOptionalXmlElementName();
 	public void setOptionalXmlElementName( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubValue src );
+
 	public void setTableCol( ICFBamPubTableCol src );
+
 	public void set( ICFBamPubValueH src );
+
 	public void setTableCol( ICFBamPubTableColH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

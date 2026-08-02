@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubServerMethod persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubServerMethod extends ICFBamPubScope
+public interface ICFBamPubServerMethod
+	extends ICFBamPubScope
 {
 	public static final ICFBamPubSchema.CodeVisibilityEnum CODEVIS_MIN_VALUE = ICFBamPubSchema.CodeVisibilityEnum.Public;
 	public static final ICFBamPubSchema.CodeVisibilityEnum CODEVIS_MAX_VALUE = ICFBamPubSchema.CodeVisibilityEnum.Private;
@@ -80,12 +81,17 @@ public interface ICFBamPubServerMethod extends ICFBamPubScope
 	public final static String S_CLASS_CODE = "a804";
 
 	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
-	public ICFBamPubTable getRequiredContainerForTable();
-	public List<ICFBamPubParam> getOptionalComponentsParams();
+
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+
+	public ICFBamPubTable getRequiredContainerForTable();
+
 	public void setRequiredContainerForTable(ICFBamPubTable argObj);
 	public void setRequiredContainerForTable(CFLibDbKeyHash256 argTableId);
+
+	public List<ICFBamPubParam> getOptionalComponentsParams();
+
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public String getRequiredName();
@@ -112,17 +118,21 @@ public interface ICFBamPubServerMethod extends ICFBamPubScope
 	public void setRequiredCppMethodBody( String value );
 	public String getRequiredCsMethodBody();
 	public void setRequiredCsMethodBody( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubScope src );
+
 	public void setServerMethod( ICFBamPubServerMethod src );
+
 	public void set( ICFBamPubScopeH src );
+
 	public void setServerMethod( ICFBamPubServerMethodH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }

@@ -61,7 +61,8 @@ import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 /**
  *	ICFBamPubTableTweak persistence instances have CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFBamPubTableTweak extends ICFBamPubTweak
+public interface ICFBamPubTableTweak
+	extends ICFBamPubTweak
 {
 	public static final String S_TABLEID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 TABLEID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_TABLEID_INIT_VALUE );
@@ -69,20 +70,26 @@ public interface ICFBamPubTableTweak extends ICFBamPubTweak
 	public final static String S_CLASS_CODE = "a809";
 
 	public ICFBamPubTable getRequiredContainerTableDef();
+
 	public void setRequiredContainerTableDef(ICFBamPubTable argObj);
 	public void setRequiredContainerTableDef(CFLibDbKeyHash256 argTableId);
+
 	public CFLibDbKeyHash256 getRequiredTableId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFBamPubTweak src );
+
 	public void setTableTweak( ICFBamPubTableTweak src );
+
 	public void set( ICFBamPubTweakH src );
+
 	public void setTableTweak( ICFBamPubTableTweakH src );
+
+	public String getXmlAttrFragment();
+
+	public String toString();
 }
