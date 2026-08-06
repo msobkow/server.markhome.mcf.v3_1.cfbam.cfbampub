@@ -75,6 +75,7 @@ public interface ICFBamPubBoolCol
 	public void setRequiredContainerTable(CFLibDbKeyHash256 argTableId);
 
 	public CFLibDbKeyHash256 getRequiredTableId();
+	public void setRequiredTableId( CFLibDbKeyHash256 value );
 	public boolean equals( Object obj );
 
 	public int hashCode();

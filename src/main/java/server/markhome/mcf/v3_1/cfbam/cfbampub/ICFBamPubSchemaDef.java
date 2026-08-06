@@ -96,7 +96,9 @@ public interface ICFBamPubSchemaDef
 	public List<ICFBamPubSchemaRole> getOptionalComponentsRoles();
 
 	public CFLibDbKeyHash256 getRequiredCTenantId();
+	public void setRequiredCTenantId( CFLibDbKeyHash256 value );
 	public CFLibDbKeyHash256 getRequiredMinorVersionId();
+	public void setRequiredMinorVersionId( CFLibDbKeyHash256 value );
 	public String getRequiredName();
 	public void setRequiredName( String value );
 	public String getOptionalDbName();

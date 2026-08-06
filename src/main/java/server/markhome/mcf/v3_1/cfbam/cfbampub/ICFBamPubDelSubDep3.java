@@ -76,6 +76,7 @@ public interface ICFBamPubDelSubDep3
 	public void setRequiredContainerDelSubDep2(CFLibDbKeyHash256 argDelSubDep2Id);
 
 	public CFLibDbKeyHash256 getRequiredDelSubDep2Id();
+	public void setRequiredDelSubDep2Id( CFLibDbKeyHash256 value );
 	public String getRequiredName();
 	public void setRequiredName( String value );
 	public boolean equals( Object obj );

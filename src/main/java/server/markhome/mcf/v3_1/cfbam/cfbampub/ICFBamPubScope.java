@@ -104,6 +104,7 @@ public interface ICFBamPubScope
 	public void setRequiredOwnerTenant(CFLibDbKeyHash256 argTenantId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
+	public void setRequiredTenantId( CFLibDbKeyHash256 value );
 	public boolean equals( Object obj );
 
 	public int hashCode();

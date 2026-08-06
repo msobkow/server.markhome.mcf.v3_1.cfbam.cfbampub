@@ -82,7 +82,9 @@ public interface ICFBamPubDelDep
 	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
 
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
+	public void setOptionalDefSchemaId( CFLibDbKeyHash256 value );
 	public CFLibDbKeyHash256 getRequiredRelationId();
+	public void setRequiredRelationId( CFLibDbKeyHash256 value );
 	public boolean equals( Object obj );
 
 	public int hashCode();
