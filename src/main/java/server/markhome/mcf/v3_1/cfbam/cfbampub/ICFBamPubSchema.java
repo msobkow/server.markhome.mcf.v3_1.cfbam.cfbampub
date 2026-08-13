@@ -286,7 +286,7 @@ extends ICFSecPubSchema,
 		final static ArrayList<ICFSecPubSchema.ClassMapEntry> entries = new ArrayList<>();
 		final static HashMap<Integer,ICFSecPubSchema.ClassMapEntry> mapBackingClassCodeToEntry = new HashMap<>();
 		final static HashMap<Integer,ICFSecPubSchema.ClassMapEntry> mapRuntimeClassCodeToEntry = new HashMap<>();
-		final static AtomicReference<ICFBamPubSchema> backingCFBamPubSchema = new AtomicReference<>();
+		final static AtomicReference<ICFBamPubSchema> backingCFBam = new AtomicReference<>();
 	public enum LoaderBehaviourEnum {
 		Insert,
 		Update,
@@ -814,17 +814,17 @@ extends ICFSecPubSchema,
 		return( retval );
 	}
 
-		public static ICFBamPubSchema getBackingCFBamPubSchema() {
-			return( ICFBamPubSchema.backingCFBamPubSchema.get() );
+		public static ICFBamPubSchema getBackingCFBam() {
+			return( ICFBamPubSchema.backingCFBam.get() );
 		}
 		
-		public static void setBackingCFBamPubSchema(ICFBamPubSchema backingSchema) {
-			ICFBamPubSchema.backingCFBamPubSchema.set(backingSchema);
+		public static void setBackingPubSchema(ICFBamPubSchema backingSchema) {
+			ICFBamPubSchema.backingCFBam.set(backingSchema);
 		}
 		
-		public ICFBamPubSchema getCFBamPubSchema();
-		public void setCFBamPubSchema(ICFBamPubSchema schema);
-		
+		public ICFBamPubSchema getCFBamSchema();
+		public void setCFBamSchema(ICFBamPubSchema schema);
+
 		public static int doInitClassMapEntries(int value) {
 			value = ICFSecPubSchema.doInitClassMapEntries(value);
 			value = ICFIntPubSchema.doInitClassMapEntries(value);
