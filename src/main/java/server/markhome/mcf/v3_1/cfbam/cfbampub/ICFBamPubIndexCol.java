@@ -102,8 +102,8 @@ public interface ICFBamPubIndexCol
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public $implJavaOptAtomType$ getPKey();
-	public void setPKey($implJavaOptAtomType$ requiredId);
+	public ICFLibKeyHash256 getPKey();
+	public void setPKey(ICFLibKeyHash256 requiredId);
 	public List<ICFBamPubRelationCol> getOptionalChildrenRefRelFromCol();
 
 	public List<ICFBamPubRelationCol> getOptionalChildrenRefRelToCol();

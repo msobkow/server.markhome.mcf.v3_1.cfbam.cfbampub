@@ -87,8 +87,8 @@ public interface ICFBamPubParamH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public $implJavaAtomType$ getRequiredId();
-	public void setRequiredId( $implJavaAtomType$ requiredId );
+	public ICFLibKeyHash256 getRequiredId();
+	public void setRequiredId( ICFLibKeyHash256 requiredId );
 
 	public CFLibDbKeyHash256 getRequiredServerMethodId();
 	public void setRequiredServerMethodId( CFLibDbKeyHash256 value );
