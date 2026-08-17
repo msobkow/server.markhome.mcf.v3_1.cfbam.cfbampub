@@ -73,7 +73,7 @@ public interface ICFBamPubDelSubDep2
 	public ICFBamPubDelSubDep1 getRequiredContainerDelSubDep1();
 
 	public void setRequiredContainerDelSubDep1(ICFBamPubDelSubDep1 argObj);
-	public void setRequiredContainerDelSubDep1(CFLibDbKeyHash256 argDelSubDep1Id);
+	public void setRequiredContainerDelSubDep1(ICFLibKeyHash256 argDelSubDep1Id);
 
 	public List<ICFBamPubDelSubDep3> getOptionalComponentsDelDep();
 

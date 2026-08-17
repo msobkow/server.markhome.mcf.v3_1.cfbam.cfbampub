@@ -99,8 +99,8 @@ public interface ICFBamPubChain
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPKey();
-	public void setPKey(CFLibDbKeyHash256 requiredId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredId);
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
@@ -109,22 +109,22 @@ public interface ICFBamPubChain
 	public ICFBamPubTable getRequiredContainerTable();
 
 	public void setRequiredContainerTable(ICFBamPubTable argObj);
-	public void setRequiredContainerTable(CFLibDbKeyHash256 argTableId);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
 	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
 	public ICFBamPubRelation getRequiredLookupPrevRel();
 
 	public void setRequiredLookupPrevRel(ICFBamPubRelation argObj);
-	public void setRequiredLookupPrevRel(CFLibDbKeyHash256 argPrevRelationId);
+	public void setRequiredLookupPrevRel(ICFLibKeyHash256 argPrevRelationId);
 
 	public ICFBamPubRelation getRequiredLookupNextRel();
 
 	public void setRequiredLookupNextRel(ICFBamPubRelation argObj);
-	public void setRequiredLookupNextRel(CFLibDbKeyHash256 argNextRelationId);
+	public void setRequiredLookupNextRel(ICFLibKeyHash256 argNextRelationId);
 
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public void setOptionalDefSchemaId( CFLibDbKeyHash256 value );

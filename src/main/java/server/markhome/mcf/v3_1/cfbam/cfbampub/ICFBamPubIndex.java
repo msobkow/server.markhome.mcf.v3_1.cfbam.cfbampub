@@ -80,12 +80,12 @@ public interface ICFBamPubIndex
 	public ICFBamPubTable getRequiredContainerTable();
 
 	public void setRequiredContainerTable(ICFBamPubTable argObj);
-	public void setRequiredContainerTable(CFLibDbKeyHash256 argTableId);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
 	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
 	public List<ICFBamPubIndexCol> getOptionalComponentsColumns();
 

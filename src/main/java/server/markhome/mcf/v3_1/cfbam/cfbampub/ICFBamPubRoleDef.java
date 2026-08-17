@@ -97,8 +97,8 @@ public interface ICFBamPubRoleDef
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPKey();
-	public void setPKey(CFLibDbKeyHash256 requiredId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredId);
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
@@ -107,12 +107,12 @@ public interface ICFBamPubRoleDef
 	public ICFBamPubScope getRequiredContainerScopeDef();
 
 	public void setRequiredContainerScopeDef(ICFBamPubScope argObj);
-	public void setRequiredContainerScopeDef(CFLibDbKeyHash256 argScopeId);
+	public void setRequiredContainerScopeDef(ICFLibKeyHash256 argScopeId);
 
 	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
 	public CFLibDbKeyHash256 getRequiredScopeId();
 	public void setRequiredScopeId( CFLibDbKeyHash256 value );

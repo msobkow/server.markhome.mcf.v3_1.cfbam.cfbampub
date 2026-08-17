@@ -620,6 +620,6 @@ public interface ICFBamPubBoolTypeTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubBoolType pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

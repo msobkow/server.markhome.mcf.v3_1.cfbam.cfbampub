@@ -87,8 +87,8 @@ public interface ICFBamPubRelationColH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public CFLibDbKeyHash256 getRequiredId();
-	public void setRequiredId( CFLibDbKeyHash256 requiredId );
+	public $implJavaAtomType$ getRequiredId();
+	public void setRequiredId( $implJavaAtomType$ requiredId );
 
 	public CFLibDbKeyHash256 getRequiredRelationId();
 	public void setRequiredRelationId( CFLibDbKeyHash256 value );

@@ -72,7 +72,7 @@ public interface ICFBamPubTextCol
 	public ICFBamPubTable getRequiredContainerTable();
 
 	public void setRequiredContainerTable(ICFBamPubTable argObj);
-	public void setRequiredContainerTable(CFLibDbKeyHash256 argTableId);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );

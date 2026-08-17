@@ -75,12 +75,12 @@ public interface ICFBamPubTableCol
 	public ICFBamPubTable getRequiredContainerTable();
 
 	public void setRequiredContainerTable(ICFBamPubTable argObj);
-	public void setRequiredContainerTable(CFLibDbKeyHash256 argTableId);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
 	public ICFBamPubValue getRequiredParentDataType();
 
 	public void setRequiredParentDataType(ICFBamPubValue argObj);
-	public void setRequiredParentDataType(CFLibDbKeyHash256 argDataId);
+	public void setRequiredParentDataType(ICFLibKeyHash256 argDataId);
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );

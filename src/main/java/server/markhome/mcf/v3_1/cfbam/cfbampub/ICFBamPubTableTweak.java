@@ -72,7 +72,7 @@ public interface ICFBamPubTableTweak
 	public ICFBamPubTable getRequiredContainerTableDef();
 
 	public void setRequiredContainerTableDef(ICFBamPubTable argObj);
-	public void setRequiredContainerTableDef(CFLibDbKeyHash256 argTableId);
+	public void setRequiredContainerTableDef(ICFLibKeyHash256 argTableId);
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );

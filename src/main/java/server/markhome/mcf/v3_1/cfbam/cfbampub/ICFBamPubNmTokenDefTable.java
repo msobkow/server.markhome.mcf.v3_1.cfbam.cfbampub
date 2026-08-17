@@ -575,6 +575,6 @@ public interface ICFBamPubNmTokenDefTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubNmTokenDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

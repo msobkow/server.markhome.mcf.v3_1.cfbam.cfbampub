@@ -72,7 +72,7 @@ public interface ICFBamPubServerObjFunc
 	public ICFBamPubTable getOptionalLookupRetTable();
 
 	public void setOptionalLookupRetTable(ICFBamPubTable argObj);
-	public void setOptionalLookupRetTable(CFLibDbKeyHash256 argRetTableId);
+	public void setOptionalLookupRetTable(ICFLibKeyHash256 argRetTableId);
 
 	public CFLibDbKeyHash256 getOptionalRetTableId();
 	public void setOptionalRetTableId( CFLibDbKeyHash256 value );

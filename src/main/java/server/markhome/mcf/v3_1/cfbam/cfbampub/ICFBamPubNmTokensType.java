@@ -72,7 +72,7 @@ public interface ICFBamPubNmTokensType
 	public ICFBamPubSchemaDef getRequiredContainerSchemaDef();
 
 	public void setRequiredContainerSchemaDef(ICFBamPubSchemaDef argObj);
-	public void setRequiredContainerSchemaDef(CFLibDbKeyHash256 argSchemaDefId);
+	public void setRequiredContainerSchemaDef(ICFLibKeyHash256 argSchemaDefId);
 
 	public CFLibDbKeyHash256 getRequiredSchemaDefId();
 	public void setRequiredSchemaDefId( CFLibDbKeyHash256 value );

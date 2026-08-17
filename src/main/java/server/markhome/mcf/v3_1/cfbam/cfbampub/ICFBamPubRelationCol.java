@@ -103,8 +103,8 @@ public interface ICFBamPubRelationCol
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPKey();
-	public void setPKey(CFLibDbKeyHash256 requiredId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredId);
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
@@ -113,32 +113,32 @@ public interface ICFBamPubRelationCol
 	public ICFBamPubRelation getRequiredContainerRelation();
 
 	public void setRequiredContainerRelation(ICFBamPubRelation argObj);
-	public void setRequiredContainerRelation(CFLibDbKeyHash256 argRelationId);
+	public void setRequiredContainerRelation(ICFLibKeyHash256 argRelationId);
 
 	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
 	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void setOptionalLookupDefSchema(CFLibDbKeyHash256 argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
 	public ICFBamPubRelationCol getOptionalLookupPrev();
 
 	public void setOptionalLookupPrev(ICFBamPubRelationCol argObj);
-	public void setOptionalLookupPrev(CFLibDbKeyHash256 argPrevId);
+	public void setOptionalLookupPrev(ICFLibKeyHash256 argPrevId);
 
 	public ICFBamPubRelationCol getOptionalLookupNext();
 
 	public void setOptionalLookupNext(ICFBamPubRelationCol argObj);
-	public void setOptionalLookupNext(CFLibDbKeyHash256 argNextId);
+	public void setOptionalLookupNext(ICFLibKeyHash256 argNextId);
 
 	public ICFBamPubIndexCol getRequiredLookupFromCol();
 
 	public void setRequiredLookupFromCol(ICFBamPubIndexCol argObj);
-	public void setRequiredLookupFromCol(CFLibDbKeyHash256 argFromColId);
+	public void setRequiredLookupFromCol(ICFLibKeyHash256 argFromColId);
 
 	public ICFBamPubIndexCol getRequiredLookupToCol();
 
 	public void setRequiredLookupToCol(ICFBamPubIndexCol argObj);
-	public void setRequiredLookupToCol(CFLibDbKeyHash256 argToColId);
+	public void setRequiredLookupToCol(ICFLibKeyHash256 argToColId);
 
 	public CFLibDbKeyHash256 getRequiredRelationId();
 	public void setRequiredRelationId( CFLibDbKeyHash256 value );

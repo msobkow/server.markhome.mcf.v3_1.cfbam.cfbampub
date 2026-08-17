@@ -620,6 +620,6 @@ public interface ICFBamPubNmTokenColTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubNmTokenCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

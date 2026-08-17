@@ -73,7 +73,7 @@ public interface ICFBamPubPopTopDep
 	public ICFBamPubRelation getRequiredContainerContRelation();
 
 	public void setRequiredContainerContRelation(ICFBamPubRelation argObj);
-	public void setRequiredContainerContRelation(CFLibDbKeyHash256 argContRelationId);
+	public void setRequiredContainerContRelation(ICFLibKeyHash256 argContRelationId);
 
 	public List<ICFBamPubPopSubDep1> getOptionalComponentsPopDep();
 

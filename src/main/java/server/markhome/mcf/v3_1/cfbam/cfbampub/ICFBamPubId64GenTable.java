@@ -620,6 +620,6 @@ public interface ICFBamPubId64GenTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubId64Gen pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }
