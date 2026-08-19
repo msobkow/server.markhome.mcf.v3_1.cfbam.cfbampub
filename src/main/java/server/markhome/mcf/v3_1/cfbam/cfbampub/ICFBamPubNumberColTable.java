@@ -131,7 +131,7 @@ public interface ICFBamPubNumberColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteNumberColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the NumberCol instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubNumberColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubNumberCol pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived NumberCol record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubNumberColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubNumberCol publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all NumberCol instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubNumberColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubNumberCol pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific NumberCol record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubNumberColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubNumberCol publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific NumberCol record instances.

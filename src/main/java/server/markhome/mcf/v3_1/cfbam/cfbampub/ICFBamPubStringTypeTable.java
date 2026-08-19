@@ -131,7 +131,7 @@ public interface ICFBamPubStringTypeTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteStringTypeByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the StringType instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubStringTypeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubStringType pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived StringType record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubStringTypeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubStringType publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all StringType instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubStringTypeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubStringType pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific StringType record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubStringTypeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubStringType publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific StringType record instances.

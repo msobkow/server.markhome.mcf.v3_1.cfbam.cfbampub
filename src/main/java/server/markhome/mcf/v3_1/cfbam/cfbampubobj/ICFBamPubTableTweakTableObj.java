@@ -119,7 +119,7 @@ public interface ICFBamPubTableTweakTableObj
 	 *	@return	The TableTweak-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTableTweakObj readTableTweak( CFLibDbKeyHash256 pkey );
+	ICFBamPubTableTweakObj readTableTweak( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TableTweak-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTableTweakTableObj
 	 *	@return	The TableTweak-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTableTweakObj readTableTweak( CFLibDbKeyHash256 pkey,
+	ICFBamPubTableTweakObj readTableTweak( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTableTweakObj readCachedTableTweak( CFLibDbKeyHash256 pkey );
+	ICFBamPubTableTweakObj readCachedTableTweak( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTableTweak( ICFBamPubTableTweakObj obj );
 
-	void deepDisposeTableTweak( CFLibDbKeyHash256 pkey );
+	void deepDisposeTableTweak( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTableTweakObj lockTableTweak( CFLibDbKeyHash256 pkey );
+	ICFBamPubTableTweakObj lockTableTweak( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TableTweak-derived instances in the database.

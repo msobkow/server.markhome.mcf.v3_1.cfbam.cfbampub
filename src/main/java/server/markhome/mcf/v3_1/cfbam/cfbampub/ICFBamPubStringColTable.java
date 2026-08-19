@@ -131,7 +131,7 @@ public interface ICFBamPubStringColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteStringColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the StringCol instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubStringColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubStringCol pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived StringCol record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubStringColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubStringCol publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all StringCol instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubStringColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubStringCol pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific StringCol record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubStringColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubStringCol publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific StringCol record instances.

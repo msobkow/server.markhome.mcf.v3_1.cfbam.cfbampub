@@ -119,7 +119,7 @@ public interface ICFBamPubBoolTypeTableObj
 	 *	@return	The BoolType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBoolTypeObj readBoolType( CFLibDbKeyHash256 pkey );
+	ICFBamPubBoolTypeObj readBoolType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a BoolType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubBoolTypeTableObj
 	 *	@return	The BoolType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBoolTypeObj readBoolType( CFLibDbKeyHash256 pkey,
+	ICFBamPubBoolTypeObj readBoolType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubBoolTypeObj readCachedBoolType( CFLibDbKeyHash256 pkey );
+	ICFBamPubBoolTypeObj readCachedBoolType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeBoolType( ICFBamPubBoolTypeObj obj );
 
-	void deepDisposeBoolType( CFLibDbKeyHash256 pkey );
+	void deepDisposeBoolType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubBoolTypeObj lockBoolType( CFLibDbKeyHash256 pkey );
+	ICFBamPubBoolTypeObj lockBoolType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the BoolType-derived instances in the database.

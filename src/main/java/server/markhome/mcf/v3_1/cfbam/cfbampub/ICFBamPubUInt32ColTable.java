@@ -131,7 +131,7 @@ public interface ICFBamPubUInt32ColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteUInt32ColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the UInt32Col instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubUInt32ColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubUInt32Col pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived UInt32Col record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubUInt32ColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubUInt32Col publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all UInt32Col instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubUInt32ColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubUInt32Col pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific UInt32Col record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubUInt32ColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubUInt32Col publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific UInt32Col record instances.

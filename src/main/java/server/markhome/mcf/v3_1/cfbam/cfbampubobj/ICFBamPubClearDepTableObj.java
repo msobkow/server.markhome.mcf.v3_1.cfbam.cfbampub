@@ -119,7 +119,7 @@ public interface ICFBamPubClearDepTableObj
 	 *	@return	The ClearDep-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubClearDepObj readClearDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubClearDepObj readClearDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a ClearDep-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubClearDepTableObj
 	 *	@return	The ClearDep-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubClearDepObj readClearDep( CFLibDbKeyHash256 pkey,
+	ICFBamPubClearDepObj readClearDep( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubClearDepObj readCachedClearDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubClearDepObj readCachedClearDep( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeClearDep( ICFBamPubClearDepObj obj );
 
-	void deepDisposeClearDep( CFLibDbKeyHash256 pkey );
+	void deepDisposeClearDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubClearDepObj lockClearDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubClearDepObj lockClearDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the ClearDep-derived instances in the database.

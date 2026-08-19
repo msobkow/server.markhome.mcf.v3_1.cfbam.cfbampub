@@ -119,7 +119,7 @@ public interface ICFBamPubDbKeyHash224ColTableObj
 	 *	@return	The DbKeyHash224Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash224ColObj readDbKeyHash224Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash224ColObj readDbKeyHash224Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DbKeyHash224Col-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDbKeyHash224ColTableObj
 	 *	@return	The DbKeyHash224Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash224ColObj readDbKeyHash224Col( CFLibDbKeyHash256 pkey,
+	ICFBamPubDbKeyHash224ColObj readDbKeyHash224Col( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDbKeyHash224ColObj readCachedDbKeyHash224Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash224ColObj readCachedDbKeyHash224Col( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDbKeyHash224Col( ICFBamPubDbKeyHash224ColObj obj );
 
-	void deepDisposeDbKeyHash224Col( CFLibDbKeyHash256 pkey );
+	void deepDisposeDbKeyHash224Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDbKeyHash224ColObj lockDbKeyHash224Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash224ColObj lockDbKeyHash224Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DbKeyHash224Col-derived instances in the database.

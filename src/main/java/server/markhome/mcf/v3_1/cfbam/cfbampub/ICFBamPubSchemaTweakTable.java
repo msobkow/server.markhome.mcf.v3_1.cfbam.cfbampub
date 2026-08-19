@@ -131,7 +131,7 @@ public interface ICFBamPubSchemaTweakTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteSchemaTweakByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the SchemaTweak instances identified by the key UNameIdx.
 	 *
@@ -255,7 +255,7 @@ public interface ICFBamPubSchemaTweakTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubSchemaTweak pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived SchemaTweak record instance by primary key.
@@ -268,7 +268,7 @@ public interface ICFBamPubSchemaTweakTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubSchemaTweak publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all SchemaTweak instances.
@@ -394,7 +394,7 @@ public interface ICFBamPubSchemaTweakTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubSchemaTweak pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific SchemaTweak record instance identified by the primary key.
@@ -409,7 +409,7 @@ public interface ICFBamPubSchemaTweakTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubSchemaTweak publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific SchemaTweak record instances.

@@ -191,7 +191,7 @@ public interface ICFBamPubDelSubDep3Table
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteDelSubDep3ByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the DelSubDep3 instances identified by the key TenantIdx.
 	 *
@@ -224,7 +224,7 @@ public interface ICFBamPubDelSubDep3Table
 	 *		no such existing key value.
 	 */
 	public ICFBamPubDelSubDep3 pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived DelSubDep3 record instance by primary key.
@@ -237,7 +237,7 @@ public interface ICFBamPubDelSubDep3Table
 	 *		no such existing key value.
 	 */
 	public ICFBamPubDelSubDep3 publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all DelSubDep3 instances.
@@ -338,7 +338,7 @@ public interface ICFBamPubDelSubDep3Table
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubDelSubDep3 pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific DelSubDep3 record instance identified by the primary key.
@@ -353,7 +353,7 @@ public interface ICFBamPubDelSubDep3Table
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubDelSubDep3 publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific DelSubDep3 record instances.

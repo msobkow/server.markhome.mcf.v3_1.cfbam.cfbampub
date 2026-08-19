@@ -119,7 +119,7 @@ public interface ICFBamPubPopSubDep1TableObj
 	 *	@return	The PopSubDep1-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubPopSubDep1Obj readPopSubDep1( CFLibDbKeyHash256 pkey );
+	ICFBamPubPopSubDep1Obj readPopSubDep1( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a PopSubDep1-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubPopSubDep1TableObj
 	 *	@return	The PopSubDep1-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubPopSubDep1Obj readPopSubDep1( CFLibDbKeyHash256 pkey,
+	ICFBamPubPopSubDep1Obj readPopSubDep1( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubPopSubDep1Obj readCachedPopSubDep1( CFLibDbKeyHash256 pkey );
+	ICFBamPubPopSubDep1Obj readCachedPopSubDep1( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposePopSubDep1( ICFBamPubPopSubDep1Obj obj );
 
-	void deepDisposePopSubDep1( CFLibDbKeyHash256 pkey );
+	void deepDisposePopSubDep1( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubPopSubDep1Obj lockPopSubDep1( CFLibDbKeyHash256 pkey );
+	ICFBamPubPopSubDep1Obj lockPopSubDep1( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the PopSubDep1-derived instances in the database.

@@ -131,7 +131,7 @@ public interface ICFBamPubBlobColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteBlobColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the BlobCol instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubBlobColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubBlobCol pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived BlobCol record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubBlobColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubBlobCol publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all BlobCol instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubBlobColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubBlobCol pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific BlobCol record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubBlobColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubBlobCol publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific BlobCol record instances.

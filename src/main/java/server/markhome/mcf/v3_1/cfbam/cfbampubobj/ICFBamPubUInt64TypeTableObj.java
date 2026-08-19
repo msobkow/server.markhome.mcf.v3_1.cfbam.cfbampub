@@ -119,7 +119,7 @@ public interface ICFBamPubUInt64TypeTableObj
 	 *	@return	The UInt64Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt64TypeObj readUInt64Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt64TypeObj readUInt64Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a UInt64Type-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubUInt64TypeTableObj
 	 *	@return	The UInt64Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt64TypeObj readUInt64Type( CFLibDbKeyHash256 pkey,
+	ICFBamPubUInt64TypeObj readUInt64Type( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubUInt64TypeObj readCachedUInt64Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt64TypeObj readCachedUInt64Type( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeUInt64Type( ICFBamPubUInt64TypeObj obj );
 
-	void deepDisposeUInt64Type( CFLibDbKeyHash256 pkey );
+	void deepDisposeUInt64Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubUInt64TypeObj lockUInt64Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt64TypeObj lockUInt64Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the UInt64Type-derived instances in the database.

@@ -119,7 +119,7 @@ public interface ICFBamPubIndexColTableObj
 	 *	@return	The IndexCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubIndexColObj readIndexCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubIndexColObj readIndexCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a IndexCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubIndexColTableObj
 	 *	@return	The IndexCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubIndexColObj readIndexCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubIndexColObj readIndexCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubIndexColObj readCachedIndexCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubIndexColObj readCachedIndexCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeIndexCol( ICFBamPubIndexColObj obj );
 
-	void deepDisposeIndexCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeIndexCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubIndexColObj lockIndexCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubIndexColObj lockIndexCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the IndexCol-derived instances in the database.

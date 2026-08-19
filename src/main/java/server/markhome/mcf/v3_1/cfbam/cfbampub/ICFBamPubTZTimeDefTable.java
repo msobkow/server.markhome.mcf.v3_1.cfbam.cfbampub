@@ -112,7 +112,7 @@ public interface ICFBamPubTZTimeDefTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteTZTimeDefByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the TZTimeDef instances identified by the key UNameIdx.
 	 *
@@ -268,7 +268,7 @@ public interface ICFBamPubTZTimeDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTZTimeDef pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived TZTimeDef record instance by primary key.
@@ -281,7 +281,7 @@ public interface ICFBamPubTZTimeDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTZTimeDef publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all TZTimeDef instances.
@@ -412,7 +412,7 @@ public interface ICFBamPubTZTimeDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTZTimeDef pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific TZTimeDef record instance identified by the primary key.
@@ -427,7 +427,7 @@ public interface ICFBamPubTZTimeDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTZTimeDef publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific TZTimeDef record instances.

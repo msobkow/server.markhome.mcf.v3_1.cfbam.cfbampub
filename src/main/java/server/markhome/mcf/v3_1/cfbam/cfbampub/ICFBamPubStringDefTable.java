@@ -112,7 +112,7 @@ public interface ICFBamPubStringDefTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteStringDefByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the StringDef instances identified by the key UNameIdx.
 	 *
@@ -268,7 +268,7 @@ public interface ICFBamPubStringDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubStringDef pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived StringDef record instance by primary key.
@@ -281,7 +281,7 @@ public interface ICFBamPubStringDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubStringDef publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all StringDef instances.
@@ -412,7 +412,7 @@ public interface ICFBamPubStringDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubStringDef pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific StringDef record instance identified by the primary key.
@@ -427,7 +427,7 @@ public interface ICFBamPubStringDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubStringDef publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific StringDef record instances.

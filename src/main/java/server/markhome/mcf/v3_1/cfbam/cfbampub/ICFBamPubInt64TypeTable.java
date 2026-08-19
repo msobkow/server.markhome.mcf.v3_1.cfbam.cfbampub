@@ -131,7 +131,7 @@ public interface ICFBamPubInt64TypeTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteInt64TypeByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Int64Type instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubInt64TypeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubInt64Type pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Int64Type record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubInt64TypeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubInt64Type publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Int64Type instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubInt64TypeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubInt64Type pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Int64Type record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubInt64TypeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubInt64Type publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Int64Type record instances.

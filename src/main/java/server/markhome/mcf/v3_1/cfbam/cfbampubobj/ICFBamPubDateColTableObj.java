@@ -119,7 +119,7 @@ public interface ICFBamPubDateColTableObj
 	 *	@return	The DateCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDateColObj readDateCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubDateColObj readDateCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DateCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDateColTableObj
 	 *	@return	The DateCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDateColObj readDateCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubDateColObj readDateCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDateColObj readCachedDateCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubDateColObj readCachedDateCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDateCol( ICFBamPubDateColObj obj );
 
-	void deepDisposeDateCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeDateCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDateColObj lockDateCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubDateColObj lockDateCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DateCol-derived instances in the database.

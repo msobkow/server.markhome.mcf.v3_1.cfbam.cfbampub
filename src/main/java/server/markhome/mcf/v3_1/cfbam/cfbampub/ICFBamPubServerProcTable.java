@@ -213,7 +213,7 @@ public interface ICFBamPubServerProcTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteServerProcByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the ServerProc instances identified by the key TenantIdx.
 	 *
@@ -246,7 +246,7 @@ public interface ICFBamPubServerProcTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubServerProc pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived ServerProc record instance by primary key.
@@ -259,7 +259,7 @@ public interface ICFBamPubServerProcTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubServerProc publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all ServerProc instances.
@@ -375,7 +375,7 @@ public interface ICFBamPubServerProcTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubServerProc pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific ServerProc record instance identified by the primary key.
@@ -390,7 +390,7 @@ public interface ICFBamPubServerProcTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubServerProc publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific ServerProc record instances.

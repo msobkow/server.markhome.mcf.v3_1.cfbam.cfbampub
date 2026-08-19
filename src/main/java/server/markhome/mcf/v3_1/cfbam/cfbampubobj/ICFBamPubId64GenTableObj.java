@@ -119,7 +119,7 @@ public interface ICFBamPubId64GenTableObj
 	 *	@return	The Id64Gen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubId64GenObj readId64Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubId64GenObj readId64Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Id64Gen-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubId64GenTableObj
 	 *	@return	The Id64Gen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubId64GenObj readId64Gen( CFLibDbKeyHash256 pkey,
+	ICFBamPubId64GenObj readId64Gen( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubId64GenObj readCachedId64Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubId64GenObj readCachedId64Gen( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeId64Gen( ICFBamPubId64GenObj obj );
 
-	void deepDisposeId64Gen( CFLibDbKeyHash256 pkey );
+	void deepDisposeId64Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubId64GenObj lockId64Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubId64GenObj lockId64Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Id64Gen-derived instances in the database.

@@ -119,7 +119,7 @@ public interface ICFBamPubUInt16ColTableObj
 	 *	@return	The UInt16Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt16ColObj readUInt16Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt16ColObj readUInt16Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a UInt16Col-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubUInt16ColTableObj
 	 *	@return	The UInt16Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt16ColObj readUInt16Col( CFLibDbKeyHash256 pkey,
+	ICFBamPubUInt16ColObj readUInt16Col( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubUInt16ColObj readCachedUInt16Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt16ColObj readCachedUInt16Col( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeUInt16Col( ICFBamPubUInt16ColObj obj );
 
-	void deepDisposeUInt16Col( CFLibDbKeyHash256 pkey );
+	void deepDisposeUInt16Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubUInt16ColObj lockUInt16Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt16ColObj lockUInt16Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the UInt16Col-derived instances in the database.

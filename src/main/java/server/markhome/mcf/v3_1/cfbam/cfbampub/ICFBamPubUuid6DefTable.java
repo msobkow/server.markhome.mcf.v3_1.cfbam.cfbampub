@@ -112,7 +112,7 @@ public interface ICFBamPubUuid6DefTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteUuid6DefByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Uuid6Def instances identified by the key UNameIdx.
 	 *
@@ -268,7 +268,7 @@ public interface ICFBamPubUuid6DefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubUuid6Def pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Uuid6Def record instance by primary key.
@@ -281,7 +281,7 @@ public interface ICFBamPubUuid6DefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubUuid6Def publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Uuid6Def instances.
@@ -412,7 +412,7 @@ public interface ICFBamPubUuid6DefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubUuid6Def pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Uuid6Def record instance identified by the primary key.
@@ -427,7 +427,7 @@ public interface ICFBamPubUuid6DefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubUuid6Def publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Uuid6Def record instances.

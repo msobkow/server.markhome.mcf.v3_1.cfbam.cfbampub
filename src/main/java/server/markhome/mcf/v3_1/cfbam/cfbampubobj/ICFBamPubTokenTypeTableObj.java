@@ -119,7 +119,7 @@ public interface ICFBamPubTokenTypeTableObj
 	 *	@return	The TokenType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTokenTypeObj readTokenType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTokenTypeObj readTokenType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TokenType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTokenTypeTableObj
 	 *	@return	The TokenType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTokenTypeObj readTokenType( CFLibDbKeyHash256 pkey,
+	ICFBamPubTokenTypeObj readTokenType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTokenTypeObj readCachedTokenType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTokenTypeObj readCachedTokenType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTokenType( ICFBamPubTokenTypeObj obj );
 
-	void deepDisposeTokenType( CFLibDbKeyHash256 pkey );
+	void deepDisposeTokenType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTokenTypeObj lockTokenType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTokenTypeObj lockTokenType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TokenType-derived instances in the database.

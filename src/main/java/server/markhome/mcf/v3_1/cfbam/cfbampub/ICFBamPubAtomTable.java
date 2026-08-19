@@ -112,7 +112,7 @@ public interface ICFBamPubAtomTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteAtomByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Atom instances identified by the key UNameIdx.
 	 *
@@ -268,7 +268,7 @@ public interface ICFBamPubAtomTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubAtom pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Atom record instance by primary key.
@@ -281,7 +281,7 @@ public interface ICFBamPubAtomTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubAtom publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Atom instances.
@@ -412,7 +412,7 @@ public interface ICFBamPubAtomTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubAtom pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Atom record instance identified by the primary key.
@@ -427,7 +427,7 @@ public interface ICFBamPubAtomTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubAtom publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Atom record instances.

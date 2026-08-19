@@ -119,7 +119,7 @@ public interface ICFBamPubNumberColTableObj
 	 *	@return	The NumberCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNumberColObj readNumberCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubNumberColObj readNumberCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a NumberCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubNumberColTableObj
 	 *	@return	The NumberCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNumberColObj readNumberCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubNumberColObj readNumberCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubNumberColObj readCachedNumberCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubNumberColObj readCachedNumberCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeNumberCol( ICFBamPubNumberColObj obj );
 
-	void deepDisposeNumberCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeNumberCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubNumberColObj lockNumberCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubNumberColObj lockNumberCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the NumberCol-derived instances in the database.

@@ -131,7 +131,7 @@ public interface ICFBamPubUInt16ColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteUInt16ColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the UInt16Col instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubUInt16ColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubUInt16Col pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived UInt16Col record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubUInt16ColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubUInt16Col publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all UInt16Col instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubUInt16ColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubUInt16Col pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific UInt16Col record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubUInt16ColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubUInt16Col publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific UInt16Col record instances.

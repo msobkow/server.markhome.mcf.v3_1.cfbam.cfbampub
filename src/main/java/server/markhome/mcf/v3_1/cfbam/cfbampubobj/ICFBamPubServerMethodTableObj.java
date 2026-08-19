@@ -119,7 +119,7 @@ public interface ICFBamPubServerMethodTableObj
 	 *	@return	The ServerMethod-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubServerMethodObj readServerMethod( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerMethodObj readServerMethod( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a ServerMethod-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubServerMethodTableObj
 	 *	@return	The ServerMethod-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubServerMethodObj readServerMethod( CFLibDbKeyHash256 pkey,
+	ICFBamPubServerMethodObj readServerMethod( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubServerMethodObj readCachedServerMethod( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerMethodObj readCachedServerMethod( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeServerMethod( ICFBamPubServerMethodObj obj );
 
-	void deepDisposeServerMethod( CFLibDbKeyHash256 pkey );
+	void deepDisposeServerMethod( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubServerMethodObj lockServerMethod( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerMethodObj lockServerMethod( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the ServerMethod-derived instances in the database.

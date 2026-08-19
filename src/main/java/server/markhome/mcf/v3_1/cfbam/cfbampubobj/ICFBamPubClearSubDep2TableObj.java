@@ -119,7 +119,7 @@ public interface ICFBamPubClearSubDep2TableObj
 	 *	@return	The ClearSubDep2-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubClearSubDep2Obj readClearSubDep2( CFLibDbKeyHash256 pkey );
+	ICFBamPubClearSubDep2Obj readClearSubDep2( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a ClearSubDep2-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubClearSubDep2TableObj
 	 *	@return	The ClearSubDep2-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubClearSubDep2Obj readClearSubDep2( CFLibDbKeyHash256 pkey,
+	ICFBamPubClearSubDep2Obj readClearSubDep2( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubClearSubDep2Obj readCachedClearSubDep2( CFLibDbKeyHash256 pkey );
+	ICFBamPubClearSubDep2Obj readCachedClearSubDep2( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeClearSubDep2( ICFBamPubClearSubDep2Obj obj );
 
-	void deepDisposeClearSubDep2( CFLibDbKeyHash256 pkey );
+	void deepDisposeClearSubDep2( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubClearSubDep2Obj lockClearSubDep2( CFLibDbKeyHash256 pkey );
+	ICFBamPubClearSubDep2Obj lockClearSubDep2( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the ClearSubDep2-derived instances in the database.

@@ -131,7 +131,7 @@ public interface ICFBamPubId32GenTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteId32GenByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Id32Gen instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubId32GenTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubId32Gen pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Id32Gen record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubId32GenTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubId32Gen publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Id32Gen instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubId32GenTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubId32Gen pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Id32Gen record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubId32GenTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubId32Gen publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Id32Gen record instances.

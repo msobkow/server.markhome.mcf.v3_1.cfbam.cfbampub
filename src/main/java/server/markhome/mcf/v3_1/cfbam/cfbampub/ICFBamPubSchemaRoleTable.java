@@ -172,7 +172,7 @@ public interface ICFBamPubSchemaRoleTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteSchemaRoleByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the SchemaRole instances identified by the key UNameIdx.
 	 *
@@ -271,7 +271,7 @@ public interface ICFBamPubSchemaRoleTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubSchemaRole pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived SchemaRole record instance by primary key.
@@ -284,7 +284,7 @@ public interface ICFBamPubSchemaRoleTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubSchemaRole publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all SchemaRole instances.
@@ -419,7 +419,7 @@ public interface ICFBamPubSchemaRoleTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubSchemaRole pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific SchemaRole record instance identified by the primary key.
@@ -434,7 +434,7 @@ public interface ICFBamPubSchemaRoleTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubSchemaRole publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific SchemaRole record instances.

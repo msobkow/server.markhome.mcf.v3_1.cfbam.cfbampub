@@ -119,7 +119,7 @@ public interface ICFBamPubInt16TypeTableObj
 	 *	@return	The Int16Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubInt16TypeObj readInt16Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt16TypeObj readInt16Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Int16Type-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubInt16TypeTableObj
 	 *	@return	The Int16Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubInt16TypeObj readInt16Type( CFLibDbKeyHash256 pkey,
+	ICFBamPubInt16TypeObj readInt16Type( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubInt16TypeObj readCachedInt16Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt16TypeObj readCachedInt16Type( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeInt16Type( ICFBamPubInt16TypeObj obj );
 
-	void deepDisposeInt16Type( CFLibDbKeyHash256 pkey );
+	void deepDisposeInt16Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubInt16TypeObj lockInt16Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt16TypeObj lockInt16Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Int16Type-derived instances in the database.

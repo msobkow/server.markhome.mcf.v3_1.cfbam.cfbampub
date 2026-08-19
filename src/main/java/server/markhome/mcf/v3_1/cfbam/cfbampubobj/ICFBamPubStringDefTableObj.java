@@ -119,7 +119,7 @@ public interface ICFBamPubStringDefTableObj
 	 *	@return	The StringDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubStringDefObj readStringDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubStringDefObj readStringDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a StringDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubStringDefTableObj
 	 *	@return	The StringDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubStringDefObj readStringDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubStringDefObj readStringDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubStringDefObj readCachedStringDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubStringDefObj readCachedStringDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeStringDef( ICFBamPubStringDefObj obj );
 
-	void deepDisposeStringDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeStringDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubStringDefObj lockStringDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubStringDefObj lockStringDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the StringDef-derived instances in the database.

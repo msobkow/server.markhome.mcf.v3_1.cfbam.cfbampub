@@ -119,7 +119,7 @@ public interface ICFBamPubDbKeyHash384DefTableObj
 	 *	@return	The DbKeyHash384Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash384DefObj readDbKeyHash384Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash384DefObj readDbKeyHash384Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DbKeyHash384Def-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDbKeyHash384DefTableObj
 	 *	@return	The DbKeyHash384Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash384DefObj readDbKeyHash384Def( CFLibDbKeyHash256 pkey,
+	ICFBamPubDbKeyHash384DefObj readDbKeyHash384Def( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDbKeyHash384DefObj readCachedDbKeyHash384Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash384DefObj readCachedDbKeyHash384Def( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDbKeyHash384Def( ICFBamPubDbKeyHash384DefObj obj );
 
-	void deepDisposeDbKeyHash384Def( CFLibDbKeyHash256 pkey );
+	void deepDisposeDbKeyHash384Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDbKeyHash384DefObj lockDbKeyHash384Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash384DefObj lockDbKeyHash384Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DbKeyHash384Def-derived instances in the database.

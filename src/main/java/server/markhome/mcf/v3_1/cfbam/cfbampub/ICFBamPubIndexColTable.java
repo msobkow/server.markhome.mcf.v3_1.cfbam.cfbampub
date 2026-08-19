@@ -112,7 +112,7 @@ public interface ICFBamPubIndexColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteIndexColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the IndexCol instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubIndexColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubIndexCol pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived IndexCol record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubIndexColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubIndexCol publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all IndexCol instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubIndexColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubIndexCol pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific IndexCol record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubIndexColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubIndexCol publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific IndexCol record instances.

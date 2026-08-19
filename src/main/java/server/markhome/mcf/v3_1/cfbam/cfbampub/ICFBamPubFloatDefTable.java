@@ -112,7 +112,7 @@ public interface ICFBamPubFloatDefTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteFloatDefByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the FloatDef instances identified by the key UNameIdx.
 	 *
@@ -268,7 +268,7 @@ public interface ICFBamPubFloatDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubFloatDef pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived FloatDef record instance by primary key.
@@ -281,7 +281,7 @@ public interface ICFBamPubFloatDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubFloatDef publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all FloatDef instances.
@@ -412,7 +412,7 @@ public interface ICFBamPubFloatDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubFloatDef pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific FloatDef record instance identified by the primary key.
@@ -427,7 +427,7 @@ public interface ICFBamPubFloatDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubFloatDef publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific FloatDef record instances.

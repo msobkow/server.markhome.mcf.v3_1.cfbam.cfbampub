@@ -119,7 +119,7 @@ public interface ICFBamPubServerListFuncTableObj
 	 *	@return	The ServerListFunc-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubServerListFuncObj readServerListFunc( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerListFuncObj readServerListFunc( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a ServerListFunc-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubServerListFuncTableObj
 	 *	@return	The ServerListFunc-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubServerListFuncObj readServerListFunc( CFLibDbKeyHash256 pkey,
+	ICFBamPubServerListFuncObj readServerListFunc( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubServerListFuncObj readCachedServerListFunc( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerListFuncObj readCachedServerListFunc( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeServerListFunc( ICFBamPubServerListFuncObj obj );
 
-	void deepDisposeServerListFunc( CFLibDbKeyHash256 pkey );
+	void deepDisposeServerListFunc( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubServerListFuncObj lockServerListFunc( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerListFuncObj lockServerListFunc( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the ServerListFunc-derived instances in the database.

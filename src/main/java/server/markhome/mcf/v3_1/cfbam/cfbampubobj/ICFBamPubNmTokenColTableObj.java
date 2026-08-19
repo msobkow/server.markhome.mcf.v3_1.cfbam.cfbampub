@@ -119,7 +119,7 @@ public interface ICFBamPubNmTokenColTableObj
 	 *	@return	The NmTokenCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNmTokenColObj readNmTokenCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubNmTokenColObj readNmTokenCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a NmTokenCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubNmTokenColTableObj
 	 *	@return	The NmTokenCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNmTokenColObj readNmTokenCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubNmTokenColObj readNmTokenCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubNmTokenColObj readCachedNmTokenCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubNmTokenColObj readCachedNmTokenCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeNmTokenCol( ICFBamPubNmTokenColObj obj );
 
-	void deepDisposeNmTokenCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeNmTokenCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubNmTokenColObj lockNmTokenCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubNmTokenColObj lockNmTokenCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the NmTokenCol-derived instances in the database.

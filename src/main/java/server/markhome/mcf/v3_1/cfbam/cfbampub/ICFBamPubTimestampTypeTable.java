@@ -131,7 +131,7 @@ public interface ICFBamPubTimestampTypeTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteTimestampTypeByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the TimestampType instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubTimestampTypeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTimestampType pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived TimestampType record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubTimestampTypeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTimestampType publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all TimestampType instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubTimestampTypeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTimestampType pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific TimestampType record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubTimestampTypeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTimestampType publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific TimestampType record instances.

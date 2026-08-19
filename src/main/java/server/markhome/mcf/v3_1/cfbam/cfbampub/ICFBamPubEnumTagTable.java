@@ -112,7 +112,7 @@ public interface ICFBamPubEnumTagTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteEnumTagByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the EnumTag instances identified by the key EnumIdx.
 	 *
@@ -224,7 +224,7 @@ public interface ICFBamPubEnumTagTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubEnumTag pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived EnumTag record instance by primary key.
@@ -237,7 +237,7 @@ public interface ICFBamPubEnumTagTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubEnumTag publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all EnumTag instances.
@@ -338,7 +338,7 @@ public interface ICFBamPubEnumTagTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubEnumTag pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific EnumTag record instance identified by the primary key.
@@ -353,7 +353,7 @@ public interface ICFBamPubEnumTagTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubEnumTag publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific EnumTag record instances.

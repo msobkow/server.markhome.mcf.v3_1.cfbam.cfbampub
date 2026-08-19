@@ -213,7 +213,7 @@ public interface ICFBamPubServerMethodTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteServerMethodByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the ServerMethod instances identified by the key TenantIdx.
 	 *
@@ -246,7 +246,7 @@ public interface ICFBamPubServerMethodTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubServerMethod pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived ServerMethod record instance by primary key.
@@ -259,7 +259,7 @@ public interface ICFBamPubServerMethodTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubServerMethod publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all ServerMethod instances.
@@ -375,7 +375,7 @@ public interface ICFBamPubServerMethodTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubServerMethod pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific ServerMethod record instance identified by the primary key.
@@ -390,7 +390,7 @@ public interface ICFBamPubServerMethodTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubServerMethod publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific ServerMethod record instances.

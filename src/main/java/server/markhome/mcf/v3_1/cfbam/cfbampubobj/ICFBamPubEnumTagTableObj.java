@@ -119,7 +119,7 @@ public interface ICFBamPubEnumTagTableObj
 	 *	@return	The EnumTag-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubEnumTagObj readEnumTag( CFLibDbKeyHash256 pkey );
+	ICFBamPubEnumTagObj readEnumTag( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a EnumTag-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubEnumTagTableObj
 	 *	@return	The EnumTag-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubEnumTagObj readEnumTag( CFLibDbKeyHash256 pkey,
+	ICFBamPubEnumTagObj readEnumTag( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubEnumTagObj readCachedEnumTag( CFLibDbKeyHash256 pkey );
+	ICFBamPubEnumTagObj readCachedEnumTag( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeEnumTag( ICFBamPubEnumTagObj obj );
 
-	void deepDisposeEnumTag( CFLibDbKeyHash256 pkey );
+	void deepDisposeEnumTag( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubEnumTagObj lockEnumTag( CFLibDbKeyHash256 pkey );
+	ICFBamPubEnumTagObj lockEnumTag( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the EnumTag-derived instances in the database.

@@ -119,7 +119,7 @@ public interface ICFBamPubPopTopDepTableObj
 	 *	@return	The PopTopDep-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubPopTopDepObj readPopTopDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubPopTopDepObj readPopTopDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a PopTopDep-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubPopTopDepTableObj
 	 *	@return	The PopTopDep-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubPopTopDepObj readPopTopDep( CFLibDbKeyHash256 pkey,
+	ICFBamPubPopTopDepObj readPopTopDep( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubPopTopDepObj readCachedPopTopDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubPopTopDepObj readCachedPopTopDep( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposePopTopDep( ICFBamPubPopTopDepObj obj );
 
-	void deepDisposePopTopDep( CFLibDbKeyHash256 pkey );
+	void deepDisposePopTopDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubPopTopDepObj lockPopTopDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubPopTopDepObj lockPopTopDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the PopTopDep-derived instances in the database.

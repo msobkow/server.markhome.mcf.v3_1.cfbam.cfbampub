@@ -119,7 +119,7 @@ public interface ICFBamPubIndexTableObj
 	 *	@return	The Index-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubIndexObj readIndex( CFLibDbKeyHash256 pkey );
+	ICFBamPubIndexObj readIndex( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Index-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubIndexTableObj
 	 *	@return	The Index-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubIndexObj readIndex( CFLibDbKeyHash256 pkey,
+	ICFBamPubIndexObj readIndex( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubIndexObj readCachedIndex( CFLibDbKeyHash256 pkey );
+	ICFBamPubIndexObj readCachedIndex( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeIndex( ICFBamPubIndexObj obj );
 
-	void deepDisposeIndex( CFLibDbKeyHash256 pkey );
+	void deepDisposeIndex( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubIndexObj lockIndex( CFLibDbKeyHash256 pkey );
+	ICFBamPubIndexObj lockIndex( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Index-derived instances in the database.

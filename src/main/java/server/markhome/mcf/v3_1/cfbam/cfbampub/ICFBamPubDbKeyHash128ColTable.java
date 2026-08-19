@@ -131,7 +131,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteDbKeyHash128ColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the DbKeyHash128Col instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubDbKeyHash128Col pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived DbKeyHash128Col record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubDbKeyHash128Col publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all DbKeyHash128Col instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubDbKeyHash128Col pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific DbKeyHash128Col record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubDbKeyHash128ColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubDbKeyHash128Col publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific DbKeyHash128Col record instances.

@@ -128,7 +128,7 @@ public interface ICFBamPubRoleDefTableObj
 	 *	@return	The RoleDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubRoleDefObj readRoleDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubRoleDefObj readRoleDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a RoleDef-derived instance by it's primary key.
@@ -138,19 +138,19 @@ public interface ICFBamPubRoleDefTableObj
 	 *	@return	The RoleDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubRoleDefObj readRoleDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubRoleDefObj readRoleDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubRoleDefObj readCachedRoleDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubRoleDefObj readCachedRoleDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeRoleDef( ICFBamPubRoleDefObj obj );
 
-	void deepDisposeRoleDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeRoleDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubRoleDefObj lockRoleDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubRoleDefObj lockRoleDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the RoleDef-derived instances in the database.

@@ -131,7 +131,7 @@ public interface ICFBamPubDbKeyHash384TypeTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteDbKeyHash384TypeByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the DbKeyHash384Type instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubDbKeyHash384TypeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubDbKeyHash384Type pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived DbKeyHash384Type record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubDbKeyHash384TypeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubDbKeyHash384Type publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all DbKeyHash384Type instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubDbKeyHash384TypeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubDbKeyHash384Type pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific DbKeyHash384Type record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubDbKeyHash384TypeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubDbKeyHash384Type publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific DbKeyHash384Type record instances.

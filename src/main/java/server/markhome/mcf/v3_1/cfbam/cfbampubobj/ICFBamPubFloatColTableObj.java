@@ -119,7 +119,7 @@ public interface ICFBamPubFloatColTableObj
 	 *	@return	The FloatCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubFloatColObj readFloatCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubFloatColObj readFloatCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a FloatCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubFloatColTableObj
 	 *	@return	The FloatCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubFloatColObj readFloatCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubFloatColObj readFloatCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubFloatColObj readCachedFloatCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubFloatColObj readCachedFloatCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeFloatCol( ICFBamPubFloatColObj obj );
 
-	void deepDisposeFloatCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeFloatCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubFloatColObj lockFloatCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubFloatColObj lockFloatCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the FloatCol-derived instances in the database.

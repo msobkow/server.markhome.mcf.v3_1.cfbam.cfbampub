@@ -119,7 +119,7 @@ public interface ICFBamPubDbKeyHash512DefTableObj
 	 *	@return	The DbKeyHash512Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash512DefObj readDbKeyHash512Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash512DefObj readDbKeyHash512Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DbKeyHash512Def-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDbKeyHash512DefTableObj
 	 *	@return	The DbKeyHash512Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash512DefObj readDbKeyHash512Def( CFLibDbKeyHash256 pkey,
+	ICFBamPubDbKeyHash512DefObj readDbKeyHash512Def( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDbKeyHash512DefObj readCachedDbKeyHash512Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash512DefObj readCachedDbKeyHash512Def( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDbKeyHash512Def( ICFBamPubDbKeyHash512DefObj obj );
 
-	void deepDisposeDbKeyHash512Def( CFLibDbKeyHash256 pkey );
+	void deepDisposeDbKeyHash512Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDbKeyHash512DefObj lockDbKeyHash512Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash512DefObj lockDbKeyHash512Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DbKeyHash512Def-derived instances in the database.

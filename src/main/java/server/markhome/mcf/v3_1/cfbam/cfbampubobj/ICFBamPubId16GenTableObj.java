@@ -119,7 +119,7 @@ public interface ICFBamPubId16GenTableObj
 	 *	@return	The Id16Gen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubId16GenObj readId16Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubId16GenObj readId16Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Id16Gen-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubId16GenTableObj
 	 *	@return	The Id16Gen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubId16GenObj readId16Gen( CFLibDbKeyHash256 pkey,
+	ICFBamPubId16GenObj readId16Gen( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubId16GenObj readCachedId16Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubId16GenObj readCachedId16Gen( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeId16Gen( ICFBamPubId16GenObj obj );
 
-	void deepDisposeId16Gen( CFLibDbKeyHash256 pkey );
+	void deepDisposeId16Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubId16GenObj lockId16Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubId16GenObj lockId16Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Id16Gen-derived instances in the database.

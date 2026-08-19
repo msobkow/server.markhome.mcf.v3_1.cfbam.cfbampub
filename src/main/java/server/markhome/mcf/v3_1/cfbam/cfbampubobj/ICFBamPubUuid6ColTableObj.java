@@ -119,7 +119,7 @@ public interface ICFBamPubUuid6ColTableObj
 	 *	@return	The Uuid6Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUuid6ColObj readUuid6Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuid6ColObj readUuid6Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Uuid6Col-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubUuid6ColTableObj
 	 *	@return	The Uuid6Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUuid6ColObj readUuid6Col( CFLibDbKeyHash256 pkey,
+	ICFBamPubUuid6ColObj readUuid6Col( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubUuid6ColObj readCachedUuid6Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuid6ColObj readCachedUuid6Col( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeUuid6Col( ICFBamPubUuid6ColObj obj );
 
-	void deepDisposeUuid6Col( CFLibDbKeyHash256 pkey );
+	void deepDisposeUuid6Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubUuid6ColObj lockUuid6Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuid6ColObj lockUuid6Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Uuid6Col-derived instances in the database.

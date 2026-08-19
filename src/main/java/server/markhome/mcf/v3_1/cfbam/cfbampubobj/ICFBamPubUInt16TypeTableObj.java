@@ -119,7 +119,7 @@ public interface ICFBamPubUInt16TypeTableObj
 	 *	@return	The UInt16Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt16TypeObj readUInt16Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt16TypeObj readUInt16Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a UInt16Type-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubUInt16TypeTableObj
 	 *	@return	The UInt16Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt16TypeObj readUInt16Type( CFLibDbKeyHash256 pkey,
+	ICFBamPubUInt16TypeObj readUInt16Type( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubUInt16TypeObj readCachedUInt16Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt16TypeObj readCachedUInt16Type( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeUInt16Type( ICFBamPubUInt16TypeObj obj );
 
-	void deepDisposeUInt16Type( CFLibDbKeyHash256 pkey );
+	void deepDisposeUInt16Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubUInt16TypeObj lockUInt16Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt16TypeObj lockUInt16Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the UInt16Type-derived instances in the database.

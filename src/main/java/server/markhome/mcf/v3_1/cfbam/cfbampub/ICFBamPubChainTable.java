@@ -112,7 +112,7 @@ public interface ICFBamPubChainTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteChainByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Chain instances identified by the key ChainTableIdx.
 	 *
@@ -224,7 +224,7 @@ public interface ICFBamPubChainTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubChain pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Chain record instance by primary key.
@@ -237,7 +237,7 @@ public interface ICFBamPubChainTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubChain publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Chain instances.
@@ -338,7 +338,7 @@ public interface ICFBamPubChainTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubChain pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Chain record instance identified by the primary key.
@@ -353,7 +353,7 @@ public interface ICFBamPubChainTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubChain publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Chain record instances.

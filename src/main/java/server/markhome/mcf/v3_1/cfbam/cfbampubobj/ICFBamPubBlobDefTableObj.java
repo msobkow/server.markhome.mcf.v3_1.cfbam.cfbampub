@@ -119,7 +119,7 @@ public interface ICFBamPubBlobDefTableObj
 	 *	@return	The BlobDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBlobDefObj readBlobDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubBlobDefObj readBlobDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a BlobDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubBlobDefTableObj
 	 *	@return	The BlobDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBlobDefObj readBlobDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubBlobDefObj readBlobDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubBlobDefObj readCachedBlobDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubBlobDefObj readCachedBlobDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeBlobDef( ICFBamPubBlobDefObj obj );
 
-	void deepDisposeBlobDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeBlobDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubBlobDefObj lockBlobDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubBlobDefObj lockBlobDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the BlobDef-derived instances in the database.

@@ -119,7 +119,7 @@ public interface ICFBamPubDoubleDefTableObj
 	 *	@return	The DoubleDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDoubleDefObj readDoubleDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubDoubleDefObj readDoubleDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DoubleDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDoubleDefTableObj
 	 *	@return	The DoubleDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDoubleDefObj readDoubleDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubDoubleDefObj readDoubleDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDoubleDefObj readCachedDoubleDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubDoubleDefObj readCachedDoubleDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDoubleDef( ICFBamPubDoubleDefObj obj );
 
-	void deepDisposeDoubleDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeDoubleDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDoubleDefObj lockDoubleDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubDoubleDefObj lockDoubleDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DoubleDef-derived instances in the database.

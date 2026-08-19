@@ -119,7 +119,7 @@ public interface ICFBamPubFloatTypeTableObj
 	 *	@return	The FloatType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubFloatTypeObj readFloatType( CFLibDbKeyHash256 pkey );
+	ICFBamPubFloatTypeObj readFloatType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a FloatType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubFloatTypeTableObj
 	 *	@return	The FloatType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubFloatTypeObj readFloatType( CFLibDbKeyHash256 pkey,
+	ICFBamPubFloatTypeObj readFloatType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubFloatTypeObj readCachedFloatType( CFLibDbKeyHash256 pkey );
+	ICFBamPubFloatTypeObj readCachedFloatType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeFloatType( ICFBamPubFloatTypeObj obj );
 
-	void deepDisposeFloatType( CFLibDbKeyHash256 pkey );
+	void deepDisposeFloatType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubFloatTypeObj lockFloatType( CFLibDbKeyHash256 pkey );
+	ICFBamPubFloatTypeObj lockFloatType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the FloatType-derived instances in the database.

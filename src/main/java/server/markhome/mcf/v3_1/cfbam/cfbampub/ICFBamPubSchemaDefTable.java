@@ -238,7 +238,7 @@ public interface ICFBamPubSchemaDefTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteSchemaDefByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the SchemaDef instances identified by the key TenantIdx.
 	 *
@@ -271,7 +271,7 @@ public interface ICFBamPubSchemaDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubSchemaDef pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived SchemaDef record instance by primary key.
@@ -284,7 +284,7 @@ public interface ICFBamPubSchemaDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubSchemaDef publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all SchemaDef instances.
@@ -419,7 +419,7 @@ public interface ICFBamPubSchemaDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubSchemaDef pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific SchemaDef record instance identified by the primary key.
@@ -434,7 +434,7 @@ public interface ICFBamPubSchemaDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubSchemaDef publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific SchemaDef record instances.

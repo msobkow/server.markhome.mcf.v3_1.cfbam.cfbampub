@@ -119,7 +119,7 @@ public interface ICFBamPubInt64ColTableObj
 	 *	@return	The Int64Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubInt64ColObj readInt64Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt64ColObj readInt64Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Int64Col-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubInt64ColTableObj
 	 *	@return	The Int64Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubInt64ColObj readInt64Col( CFLibDbKeyHash256 pkey,
+	ICFBamPubInt64ColObj readInt64Col( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubInt64ColObj readCachedInt64Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt64ColObj readCachedInt64Col( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeInt64Col( ICFBamPubInt64ColObj obj );
 
-	void deepDisposeInt64Col( CFLibDbKeyHash256 pkey );
+	void deepDisposeInt64Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubInt64ColObj lockInt64Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt64ColObj lockInt64Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Int64Col-derived instances in the database.

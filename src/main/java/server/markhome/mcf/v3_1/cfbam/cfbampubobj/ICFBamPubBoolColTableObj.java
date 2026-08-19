@@ -119,7 +119,7 @@ public interface ICFBamPubBoolColTableObj
 	 *	@return	The BoolCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBoolColObj readBoolCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubBoolColObj readBoolCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a BoolCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubBoolColTableObj
 	 *	@return	The BoolCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBoolColObj readBoolCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubBoolColObj readBoolCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubBoolColObj readCachedBoolCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubBoolColObj readCachedBoolCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeBoolCol( ICFBamPubBoolColObj obj );
 
-	void deepDisposeBoolCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeBoolCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubBoolColObj lockBoolCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubBoolColObj lockBoolCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the BoolCol-derived instances in the database.

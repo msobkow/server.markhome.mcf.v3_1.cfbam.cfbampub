@@ -119,7 +119,7 @@ public interface ICFBamPubRelationColTableObj
 	 *	@return	The RelationCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubRelationColObj readRelationCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubRelationColObj readRelationCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a RelationCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubRelationColTableObj
 	 *	@return	The RelationCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubRelationColObj readRelationCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubRelationColObj readRelationCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubRelationColObj readCachedRelationCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubRelationColObj readCachedRelationCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeRelationCol( ICFBamPubRelationColObj obj );
 
-	void deepDisposeRelationCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeRelationCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubRelationColObj lockRelationCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubRelationColObj lockRelationCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the RelationCol-derived instances in the database.

@@ -119,7 +119,7 @@ public interface ICFBamPubUuid6DefTableObj
 	 *	@return	The Uuid6Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUuid6DefObj readUuid6Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuid6DefObj readUuid6Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Uuid6Def-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubUuid6DefTableObj
 	 *	@return	The Uuid6Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUuid6DefObj readUuid6Def( CFLibDbKeyHash256 pkey,
+	ICFBamPubUuid6DefObj readUuid6Def( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubUuid6DefObj readCachedUuid6Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuid6DefObj readCachedUuid6Def( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeUuid6Def( ICFBamPubUuid6DefObj obj );
 
-	void deepDisposeUuid6Def( CFLibDbKeyHash256 pkey );
+	void deepDisposeUuid6Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubUuid6DefObj lockUuid6Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuid6DefObj lockUuid6Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Uuid6Def-derived instances in the database.

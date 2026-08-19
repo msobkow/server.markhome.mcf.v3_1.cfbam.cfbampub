@@ -119,7 +119,7 @@ public interface ICFBamPubEnumTypeTableObj
 	 *	@return	The EnumType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubEnumTypeObj readEnumType( CFLibDbKeyHash256 pkey );
+	ICFBamPubEnumTypeObj readEnumType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a EnumType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubEnumTypeTableObj
 	 *	@return	The EnumType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubEnumTypeObj readEnumType( CFLibDbKeyHash256 pkey,
+	ICFBamPubEnumTypeObj readEnumType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubEnumTypeObj readCachedEnumType( CFLibDbKeyHash256 pkey );
+	ICFBamPubEnumTypeObj readCachedEnumType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeEnumType( ICFBamPubEnumTypeObj obj );
 
-	void deepDisposeEnumType( CFLibDbKeyHash256 pkey );
+	void deepDisposeEnumType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubEnumTypeObj lockEnumType( CFLibDbKeyHash256 pkey );
+	ICFBamPubEnumTypeObj lockEnumType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the EnumType-derived instances in the database.

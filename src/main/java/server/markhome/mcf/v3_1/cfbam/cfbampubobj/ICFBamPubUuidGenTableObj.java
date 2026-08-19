@@ -119,7 +119,7 @@ public interface ICFBamPubUuidGenTableObj
 	 *	@return	The UuidGen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUuidGenObj readUuidGen( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuidGenObj readUuidGen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a UuidGen-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubUuidGenTableObj
 	 *	@return	The UuidGen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUuidGenObj readUuidGen( CFLibDbKeyHash256 pkey,
+	ICFBamPubUuidGenObj readUuidGen( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubUuidGenObj readCachedUuidGen( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuidGenObj readCachedUuidGen( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeUuidGen( ICFBamPubUuidGenObj obj );
 
-	void deepDisposeUuidGen( CFLibDbKeyHash256 pkey );
+	void deepDisposeUuidGen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubUuidGenObj lockUuidGen( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuidGenObj lockUuidGen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the UuidGen-derived instances in the database.

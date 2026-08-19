@@ -119,7 +119,7 @@ public interface ICFBamPubNumberTypeTableObj
 	 *	@return	The NumberType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNumberTypeObj readNumberType( CFLibDbKeyHash256 pkey );
+	ICFBamPubNumberTypeObj readNumberType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a NumberType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubNumberTypeTableObj
 	 *	@return	The NumberType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNumberTypeObj readNumberType( CFLibDbKeyHash256 pkey,
+	ICFBamPubNumberTypeObj readNumberType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubNumberTypeObj readCachedNumberType( CFLibDbKeyHash256 pkey );
+	ICFBamPubNumberTypeObj readCachedNumberType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeNumberType( ICFBamPubNumberTypeObj obj );
 
-	void deepDisposeNumberType( CFLibDbKeyHash256 pkey );
+	void deepDisposeNumberType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubNumberTypeObj lockNumberType( CFLibDbKeyHash256 pkey );
+	ICFBamPubNumberTypeObj lockNumberType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the NumberType-derived instances in the database.

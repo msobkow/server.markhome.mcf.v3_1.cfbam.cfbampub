@@ -112,7 +112,7 @@ public interface ICFBamPubUInt64DefTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteUInt64DefByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the UInt64Def instances identified by the key UNameIdx.
 	 *
@@ -268,7 +268,7 @@ public interface ICFBamPubUInt64DefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubUInt64Def pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived UInt64Def record instance by primary key.
@@ -281,7 +281,7 @@ public interface ICFBamPubUInt64DefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubUInt64Def publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all UInt64Def instances.
@@ -412,7 +412,7 @@ public interface ICFBamPubUInt64DefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubUInt64Def pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific UInt64Def record instance identified by the primary key.
@@ -427,7 +427,7 @@ public interface ICFBamPubUInt64DefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubUInt64Def publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific UInt64Def record instances.

@@ -119,7 +119,7 @@ public interface ICFBamPubTimeColTableObj
 	 *	@return	The TimeCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimeColObj readTimeCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimeColObj readTimeCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TimeCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTimeColTableObj
 	 *	@return	The TimeCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimeColObj readTimeCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubTimeColObj readTimeCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTimeColObj readCachedTimeCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimeColObj readCachedTimeCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTimeCol( ICFBamPubTimeColObj obj );
 
-	void deepDisposeTimeCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeTimeCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTimeColObj lockTimeCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimeColObj lockTimeCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TimeCol-derived instances in the database.

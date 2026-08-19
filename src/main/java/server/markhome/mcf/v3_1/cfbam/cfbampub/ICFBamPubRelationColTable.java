@@ -112,7 +112,7 @@ public interface ICFBamPubRelationColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteRelationColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the RelationCol instances identified by the key UNameIdx.
 	 *
@@ -306,7 +306,7 @@ public interface ICFBamPubRelationColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubRelationCol pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived RelationCol record instance by primary key.
@@ -319,7 +319,7 @@ public interface ICFBamPubRelationColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubRelationCol publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all RelationCol instances.
@@ -474,7 +474,7 @@ public interface ICFBamPubRelationColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubRelationCol pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific RelationCol record instance identified by the primary key.
@@ -489,7 +489,7 @@ public interface ICFBamPubRelationColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubRelationCol publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific RelationCol record instances.

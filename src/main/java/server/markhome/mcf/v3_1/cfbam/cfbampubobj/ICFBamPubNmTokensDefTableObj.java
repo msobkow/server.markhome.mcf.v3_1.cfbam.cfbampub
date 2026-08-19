@@ -119,7 +119,7 @@ public interface ICFBamPubNmTokensDefTableObj
 	 *	@return	The NmTokensDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNmTokensDefObj readNmTokensDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubNmTokensDefObj readNmTokensDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a NmTokensDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubNmTokensDefTableObj
 	 *	@return	The NmTokensDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNmTokensDefObj readNmTokensDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubNmTokensDefObj readNmTokensDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubNmTokensDefObj readCachedNmTokensDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubNmTokensDefObj readCachedNmTokensDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeNmTokensDef( ICFBamPubNmTokensDefObj obj );
 
-	void deepDisposeNmTokensDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeNmTokensDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubNmTokensDefObj lockNmTokensDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubNmTokensDefObj lockNmTokensDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the NmTokensDef-derived instances in the database.

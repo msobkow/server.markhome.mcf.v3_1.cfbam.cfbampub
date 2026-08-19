@@ -119,7 +119,7 @@ public interface ICFBamPubAtomTableObj
 	 *	@return	The Atom-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubAtomObj readAtom( CFLibDbKeyHash256 pkey );
+	ICFBamPubAtomObj readAtom( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Atom-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubAtomTableObj
 	 *	@return	The Atom-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubAtomObj readAtom( CFLibDbKeyHash256 pkey,
+	ICFBamPubAtomObj readAtom( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubAtomObj readCachedAtom( CFLibDbKeyHash256 pkey );
+	ICFBamPubAtomObj readCachedAtom( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeAtom( ICFBamPubAtomObj obj );
 
-	void deepDisposeAtom( CFLibDbKeyHash256 pkey );
+	void deepDisposeAtom( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubAtomObj lockAtom( CFLibDbKeyHash256 pkey );
+	ICFBamPubAtomObj lockAtom( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Atom-derived instances in the database.

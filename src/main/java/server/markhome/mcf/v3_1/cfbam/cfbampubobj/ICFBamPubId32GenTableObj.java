@@ -119,7 +119,7 @@ public interface ICFBamPubId32GenTableObj
 	 *	@return	The Id32Gen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubId32GenObj readId32Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubId32GenObj readId32Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Id32Gen-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubId32GenTableObj
 	 *	@return	The Id32Gen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubId32GenObj readId32Gen( CFLibDbKeyHash256 pkey,
+	ICFBamPubId32GenObj readId32Gen( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubId32GenObj readCachedId32Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubId32GenObj readCachedId32Gen( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeId32Gen( ICFBamPubId32GenObj obj );
 
-	void deepDisposeId32Gen( CFLibDbKeyHash256 pkey );
+	void deepDisposeId32Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubId32GenObj lockId32Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubId32GenObj lockId32Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Id32Gen-derived instances in the database.

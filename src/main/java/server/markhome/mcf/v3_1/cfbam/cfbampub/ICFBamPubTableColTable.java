@@ -150,7 +150,7 @@ public interface ICFBamPubTableColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteTableColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the TableCol instances identified by the key UNameIdx.
 	 *
@@ -306,7 +306,7 @@ public interface ICFBamPubTableColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTableCol pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived TableCol record instance by primary key.
@@ -319,7 +319,7 @@ public interface ICFBamPubTableColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTableCol publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all TableCol instances.
@@ -474,7 +474,7 @@ public interface ICFBamPubTableColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTableCol pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific TableCol record instance identified by the primary key.
@@ -489,7 +489,7 @@ public interface ICFBamPubTableColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTableCol publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific TableCol record instances.

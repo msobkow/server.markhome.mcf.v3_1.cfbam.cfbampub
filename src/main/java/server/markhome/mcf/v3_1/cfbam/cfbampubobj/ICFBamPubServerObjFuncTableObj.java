@@ -119,7 +119,7 @@ public interface ICFBamPubServerObjFuncTableObj
 	 *	@return	The ServerObjFunc-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubServerObjFuncObj readServerObjFunc( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerObjFuncObj readServerObjFunc( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a ServerObjFunc-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubServerObjFuncTableObj
 	 *	@return	The ServerObjFunc-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubServerObjFuncObj readServerObjFunc( CFLibDbKeyHash256 pkey,
+	ICFBamPubServerObjFuncObj readServerObjFunc( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubServerObjFuncObj readCachedServerObjFunc( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerObjFuncObj readCachedServerObjFunc( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeServerObjFunc( ICFBamPubServerObjFuncObj obj );
 
-	void deepDisposeServerObjFunc( CFLibDbKeyHash256 pkey );
+	void deepDisposeServerObjFunc( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubServerObjFuncObj lockServerObjFunc( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerObjFuncObj lockServerObjFunc( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the ServerObjFunc-derived instances in the database.

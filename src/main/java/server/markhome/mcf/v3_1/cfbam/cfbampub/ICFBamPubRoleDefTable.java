@@ -112,7 +112,7 @@ public interface ICFBamPubRoleDefTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteRoleDefByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the RoleDef instances identified by the key UNameIdx.
 	 *
@@ -211,7 +211,7 @@ public interface ICFBamPubRoleDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubRoleDef pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived RoleDef record instance by primary key.
@@ -224,7 +224,7 @@ public interface ICFBamPubRoleDefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubRoleDef publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all RoleDef instances.
@@ -320,7 +320,7 @@ public interface ICFBamPubRoleDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubRoleDef pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific RoleDef record instance identified by the primary key.
@@ -335,7 +335,7 @@ public interface ICFBamPubRoleDefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubRoleDef publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific RoleDef record instances.

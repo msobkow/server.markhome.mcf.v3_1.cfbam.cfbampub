@@ -119,7 +119,7 @@ public interface ICFBamPubClearTopDepTableObj
 	 *	@return	The ClearTopDep-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubClearTopDepObj readClearTopDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubClearTopDepObj readClearTopDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a ClearTopDep-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubClearTopDepTableObj
 	 *	@return	The ClearTopDep-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubClearTopDepObj readClearTopDep( CFLibDbKeyHash256 pkey,
+	ICFBamPubClearTopDepObj readClearTopDep( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubClearTopDepObj readCachedClearTopDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubClearTopDepObj readCachedClearTopDep( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeClearTopDep( ICFBamPubClearTopDepObj obj );
 
-	void deepDisposeClearTopDep( CFLibDbKeyHash256 pkey );
+	void deepDisposeClearTopDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubClearTopDepObj lockClearTopDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubClearTopDepObj lockClearTopDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the ClearTopDep-derived instances in the database.

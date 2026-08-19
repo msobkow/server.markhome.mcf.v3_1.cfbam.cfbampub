@@ -128,7 +128,7 @@ public interface ICFBamPubScopeTableObj
 	 *	@return	The Scope-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubScopeObj readScope( CFLibDbKeyHash256 pkey );
+	ICFBamPubScopeObj readScope( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Scope-derived instance by it's primary key.
@@ -138,19 +138,19 @@ public interface ICFBamPubScopeTableObj
 	 *	@return	The Scope-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubScopeObj readScope( CFLibDbKeyHash256 pkey,
+	ICFBamPubScopeObj readScope( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubScopeObj readCachedScope( CFLibDbKeyHash256 pkey );
+	ICFBamPubScopeObj readCachedScope( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeScope( ICFBamPubScopeObj obj );
 
-	void deepDisposeScope( CFLibDbKeyHash256 pkey );
+	void deepDisposeScope( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubScopeObj lockScope( CFLibDbKeyHash256 pkey );
+	ICFBamPubScopeObj lockScope( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Scope-derived instances in the database.

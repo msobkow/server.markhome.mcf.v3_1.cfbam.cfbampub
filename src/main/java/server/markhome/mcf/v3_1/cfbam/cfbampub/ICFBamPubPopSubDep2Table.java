@@ -191,7 +191,7 @@ public interface ICFBamPubPopSubDep2Table
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeletePopSubDep2ByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the PopSubDep2 instances identified by the key TenantIdx.
 	 *
@@ -224,7 +224,7 @@ public interface ICFBamPubPopSubDep2Table
 	 *		no such existing key value.
 	 */
 	public ICFBamPubPopSubDep2 pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived PopSubDep2 record instance by primary key.
@@ -237,7 +237,7 @@ public interface ICFBamPubPopSubDep2Table
 	 *		no such existing key value.
 	 */
 	public ICFBamPubPopSubDep2 publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all PopSubDep2 instances.
@@ -338,7 +338,7 @@ public interface ICFBamPubPopSubDep2Table
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubPopSubDep2 pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific PopSubDep2 record instance identified by the primary key.
@@ -353,7 +353,7 @@ public interface ICFBamPubPopSubDep2Table
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubPopSubDep2 publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific PopSubDep2 record instances.

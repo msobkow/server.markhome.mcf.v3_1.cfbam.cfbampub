@@ -119,7 +119,7 @@ public interface ICFBamPubTextColTableObj
 	 *	@return	The TextCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTextColObj readTextCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTextColObj readTextCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TextCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTextColTableObj
 	 *	@return	The TextCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTextColObj readTextCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubTextColObj readTextCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTextColObj readCachedTextCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTextColObj readCachedTextCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTextCol( ICFBamPubTextColObj obj );
 
-	void deepDisposeTextCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeTextCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTextColObj lockTextCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTextColObj lockTextCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TextCol-derived instances in the database.

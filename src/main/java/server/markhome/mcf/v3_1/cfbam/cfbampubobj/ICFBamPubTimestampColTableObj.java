@@ -119,7 +119,7 @@ public interface ICFBamPubTimestampColTableObj
 	 *	@return	The TimestampCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimestampColObj readTimestampCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimestampColObj readTimestampCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TimestampCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTimestampColTableObj
 	 *	@return	The TimestampCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimestampColObj readTimestampCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubTimestampColObj readTimestampCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTimestampColObj readCachedTimestampCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimestampColObj readCachedTimestampCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTimestampCol( ICFBamPubTimestampColObj obj );
 
-	void deepDisposeTimestampCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeTimestampCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTimestampColObj lockTimestampCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimestampColObj lockTimestampCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TimestampCol-derived instances in the database.

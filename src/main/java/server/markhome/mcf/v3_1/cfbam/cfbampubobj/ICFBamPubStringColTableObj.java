@@ -119,7 +119,7 @@ public interface ICFBamPubStringColTableObj
 	 *	@return	The StringCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubStringColObj readStringCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubStringColObj readStringCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a StringCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubStringColTableObj
 	 *	@return	The StringCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubStringColObj readStringCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubStringColObj readStringCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubStringColObj readCachedStringCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubStringColObj readCachedStringCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeStringCol( ICFBamPubStringColObj obj );
 
-	void deepDisposeStringCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeStringCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubStringColObj lockStringCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubStringColObj lockStringCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the StringCol-derived instances in the database.

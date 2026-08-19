@@ -232,7 +232,7 @@ public interface ICFBamPubServerObjFuncTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteServerObjFuncByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the ServerObjFunc instances identified by the key TenantIdx.
 	 *
@@ -265,7 +265,7 @@ public interface ICFBamPubServerObjFuncTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubServerObjFunc pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived ServerObjFunc record instance by primary key.
@@ -278,7 +278,7 @@ public interface ICFBamPubServerObjFuncTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubServerObjFunc publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all ServerObjFunc instances.
@@ -406,7 +406,7 @@ public interface ICFBamPubServerObjFuncTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubServerObjFunc pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific ServerObjFunc record instance identified by the primary key.
@@ -421,7 +421,7 @@ public interface ICFBamPubServerObjFuncTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubServerObjFunc publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific ServerObjFunc record instances.

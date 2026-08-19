@@ -119,7 +119,7 @@ public interface ICFBamPubBoolDefTableObj
 	 *	@return	The BoolDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBoolDefObj readBoolDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubBoolDefObj readBoolDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a BoolDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubBoolDefTableObj
 	 *	@return	The BoolDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBoolDefObj readBoolDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubBoolDefObj readBoolDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubBoolDefObj readCachedBoolDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubBoolDefObj readCachedBoolDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeBoolDef( ICFBamPubBoolDefObj obj );
 
-	void deepDisposeBoolDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeBoolDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubBoolDefObj lockBoolDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubBoolDefObj lockBoolDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the BoolDef-derived instances in the database.

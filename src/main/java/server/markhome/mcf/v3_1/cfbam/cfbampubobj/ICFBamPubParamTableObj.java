@@ -119,7 +119,7 @@ public interface ICFBamPubParamTableObj
 	 *	@return	The Param-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubParamObj readParam( CFLibDbKeyHash256 pkey );
+	ICFBamPubParamObj readParam( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Param-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubParamTableObj
 	 *	@return	The Param-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubParamObj readParam( CFLibDbKeyHash256 pkey,
+	ICFBamPubParamObj readParam( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubParamObj readCachedParam( CFLibDbKeyHash256 pkey );
+	ICFBamPubParamObj readCachedParam( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeParam( ICFBamPubParamObj obj );
 
-	void deepDisposeParam( CFLibDbKeyHash256 pkey );
+	void deepDisposeParam( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubParamObj lockParam( CFLibDbKeyHash256 pkey );
+	ICFBamPubParamObj lockParam( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Param-derived instances in the database.

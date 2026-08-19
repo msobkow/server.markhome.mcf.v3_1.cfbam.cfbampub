@@ -119,7 +119,7 @@ public interface ICFBamPubDbKeyHash256TypeTableObj
 	 *	@return	The DbKeyHash256Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash256TypeObj readDbKeyHash256Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash256TypeObj readDbKeyHash256Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DbKeyHash256Type-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDbKeyHash256TypeTableObj
 	 *	@return	The DbKeyHash256Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash256TypeObj readDbKeyHash256Type( CFLibDbKeyHash256 pkey,
+	ICFBamPubDbKeyHash256TypeObj readDbKeyHash256Type( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDbKeyHash256TypeObj readCachedDbKeyHash256Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash256TypeObj readCachedDbKeyHash256Type( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDbKeyHash256Type( ICFBamPubDbKeyHash256TypeObj obj );
 
-	void deepDisposeDbKeyHash256Type( CFLibDbKeyHash256 pkey );
+	void deepDisposeDbKeyHash256Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDbKeyHash256TypeObj lockDbKeyHash256Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash256TypeObj lockDbKeyHash256Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DbKeyHash256Type-derived instances in the database.

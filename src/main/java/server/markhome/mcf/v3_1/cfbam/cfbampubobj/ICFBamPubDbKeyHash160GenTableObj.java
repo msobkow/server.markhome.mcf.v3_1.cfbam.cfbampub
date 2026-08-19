@@ -119,7 +119,7 @@ public interface ICFBamPubDbKeyHash160GenTableObj
 	 *	@return	The DbKeyHash160Gen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash160GenObj readDbKeyHash160Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash160GenObj readDbKeyHash160Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DbKeyHash160Gen-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDbKeyHash160GenTableObj
 	 *	@return	The DbKeyHash160Gen-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDbKeyHash160GenObj readDbKeyHash160Gen( CFLibDbKeyHash256 pkey,
+	ICFBamPubDbKeyHash160GenObj readDbKeyHash160Gen( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDbKeyHash160GenObj readCachedDbKeyHash160Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash160GenObj readCachedDbKeyHash160Gen( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDbKeyHash160Gen( ICFBamPubDbKeyHash160GenObj obj );
 
-	void deepDisposeDbKeyHash160Gen( CFLibDbKeyHash256 pkey );
+	void deepDisposeDbKeyHash160Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDbKeyHash160GenObj lockDbKeyHash160Gen( CFLibDbKeyHash256 pkey );
+	ICFBamPubDbKeyHash160GenObj lockDbKeyHash160Gen( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DbKeyHash160Gen-derived instances in the database.

@@ -119,7 +119,7 @@ public interface ICFBamPubDelDepTableObj
 	 *	@return	The DelDep-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDelDepObj readDelDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubDelDepObj readDelDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DelDep-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDelDepTableObj
 	 *	@return	The DelDep-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDelDepObj readDelDep( CFLibDbKeyHash256 pkey,
+	ICFBamPubDelDepObj readDelDep( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDelDepObj readCachedDelDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubDelDepObj readCachedDelDep( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDelDep( ICFBamPubDelDepObj obj );
 
-	void deepDisposeDelDep( CFLibDbKeyHash256 pkey );
+	void deepDisposeDelDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDelDepObj lockDelDep( CFLibDbKeyHash256 pkey );
+	ICFBamPubDelDepObj lockDelDep( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DelDep-derived instances in the database.

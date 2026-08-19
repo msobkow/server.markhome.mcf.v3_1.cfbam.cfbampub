@@ -210,7 +210,7 @@ public interface ICFBamPubSchemaRefTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteSchemaRefByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the SchemaRef instances identified by the key TenantIdx.
 	 *
@@ -243,7 +243,7 @@ public interface ICFBamPubSchemaRefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubSchemaRef pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived SchemaRef record instance by primary key.
@@ -256,7 +256,7 @@ public interface ICFBamPubSchemaRefTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubSchemaRef publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all SchemaRef instances.
@@ -369,7 +369,7 @@ public interface ICFBamPubSchemaRefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubSchemaRef pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific SchemaRef record instance identified by the primary key.
@@ -384,7 +384,7 @@ public interface ICFBamPubSchemaRefTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubSchemaRef publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific SchemaRef record instances.

@@ -119,7 +119,7 @@ public interface ICFBamPubTimeDefTableObj
 	 *	@return	The TimeDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimeDefObj readTimeDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimeDefObj readTimeDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TimeDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTimeDefTableObj
 	 *	@return	The TimeDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimeDefObj readTimeDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubTimeDefObj readTimeDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTimeDefObj readCachedTimeDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimeDefObj readCachedTimeDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTimeDef( ICFBamPubTimeDefObj obj );
 
-	void deepDisposeTimeDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeTimeDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTimeDefObj lockTimeDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimeDefObj lockTimeDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TimeDef-derived instances in the database.

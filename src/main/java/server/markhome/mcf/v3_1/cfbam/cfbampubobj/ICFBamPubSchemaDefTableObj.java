@@ -119,7 +119,7 @@ public interface ICFBamPubSchemaDefTableObj
 	 *	@return	The SchemaDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubSchemaDefObj readSchemaDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaDefObj readSchemaDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a SchemaDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubSchemaDefTableObj
 	 *	@return	The SchemaDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubSchemaDefObj readSchemaDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubSchemaDefObj readSchemaDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubSchemaDefObj readCachedSchemaDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaDefObj readCachedSchemaDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeSchemaDef( ICFBamPubSchemaDefObj obj );
 
-	void deepDisposeSchemaDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeSchemaDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubSchemaDefObj lockSchemaDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaDefObj lockSchemaDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the SchemaDef-derived instances in the database.

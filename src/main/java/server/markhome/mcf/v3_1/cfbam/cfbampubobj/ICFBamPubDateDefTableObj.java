@@ -119,7 +119,7 @@ public interface ICFBamPubDateDefTableObj
 	 *	@return	The DateDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDateDefObj readDateDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubDateDefObj readDateDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DateDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDateDefTableObj
 	 *	@return	The DateDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDateDefObj readDateDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubDateDefObj readDateDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDateDefObj readCachedDateDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubDateDefObj readCachedDateDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDateDef( ICFBamPubDateDefObj obj );
 
-	void deepDisposeDateDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeDateDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDateDefObj lockDateDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubDateDefObj lockDateDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DateDef-derived instances in the database.

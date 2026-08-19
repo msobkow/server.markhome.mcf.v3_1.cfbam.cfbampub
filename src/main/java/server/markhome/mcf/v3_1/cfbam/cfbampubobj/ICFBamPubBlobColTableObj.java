@@ -119,7 +119,7 @@ public interface ICFBamPubBlobColTableObj
 	 *	@return	The BlobCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBlobColObj readBlobCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubBlobColObj readBlobCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a BlobCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubBlobColTableObj
 	 *	@return	The BlobCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBlobColObj readBlobCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubBlobColObj readBlobCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubBlobColObj readCachedBlobCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubBlobColObj readCachedBlobCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeBlobCol( ICFBamPubBlobColObj obj );
 
-	void deepDisposeBlobCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeBlobCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubBlobColObj lockBlobCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubBlobColObj lockBlobCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the BlobCol-derived instances in the database.

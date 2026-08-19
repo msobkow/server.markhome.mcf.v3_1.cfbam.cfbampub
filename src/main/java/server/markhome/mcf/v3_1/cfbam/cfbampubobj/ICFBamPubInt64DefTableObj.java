@@ -119,7 +119,7 @@ public interface ICFBamPubInt64DefTableObj
 	 *	@return	The Int64Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubInt64DefObj readInt64Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt64DefObj readInt64Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Int64Def-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubInt64DefTableObj
 	 *	@return	The Int64Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubInt64DefObj readInt64Def( CFLibDbKeyHash256 pkey,
+	ICFBamPubInt64DefObj readInt64Def( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubInt64DefObj readCachedInt64Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt64DefObj readCachedInt64Def( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeInt64Def( ICFBamPubInt64DefObj obj );
 
-	void deepDisposeInt64Def( CFLibDbKeyHash256 pkey );
+	void deepDisposeInt64Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubInt64DefObj lockInt64Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt64DefObj lockInt64Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Int64Def-derived instances in the database.

@@ -119,7 +119,7 @@ public interface ICFBamPubTokenDefTableObj
 	 *	@return	The TokenDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTokenDefObj readTokenDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTokenDefObj readTokenDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TokenDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTokenDefTableObj
 	 *	@return	The TokenDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTokenDefObj readTokenDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubTokenDefObj readTokenDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTokenDefObj readCachedTokenDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTokenDefObj readCachedTokenDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTokenDef( ICFBamPubTokenDefObj obj );
 
-	void deepDisposeTokenDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeTokenDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTokenDefObj lockTokenDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTokenDefObj lockTokenDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TokenDef-derived instances in the database.

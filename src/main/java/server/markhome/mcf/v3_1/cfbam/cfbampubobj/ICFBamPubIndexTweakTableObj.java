@@ -119,7 +119,7 @@ public interface ICFBamPubIndexTweakTableObj
 	 *	@return	The IndexTweak-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubIndexTweakObj readIndexTweak( CFLibDbKeyHash256 pkey );
+	ICFBamPubIndexTweakObj readIndexTweak( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a IndexTweak-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubIndexTweakTableObj
 	 *	@return	The IndexTweak-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubIndexTweakObj readIndexTweak( CFLibDbKeyHash256 pkey,
+	ICFBamPubIndexTweakObj readIndexTweak( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubIndexTweakObj readCachedIndexTweak( CFLibDbKeyHash256 pkey );
+	ICFBamPubIndexTweakObj readCachedIndexTweak( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeIndexTweak( ICFBamPubIndexTweakObj obj );
 
-	void deepDisposeIndexTweak( CFLibDbKeyHash256 pkey );
+	void deepDisposeIndexTweak( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubIndexTweakObj lockIndexTweak( CFLibDbKeyHash256 pkey );
+	ICFBamPubIndexTweakObj lockIndexTweak( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the IndexTweak-derived instances in the database.

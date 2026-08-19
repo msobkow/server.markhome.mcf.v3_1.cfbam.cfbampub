@@ -119,7 +119,7 @@ public interface ICFBamPubInt32DefTableObj
 	 *	@return	The Int32Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubInt32DefObj readInt32Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt32DefObj readInt32Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Int32Def-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubInt32DefTableObj
 	 *	@return	The Int32Def-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubInt32DefObj readInt32Def( CFLibDbKeyHash256 pkey,
+	ICFBamPubInt32DefObj readInt32Def( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubInt32DefObj readCachedInt32Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt32DefObj readCachedInt32Def( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeInt32Def( ICFBamPubInt32DefObj obj );
 
-	void deepDisposeInt32Def( CFLibDbKeyHash256 pkey );
+	void deepDisposeInt32Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubInt32DefObj lockInt32Def( CFLibDbKeyHash256 pkey );
+	ICFBamPubInt32DefObj lockInt32Def( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Int32Def-derived instances in the database.

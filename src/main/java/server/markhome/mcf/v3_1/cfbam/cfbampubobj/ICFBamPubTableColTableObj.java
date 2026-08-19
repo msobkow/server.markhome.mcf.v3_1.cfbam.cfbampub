@@ -119,7 +119,7 @@ public interface ICFBamPubTableColTableObj
 	 *	@return	The TableCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTableColObj readTableCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTableColObj readTableCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TableCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTableColTableObj
 	 *	@return	The TableCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTableColObj readTableCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubTableColObj readTableCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTableColObj readCachedTableCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTableColObj readCachedTableCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTableCol( ICFBamPubTableColObj obj );
 
-	void deepDisposeTableCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeTableCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTableColObj lockTableCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTableColObj lockTableCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TableCol-derived instances in the database.

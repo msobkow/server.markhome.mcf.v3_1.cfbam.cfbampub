@@ -232,7 +232,7 @@ public interface ICFBamPubServerListFuncTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteServerListFuncByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the ServerListFunc instances identified by the key TenantIdx.
 	 *
@@ -265,7 +265,7 @@ public interface ICFBamPubServerListFuncTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubServerListFunc pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived ServerListFunc record instance by primary key.
@@ -278,7 +278,7 @@ public interface ICFBamPubServerListFuncTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubServerListFunc publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all ServerListFunc instances.
@@ -406,7 +406,7 @@ public interface ICFBamPubServerListFuncTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubServerListFunc pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific ServerListFunc record instance identified by the primary key.
@@ -421,7 +421,7 @@ public interface ICFBamPubServerListFuncTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubServerListFunc publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific ServerListFunc record instances.

@@ -119,7 +119,7 @@ public interface ICFBamPubDoubleColTableObj
 	 *	@return	The DoubleCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDoubleColObj readDoubleCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubDoubleColObj readDoubleCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DoubleCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDoubleColTableObj
 	 *	@return	The DoubleCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDoubleColObj readDoubleCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubDoubleColObj readDoubleCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDoubleColObj readCachedDoubleCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubDoubleColObj readCachedDoubleCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDoubleCol( ICFBamPubDoubleColObj obj );
 
-	void deepDisposeDoubleCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeDoubleCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDoubleColObj lockDoubleCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubDoubleColObj lockDoubleCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DoubleCol-derived instances in the database.

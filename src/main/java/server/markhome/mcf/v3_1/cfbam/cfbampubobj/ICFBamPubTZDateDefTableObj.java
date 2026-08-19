@@ -119,7 +119,7 @@ public interface ICFBamPubTZDateDefTableObj
 	 *	@return	The TZDateDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTZDateDefObj readTZDateDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTZDateDefObj readTZDateDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TZDateDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTZDateDefTableObj
 	 *	@return	The TZDateDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTZDateDefObj readTZDateDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubTZDateDefObj readTZDateDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTZDateDefObj readCachedTZDateDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTZDateDefObj readCachedTZDateDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTZDateDef( ICFBamPubTZDateDefObj obj );
 
-	void deepDisposeTZDateDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeTZDateDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTZDateDefObj lockTZDateDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTZDateDefObj lockTZDateDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TZDateDef-derived instances in the database.

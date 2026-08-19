@@ -119,7 +119,7 @@ public interface ICFBamPubSchemaRoleTableObj
 	 *	@return	The SchemaRole-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubSchemaRoleObj readSchemaRole( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaRoleObj readSchemaRole( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a SchemaRole-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubSchemaRoleTableObj
 	 *	@return	The SchemaRole-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubSchemaRoleObj readSchemaRole( CFLibDbKeyHash256 pkey,
+	ICFBamPubSchemaRoleObj readSchemaRole( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubSchemaRoleObj readCachedSchemaRole( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaRoleObj readCachedSchemaRole( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeSchemaRole( ICFBamPubSchemaRoleObj obj );
 
-	void deepDisposeSchemaRole( CFLibDbKeyHash256 pkey );
+	void deepDisposeSchemaRole( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubSchemaRoleObj lockSchemaRole( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaRoleObj lockSchemaRole( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the SchemaRole-derived instances in the database.

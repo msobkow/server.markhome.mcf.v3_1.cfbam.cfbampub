@@ -119,7 +119,7 @@ public interface ICFBamPubTZTimestampTypeTableObj
 	 *	@return	The TZTimestampType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTZTimestampTypeObj readTZTimestampType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTZTimestampTypeObj readTZTimestampType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TZTimestampType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTZTimestampTypeTableObj
 	 *	@return	The TZTimestampType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTZTimestampTypeObj readTZTimestampType( CFLibDbKeyHash256 pkey,
+	ICFBamPubTZTimestampTypeObj readTZTimestampType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTZTimestampTypeObj readCachedTZTimestampType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTZTimestampTypeObj readCachedTZTimestampType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTZTimestampType( ICFBamPubTZTimestampTypeObj obj );
 
-	void deepDisposeTZTimestampType( CFLibDbKeyHash256 pkey );
+	void deepDisposeTZTimestampType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTZTimestampTypeObj lockTZTimestampType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTZTimestampTypeObj lockTZTimestampType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TZTimestampType-derived instances in the database.

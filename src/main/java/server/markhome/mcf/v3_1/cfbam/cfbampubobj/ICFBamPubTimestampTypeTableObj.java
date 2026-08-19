@@ -119,7 +119,7 @@ public interface ICFBamPubTimestampTypeTableObj
 	 *	@return	The TimestampType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimestampTypeObj readTimestampType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimestampTypeObj readTimestampType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TimestampType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTimestampTypeTableObj
 	 *	@return	The TimestampType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimestampTypeObj readTimestampType( CFLibDbKeyHash256 pkey,
+	ICFBamPubTimestampTypeObj readTimestampType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTimestampTypeObj readCachedTimestampType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimestampTypeObj readCachedTimestampType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTimestampType( ICFBamPubTimestampTypeObj obj );
 
-	void deepDisposeTimestampType( CFLibDbKeyHash256 pkey );
+	void deepDisposeTimestampType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTimestampTypeObj lockTimestampType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimestampTypeObj lockTimestampType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TimestampType-derived instances in the database.

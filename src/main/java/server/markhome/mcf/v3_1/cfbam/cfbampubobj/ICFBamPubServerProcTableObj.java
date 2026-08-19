@@ -119,7 +119,7 @@ public interface ICFBamPubServerProcTableObj
 	 *	@return	The ServerProc-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubServerProcObj readServerProc( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerProcObj readServerProc( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a ServerProc-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubServerProcTableObj
 	 *	@return	The ServerProc-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubServerProcObj readServerProc( CFLibDbKeyHash256 pkey,
+	ICFBamPubServerProcObj readServerProc( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubServerProcObj readCachedServerProc( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerProcObj readCachedServerProc( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeServerProc( ICFBamPubServerProcObj obj );
 
-	void deepDisposeServerProc( CFLibDbKeyHash256 pkey );
+	void deepDisposeServerProc( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubServerProcObj lockServerProc( CFLibDbKeyHash256 pkey );
+	ICFBamPubServerProcObj lockServerProc( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the ServerProc-derived instances in the database.

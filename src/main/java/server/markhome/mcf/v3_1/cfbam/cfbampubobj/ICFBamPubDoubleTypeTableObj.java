@@ -119,7 +119,7 @@ public interface ICFBamPubDoubleTypeTableObj
 	 *	@return	The DoubleType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDoubleTypeObj readDoubleType( CFLibDbKeyHash256 pkey );
+	ICFBamPubDoubleTypeObj readDoubleType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DoubleType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDoubleTypeTableObj
 	 *	@return	The DoubleType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDoubleTypeObj readDoubleType( CFLibDbKeyHash256 pkey,
+	ICFBamPubDoubleTypeObj readDoubleType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDoubleTypeObj readCachedDoubleType( CFLibDbKeyHash256 pkey );
+	ICFBamPubDoubleTypeObj readCachedDoubleType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDoubleType( ICFBamPubDoubleTypeObj obj );
 
-	void deepDisposeDoubleType( CFLibDbKeyHash256 pkey );
+	void deepDisposeDoubleType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDoubleTypeObj lockDoubleType( CFLibDbKeyHash256 pkey );
+	ICFBamPubDoubleTypeObj lockDoubleType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DoubleType-derived instances in the database.

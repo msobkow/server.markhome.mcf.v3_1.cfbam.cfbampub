@@ -119,7 +119,7 @@ public interface ICFBamPubTZTimeColTableObj
 	 *	@return	The TZTimeCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTZTimeColObj readTZTimeCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTZTimeColObj readTZTimeCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TZTimeCol-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTZTimeColTableObj
 	 *	@return	The TZTimeCol-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTZTimeColObj readTZTimeCol( CFLibDbKeyHash256 pkey,
+	ICFBamPubTZTimeColObj readTZTimeCol( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTZTimeColObj readCachedTZTimeCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTZTimeColObj readCachedTZTimeCol( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTZTimeCol( ICFBamPubTZTimeColObj obj );
 
-	void deepDisposeTZTimeCol( CFLibDbKeyHash256 pkey );
+	void deepDisposeTZTimeCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTZTimeColObj lockTZTimeCol( CFLibDbKeyHash256 pkey );
+	ICFBamPubTZTimeColObj lockTZTimeCol( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TZTimeCol-derived instances in the database.

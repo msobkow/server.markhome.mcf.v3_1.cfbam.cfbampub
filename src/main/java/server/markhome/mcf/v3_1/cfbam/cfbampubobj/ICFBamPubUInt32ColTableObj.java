@@ -119,7 +119,7 @@ public interface ICFBamPubUInt32ColTableObj
 	 *	@return	The UInt32Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt32ColObj readUInt32Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt32ColObj readUInt32Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a UInt32Col-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubUInt32ColTableObj
 	 *	@return	The UInt32Col-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt32ColObj readUInt32Col( CFLibDbKeyHash256 pkey,
+	ICFBamPubUInt32ColObj readUInt32Col( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubUInt32ColObj readCachedUInt32Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt32ColObj readCachedUInt32Col( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeUInt32Col( ICFBamPubUInt32ColObj obj );
 
-	void deepDisposeUInt32Col( CFLibDbKeyHash256 pkey );
+	void deepDisposeUInt32Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubUInt32ColObj lockUInt32Col( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt32ColObj lockUInt32Col( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the UInt32Col-derived instances in the database.

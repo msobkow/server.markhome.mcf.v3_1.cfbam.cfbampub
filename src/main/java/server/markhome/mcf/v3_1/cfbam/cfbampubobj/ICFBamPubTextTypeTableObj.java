@@ -119,7 +119,7 @@ public interface ICFBamPubTextTypeTableObj
 	 *	@return	The TextType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTextTypeObj readTextType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTextTypeObj readTextType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TextType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTextTypeTableObj
 	 *	@return	The TextType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTextTypeObj readTextType( CFLibDbKeyHash256 pkey,
+	ICFBamPubTextTypeObj readTextType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTextTypeObj readCachedTextType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTextTypeObj readCachedTextType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTextType( ICFBamPubTextTypeObj obj );
 
-	void deepDisposeTextType( CFLibDbKeyHash256 pkey );
+	void deepDisposeTextType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTextTypeObj lockTextType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTextTypeObj lockTextType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TextType-derived instances in the database.

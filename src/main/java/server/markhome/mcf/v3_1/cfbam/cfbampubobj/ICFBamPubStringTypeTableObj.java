@@ -119,7 +119,7 @@ public interface ICFBamPubStringTypeTableObj
 	 *	@return	The StringType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubStringTypeObj readStringType( CFLibDbKeyHash256 pkey );
+	ICFBamPubStringTypeObj readStringType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a StringType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubStringTypeTableObj
 	 *	@return	The StringType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubStringTypeObj readStringType( CFLibDbKeyHash256 pkey,
+	ICFBamPubStringTypeObj readStringType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubStringTypeObj readCachedStringType( CFLibDbKeyHash256 pkey );
+	ICFBamPubStringTypeObj readCachedStringType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeStringType( ICFBamPubStringTypeObj obj );
 
-	void deepDisposeStringType( CFLibDbKeyHash256 pkey );
+	void deepDisposeStringType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubStringTypeObj lockStringType( CFLibDbKeyHash256 pkey );
+	ICFBamPubStringTypeObj lockStringType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the StringType-derived instances in the database.

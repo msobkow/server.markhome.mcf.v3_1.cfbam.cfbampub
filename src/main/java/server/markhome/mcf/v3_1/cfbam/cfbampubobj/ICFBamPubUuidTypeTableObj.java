@@ -119,7 +119,7 @@ public interface ICFBamPubUuidTypeTableObj
 	 *	@return	The UuidType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUuidTypeObj readUuidType( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuidTypeObj readUuidType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a UuidType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubUuidTypeTableObj
 	 *	@return	The UuidType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUuidTypeObj readUuidType( CFLibDbKeyHash256 pkey,
+	ICFBamPubUuidTypeObj readUuidType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubUuidTypeObj readCachedUuidType( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuidTypeObj readCachedUuidType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeUuidType( ICFBamPubUuidTypeObj obj );
 
-	void deepDisposeUuidType( CFLibDbKeyHash256 pkey );
+	void deepDisposeUuidType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubUuidTypeObj lockUuidType( CFLibDbKeyHash256 pkey );
+	ICFBamPubUuidTypeObj lockUuidType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the UuidType-derived instances in the database.

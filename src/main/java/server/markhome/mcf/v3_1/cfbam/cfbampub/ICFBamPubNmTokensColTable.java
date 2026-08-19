@@ -131,7 +131,7 @@ public interface ICFBamPubNmTokensColTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteNmTokensColByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the NmTokensCol instances identified by the key UNameIdx.
 	 *
@@ -287,7 +287,7 @@ public interface ICFBamPubNmTokensColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubNmTokensCol pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived NmTokensCol record instance by primary key.
@@ -300,7 +300,7 @@ public interface ICFBamPubNmTokensColTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubNmTokensCol publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all NmTokensCol instances.
@@ -443,7 +443,7 @@ public interface ICFBamPubNmTokensColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubNmTokensCol pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific NmTokensCol record instance identified by the primary key.
@@ -458,7 +458,7 @@ public interface ICFBamPubNmTokensColTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubNmTokensCol publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific NmTokensCol record instances.

@@ -119,7 +119,7 @@ public interface ICFBamPubTimeTypeTableObj
 	 *	@return	The TimeType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimeTypeObj readTimeType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimeTypeObj readTimeType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TimeType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTimeTypeTableObj
 	 *	@return	The TimeType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTimeTypeObj readTimeType( CFLibDbKeyHash256 pkey,
+	ICFBamPubTimeTypeObj readTimeType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTimeTypeObj readCachedTimeType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimeTypeObj readCachedTimeType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTimeType( ICFBamPubTimeTypeObj obj );
 
-	void deepDisposeTimeType( CFLibDbKeyHash256 pkey );
+	void deepDisposeTimeType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTimeTypeObj lockTimeType( CFLibDbKeyHash256 pkey );
+	ICFBamPubTimeTypeObj lockTimeType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TimeType-derived instances in the database.

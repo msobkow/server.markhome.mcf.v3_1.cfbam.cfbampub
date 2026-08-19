@@ -119,7 +119,7 @@ public interface ICFBamPubTextDefTableObj
 	 *	@return	The TextDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTextDefObj readTextDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTextDefObj readTextDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TextDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTextDefTableObj
 	 *	@return	The TextDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTextDefObj readTextDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubTextDefObj readTextDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTextDefObj readCachedTextDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTextDefObj readCachedTextDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTextDef( ICFBamPubTextDefObj obj );
 
-	void deepDisposeTextDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeTextDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTextDefObj lockTextDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubTextDefObj lockTextDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TextDef-derived instances in the database.

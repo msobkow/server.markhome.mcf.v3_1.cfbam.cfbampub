@@ -119,7 +119,7 @@ public interface ICFBamPubFloatDefTableObj
 	 *	@return	The FloatDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubFloatDefObj readFloatDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubFloatDefObj readFloatDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a FloatDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubFloatDefTableObj
 	 *	@return	The FloatDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubFloatDefObj readFloatDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubFloatDefObj readFloatDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubFloatDefObj readCachedFloatDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubFloatDefObj readCachedFloatDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeFloatDef( ICFBamPubFloatDefObj obj );
 
-	void deepDisposeFloatDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeFloatDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubFloatDefObj lockFloatDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubFloatDefObj lockFloatDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the FloatDef-derived instances in the database.

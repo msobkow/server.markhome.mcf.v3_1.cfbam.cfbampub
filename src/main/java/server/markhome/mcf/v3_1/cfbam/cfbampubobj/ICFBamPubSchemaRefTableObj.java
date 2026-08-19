@@ -119,7 +119,7 @@ public interface ICFBamPubSchemaRefTableObj
 	 *	@return	The SchemaRef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubSchemaRefObj readSchemaRef( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaRefObj readSchemaRef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a SchemaRef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubSchemaRefTableObj
 	 *	@return	The SchemaRef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubSchemaRefObj readSchemaRef( CFLibDbKeyHash256 pkey,
+	ICFBamPubSchemaRefObj readSchemaRef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubSchemaRefObj readCachedSchemaRef( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaRefObj readCachedSchemaRef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeSchemaRef( ICFBamPubSchemaRefObj obj );
 
-	void deepDisposeSchemaRef( CFLibDbKeyHash256 pkey );
+	void deepDisposeSchemaRef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubSchemaRefObj lockSchemaRef( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaRefObj lockSchemaRef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the SchemaRef-derived instances in the database.

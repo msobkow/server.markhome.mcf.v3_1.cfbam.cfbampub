@@ -119,7 +119,7 @@ public interface ICFBamPubDelSubDep3TableObj
 	 *	@return	The DelSubDep3-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDelSubDep3Obj readDelSubDep3( CFLibDbKeyHash256 pkey );
+	ICFBamPubDelSubDep3Obj readDelSubDep3( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DelSubDep3-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDelSubDep3TableObj
 	 *	@return	The DelSubDep3-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDelSubDep3Obj readDelSubDep3( CFLibDbKeyHash256 pkey,
+	ICFBamPubDelSubDep3Obj readDelSubDep3( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDelSubDep3Obj readCachedDelSubDep3( CFLibDbKeyHash256 pkey );
+	ICFBamPubDelSubDep3Obj readCachedDelSubDep3( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDelSubDep3( ICFBamPubDelSubDep3Obj obj );
 
-	void deepDisposeDelSubDep3( CFLibDbKeyHash256 pkey );
+	void deepDisposeDelSubDep3( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDelSubDep3Obj lockDelSubDep3( CFLibDbKeyHash256 pkey );
+	ICFBamPubDelSubDep3Obj lockDelSubDep3( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DelSubDep3-derived instances in the database.

@@ -119,7 +119,7 @@ public interface ICFBamPubChainTableObj
 	 *	@return	The Chain-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubChainObj readChain( CFLibDbKeyHash256 pkey );
+	ICFBamPubChainObj readChain( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Chain-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubChainTableObj
 	 *	@return	The Chain-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubChainObj readChain( CFLibDbKeyHash256 pkey,
+	ICFBamPubChainObj readChain( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubChainObj readCachedChain( CFLibDbKeyHash256 pkey );
+	ICFBamPubChainObj readCachedChain( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeChain( ICFBamPubChainObj obj );
 
-	void deepDisposeChain( CFLibDbKeyHash256 pkey );
+	void deepDisposeChain( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubChainObj lockChain( CFLibDbKeyHash256 pkey );
+	ICFBamPubChainObj lockChain( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Chain-derived instances in the database.

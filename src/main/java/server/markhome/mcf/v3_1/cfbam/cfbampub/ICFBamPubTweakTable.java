@@ -112,7 +112,7 @@ public interface ICFBamPubTweakTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteTweakByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Tweak instances identified by the key UNameIdx.
 	 *
@@ -236,7 +236,7 @@ public interface ICFBamPubTweakTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTweak pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Tweak record instance by primary key.
@@ -249,7 +249,7 @@ public interface ICFBamPubTweakTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTweak publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Tweak instances.
@@ -363,7 +363,7 @@ public interface ICFBamPubTweakTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTweak pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Tweak record instance identified by the primary key.
@@ -378,7 +378,7 @@ public interface ICFBamPubTweakTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTweak publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Tweak record instances.

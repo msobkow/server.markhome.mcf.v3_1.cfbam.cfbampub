@@ -119,7 +119,7 @@ public interface ICFBamPubBlobTypeTableObj
 	 *	@return	The BlobType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBlobTypeObj readBlobType( CFLibDbKeyHash256 pkey );
+	ICFBamPubBlobTypeObj readBlobType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a BlobType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubBlobTypeTableObj
 	 *	@return	The BlobType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubBlobTypeObj readBlobType( CFLibDbKeyHash256 pkey,
+	ICFBamPubBlobTypeObj readBlobType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubBlobTypeObj readCachedBlobType( CFLibDbKeyHash256 pkey );
+	ICFBamPubBlobTypeObj readCachedBlobType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeBlobType( ICFBamPubBlobTypeObj obj );
 
-	void deepDisposeBlobType( CFLibDbKeyHash256 pkey );
+	void deepDisposeBlobType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubBlobTypeObj lockBlobType( CFLibDbKeyHash256 pkey );
+	ICFBamPubBlobTypeObj lockBlobType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the BlobType-derived instances in the database.

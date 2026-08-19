@@ -119,7 +119,7 @@ public interface ICFBamPubUInt32TypeTableObj
 	 *	@return	The UInt32Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt32TypeObj readUInt32Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt32TypeObj readUInt32Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a UInt32Type-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubUInt32TypeTableObj
 	 *	@return	The UInt32Type-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubUInt32TypeObj readUInt32Type( CFLibDbKeyHash256 pkey,
+	ICFBamPubUInt32TypeObj readUInt32Type( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubUInt32TypeObj readCachedUInt32Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt32TypeObj readCachedUInt32Type( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeUInt32Type( ICFBamPubUInt32TypeObj obj );
 
-	void deepDisposeUInt32Type( CFLibDbKeyHash256 pkey );
+	void deepDisposeUInt32Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubUInt32TypeObj lockUInt32Type( CFLibDbKeyHash256 pkey );
+	ICFBamPubUInt32TypeObj lockUInt32Type( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the UInt32Type-derived instances in the database.

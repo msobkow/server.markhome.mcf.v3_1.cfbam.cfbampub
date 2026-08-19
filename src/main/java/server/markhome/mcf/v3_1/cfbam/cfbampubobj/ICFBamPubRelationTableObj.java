@@ -119,7 +119,7 @@ public interface ICFBamPubRelationTableObj
 	 *	@return	The Relation-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubRelationObj readRelation( CFLibDbKeyHash256 pkey );
+	ICFBamPubRelationObj readRelation( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Relation-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubRelationTableObj
 	 *	@return	The Relation-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubRelationObj readRelation( CFLibDbKeyHash256 pkey,
+	ICFBamPubRelationObj readRelation( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubRelationObj readCachedRelation( CFLibDbKeyHash256 pkey );
+	ICFBamPubRelationObj readCachedRelation( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeRelation( ICFBamPubRelationObj obj );
 
-	void deepDisposeRelation( CFLibDbKeyHash256 pkey );
+	void deepDisposeRelation( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubRelationObj lockRelation( CFLibDbKeyHash256 pkey );
+	ICFBamPubRelationObj lockRelation( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Relation-derived instances in the database.

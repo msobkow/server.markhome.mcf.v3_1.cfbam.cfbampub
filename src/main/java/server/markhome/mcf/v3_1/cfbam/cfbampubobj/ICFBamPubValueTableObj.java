@@ -128,7 +128,7 @@ public interface ICFBamPubValueTableObj
 	 *	@return	The Value-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubValueObj readValue( CFLibDbKeyHash256 pkey );
+	ICFBamPubValueObj readValue( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Value-derived instance by it's primary key.
@@ -138,19 +138,19 @@ public interface ICFBamPubValueTableObj
 	 *	@return	The Value-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubValueObj readValue( CFLibDbKeyHash256 pkey,
+	ICFBamPubValueObj readValue( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubValueObj readCachedValue( CFLibDbKeyHash256 pkey );
+	ICFBamPubValueObj readCachedValue( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeValue( ICFBamPubValueObj obj );
 
-	void deepDisposeValue( CFLibDbKeyHash256 pkey );
+	void deepDisposeValue( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubValueObj lockValue( CFLibDbKeyHash256 pkey );
+	ICFBamPubValueObj lockValue( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Value-derived instances in the database.

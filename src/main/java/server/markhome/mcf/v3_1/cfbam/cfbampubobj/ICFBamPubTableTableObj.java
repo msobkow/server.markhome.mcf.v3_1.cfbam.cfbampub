@@ -119,7 +119,7 @@ public interface ICFBamPubTableTableObj
 	 *	@return	The Table-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTableObj readTable( CFLibDbKeyHash256 pkey );
+	ICFBamPubTableObj readTable( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Table-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubTableTableObj
 	 *	@return	The Table-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubTableObj readTable( CFLibDbKeyHash256 pkey,
+	ICFBamPubTableObj readTable( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubTableObj readCachedTable( CFLibDbKeyHash256 pkey );
+	ICFBamPubTableObj readCachedTable( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTable( ICFBamPubTableObj obj );
 
-	void deepDisposeTable( CFLibDbKeyHash256 pkey );
+	void deepDisposeTable( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubTableObj lockTable( CFLibDbKeyHash256 pkey );
+	ICFBamPubTableObj lockTable( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Table-derived instances in the database.

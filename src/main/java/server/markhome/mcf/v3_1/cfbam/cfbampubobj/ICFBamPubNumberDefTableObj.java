@@ -119,7 +119,7 @@ public interface ICFBamPubNumberDefTableObj
 	 *	@return	The NumberDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNumberDefObj readNumberDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubNumberDefObj readNumberDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a NumberDef-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubNumberDefTableObj
 	 *	@return	The NumberDef-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNumberDefObj readNumberDef( CFLibDbKeyHash256 pkey,
+	ICFBamPubNumberDefObj readNumberDef( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubNumberDefObj readCachedNumberDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubNumberDefObj readCachedNumberDef( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeNumberDef( ICFBamPubNumberDefObj obj );
 
-	void deepDisposeNumberDef( CFLibDbKeyHash256 pkey );
+	void deepDisposeNumberDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubNumberDefObj lockNumberDef( CFLibDbKeyHash256 pkey );
+	ICFBamPubNumberDefObj lockNumberDef( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the NumberDef-derived instances in the database.

@@ -131,7 +131,7 @@ public interface ICFBamPubIndexTweakTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteIndexTweakByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the IndexTweak instances identified by the key UNameIdx.
 	 *
@@ -255,7 +255,7 @@ public interface ICFBamPubIndexTweakTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubIndexTweak pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived IndexTweak record instance by primary key.
@@ -268,7 +268,7 @@ public interface ICFBamPubIndexTweakTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubIndexTweak publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all IndexTweak instances.
@@ -394,7 +394,7 @@ public interface ICFBamPubIndexTweakTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubIndexTweak pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific IndexTweak record instance identified by the primary key.
@@ -409,7 +409,7 @@ public interface ICFBamPubIndexTweakTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubIndexTweak publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific IndexTweak record instances.

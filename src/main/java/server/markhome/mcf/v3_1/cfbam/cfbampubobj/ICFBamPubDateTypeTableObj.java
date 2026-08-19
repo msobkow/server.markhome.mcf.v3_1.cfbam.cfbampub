@@ -119,7 +119,7 @@ public interface ICFBamPubDateTypeTableObj
 	 *	@return	The DateType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDateTypeObj readDateType( CFLibDbKeyHash256 pkey );
+	ICFBamPubDateTypeObj readDateType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a DateType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubDateTypeTableObj
 	 *	@return	The DateType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubDateTypeObj readDateType( CFLibDbKeyHash256 pkey,
+	ICFBamPubDateTypeObj readDateType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubDateTypeObj readCachedDateType( CFLibDbKeyHash256 pkey );
+	ICFBamPubDateTypeObj readCachedDateType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeDateType( ICFBamPubDateTypeObj obj );
 
-	void deepDisposeDateType( CFLibDbKeyHash256 pkey );
+	void deepDisposeDateType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubDateTypeObj lockDateType( CFLibDbKeyHash256 pkey );
+	ICFBamPubDateTypeObj lockDateType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the DateType-derived instances in the database.

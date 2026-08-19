@@ -112,7 +112,7 @@ public interface ICFBamPubScopeTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteScopeByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Scope instances identified by the key TenantIdx.
 	 *
@@ -145,7 +145,7 @@ public interface ICFBamPubScopeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubScope pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Scope record instance by primary key.
@@ -158,7 +158,7 @@ public interface ICFBamPubScopeTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubScope publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Scope instances.
@@ -207,7 +207,7 @@ public interface ICFBamPubScopeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubScope pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Scope record instance identified by the primary key.
@@ -222,7 +222,7 @@ public interface ICFBamPubScopeTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubScope publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Scope record instances.

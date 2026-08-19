@@ -131,7 +131,7 @@ public interface ICFBamPubTableTweakTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteTableTweakByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the TableTweak instances identified by the key UNameIdx.
 	 *
@@ -255,7 +255,7 @@ public interface ICFBamPubTableTweakTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTableTweak pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived TableTweak record instance by primary key.
@@ -268,7 +268,7 @@ public interface ICFBamPubTableTweakTable
 	 *		no such existing key value.
 	 */
 	public ICFBamPubTableTweak publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all TableTweak instances.
@@ -394,7 +394,7 @@ public interface ICFBamPubTableTweakTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTableTweak pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific TableTweak record instance identified by the primary key.
@@ -409,7 +409,7 @@ public interface ICFBamPubTableTweakTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFBamPubTableTweak publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific TableTweak record instances.

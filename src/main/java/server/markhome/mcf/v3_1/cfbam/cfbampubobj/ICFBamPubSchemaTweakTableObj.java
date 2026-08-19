@@ -119,7 +119,7 @@ public interface ICFBamPubSchemaTweakTableObj
 	 *	@return	The SchemaTweak-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubSchemaTweakObj readSchemaTweak( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaTweakObj readSchemaTweak( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a SchemaTweak-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubSchemaTweakTableObj
 	 *	@return	The SchemaTweak-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubSchemaTweakObj readSchemaTweak( CFLibDbKeyHash256 pkey,
+	ICFBamPubSchemaTweakObj readSchemaTweak( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubSchemaTweakObj readCachedSchemaTweak( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaTweakObj readCachedSchemaTweak( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeSchemaTweak( ICFBamPubSchemaTweakObj obj );
 
-	void deepDisposeSchemaTweak( CFLibDbKeyHash256 pkey );
+	void deepDisposeSchemaTweak( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubSchemaTweakObj lockSchemaTweak( CFLibDbKeyHash256 pkey );
+	ICFBamPubSchemaTweakObj lockSchemaTweak( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the SchemaTweak-derived instances in the database.

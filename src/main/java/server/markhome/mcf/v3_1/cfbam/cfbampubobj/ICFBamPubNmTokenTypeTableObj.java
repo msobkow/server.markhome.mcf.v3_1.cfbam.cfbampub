@@ -119,7 +119,7 @@ public interface ICFBamPubNmTokenTypeTableObj
 	 *	@return	The NmTokenType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNmTokenTypeObj readNmTokenType( CFLibDbKeyHash256 pkey );
+	ICFBamPubNmTokenTypeObj readNmTokenType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a NmTokenType-derived instance by it's primary key.
@@ -129,19 +129,19 @@ public interface ICFBamPubNmTokenTypeTableObj
 	 *	@return	The NmTokenType-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFBamPubNmTokenTypeObj readNmTokenType( CFLibDbKeyHash256 pkey,
+	ICFBamPubNmTokenTypeObj readNmTokenType( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFBamPubNmTokenTypeObj readCachedNmTokenType( CFLibDbKeyHash256 pkey );
+	ICFBamPubNmTokenTypeObj readCachedNmTokenType( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeNmTokenType( ICFBamPubNmTokenTypeObj obj );
 
-	void deepDisposeNmTokenType( CFLibDbKeyHash256 pkey );
+	void deepDisposeNmTokenType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFBamPubNmTokenTypeObj lockNmTokenType( CFLibDbKeyHash256 pkey );
+	ICFBamPubNmTokenTypeObj lockNmTokenType( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the NmTokenType-derived instances in the database.
