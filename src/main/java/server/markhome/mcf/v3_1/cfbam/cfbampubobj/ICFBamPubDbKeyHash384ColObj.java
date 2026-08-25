@@ -89,18 +89,18 @@ public interface ICFBamPubDbKeyHash384ColObj
 	ICFBamPubDbKeyHash384Col getDbKeyHash384ColRec();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable();
+	ICFBamPubTableObj getRequiredContainerTable();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable( boolean forceRead );
+	ICFBamPubTableObj getRequiredContainerTable( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

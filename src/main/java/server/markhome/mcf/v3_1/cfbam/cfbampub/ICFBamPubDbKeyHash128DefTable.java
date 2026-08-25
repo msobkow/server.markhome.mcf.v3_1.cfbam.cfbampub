@@ -576,6 +576,6 @@ public interface ICFBamPubDbKeyHash128DefTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubDbKeyHash128Def pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

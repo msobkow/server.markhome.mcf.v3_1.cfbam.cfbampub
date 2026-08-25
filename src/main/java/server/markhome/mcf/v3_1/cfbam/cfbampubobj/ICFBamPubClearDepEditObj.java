@@ -78,42 +78,42 @@ public interface ICFBamPubClearDepEditObj
 	 *
 	 *	@return	The ICFBamPubRelationObj instance referenced by the Relation key.
 	 */
-	ICFBamPubRelationObj get$OptionalOrRequired$LookupRelation();
+	ICFBamPubRelationObj getRequiredLookupRelation();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubRelationObj instance referenced by the Relation key.
+	 *	Get the required ICFBamPubRelationObj instance referenced by the Relation key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubRelationObj instance referenced by the Relation key.
+	 *	@return	The required ICFBamPubRelationObj instance referenced by the Relation key.
 	 */
-	ICFBamPubRelationObj get$OptionalOrRequired$LookupRelation( boolean forceRead );
+	ICFBamPubRelationObj getRequiredLookupRelation( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubRelationObj instance referenced by the Relation key.
 	 *
 	 *	@param	value	the ICFBamPubRelationObj instance to be referenced by the Relation key.
 	 */
-	void set$OptionalOrRequired$LookupRelation( ICFBamPubRelationObj value );
+	void setRequiredLookupRelation( ICFBamPubRelationObj value );
 
 	/**
 	 *	Get the ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
 	 *	@return	The ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema();
+	ICFBamPubSchemaDefObj getOptionalLookupDefSchema();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema( boolean forceRead );
+	ICFBamPubSchemaDefObj getOptionalLookupDefSchema( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
 	 *	@param	value	the ICFBamPubSchemaDefObj instance to be referenced by the DefSchema key.
 	 */
-	void set$OptionalOrRequired$LookupDefSchema( ICFBamPubSchemaDefObj value );
+	void setOptionalLookupDefSchema( ICFBamPubSchemaDefObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute RelationId.

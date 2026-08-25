@@ -78,70 +78,70 @@ public interface ICFBamPubDelTopDepEditObj
 	 *
 	 *	@return	The ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable();
+	ICFBamPubTableObj getRequiredContainerTable();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable( boolean forceRead );
+	ICFBamPubTableObj getRequiredContainerTable( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubTableObj instance referenced by the Table key.
 	 *
 	 *	@param	value	the ICFBamPubTableObj instance to be referenced by the Table key.
 	 */
-	void set$OptionalOrRequired$ContainerTable( ICFBamPubTableObj value );
+	void setRequiredContainerTable( ICFBamPubTableObj value );
 
 	/**
 	 *	Get a list ICFBamPubDelSubDep1Obj instances referenced by the DelDep key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubDelSubDep1Obj instances referenced by the DelDep key.
 	 */
-	List<ICFBamPubDelSubDep1Obj> get$OptionalOrRequired$ComponentsDelDep();
+	List<ICFBamPubDelSubDep1Obj> getOptionalComponentsDelDep();
 
 	/**
 	 *	Get the ICFBamPubDelTopDepObj instance referenced by the Prev key.
 	 *
 	 *	@return	The ICFBamPubDelTopDepObj instance referenced by the Prev key.
 	 */
-	ICFBamPubDelTopDepObj get$OptionalOrRequired$LookupPrev();
+	ICFBamPubDelTopDepObj getOptionalLookupPrev();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubDelTopDepObj instance referenced by the Prev key.
+	 *	Get the optional ICFBamPubDelTopDepObj instance referenced by the Prev key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubDelTopDepObj instance referenced by the Prev key.
+	 *	@return	The optional ICFBamPubDelTopDepObj instance referenced by the Prev key.
 	 */
-	ICFBamPubDelTopDepObj get$OptionalOrRequired$LookupPrev( boolean forceRead );
+	ICFBamPubDelTopDepObj getOptionalLookupPrev( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubDelTopDepObj instance referenced by the Prev key.
 	 *
 	 *	@param	value	the ICFBamPubDelTopDepObj instance to be referenced by the Prev key.
 	 */
-	void set$OptionalOrRequired$LookupPrev( ICFBamPubDelTopDepObj value );
+	void setOptionalLookupPrev( ICFBamPubDelTopDepObj value );
 
 	/**
 	 *	Get the ICFBamPubDelTopDepObj instance referenced by the Next key.
 	 *
 	 *	@return	The ICFBamPubDelTopDepObj instance referenced by the Next key.
 	 */
-	ICFBamPubDelTopDepObj get$OptionalOrRequired$LookupNext();
+	ICFBamPubDelTopDepObj getOptionalLookupNext();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubDelTopDepObj instance referenced by the Next key.
+	 *	Get the optional ICFBamPubDelTopDepObj instance referenced by the Next key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubDelTopDepObj instance referenced by the Next key.
+	 *	@return	The optional ICFBamPubDelTopDepObj instance referenced by the Next key.
 	 */
-	ICFBamPubDelTopDepObj get$OptionalOrRequired$LookupNext( boolean forceRead );
+	ICFBamPubDelTopDepObj getOptionalLookupNext( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubDelTopDepObj instance referenced by the Next key.
 	 *
 	 *	@param	value	the ICFBamPubDelTopDepObj instance to be referenced by the Next key.
 	 */
-	void set$OptionalOrRequired$LookupNext( ICFBamPubDelTopDepObj value );
+	void setOptionalLookupNext( ICFBamPubDelTopDepObj value );
 
 	/**
 	 *	Get the required String attribute Name.

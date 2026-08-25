@@ -78,19 +78,19 @@ public interface ICFBamPubIndex
 	public final static int CLASS_CODE = 0xa825;
 	public final static String S_CLASS_CODE = "a825";
 
-	public ICFBamPubTable get$OptionalOrRequired$ContainerTable();
+	public ICFBamPubTable getRequiredContainerTable();
 
-	public void set$OptionalOrRequired$ContainerTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$ContainerTable($implIJavaAtomType$ argTableId);
+	public void setRequiredContainerTable(ICFBamPubTable argObj);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
-	public List<ICFBamPubIndexCol> get$OptionalOrRequired$ComponentsColumns();
+	public List<ICFBamPubIndexCol> getOptionalComponentsColumns();
 
-	public List<ICFBamPubIndexTweak> get$OptionalOrRequired$ComponentsTweaks();
+	public List<ICFBamPubIndexTweak> getOptionalComponentsTweaks();
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );
@@ -114,7 +114,7 @@ public interface ICFBamPubIndex
 	public void setRequiredIsUnique( boolean value );
 	public boolean getRequiredIsDbMapped();
 	public void setRequiredIsDbMapped( boolean value );
-	public $implIJavaAtomType$ getRequiredCodeVis();
+	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
 	public boolean equals( Object obj );
 

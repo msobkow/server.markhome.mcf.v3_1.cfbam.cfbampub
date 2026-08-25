@@ -91,39 +91,39 @@ public interface ICFBamPubRelation
 	public final static int CLASS_CODE = 0xa839;
 	public final static String S_CLASS_CODE = "a839";
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
-	public ICFBamPubTable get$OptionalOrRequired$ContainerFromTable();
+	public ICFBamPubTable getRequiredContainerFromTable();
 
-	public void set$OptionalOrRequired$ContainerFromTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$ContainerFromTable($implIJavaAtomType$ argTableId);
+	public void setRequiredContainerFromTable(ICFBamPubTable argObj);
+	public void setRequiredContainerFromTable(ICFLibKeyHash256 argTableId);
 
-	public ICFBamPubIndex get$OptionalOrRequired$LookupFromIndex();
+	public ICFBamPubIndex getRequiredLookupFromIndex();
 
-	public void set$OptionalOrRequired$LookupFromIndex(ICFBamPubIndex argObj);
-	public void set$OptionalOrRequired$LookupFromIndex($implIJavaAtomType$ argFromIndexId);
+	public void setRequiredLookupFromIndex(ICFBamPubIndex argObj);
+	public void setRequiredLookupFromIndex(ICFLibKeyHash256 argFromIndexId);
 
-	public ICFBamPubTable get$OptionalOrRequired$LookupToTable();
+	public ICFBamPubTable getRequiredLookupToTable();
 
-	public void set$OptionalOrRequired$LookupToTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$LookupToTable($implIJavaAtomType$ argToTableId);
+	public void setRequiredLookupToTable(ICFBamPubTable argObj);
+	public void setRequiredLookupToTable(ICFLibKeyHash256 argToTableId);
 
-	public ICFBamPubIndex get$OptionalOrRequired$LookupToIndex();
+	public ICFBamPubIndex getRequiredLookupToIndex();
 
-	public void set$OptionalOrRequired$LookupToIndex(ICFBamPubIndex argObj);
-	public void set$OptionalOrRequired$LookupToIndex($implIJavaAtomType$ argToIndexId);
+	public void setRequiredLookupToIndex(ICFBamPubIndex argObj);
+	public void setRequiredLookupToIndex(ICFLibKeyHash256 argToIndexId);
 
-	public ICFBamPubRelation get$OptionalOrRequired$LookupNarrowed();
+	public ICFBamPubRelation getOptionalLookupNarrowed();
 
-	public void set$OptionalOrRequired$LookupNarrowed(ICFBamPubRelation argObj);
-	public void set$OptionalOrRequired$LookupNarrowed($implIJavaAtomType$ argNarrowedId);
+	public void setOptionalLookupNarrowed(ICFBamPubRelation argObj);
+	public void setOptionalLookupNarrowed(ICFLibKeyHash256 argNarrowedId);
 
-	public List<ICFBamPubRelationCol> get$OptionalOrRequired$ComponentsColumns();
+	public List<ICFBamPubRelationCol> getOptionalComponentsColumns();
 
-	public List<ICFBamPubPopTopDep> get$OptionalOrRequired$ComponentsPopDep();
+	public List<ICFBamPubPopTopDep> getOptionalComponentsPopDep();
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );
@@ -139,7 +139,7 @@ public interface ICFBamPubRelation
 	public void setOptionalShortDescription( String value );
 	public String getOptionalDescription();
 	public void setOptionalDescription( String value );
-	public $implIJavaAtomType$ getRequiredRelationType();
+	public ICFBamPubSchema.RelationTypeEnum getRequiredRelationType();
 	public void setRequiredRelationType( ICFBamPubSchema.RelationTypeEnum value );
 	public String getOptionalDbName();
 	public void setOptionalDbName( String value );
@@ -161,7 +161,7 @@ public interface ICFBamPubRelation
 	public void setRequiredAllowAddendum( boolean value );
 	public CFLibDbKeyHash256 getOptionalNarrowedId();
 	public void setOptionalNarrowedId( CFLibDbKeyHash256 value );
-	public $implIJavaAtomType$ getRequiredCodeVis();
+	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
 	public boolean equals( Object obj );
 

@@ -89,46 +89,46 @@ public interface ICFBamPubServerMethodObj
 	ICFBamPubServerMethod getServerMethodRec();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema();
+	ICFBamPubSchemaDefObj getOptionalLookupDefSchema();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema( boolean forceRead );
+	ICFBamPubSchemaDefObj getOptionalLookupDefSchema( boolean forceRead );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the ForTable key.
+	 *	Get the required ICFBamPubTableObj instance referenced by the ForTable key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the ForTable key.
+	 *	@return	The required ICFBamPubTableObj instance referenced by the ForTable key.
 	 */
-	ICFBamPubTableObj get$OptionalOrRequired$ContainerForTable();
+	ICFBamPubTableObj getRequiredContainerForTable();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the ForTable key.
+	 *	Get the required ICFBamPubTableObj instance referenced by the ForTable key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the ForTable key.
+	 *	@return	The required ICFBamPubTableObj instance referenced by the ForTable key.
 	 */
-	ICFBamPubTableObj get$OptionalOrRequired$ContainerForTable( boolean forceRead );
+	ICFBamPubTableObj getRequiredContainerForTable( boolean forceRead );
 
 	/**
-	 *	Get the array of $optionalorrequired$ ICFBamPubParamObj array of instances referenced by the Params key.
+	 *	Get the array of optional ICFBamPubParamObj array of instances referenced by the Params key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubParamObj[] array of instances referenced by the Params key.
+	 *	@return	The optional ICFBamPubParamObj[] array of instances referenced by the Params key.
 	 */
-	List<ICFBamPubParamObj> get$OptionalOrRequired$ComponentsParams();
+	List<ICFBamPubParamObj> getOptionalComponentsParams();
 
 	/**
-	 *	Get the array of $optionalorrequired$ ICFBamPubParamObj array of instances referenced by the Params key.
+	 *	Get the array of optional ICFBamPubParamObj array of instances referenced by the Params key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubParamObj[] array of instances referenced by the Params key.
+	 *	@return	The optional ICFBamPubParamObj[] array of instances referenced by the Params key.
 	 */
-	List<ICFBamPubParamObj> get$OptionalOrRequired$ComponentsParams( boolean forceRead );
+	List<ICFBamPubParamObj> getOptionalComponentsParams( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute TableId.

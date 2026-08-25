@@ -576,6 +576,6 @@ public interface ICFBamPubAtomTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubAtom pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

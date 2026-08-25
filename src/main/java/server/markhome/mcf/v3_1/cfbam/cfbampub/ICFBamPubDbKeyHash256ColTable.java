@@ -621,6 +621,6 @@ public interface ICFBamPubDbKeyHash256ColTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubDbKeyHash256Col pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

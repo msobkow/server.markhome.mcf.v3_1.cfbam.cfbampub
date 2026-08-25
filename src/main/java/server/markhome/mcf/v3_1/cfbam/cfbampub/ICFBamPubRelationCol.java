@@ -111,35 +111,35 @@ public interface ICFBamPubRelationCol
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFBamPubRelation get$OptionalOrRequired$ContainerRelation();
+	public ICFBamPubRelation getRequiredContainerRelation();
 
-	public void set$OptionalOrRequired$ContainerRelation(ICFBamPubRelation argObj);
-	public void set$OptionalOrRequired$ContainerRelation($implIJavaAtomType$ argRelationId);
+	public void setRequiredContainerRelation(ICFBamPubRelation argObj);
+	public void setRequiredContainerRelation(ICFLibKeyHash256 argRelationId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
-	public ICFBamPubRelationCol get$OptionalOrRequired$LookupPrev();
+	public ICFBamPubRelationCol getOptionalLookupPrev();
 
-	public void set$OptionalOrRequired$LookupPrev(ICFBamPubRelationCol argObj);
-	public void set$OptionalOrRequired$LookupPrev($implIJavaAtomType$ argPrevId);
+	public void setOptionalLookupPrev(ICFBamPubRelationCol argObj);
+	public void setOptionalLookupPrev(ICFLibKeyHash256 argPrevId);
 
-	public ICFBamPubRelationCol get$OptionalOrRequired$LookupNext();
+	public ICFBamPubRelationCol getOptionalLookupNext();
 
-	public void set$OptionalOrRequired$LookupNext(ICFBamPubRelationCol argObj);
-	public void set$OptionalOrRequired$LookupNext($implIJavaAtomType$ argNextId);
+	public void setOptionalLookupNext(ICFBamPubRelationCol argObj);
+	public void setOptionalLookupNext(ICFLibKeyHash256 argNextId);
 
-	public ICFBamPubIndexCol get$OptionalOrRequired$LookupFromCol();
+	public ICFBamPubIndexCol getRequiredLookupFromCol();
 
-	public void set$OptionalOrRequired$LookupFromCol(ICFBamPubIndexCol argObj);
-	public void set$OptionalOrRequired$LookupFromCol($implIJavaAtomType$ argFromColId);
+	public void setRequiredLookupFromCol(ICFBamPubIndexCol argObj);
+	public void setRequiredLookupFromCol(ICFLibKeyHash256 argFromColId);
 
-	public ICFBamPubIndexCol get$OptionalOrRequired$LookupToCol();
+	public ICFBamPubIndexCol getRequiredLookupToCol();
 
-	public void set$OptionalOrRequired$LookupToCol(ICFBamPubIndexCol argObj);
-	public void set$OptionalOrRequired$LookupToCol($implIJavaAtomType$ argToColId);
+	public void setRequiredLookupToCol(ICFBamPubIndexCol argObj);
+	public void setRequiredLookupToCol(ICFLibKeyHash256 argToColId);
 
 	public CFLibDbKeyHash256 getRequiredRelationId();
 	public void setRequiredRelationId( CFLibDbKeyHash256 value );

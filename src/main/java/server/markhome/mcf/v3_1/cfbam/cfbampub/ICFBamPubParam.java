@@ -110,30 +110,30 @@ public interface ICFBamPubParam
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFBamPubServerMethod get$OptionalOrRequired$ContainerServerMeth();
+	public ICFBamPubServerMethod getRequiredContainerServerMeth();
 
-	public void set$OptionalOrRequired$ContainerServerMeth(ICFBamPubServerMethod argObj);
-	public void set$OptionalOrRequired$ContainerServerMeth($implIJavaAtomType$ argServerMethodId);
+	public void setRequiredContainerServerMeth(ICFBamPubServerMethod argObj);
+	public void setRequiredContainerServerMeth(ICFLibKeyHash256 argServerMethodId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
-	public ICFBamPubParam get$OptionalOrRequired$LookupPrev();
+	public ICFBamPubParam getOptionalLookupPrev();
 
-	public void set$OptionalOrRequired$LookupPrev(ICFBamPubParam argObj);
-	public void set$OptionalOrRequired$LookupPrev($implIJavaAtomType$ argPrevId);
+	public void setOptionalLookupPrev(ICFBamPubParam argObj);
+	public void setOptionalLookupPrev(ICFLibKeyHash256 argPrevId);
 
-	public ICFBamPubParam get$OptionalOrRequired$LookupNext();
+	public ICFBamPubParam getOptionalLookupNext();
 
-	public void set$OptionalOrRequired$LookupNext(ICFBamPubParam argObj);
-	public void set$OptionalOrRequired$LookupNext($implIJavaAtomType$ argNextId);
+	public void setOptionalLookupNext(ICFBamPubParam argObj);
+	public void setOptionalLookupNext(ICFLibKeyHash256 argNextId);
 
-	public ICFBamPubValue get$OptionalOrRequired$LookupType();
+	public ICFBamPubValue getRequiredLookupType();
 
-	public void set$OptionalOrRequired$LookupType(ICFBamPubValue argObj);
-	public void set$OptionalOrRequired$LookupType($implIJavaAtomType$ argTypeId);
+	public void setRequiredLookupType(ICFBamPubValue argObj);
+	public void setRequiredLookupType(ICFLibKeyHash256 argTypeId);
 
 	public CFLibDbKeyHash256 getRequiredServerMethodId();
 	public void setRequiredServerMethodId( CFLibDbKeyHash256 value );

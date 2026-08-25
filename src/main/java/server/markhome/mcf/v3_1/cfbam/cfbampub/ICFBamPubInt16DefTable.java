@@ -576,6 +576,6 @@ public interface ICFBamPubInt16DefTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubInt16Def pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

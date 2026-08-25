@@ -78,7 +78,7 @@ public interface ICFBamPubRelationH extends ICFBamPubScopeH
 	public void setOptionalShortDescription( String value );
 	public String getOptionalDescription();
 	public void setOptionalDescription( String value );
-	public $implIJavaAtomType$ getRequiredRelationType();
+	public ICFBamPubSchema.RelationTypeEnum getRequiredRelationType();
 	public void setRequiredRelationType( ICFBamPubSchema.RelationTypeEnum value );
 	public String getOptionalDbName();
 	public void setOptionalDbName( String value );
@@ -100,7 +100,7 @@ public interface ICFBamPubRelationH extends ICFBamPubScopeH
 	public void setRequiredAllowAddendum( boolean value );
 	public CFLibDbKeyHash256 getOptionalNarrowedId();
 	public void setOptionalNarrowedId( CFLibDbKeyHash256 value );
-	public $implIJavaAtomType$ getRequiredCodeVis();
+	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
 	@Override
 	public boolean equals( Object obj );

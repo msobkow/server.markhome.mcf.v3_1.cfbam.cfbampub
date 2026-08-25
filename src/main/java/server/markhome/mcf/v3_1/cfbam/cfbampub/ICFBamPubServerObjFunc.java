@@ -70,10 +70,10 @@ public interface ICFBamPubServerObjFunc
 	public final static int CLASS_CODE = 0xa805;
 	public final static String S_CLASS_CODE = "a805";
 
-	public ICFBamPubTable get$OptionalOrRequired$LookupRetTable();
+	public ICFBamPubTable getOptionalLookupRetTable();
 
-	public void set$OptionalOrRequired$LookupRetTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$LookupRetTable($implIJavaAtomType$ argRetTableId);
+	public void setOptionalLookupRetTable(ICFBamPubTable argObj);
+	public void setOptionalLookupRetTable(ICFLibKeyHash256 argRetTableId);
 
 	public CFLibDbKeyHash256 getOptionalRetTableId();
 	public void setOptionalRetTableId( CFLibDbKeyHash256 value );

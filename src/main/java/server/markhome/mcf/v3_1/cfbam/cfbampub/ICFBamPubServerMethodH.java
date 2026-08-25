@@ -84,7 +84,7 @@ public interface ICFBamPubServerMethodH extends ICFBamPubScopeH
 	public void setRequiredIsInstanceMethod( boolean value );
 	public boolean getRequiredIsServerOnly();
 	public void setRequiredIsServerOnly( boolean value );
-	public $implIJavaAtomType$ getRequiredCodeVis();
+	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
 	public String getRequiredJMethodBody();
 	public void setRequiredJMethodBody( String value );

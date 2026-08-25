@@ -576,6 +576,6 @@ public interface ICFBamPubBlobDefTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubBlobDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

@@ -513,6 +513,6 @@ public interface ICFBamPubSchemaRefTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubSchemaRef pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

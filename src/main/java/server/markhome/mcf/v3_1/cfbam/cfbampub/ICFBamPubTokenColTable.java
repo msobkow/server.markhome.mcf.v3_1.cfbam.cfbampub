@@ -621,6 +621,6 @@ public interface ICFBamPubTokenColTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubTokenCol pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

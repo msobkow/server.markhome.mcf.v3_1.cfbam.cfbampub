@@ -86,7 +86,7 @@ public interface ICFBamPubIndexH extends ICFBamPubScopeH
 	public void setRequiredIsUnique( boolean value );
 	public boolean getRequiredIsDbMapped();
 	public void setRequiredIsDbMapped( boolean value );
-	public $implIJavaAtomType$ getRequiredCodeVis();
+	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
 	@Override
 	public boolean equals( Object obj );

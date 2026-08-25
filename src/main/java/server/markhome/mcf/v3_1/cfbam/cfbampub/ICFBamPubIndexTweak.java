@@ -70,10 +70,10 @@ public interface ICFBamPubIndexTweak
 	public final static int CLASS_CODE = 0xa80b;
 	public final static String S_CLASS_CODE = "a80b";
 
-	public ICFBamPubIndex get$OptionalOrRequired$ContainerIndexDef();
+	public ICFBamPubIndex getRequiredContainerIndexDef();
 
-	public void set$OptionalOrRequired$ContainerIndexDef(ICFBamPubIndex argObj);
-	public void set$OptionalOrRequired$ContainerIndexDef($implIJavaAtomType$ argIndexId);
+	public void setRequiredContainerIndexDef(ICFBamPubIndex argObj);
+	public void setRequiredContainerIndexDef(ICFLibKeyHash256 argIndexId);
 
 	public CFLibDbKeyHash256 getRequiredIndexId();
 	public void setRequiredIndexId( CFLibDbKeyHash256 value );

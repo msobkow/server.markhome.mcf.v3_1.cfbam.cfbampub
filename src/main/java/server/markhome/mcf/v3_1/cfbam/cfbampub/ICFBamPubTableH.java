@@ -102,11 +102,11 @@ public interface ICFBamPubTableH extends ICFBamPubScopeH
 	public void setRequiredIsMutable( boolean value );
 	public boolean getRequiredIsServerOnly();
 	public void setRequiredIsServerOnly( boolean value );
-	public $implIJavaAtomType$ getRequiredLoaderBehaviour();
+	public ICFBamPubSchema.LoaderBehaviourEnum getRequiredLoaderBehaviour();
 	public void setRequiredLoaderBehaviour( ICFBamPubSchema.LoaderBehaviourEnum value );
-	public $implIJavaAtomType$ getRequiredSecScope();
+	public ICFBamPubSchema.SecScopeEnum getRequiredSecScope();
 	public void setRequiredSecScope( ICFBamPubSchema.SecScopeEnum value );
-	public $implIJavaAtomType$ getRequiredCodeVis();
+	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
 	@Override
 	public boolean equals( Object obj );

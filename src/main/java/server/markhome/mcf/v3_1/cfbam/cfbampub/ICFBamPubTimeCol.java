@@ -70,10 +70,10 @@ public interface ICFBamPubTimeCol
 	public final static int CLASS_CODE = 0xa884;
 	public final static String S_CLASS_CODE = "a884";
 
-	public ICFBamPubTable get$OptionalOrRequired$ContainerTable();
+	public ICFBamPubTable getRequiredContainerTable();
 
-	public void set$OptionalOrRequired$ContainerTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$ContainerTable($implIJavaAtomType$ argTableId);
+	public void setRequiredContainerTable(ICFBamPubTable argObj);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );

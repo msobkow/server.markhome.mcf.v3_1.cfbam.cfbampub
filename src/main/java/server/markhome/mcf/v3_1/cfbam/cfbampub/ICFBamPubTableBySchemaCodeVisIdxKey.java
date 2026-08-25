@@ -66,7 +66,7 @@ public interface ICFBamPubTableBySchemaCodeVisIdxKey
 {
 	public CFLibDbKeyHash256 getRequiredSchemaDefId();
 	public void setRequiredSchemaDefId( CFLibDbKeyHash256 value );
-	public $implIJavaAtomType$ getRequiredCodeVis();
+	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
 	@Override
 	public boolean equals( Object obj );

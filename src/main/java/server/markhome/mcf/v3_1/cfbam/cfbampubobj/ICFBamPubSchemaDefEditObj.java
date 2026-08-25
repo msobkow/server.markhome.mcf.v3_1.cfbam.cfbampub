@@ -78,77 +78,77 @@ public interface ICFBamPubSchemaDefEditObj
 	 *
 	 *	@return	The ICFIntPubMinorVersionObj instance referenced by the MinorVersion key.
 	 */
-	ICFIntPubMinorVersionObj get$OptionalOrRequired$ContainerMinorVersion();
+	ICFIntPubMinorVersionObj getRequiredContainerMinorVersion();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFIntPubMinorVersionObj instance referenced by the MinorVersion key.
+	 *	Get the required ICFIntPubMinorVersionObj instance referenced by the MinorVersion key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFIntPubMinorVersionObj instance referenced by the MinorVersion key.
+	 *	@return	The required ICFIntPubMinorVersionObj instance referenced by the MinorVersion key.
 	 */
-	ICFIntPubMinorVersionObj get$OptionalOrRequired$ContainerMinorVersion( boolean forceRead );
+	ICFIntPubMinorVersionObj getRequiredContainerMinorVersion( boolean forceRead );
 
 	/**
 	 *	Set the ICFIntPubMinorVersionObj instance referenced by the MinorVersion key.
 	 *
 	 *	@param	value	the ICFIntPubMinorVersionObj instance to be referenced by the MinorVersion key.
 	 */
-	void set$OptionalOrRequired$ContainerMinorVersion( ICFIntPubMinorVersionObj value );
+	void setRequiredContainerMinorVersion( ICFIntPubMinorVersionObj value );
 
 	/**
 	 *	Get a list ICFBamPubTableObj instances referenced by the Tables key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubTableObj instances referenced by the Tables key.
 	 */
-	List<ICFBamPubTableObj> get$OptionalOrRequired$ComponentsTables();
+	List<ICFBamPubTableObj> getOptionalComponentsTables();
 
 	/**
 	 *	Get a list ICFBamPubValueObj instances referenced by the Types key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubValueObj instances referenced by the Types key.
 	 */
-	List<ICFBamPubValueObj> get$OptionalOrRequired$ComponentsTypes();
+	List<ICFBamPubValueObj> getOptionalComponentsTypes();
 
 	/**
 	 *	Get a list ICFBamPubSchemaRefObj instances referenced by the SchemaRefs key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubSchemaRefObj instances referenced by the SchemaRefs key.
 	 */
-	List<ICFBamPubSchemaRefObj> get$OptionalOrRequired$ComponentsSchemaRefs();
+	List<ICFBamPubSchemaRefObj> getOptionalComponentsSchemaRefs();
 
 	/**
 	 *	Get a list ICFBamPubTweakObj instances referenced by the Tweaks key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubTweakObj instances referenced by the Tweaks key.
 	 */
-	List<ICFBamPubTweakObj> get$OptionalOrRequired$ComponentsTweaks();
+	List<ICFBamPubTweakObj> getOptionalComponentsTweaks();
 
 	/**
 	 *	Get a list ICFBamPubSchemaRoleObj instances referenced by the Roles key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubSchemaRoleObj instances referenced by the Roles key.
 	 */
-	List<ICFBamPubSchemaRoleObj> get$OptionalOrRequired$ComponentsRoles();
+	List<ICFBamPubSchemaRoleObj> getOptionalComponentsRoles();
 
 	/**
 	 *	Get the ICFSecPubTenantObj instance referenced by the CTenant key.
 	 *
 	 *	@return	The ICFSecPubTenantObj instance referenced by the CTenant key.
 	 */
-	ICFSecPubTenantObj get$OptionalOrRequired$OwnerCTenant();
+	ICFSecPubTenantObj getRequiredOwnerCTenant();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the CTenant key.
+	 *	Get the required ICFSecPubTenantObj instance referenced by the CTenant key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the CTenant key.
+	 *	@return	The required ICFSecPubTenantObj instance referenced by the CTenant key.
 	 */
-	ICFSecPubTenantObj get$OptionalOrRequired$OwnerCTenant( boolean forceRead );
+	ICFSecPubTenantObj getRequiredOwnerCTenant( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubTenantObj instance referenced by the CTenant key.
 	 *
 	 *	@param	value	the ICFSecPubTenantObj instance to be referenced by the CTenant key.
 	 */
-	void set$OptionalOrRequired$OwnerCTenant( ICFSecPubTenantObj value );
+	void setRequiredOwnerCTenant( ICFSecPubTenantObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute CTenantId.

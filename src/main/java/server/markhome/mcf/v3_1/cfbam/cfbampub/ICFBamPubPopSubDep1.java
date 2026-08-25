@@ -71,12 +71,12 @@ public interface ICFBamPubPopSubDep1
 	public final static int CLASS_CODE = 0xa835;
 	public final static String S_CLASS_CODE = "a835";
 
-	public ICFBamPubPopTopDep get$OptionalOrRequired$ContainerContPopTopDep();
+	public ICFBamPubPopTopDep getRequiredContainerContPopTopDep();
 
-	public void set$OptionalOrRequired$ContainerContPopTopDep(ICFBamPubPopTopDep argObj);
-	public void set$OptionalOrRequired$ContainerContPopTopDep($implIJavaAtomType$ argPopTopDepId);
+	public void setRequiredContainerContPopTopDep(ICFBamPubPopTopDep argObj);
+	public void setRequiredContainerContPopTopDep(ICFLibKeyHash256 argPopTopDepId);
 
-	public List<ICFBamPubPopSubDep2> get$OptionalOrRequired$ComponentsPopDep();
+	public List<ICFBamPubPopSubDep2> getOptionalComponentsPopDep();
 
 	public CFLibDbKeyHash256 getRequiredPopTopDepId();
 	public void setRequiredPopTopDepId( CFLibDbKeyHash256 value );

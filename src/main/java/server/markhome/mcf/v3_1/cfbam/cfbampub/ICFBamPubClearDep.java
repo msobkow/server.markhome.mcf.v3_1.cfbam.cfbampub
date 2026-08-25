@@ -72,15 +72,15 @@ public interface ICFBamPubClearDep
 	public final static int CLASS_CODE = 0xa814;
 	public final static String S_CLASS_CODE = "a814";
 
-	public ICFBamPubRelation get$OptionalOrRequired$LookupRelation();
+	public ICFBamPubRelation getRequiredLookupRelation();
 
-	public void set$OptionalOrRequired$LookupRelation(ICFBamPubRelation argObj);
-	public void set$OptionalOrRequired$LookupRelation($implIJavaAtomType$ argRelationId);
+	public void setRequiredLookupRelation(ICFBamPubRelation argObj);
+	public void setRequiredLookupRelation(ICFLibKeyHash256 argRelationId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
 	public CFLibDbKeyHash256 getRequiredRelationId();
 	public void setRequiredRelationId( CFLibDbKeyHash256 value );

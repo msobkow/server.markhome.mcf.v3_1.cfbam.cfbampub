@@ -73,15 +73,15 @@ public interface ICFBamPubTableCol
 	public final static int CLASS_CODE = 0xa85c;
 	public final static String S_CLASS_CODE = "a85c";
 
-	public ICFBamPubTable get$OptionalOrRequired$ContainerTable();
+	public ICFBamPubTable getRequiredContainerTable();
 
-	public void set$OptionalOrRequired$ContainerTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$ContainerTable($implIJavaAtomType$ argTableId);
+	public void setRequiredContainerTable(ICFBamPubTable argObj);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
-	public ICFBamPubValue get$OptionalOrRequired$ParentDataType();
+	public ICFBamPubValue getRequiredParentDataType();
 
-	public void set$OptionalOrRequired$ParentDataType(ICFBamPubValue argObj);
-	public void set$OptionalOrRequired$ParentDataType($implIJavaAtomType$ argDataId);
+	public void setRequiredParentDataType(ICFBamPubValue argObj);
+	public void setRequiredParentDataType(ICFLibKeyHash256 argDataId);
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );

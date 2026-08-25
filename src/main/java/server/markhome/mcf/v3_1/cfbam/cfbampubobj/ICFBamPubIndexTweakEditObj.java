@@ -78,21 +78,21 @@ public interface ICFBamPubIndexTweakEditObj
 	 *
 	 *	@return	The ICFBamPubIndexObj instance referenced by the IndexDef key.
 	 */
-	ICFBamPubIndexObj get$OptionalOrRequired$ContainerIndexDef();
+	ICFBamPubIndexObj getRequiredContainerIndexDef();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubIndexObj instance referenced by the IndexDef key.
+	 *	Get the required ICFBamPubIndexObj instance referenced by the IndexDef key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubIndexObj instance referenced by the IndexDef key.
+	 *	@return	The required ICFBamPubIndexObj instance referenced by the IndexDef key.
 	 */
-	ICFBamPubIndexObj get$OptionalOrRequired$ContainerIndexDef( boolean forceRead );
+	ICFBamPubIndexObj getRequiredContainerIndexDef( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubIndexObj instance referenced by the IndexDef key.
 	 *
 	 *	@param	value	the ICFBamPubIndexObj instance to be referenced by the IndexDef key.
 	 */
-	void set$OptionalOrRequired$ContainerIndexDef( ICFBamPubIndexObj value );
+	void setRequiredContainerIndexDef( ICFBamPubIndexObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute IndexId.

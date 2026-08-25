@@ -107,25 +107,25 @@ public interface ICFBamPubChain
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFBamPubTable get$OptionalOrRequired$ContainerTable();
+	public ICFBamPubTable getRequiredContainerTable();
 
-	public void set$OptionalOrRequired$ContainerTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$ContainerTable($implIJavaAtomType$ argTableId);
+	public void setRequiredContainerTable(ICFBamPubTable argObj);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
-	public ICFBamPubRelation get$OptionalOrRequired$LookupPrevRel();
+	public ICFBamPubRelation getRequiredLookupPrevRel();
 
-	public void set$OptionalOrRequired$LookupPrevRel(ICFBamPubRelation argObj);
-	public void set$OptionalOrRequired$LookupPrevRel($implIJavaAtomType$ argPrevRelationId);
+	public void setRequiredLookupPrevRel(ICFBamPubRelation argObj);
+	public void setRequiredLookupPrevRel(ICFLibKeyHash256 argPrevRelationId);
 
-	public ICFBamPubRelation get$OptionalOrRequired$LookupNextRel();
+	public ICFBamPubRelation getRequiredLookupNextRel();
 
-	public void set$OptionalOrRequired$LookupNextRel(ICFBamPubRelation argObj);
-	public void set$OptionalOrRequired$LookupNextRel($implIJavaAtomType$ argNextRelationId);
+	public void setRequiredLookupNextRel(ICFBamPubRelation argObj);
+	public void setRequiredLookupNextRel(ICFLibKeyHash256 argNextRelationId);
 
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public void setOptionalDefSchemaId( CFLibDbKeyHash256 value );

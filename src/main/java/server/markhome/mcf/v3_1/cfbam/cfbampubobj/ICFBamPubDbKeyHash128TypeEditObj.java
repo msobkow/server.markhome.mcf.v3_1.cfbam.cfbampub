@@ -78,21 +78,21 @@ public interface ICFBamPubDbKeyHash128TypeEditObj
 	 *
 	 *	@return	The ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$ContainerSchemaDef();
+	ICFBamPubSchemaDefObj getRequiredContainerSchemaDef();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
+	 *	Get the required ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
+	 *	@return	The required ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$ContainerSchemaDef( boolean forceRead );
+	ICFBamPubSchemaDefObj getRequiredContainerSchemaDef( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 *
 	 *	@param	value	the ICFBamPubSchemaDefObj instance to be referenced by the SchemaDef key.
 	 */
-	void set$OptionalOrRequired$ContainerSchemaDef( ICFBamPubSchemaDefObj value );
+	void setRequiredContainerSchemaDef( ICFBamPubSchemaDefObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute SchemaDefId.

@@ -78,23 +78,23 @@ public interface ICFBamPubSchemaDef
 	public final static int CLASS_CODE = 0xa802;
 	public final static String S_CLASS_CODE = "a802";
 
-	public ICFIntPubMinorVersion get$OptionalOrRequired$ContainerMinorVersion();
+	public ICFIntPubMinorVersion getRequiredContainerMinorVersion();
 
-	public void set$OptionalOrRequired$ContainerMinorVersion($implIJavaAtomType$ argMinorVersionId);
+	public void setRequiredContainerMinorVersion(ICFLibKeyHash256 argMinorVersionId);
 
-	public ICFSecPubTenant get$OptionalOrRequired$OwnerCTenant();
+	public ICFSecPubTenant getRequiredOwnerCTenant();
 
-	public void set$OptionalOrRequired$OwnerCTenant($implIJavaAtomType$ argCTenantId);
+	public void setRequiredOwnerCTenant(ICFLibKeyHash256 argCTenantId);
 
-	public List<ICFBamPubTable> get$OptionalOrRequired$ComponentsTables();
+	public List<ICFBamPubTable> getOptionalComponentsTables();
 
-	public List<ICFBamPubValue> get$OptionalOrRequired$ComponentsTypes();
+	public List<ICFBamPubValue> getOptionalComponentsTypes();
 
-	public List<ICFBamPubSchemaRef> get$OptionalOrRequired$ComponentsSchemaRefs();
+	public List<ICFBamPubSchemaRef> getOptionalComponentsSchemaRefs();
 
-	public List<ICFBamPubTweak> get$OptionalOrRequired$ComponentsTweaks();
+	public List<ICFBamPubTweak> getOptionalComponentsTweaks();
 
-	public List<ICFBamPubSchemaRole> get$OptionalOrRequired$ComponentsRoles();
+	public List<ICFBamPubSchemaRole> getOptionalComponentsRoles();
 
 	public CFLibDbKeyHash256 getRequiredCTenantId();
 	public void setRequiredCTenantId( CFLibDbKeyHash256 value );

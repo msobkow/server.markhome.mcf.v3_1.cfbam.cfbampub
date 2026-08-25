@@ -97,53 +97,53 @@ public interface ICFBamPubTable
 	public final static int CLASS_CODE = 0xa807;
 	public final static String S_CLASS_CODE = "a807";
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$ContainerSchemaDef();
+	public ICFBamPubSchemaDef getRequiredContainerSchemaDef();
 
-	public void set$OptionalOrRequired$ContainerSchemaDef(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$ContainerSchemaDef($implIJavaAtomType$ argSchemaDefId);
+	public void setRequiredContainerSchemaDef(ICFBamPubSchemaDef argObj);
+	public void setRequiredContainerSchemaDef(ICFLibKeyHash256 argSchemaDefId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
-	public ICFBamPubIndex get$OptionalOrRequired$LookupLookupIndex();
+	public ICFBamPubIndex getOptionalLookupLookupIndex();
 
-	public void set$OptionalOrRequired$LookupLookupIndex(ICFBamPubIndex argObj);
-	public void set$OptionalOrRequired$LookupLookupIndex($implIJavaAtomType$ argLookupIndexId);
+	public void setOptionalLookupLookupIndex(ICFBamPubIndex argObj);
+	public void setOptionalLookupLookupIndex(ICFLibKeyHash256 argLookupIndexId);
 
-	public ICFBamPubIndex get$OptionalOrRequired$LookupAltIndex();
+	public ICFBamPubIndex getOptionalLookupAltIndex();
 
-	public void set$OptionalOrRequired$LookupAltIndex(ICFBamPubIndex argObj);
-	public void set$OptionalOrRequired$LookupAltIndex($implIJavaAtomType$ argAltIndexId);
+	public void setOptionalLookupAltIndex(ICFBamPubIndex argObj);
+	public void setOptionalLookupAltIndex(ICFLibKeyHash256 argAltIndexId);
 
-	public ICFBamPubTable get$OptionalOrRequired$LookupQualTable();
+	public ICFBamPubTable getOptionalLookupQualTable();
 
-	public void set$OptionalOrRequired$LookupQualTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$LookupQualTable($implIJavaAtomType$ argQualifyingTableId);
+	public void setOptionalLookupQualTable(ICFBamPubTable argObj);
+	public void setOptionalLookupQualTable(ICFLibKeyHash256 argQualifyingTableId);
 
-	public ICFBamPubIndex get$OptionalOrRequired$LookupPrimaryIndex();
+	public ICFBamPubIndex getOptionalLookupPrimaryIndex();
 
-	public void set$OptionalOrRequired$LookupPrimaryIndex(ICFBamPubIndex argObj);
-	public void set$OptionalOrRequired$LookupPrimaryIndex($implIJavaAtomType$ argPrimaryIndexId);
+	public void setOptionalLookupPrimaryIndex(ICFBamPubIndex argObj);
+	public void setOptionalLookupPrimaryIndex(ICFLibKeyHash256 argPrimaryIndexId);
 
-	public List<ICFBamPubRelation> get$OptionalOrRequired$ComponentsRelation();
+	public List<ICFBamPubRelation> getOptionalComponentsRelation();
 
-	public List<ICFBamPubIndex> get$OptionalOrRequired$ComponentsIndex();
+	public List<ICFBamPubIndex> getOptionalComponentsIndex();
 
-	public List<ICFBamPubValue> get$OptionalOrRequired$ComponentsColumns();
+	public List<ICFBamPubValue> getOptionalComponentsColumns();
 
-	public List<ICFBamPubRelation> get$OptionalOrRequired$ChildrenReverseRelations();
+	public List<ICFBamPubRelation> getOptionalChildrenReverseRelations();
 
-	public List<ICFBamPubChain> get$OptionalOrRequired$ComponentsChains();
+	public List<ICFBamPubChain> getOptionalComponentsChains();
 
-	public List<ICFBamPubDelTopDep> get$OptionalOrRequired$ComponentsDelDep();
+	public List<ICFBamPubDelTopDep> getOptionalComponentsDelDep();
 
-	public List<ICFBamPubClearTopDep> get$OptionalOrRequired$ComponentsClearDep();
+	public List<ICFBamPubClearTopDep> getOptionalComponentsClearDep();
 
-	public List<ICFBamPubServerMethod> get$OptionalOrRequired$ComponentsServerMethods();
+	public List<ICFBamPubServerMethod> getOptionalComponentsServerMethods();
 
-	public List<ICFBamPubTweak> get$OptionalOrRequired$ComponentsTweaks();
+	public List<ICFBamPubTweak> getOptionalComponentsTweaks();
 
 	public CFLibDbKeyHash256 getRequiredSchemaDefId();
 	public void setRequiredSchemaDefId( CFLibDbKeyHash256 value );
@@ -183,11 +183,11 @@ public interface ICFBamPubTable
 	public void setRequiredIsMutable( boolean value );
 	public boolean getRequiredIsServerOnly();
 	public void setRequiredIsServerOnly( boolean value );
-	public $implIJavaAtomType$ getRequiredLoaderBehaviour();
+	public ICFBamPubSchema.LoaderBehaviourEnum getRequiredLoaderBehaviour();
 	public void setRequiredLoaderBehaviour( ICFBamPubSchema.LoaderBehaviourEnum value );
-	public $implIJavaAtomType$ getRequiredSecScope();
+	public ICFBamPubSchema.SecScopeEnum getRequiredSecScope();
 	public void setRequiredSecScope( ICFBamPubSchema.SecScopeEnum value );
-	public $implIJavaAtomType$ getRequiredCodeVis();
+	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
 	public boolean equals( Object obj );
 

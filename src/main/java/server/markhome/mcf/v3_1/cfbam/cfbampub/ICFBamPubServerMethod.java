@@ -81,17 +81,17 @@ public interface ICFBamPubServerMethod
 	public final static int CLASS_CODE = 0xa804;
 	public final static String S_CLASS_CODE = "a804";
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
-	public ICFBamPubTable get$OptionalOrRequired$ContainerForTable();
+	public ICFBamPubTable getRequiredContainerForTable();
 
-	public void set$OptionalOrRequired$ContainerForTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$ContainerForTable($implIJavaAtomType$ argTableId);
+	public void setRequiredContainerForTable(ICFBamPubTable argObj);
+	public void setRequiredContainerForTable(ICFLibKeyHash256 argTableId);
 
-	public List<ICFBamPubParam> get$OptionalOrRequired$ComponentsParams();
+	public List<ICFBamPubParam> getOptionalComponentsParams();
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );
@@ -113,7 +113,7 @@ public interface ICFBamPubServerMethod
 	public void setRequiredIsInstanceMethod( boolean value );
 	public boolean getRequiredIsServerOnly();
 	public void setRequiredIsServerOnly( boolean value );
-	public $implIJavaAtomType$ getRequiredCodeVis();
+	public ICFBamPubSchema.CodeVisibilityEnum getRequiredCodeVis();
 	public void setRequiredCodeVis( ICFBamPubSchema.CodeVisibilityEnum value );
 	public String getRequiredJMethodBody();
 	public void setRequiredJMethodBody( String value );

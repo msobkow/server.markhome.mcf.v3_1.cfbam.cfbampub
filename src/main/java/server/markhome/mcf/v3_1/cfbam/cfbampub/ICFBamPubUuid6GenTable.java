@@ -621,6 +621,6 @@ public interface ICFBamPubUuid6GenTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubUuid6Gen pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

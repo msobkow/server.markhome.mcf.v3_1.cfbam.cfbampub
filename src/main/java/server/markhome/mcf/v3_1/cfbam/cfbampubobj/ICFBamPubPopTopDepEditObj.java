@@ -78,28 +78,28 @@ public interface ICFBamPubPopTopDepEditObj
 	 *
 	 *	@return	The ICFBamPubRelationObj instance referenced by the ContRelation key.
 	 */
-	ICFBamPubRelationObj get$OptionalOrRequired$ContainerContRelation();
+	ICFBamPubRelationObj getRequiredContainerContRelation();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubRelationObj instance referenced by the ContRelation key.
+	 *	Get the required ICFBamPubRelationObj instance referenced by the ContRelation key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubRelationObj instance referenced by the ContRelation key.
+	 *	@return	The required ICFBamPubRelationObj instance referenced by the ContRelation key.
 	 */
-	ICFBamPubRelationObj get$OptionalOrRequired$ContainerContRelation( boolean forceRead );
+	ICFBamPubRelationObj getRequiredContainerContRelation( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubRelationObj instance referenced by the ContRelation key.
 	 *
 	 *	@param	value	the ICFBamPubRelationObj instance to be referenced by the ContRelation key.
 	 */
-	void set$OptionalOrRequired$ContainerContRelation( ICFBamPubRelationObj value );
+	void setRequiredContainerContRelation( ICFBamPubRelationObj value );
 
 	/**
 	 *	Get a list ICFBamPubPopSubDep1Obj instances referenced by the PopDep key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubPopSubDep1Obj instances referenced by the PopDep key.
 	 */
-	List<ICFBamPubPopSubDep1Obj> get$OptionalOrRequired$ComponentsPopDep();
+	List<ICFBamPubPopSubDep1Obj> getOptionalComponentsPopDep();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute ContRelationId.

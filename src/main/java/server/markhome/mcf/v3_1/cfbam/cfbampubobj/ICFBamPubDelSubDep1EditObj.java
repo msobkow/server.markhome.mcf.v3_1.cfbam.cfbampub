@@ -78,28 +78,28 @@ public interface ICFBamPubDelSubDep1EditObj
 	 *
 	 *	@return	The ICFBamPubDelTopDepObj instance referenced by the DelTopDep key.
 	 */
-	ICFBamPubDelTopDepObj get$OptionalOrRequired$ContainerDelTopDep();
+	ICFBamPubDelTopDepObj getRequiredContainerDelTopDep();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubDelTopDepObj instance referenced by the DelTopDep key.
+	 *	Get the required ICFBamPubDelTopDepObj instance referenced by the DelTopDep key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubDelTopDepObj instance referenced by the DelTopDep key.
+	 *	@return	The required ICFBamPubDelTopDepObj instance referenced by the DelTopDep key.
 	 */
-	ICFBamPubDelTopDepObj get$OptionalOrRequired$ContainerDelTopDep( boolean forceRead );
+	ICFBamPubDelTopDepObj getRequiredContainerDelTopDep( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubDelTopDepObj instance referenced by the DelTopDep key.
 	 *
 	 *	@param	value	the ICFBamPubDelTopDepObj instance to be referenced by the DelTopDep key.
 	 */
-	void set$OptionalOrRequired$ContainerDelTopDep( ICFBamPubDelTopDepObj value );
+	void setRequiredContainerDelTopDep( ICFBamPubDelTopDepObj value );
 
 	/**
 	 *	Get a list ICFBamPubDelSubDep2Obj instances referenced by the DelDep key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubDelSubDep2Obj instances referenced by the DelDep key.
 	 */
-	List<ICFBamPubDelSubDep2Obj> get$OptionalOrRequired$ComponentsDelDep();
+	List<ICFBamPubDelSubDep2Obj> getOptionalComponentsDelDep();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute DelTopDepId.

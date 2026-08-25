@@ -104,34 +104,34 @@ public interface ICFBamPubValue
 
 	public ICFLibKeyHash256 getPKey();
 	public void setPKey(ICFLibKeyHash256 requiredId);
-	public List<ICFBamPubTableCol> get$OptionalOrRequired$ChildrenRefTableCol();
+	public List<ICFBamPubTableCol> getOptionalChildrenRefTableCol();
 
-	public List<ICFBamPubIndexCol> get$OptionalOrRequired$ChildrenRefIndexCol();
+	public List<ICFBamPubIndexCol> getOptionalChildrenRefIndexCol();
 
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFBamPubScope get$OptionalOrRequired$ContainerScope();
+	public ICFBamPubScope getRequiredContainerScope();
 
-	public void set$OptionalOrRequired$ContainerScope(ICFBamPubScope argObj);
-	public void set$OptionalOrRequired$ContainerScope($implIJavaAtomType$ argScopeId);
+	public void setRequiredContainerScope(ICFBamPubScope argObj);
+	public void setRequiredContainerScope(ICFLibKeyHash256 argScopeId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
-	public ICFBamPubValue get$OptionalOrRequired$LookupPrev();
+	public ICFBamPubValue getOptionalLookupPrev();
 
-	public void set$OptionalOrRequired$LookupPrev(ICFBamPubValue argObj);
-	public void set$OptionalOrRequired$LookupPrev($implIJavaAtomType$ argPrevId);
+	public void setOptionalLookupPrev(ICFBamPubValue argObj);
+	public void setOptionalLookupPrev(ICFLibKeyHash256 argPrevId);
 
-	public ICFBamPubValue get$OptionalOrRequired$LookupNext();
+	public ICFBamPubValue getOptionalLookupNext();
 
-	public void set$OptionalOrRequired$LookupNext(ICFBamPubValue argObj);
-	public void set$OptionalOrRequired$LookupNext($implIJavaAtomType$ argNextId);
+	public void setOptionalLookupNext(ICFBamPubValue argObj);
+	public void setOptionalLookupNext(ICFLibKeyHash256 argNextId);
 
 	public CFLibDbKeyHash256 getRequiredScopeId();
 	public void setRequiredScopeId( CFLibDbKeyHash256 value );

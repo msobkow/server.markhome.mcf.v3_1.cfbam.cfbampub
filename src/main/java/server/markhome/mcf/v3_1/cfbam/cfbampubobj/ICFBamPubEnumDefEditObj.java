@@ -78,6 +78,6 @@ public interface ICFBamPubEnumDefEditObj
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubEnumTagObj instances referenced by the Tag key.
 	 */
-	List<ICFBamPubEnumTagObj> get$OptionalOrRequired$ComponentsTag();
+	List<ICFBamPubEnumTagObj> getRequiredComponentsTag();
 
 }

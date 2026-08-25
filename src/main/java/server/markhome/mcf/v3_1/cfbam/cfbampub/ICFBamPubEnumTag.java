@@ -110,25 +110,25 @@ public interface ICFBamPubEnumTag
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFBamPubEnumDef get$OptionalOrRequired$ContainerEnumDef();
+	public ICFBamPubEnumDef getRequiredContainerEnumDef();
 
-	public void set$OptionalOrRequired$ContainerEnumDef(ICFBamPubEnumDef argObj);
-	public void set$OptionalOrRequired$ContainerEnumDef($implIJavaAtomType$ argEnumId);
+	public void setRequiredContainerEnumDef(ICFBamPubEnumDef argObj);
+	public void setRequiredContainerEnumDef(ICFLibKeyHash256 argEnumId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
-	public ICFBamPubEnumTag get$OptionalOrRequired$LookupPrev();
+	public ICFBamPubEnumTag getOptionalLookupPrev();
 
-	public void set$OptionalOrRequired$LookupPrev(ICFBamPubEnumTag argObj);
-	public void set$OptionalOrRequired$LookupPrev($implIJavaAtomType$ argPrevId);
+	public void setOptionalLookupPrev(ICFBamPubEnumTag argObj);
+	public void setOptionalLookupPrev(ICFLibKeyHash256 argPrevId);
 
-	public ICFBamPubEnumTag get$OptionalOrRequired$LookupNext();
+	public ICFBamPubEnumTag getOptionalLookupNext();
 
-	public void set$OptionalOrRequired$LookupNext(ICFBamPubEnumTag argObj);
-	public void set$OptionalOrRequired$LookupNext($implIJavaAtomType$ argNextId);
+	public void setOptionalLookupNext(ICFBamPubEnumTag argObj);
+	public void setOptionalLookupNext(ICFLibKeyHash256 argNextId);
 
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public void setOptionalDefSchemaId( CFLibDbKeyHash256 value );

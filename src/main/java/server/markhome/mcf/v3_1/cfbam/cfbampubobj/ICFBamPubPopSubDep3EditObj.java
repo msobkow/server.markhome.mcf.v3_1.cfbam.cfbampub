@@ -78,21 +78,21 @@ public interface ICFBamPubPopSubDep3EditObj
 	 *
 	 *	@return	The ICFBamPubPopSubDep2Obj instance referenced by the PopSubDep2 key.
 	 */
-	ICFBamPubPopSubDep2Obj get$OptionalOrRequired$ContainerPopSubDep2();
+	ICFBamPubPopSubDep2Obj getRequiredContainerPopSubDep2();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubPopSubDep2Obj instance referenced by the PopSubDep2 key.
+	 *	Get the required ICFBamPubPopSubDep2Obj instance referenced by the PopSubDep2 key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubPopSubDep2Obj instance referenced by the PopSubDep2 key.
+	 *	@return	The required ICFBamPubPopSubDep2Obj instance referenced by the PopSubDep2 key.
 	 */
-	ICFBamPubPopSubDep2Obj get$OptionalOrRequired$ContainerPopSubDep2( boolean forceRead );
+	ICFBamPubPopSubDep2Obj getRequiredContainerPopSubDep2( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubPopSubDep2Obj instance referenced by the PopSubDep2 key.
 	 *
 	 *	@param	value	the ICFBamPubPopSubDep2Obj instance to be referenced by the PopSubDep2 key.
 	 */
-	void set$OptionalOrRequired$ContainerPopSubDep2( ICFBamPubPopSubDep2Obj value );
+	void setRequiredContainerPopSubDep2( ICFBamPubPopSubDep2Obj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute PopSubDep2Id.

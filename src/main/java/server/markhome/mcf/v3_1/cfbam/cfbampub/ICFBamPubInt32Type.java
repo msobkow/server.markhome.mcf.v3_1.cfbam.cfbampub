@@ -70,10 +70,10 @@ public interface ICFBamPubInt32Type
 	public final static int CLASS_CODE = 0xa82a;
 	public final static String S_CLASS_CODE = "a82a";
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$ContainerSchemaDef();
+	public ICFBamPubSchemaDef getRequiredContainerSchemaDef();
 
-	public void set$OptionalOrRequired$ContainerSchemaDef(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$ContainerSchemaDef($implIJavaAtomType$ argSchemaDefId);
+	public void setRequiredContainerSchemaDef(ICFBamPubSchemaDef argObj);
+	public void setRequiredContainerSchemaDef(ICFLibKeyHash256 argSchemaDefId);
 
 	public CFLibDbKeyHash256 getRequiredSchemaDefId();
 	public void setRequiredSchemaDefId( CFLibDbKeyHash256 value );

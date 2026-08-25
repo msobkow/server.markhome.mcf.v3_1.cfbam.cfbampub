@@ -75,22 +75,22 @@ public interface ICFBamPubClearTopDep
 	public final static int CLASS_CODE = 0xa818;
 	public final static String S_CLASS_CODE = "a818";
 
-	public ICFBamPubTable get$OptionalOrRequired$ContainerTable();
+	public ICFBamPubTable getRequiredContainerTable();
 
-	public void set$OptionalOrRequired$ContainerTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$ContainerTable($implIJavaAtomType$ argTableId);
+	public void setRequiredContainerTable(ICFBamPubTable argObj);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
-	public ICFBamPubClearTopDep get$OptionalOrRequired$LookupPrev();
+	public ICFBamPubClearTopDep getOptionalLookupPrev();
 
-	public void set$OptionalOrRequired$LookupPrev(ICFBamPubClearTopDep argObj);
-	public void set$OptionalOrRequired$LookupPrev($implIJavaAtomType$ argPrevId);
+	public void setOptionalLookupPrev(ICFBamPubClearTopDep argObj);
+	public void setOptionalLookupPrev(ICFLibKeyHash256 argPrevId);
 
-	public ICFBamPubClearTopDep get$OptionalOrRequired$LookupNext();
+	public ICFBamPubClearTopDep getOptionalLookupNext();
 
-	public void set$OptionalOrRequired$LookupNext(ICFBamPubClearTopDep argObj);
-	public void set$OptionalOrRequired$LookupNext($implIJavaAtomType$ argNextId);
+	public void setOptionalLookupNext(ICFBamPubClearTopDep argObj);
+	public void setOptionalLookupNext(ICFLibKeyHash256 argNextId);
 
-	public List<ICFBamPubClearSubDep1> get$OptionalOrRequired$ComponentsClearDep();
+	public List<ICFBamPubClearSubDep1> getOptionalComponentsClearDep();
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );

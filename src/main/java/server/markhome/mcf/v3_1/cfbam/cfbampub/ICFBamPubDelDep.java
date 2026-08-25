@@ -72,15 +72,15 @@ public interface ICFBamPubDelDep
 	public final static int CLASS_CODE = 0xa81b;
 	public final static String S_CLASS_CODE = "a81b";
 
-	public ICFBamPubRelation get$OptionalOrRequired$LookupRelation();
+	public ICFBamPubRelation getRequiredLookupRelation();
 
-	public void set$OptionalOrRequired$LookupRelation(ICFBamPubRelation argObj);
-	public void set$OptionalOrRequired$LookupRelation($implIJavaAtomType$ argRelationId);
+	public void setRequiredLookupRelation(ICFBamPubRelation argObj);
+	public void setRequiredLookupRelation(ICFLibKeyHash256 argRelationId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
 	public CFLibDbKeyHash256 getOptionalDefSchemaId();
 	public void setOptionalDefSchemaId( CFLibDbKeyHash256 value );

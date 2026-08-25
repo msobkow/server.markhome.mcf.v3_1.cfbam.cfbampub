@@ -66,7 +66,7 @@ public interface ICFBamPubSchemaRoleBySchRoleScpIdxKey
 {
 	public CFLibDbKeyHash256 getRequiredSchemaDefId();
 	public void setRequiredSchemaDefId( CFLibDbKeyHash256 value );
-	public $implIJavaAtomType$ getRequiredRoleScope();
+	public ICFBamPubSchema.RoleScopeEnum getRequiredRoleScope();
 	public void setRequiredRoleScope( ICFBamPubSchema.RoleScopeEnum value );
 	@Override
 	public boolean equals( Object obj );

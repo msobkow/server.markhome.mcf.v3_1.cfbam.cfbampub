@@ -250,60 +250,60 @@ public interface ICFBamPubEnumTagObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubEnumDefObj instance referenced by the EnumDef key.
+	 *	Get the required ICFBamPubEnumDefObj instance referenced by the EnumDef key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubEnumDefObj instance referenced by the EnumDef key.
+	 *	@return	The required ICFBamPubEnumDefObj instance referenced by the EnumDef key.
 	 */
-	ICFBamPubEnumDefObj get$OptionalOrRequired$ContainerEnumDef();
+	ICFBamPubEnumDefObj getRequiredContainerEnumDef();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubEnumDefObj instance referenced by the EnumDef key.
+	 *	Get the required ICFBamPubEnumDefObj instance referenced by the EnumDef key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubEnumDefObj instance referenced by the EnumDef key.
+	 *	@return	The required ICFBamPubEnumDefObj instance referenced by the EnumDef key.
 	 */
-	ICFBamPubEnumDefObj get$OptionalOrRequired$ContainerEnumDef( boolean forceRead );
+	ICFBamPubEnumDefObj getRequiredContainerEnumDef( boolean forceRead );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema();
+	ICFBamPubSchemaDefObj getOptionalLookupDefSchema();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema( boolean forceRead );
+	ICFBamPubSchemaDefObj getOptionalLookupDefSchema( boolean forceRead );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubEnumTagObj instance referenced by the Prev key.
+	 *	Get the optional ICFBamPubEnumTagObj instance referenced by the Prev key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubEnumTagObj instance referenced by the Prev key.
+	 *	@return	The optional ICFBamPubEnumTagObj instance referenced by the Prev key.
 	 */
-	ICFBamPubEnumTagObj get$OptionalOrRequired$LookupPrev();
+	ICFBamPubEnumTagObj getOptionalLookupPrev();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubEnumTagObj instance referenced by the Prev key.
+	 *	Get the optional ICFBamPubEnumTagObj instance referenced by the Prev key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubEnumTagObj instance referenced by the Prev key.
+	 *	@return	The optional ICFBamPubEnumTagObj instance referenced by the Prev key.
 	 */
-	ICFBamPubEnumTagObj get$OptionalOrRequired$LookupPrev( boolean forceRead );
+	ICFBamPubEnumTagObj getOptionalLookupPrev( boolean forceRead );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubEnumTagObj instance referenced by the Next key.
+	 *	Get the optional ICFBamPubEnumTagObj instance referenced by the Next key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubEnumTagObj instance referenced by the Next key.
+	 *	@return	The optional ICFBamPubEnumTagObj instance referenced by the Next key.
 	 */
-	ICFBamPubEnumTagObj get$OptionalOrRequired$LookupNext();
+	ICFBamPubEnumTagObj getOptionalLookupNext();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubEnumTagObj instance referenced by the Next key.
+	 *	Get the optional ICFBamPubEnumTagObj instance referenced by the Next key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubEnumTagObj instance referenced by the Next key.
+	 *	@return	The optional ICFBamPubEnumTagObj instance referenced by the Next key.
 	 */
-	ICFBamPubEnumTagObj get$OptionalOrRequired$LookupNext( boolean forceRead );
+	ICFBamPubEnumTagObj getOptionalLookupNext( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

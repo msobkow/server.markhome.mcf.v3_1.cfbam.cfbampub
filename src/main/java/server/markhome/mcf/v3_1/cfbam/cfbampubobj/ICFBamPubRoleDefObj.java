@@ -236,32 +236,32 @@ public interface ICFBamPubRoleDefObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubScopeObj instance referenced by the ScopeDef key.
+	 *	Get the required ICFBamPubScopeObj instance referenced by the ScopeDef key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubScopeObj instance referenced by the ScopeDef key.
+	 *	@return	The required ICFBamPubScopeObj instance referenced by the ScopeDef key.
 	 */
-	ICFBamPubScopeObj get$OptionalOrRequired$ContainerScopeDef();
+	ICFBamPubScopeObj getRequiredContainerScopeDef();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubScopeObj instance referenced by the ScopeDef key.
+	 *	Get the required ICFBamPubScopeObj instance referenced by the ScopeDef key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubScopeObj instance referenced by the ScopeDef key.
+	 *	@return	The required ICFBamPubScopeObj instance referenced by the ScopeDef key.
 	 */
-	ICFBamPubScopeObj get$OptionalOrRequired$ContainerScopeDef( boolean forceRead );
+	ICFBamPubScopeObj getRequiredContainerScopeDef( boolean forceRead );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema();
+	ICFBamPubSchemaDefObj getOptionalLookupDefSchema();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema( boolean forceRead );
+	ICFBamPubSchemaDefObj getOptionalLookupDefSchema( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute ScopeId.

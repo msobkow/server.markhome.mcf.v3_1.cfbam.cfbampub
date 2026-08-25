@@ -78,21 +78,21 @@ public interface ICFBamPubDelSubDep3EditObj
 	 *
 	 *	@return	The ICFBamPubDelSubDep2Obj instance referenced by the DelSubDep2 key.
 	 */
-	ICFBamPubDelSubDep2Obj get$OptionalOrRequired$ContainerDelSubDep2();
+	ICFBamPubDelSubDep2Obj getRequiredContainerDelSubDep2();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubDelSubDep2Obj instance referenced by the DelSubDep2 key.
+	 *	Get the required ICFBamPubDelSubDep2Obj instance referenced by the DelSubDep2 key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubDelSubDep2Obj instance referenced by the DelSubDep2 key.
+	 *	@return	The required ICFBamPubDelSubDep2Obj instance referenced by the DelSubDep2 key.
 	 */
-	ICFBamPubDelSubDep2Obj get$OptionalOrRequired$ContainerDelSubDep2( boolean forceRead );
+	ICFBamPubDelSubDep2Obj getRequiredContainerDelSubDep2( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubDelSubDep2Obj instance referenced by the DelSubDep2 key.
 	 *
 	 *	@param	value	the ICFBamPubDelSubDep2Obj instance to be referenced by the DelSubDep2 key.
 	 */
-	void set$OptionalOrRequired$ContainerDelSubDep2( ICFBamPubDelSubDep2Obj value );
+	void setRequiredContainerDelSubDep2( ICFBamPubDelSubDep2Obj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute DelSubDep2Id.

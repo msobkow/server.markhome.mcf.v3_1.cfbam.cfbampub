@@ -621,6 +621,6 @@ public interface ICFBamPubBoolTypeTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubBoolType pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

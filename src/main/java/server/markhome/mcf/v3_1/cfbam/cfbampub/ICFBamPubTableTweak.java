@@ -70,10 +70,10 @@ public interface ICFBamPubTableTweak
 	public final static int CLASS_CODE = 0xa809;
 	public final static String S_CLASS_CODE = "a809";
 
-	public ICFBamPubTable get$OptionalOrRequired$ContainerTableDef();
+	public ICFBamPubTable getRequiredContainerTableDef();
 
-	public void set$OptionalOrRequired$ContainerTableDef(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$ContainerTableDef($implIJavaAtomType$ argTableId);
+	public void setRequiredContainerTableDef(ICFBamPubTable argObj);
+	public void setRequiredContainerTableDef(ICFLibKeyHash256 argTableId);
 
 	public CFLibDbKeyHash256 getRequiredTableId();
 	public void setRequiredTableId( CFLibDbKeyHash256 value );

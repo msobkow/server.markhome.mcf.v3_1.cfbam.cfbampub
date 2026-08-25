@@ -105,15 +105,15 @@ public interface ICFBamPubRoleDef
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFBamPubScope get$OptionalOrRequired$ContainerScopeDef();
+	public ICFBamPubScope getRequiredContainerScopeDef();
 
-	public void set$OptionalOrRequired$ContainerScopeDef(ICFBamPubScope argObj);
-	public void set$OptionalOrRequired$ContainerScopeDef($implIJavaAtomType$ argScopeId);
+	public void setRequiredContainerScopeDef(ICFBamPubScope argObj);
+	public void setRequiredContainerScopeDef(ICFLibKeyHash256 argScopeId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupDefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupDefSchema();
 
-	public void set$OptionalOrRequired$LookupDefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupDefSchema($implIJavaAtomType$ argDefSchemaId);
+	public void setOptionalLookupDefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupDefSchema(ICFLibKeyHash256 argDefSchemaId);
 
 	public CFLibDbKeyHash256 getRequiredScopeId();
 	public void setRequiredScopeId( CFLibDbKeyHash256 value );

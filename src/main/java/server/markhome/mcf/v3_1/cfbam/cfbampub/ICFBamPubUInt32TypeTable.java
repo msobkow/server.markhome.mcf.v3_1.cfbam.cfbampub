@@ -621,6 +621,6 @@ public interface ICFBamPubUInt32TypeTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubUInt32Type pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

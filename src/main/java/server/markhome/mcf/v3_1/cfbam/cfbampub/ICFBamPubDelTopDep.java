@@ -75,22 +75,22 @@ public interface ICFBamPubDelTopDep
 	public final static int CLASS_CODE = 0xa81f;
 	public final static String S_CLASS_CODE = "a81f";
 
-	public ICFBamPubTable get$OptionalOrRequired$ContainerTable();
+	public ICFBamPubTable getRequiredContainerTable();
 
-	public void set$OptionalOrRequired$ContainerTable(ICFBamPubTable argObj);
-	public void set$OptionalOrRequired$ContainerTable($implIJavaAtomType$ argTableId);
+	public void setRequiredContainerTable(ICFBamPubTable argObj);
+	public void setRequiredContainerTable(ICFLibKeyHash256 argTableId);
 
-	public ICFBamPubDelTopDep get$OptionalOrRequired$LookupPrev();
+	public ICFBamPubDelTopDep getOptionalLookupPrev();
 
-	public void set$OptionalOrRequired$LookupPrev(ICFBamPubDelTopDep argObj);
-	public void set$OptionalOrRequired$LookupPrev($implIJavaAtomType$ argPrevId);
+	public void setOptionalLookupPrev(ICFBamPubDelTopDep argObj);
+	public void setOptionalLookupPrev(ICFLibKeyHash256 argPrevId);
 
-	public ICFBamPubDelTopDep get$OptionalOrRequired$LookupNext();
+	public ICFBamPubDelTopDep getOptionalLookupNext();
 
-	public void set$OptionalOrRequired$LookupNext(ICFBamPubDelTopDep argObj);
-	public void set$OptionalOrRequired$LookupNext($implIJavaAtomType$ argNextId);
+	public void setOptionalLookupNext(ICFBamPubDelTopDep argObj);
+	public void setOptionalLookupNext(ICFLibKeyHash256 argNextId);
 
-	public List<ICFBamPubDelSubDep1> get$OptionalOrRequired$ComponentsDelDep();
+	public List<ICFBamPubDelSubDep1> getOptionalComponentsDelDep();
 
 	public String getRequiredName();
 	public void setRequiredName( String value );

@@ -71,12 +71,12 @@ public interface ICFBamPubClearSubDep1
 	public final static int CLASS_CODE = 0xa815;
 	public final static String S_CLASS_CODE = "a815";
 
-	public ICFBamPubClearTopDep get$OptionalOrRequired$ContainerClearTopDep();
+	public ICFBamPubClearTopDep getRequiredContainerClearTopDep();
 
-	public void set$OptionalOrRequired$ContainerClearTopDep(ICFBamPubClearTopDep argObj);
-	public void set$OptionalOrRequired$ContainerClearTopDep($implIJavaAtomType$ argClearTopDepId);
+	public void setRequiredContainerClearTopDep(ICFBamPubClearTopDep argObj);
+	public void setRequiredContainerClearTopDep(ICFLibKeyHash256 argClearTopDepId);
 
-	public List<ICFBamPubClearSubDep2> get$OptionalOrRequired$ComponentsClearDep();
+	public List<ICFBamPubClearSubDep2> getOptionalComponentsClearDep();
 
 	public CFLibDbKeyHash256 getRequiredClearTopDepId();
 	public void setRequiredClearTopDepId( CFLibDbKeyHash256 value );

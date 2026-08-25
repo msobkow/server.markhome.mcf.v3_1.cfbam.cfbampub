@@ -79,25 +79,25 @@ public interface ICFBamPubSchemaRef
 	public final static int CLASS_CODE = 0xa803;
 	public final static String S_CLASS_CODE = "a803";
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$ContainerSchema();
+	public ICFBamPubSchemaDef getRequiredContainerSchema();
 
-	public void set$OptionalOrRequired$ContainerSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$ContainerSchema($implIJavaAtomType$ argSchemaId);
+	public void setRequiredContainerSchema(ICFBamPubSchemaDef argObj);
+	public void setRequiredContainerSchema(ICFLibKeyHash256 argSchemaId);
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$LookupRefSchema();
+	public ICFBamPubSchemaDef getOptionalLookupRefSchema();
 
-	public void set$OptionalOrRequired$LookupRefSchema(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$LookupRefSchema($implIJavaAtomType$ argRefSchemaId);
+	public void setOptionalLookupRefSchema(ICFBamPubSchemaDef argObj);
+	public void setOptionalLookupRefSchema(ICFLibKeyHash256 argRefSchemaId);
 
-	public ICFBamPubSchemaRef get$OptionalOrRequired$LookupPrev();
+	public ICFBamPubSchemaRef getOptionalLookupPrev();
 
-	public void set$OptionalOrRequired$LookupPrev(ICFBamPubSchemaRef argObj);
-	public void set$OptionalOrRequired$LookupPrev($implIJavaAtomType$ argPrevId);
+	public void setOptionalLookupPrev(ICFBamPubSchemaRef argObj);
+	public void setOptionalLookupPrev(ICFLibKeyHash256 argPrevId);
 
-	public ICFBamPubSchemaRef get$OptionalOrRequired$LookupNext();
+	public ICFBamPubSchemaRef getOptionalLookupNext();
 
-	public void set$OptionalOrRequired$LookupNext(ICFBamPubSchemaRef argObj);
-	public void set$OptionalOrRequired$LookupNext($implIJavaAtomType$ argNextId);
+	public void setOptionalLookupNext(ICFBamPubSchemaRef argObj);
+	public void setOptionalLookupNext(ICFLibKeyHash256 argNextId);
 
 	public CFLibDbKeyHash256 getRequiredSchemaId();
 	public void setRequiredSchemaId( CFLibDbKeyHash256 value );

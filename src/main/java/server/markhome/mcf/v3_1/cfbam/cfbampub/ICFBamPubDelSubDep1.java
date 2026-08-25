@@ -71,12 +71,12 @@ public interface ICFBamPubDelSubDep1
 	public final static int CLASS_CODE = 0xa81c;
 	public final static String S_CLASS_CODE = "a81c";
 
-	public ICFBamPubDelTopDep get$OptionalOrRequired$ContainerDelTopDep();
+	public ICFBamPubDelTopDep getRequiredContainerDelTopDep();
 
-	public void set$OptionalOrRequired$ContainerDelTopDep(ICFBamPubDelTopDep argObj);
-	public void set$OptionalOrRequired$ContainerDelTopDep($implIJavaAtomType$ argDelTopDepId);
+	public void setRequiredContainerDelTopDep(ICFBamPubDelTopDep argObj);
+	public void setRequiredContainerDelTopDep(ICFLibKeyHash256 argDelTopDepId);
 
-	public List<ICFBamPubDelSubDep2> get$OptionalOrRequired$ComponentsDelDep();
+	public List<ICFBamPubDelSubDep2> getOptionalComponentsDelDep();
 
 	public CFLibDbKeyHash256 getRequiredDelTopDepId();
 	public void setRequiredDelTopDepId( CFLibDbKeyHash256 value );

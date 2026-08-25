@@ -89,18 +89,18 @@ public interface ICFBamPubClearSubDep3Obj
 	ICFBamPubClearSubDep3 getClearSubDep3Rec();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubClearSubDep2Obj instance referenced by the ClearSubDep2 key.
+	 *	Get the required ICFBamPubClearSubDep2Obj instance referenced by the ClearSubDep2 key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubClearSubDep2Obj instance referenced by the ClearSubDep2 key.
+	 *	@return	The required ICFBamPubClearSubDep2Obj instance referenced by the ClearSubDep2 key.
 	 */
-	ICFBamPubClearSubDep2Obj get$OptionalOrRequired$ContainerClearSubDep2();
+	ICFBamPubClearSubDep2Obj getRequiredContainerClearSubDep2();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFBamPubClearSubDep2Obj instance referenced by the ClearSubDep2 key.
+	 *	Get the required ICFBamPubClearSubDep2Obj instance referenced by the ClearSubDep2 key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFBamPubClearSubDep2Obj instance referenced by the ClearSubDep2 key.
+	 *	@return	The required ICFBamPubClearSubDep2Obj instance referenced by the ClearSubDep2 key.
 	 */
-	ICFBamPubClearSubDep2Obj get$OptionalOrRequired$ContainerClearSubDep2( boolean forceRead );
+	ICFBamPubClearSubDep2Obj getRequiredContainerClearSubDep2( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

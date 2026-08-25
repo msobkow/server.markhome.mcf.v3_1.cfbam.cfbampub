@@ -576,6 +576,6 @@ public interface ICFBamPubTimestampDefTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubTimestampDef pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }

@@ -73,14 +73,14 @@ public interface ICFBamPubSchemaRole
 	public final static int CLASS_CODE = 0xa88f;
 	public final static String S_CLASS_CODE = "a88f";
 
-	public ICFBamPubSchemaDef get$OptionalOrRequired$ContainerSchemaDef();
+	public ICFBamPubSchemaDef getRequiredContainerSchemaDef();
 
-	public void set$OptionalOrRequired$ContainerSchemaDef(ICFBamPubSchemaDef argObj);
-	public void set$OptionalOrRequired$ContainerSchemaDef($implIJavaAtomType$ argSchemaDefId);
+	public void setRequiredContainerSchemaDef(ICFBamPubSchemaDef argObj);
+	public void setRequiredContainerSchemaDef(ICFLibKeyHash256 argSchemaDefId);
 
 	public CFLibDbKeyHash256 getRequiredSchemaDefId();
 	public void setRequiredSchemaDefId( CFLibDbKeyHash256 value );
-	public $implIJavaAtomType$ getRequiredRoleScope();
+	public ICFBamPubSchema.RoleScopeEnum getRequiredRoleScope();
 	public void setRequiredRoleScope( ICFBamPubSchema.RoleScopeEnum value );
 	public boolean equals( Object obj );
 

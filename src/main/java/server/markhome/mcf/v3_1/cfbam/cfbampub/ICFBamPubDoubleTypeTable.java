@@ -621,6 +621,6 @@ public interface ICFBamPubDoubleTypeTable
 	 *	@return	The refreshed record after it has been moved
 	 */
 	public ICFBamPubDoubleType pubmoveRecDown( ICFSecPubAuthorization Authorization,
-		$implIJavaAtomType$ Id,
+		ICFLibKeyHash256 Id,
 		int revision );
 }
