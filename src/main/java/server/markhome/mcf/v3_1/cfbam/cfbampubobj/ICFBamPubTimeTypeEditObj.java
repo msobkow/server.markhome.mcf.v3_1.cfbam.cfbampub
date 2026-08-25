@@ -78,21 +78,21 @@ public interface ICFBamPubTimeTypeEditObj
 	 *
 	 *	@return	The ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 */
-	ICFBamPubSchemaDefObj getRequiredContainerSchemaDef();
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$ContainerSchemaDef();
 
 	/**
-	 *	Get the required ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 *
-	 *	@return	The required ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 */
-	ICFBamPubSchemaDefObj getRequiredContainerSchemaDef( boolean forceRead );
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$ContainerSchemaDef( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 *
 	 *	@param	value	the ICFBamPubSchemaDefObj instance to be referenced by the SchemaDef key.
 	 */
-	void setRequiredContainerSchemaDef( ICFBamPubSchemaDefObj value );
+	void set$OptionalOrRequired$ContainerSchemaDef( ICFBamPubSchemaDefObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute SchemaDefId.

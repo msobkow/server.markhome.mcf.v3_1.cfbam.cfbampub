@@ -250,102 +250,102 @@ public interface ICFBamPubIndexColObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFBamPubIndexObj instance referenced by the Index key.
+	 *	Get the $optionalorrequired$ ICFBamPubIndexObj instance referenced by the Index key.
 	 *
-	 *	@return	The required ICFBamPubIndexObj instance referenced by the Index key.
+	 *	@return	The $optionalorrequired$ ICFBamPubIndexObj instance referenced by the Index key.
 	 */
-	ICFBamPubIndexObj getRequiredContainerIndex();
+	ICFBamPubIndexObj get$OptionalOrRequired$ContainerIndex();
 
 	/**
-	 *	Get the required ICFBamPubIndexObj instance referenced by the Index key.
+	 *	Get the $optionalorrequired$ ICFBamPubIndexObj instance referenced by the Index key.
 	 *
-	 *	@return	The required ICFBamPubIndexObj instance referenced by the Index key.
+	 *	@return	The $optionalorrequired$ ICFBamPubIndexObj instance referenced by the Index key.
 	 */
-	ICFBamPubIndexObj getRequiredContainerIndex( boolean forceRead );
+	ICFBamPubIndexObj get$OptionalOrRequired$ContainerIndex( boolean forceRead );
 
 	/**
-	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema();
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema();
 
 	/**
-	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema( boolean forceRead );
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFBamPubRelationColObj array of instances referenced by the RefRelFromCol key.
+	 *	Get the array of $optionalorrequired$ ICFBamPubRelationColObj array of instances referenced by the RefRelFromCol key.
 	 *
-	 *	@return	The optional ICFBamPubRelationColObj[] array of instances referenced by the RefRelFromCol key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationColObj[] array of instances referenced by the RefRelFromCol key.
 	 */
-	List<ICFBamPubRelationColObj> getOptionalChildrenRefRelFromCol();
+	List<ICFBamPubRelationColObj> get$OptionalOrRequired$ChildrenRefRelFromCol();
 
 	/**
-	 *	Get the array of optional ICFBamPubRelationColObj array of instances referenced by the RefRelFromCol key.
+	 *	Get the array of $optionalorrequired$ ICFBamPubRelationColObj array of instances referenced by the RefRelFromCol key.
 	 *
-	 *	@return	The optional ICFBamPubRelationColObj[] array of instances referenced by the RefRelFromCol key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationColObj[] array of instances referenced by the RefRelFromCol key.
 	 */
-	List<ICFBamPubRelationColObj> getOptionalChildrenRefRelFromCol( boolean forceRead );
+	List<ICFBamPubRelationColObj> get$OptionalOrRequired$ChildrenRefRelFromCol( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFBamPubRelationColObj array of instances referenced by the RefRelToCol key.
+	 *	Get the array of $optionalorrequired$ ICFBamPubRelationColObj array of instances referenced by the RefRelToCol key.
 	 *
-	 *	@return	The optional ICFBamPubRelationColObj[] array of instances referenced by the RefRelToCol key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationColObj[] array of instances referenced by the RefRelToCol key.
 	 */
-	List<ICFBamPubRelationColObj> getOptionalChildrenRefRelToCol();
+	List<ICFBamPubRelationColObj> get$OptionalOrRequired$ChildrenRefRelToCol();
 
 	/**
-	 *	Get the array of optional ICFBamPubRelationColObj array of instances referenced by the RefRelToCol key.
+	 *	Get the array of $optionalorrequired$ ICFBamPubRelationColObj array of instances referenced by the RefRelToCol key.
 	 *
-	 *	@return	The optional ICFBamPubRelationColObj[] array of instances referenced by the RefRelToCol key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationColObj[] array of instances referenced by the RefRelToCol key.
 	 */
-	List<ICFBamPubRelationColObj> getOptionalChildrenRefRelToCol( boolean forceRead );
+	List<ICFBamPubRelationColObj> get$OptionalOrRequired$ChildrenRefRelToCol( boolean forceRead );
 
 	/**
-	 *	Get the optional ICFBamPubIndexColObj instance referenced by the Prev key.
+	 *	Get the $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the Prev key.
 	 *
-	 *	@return	The optional ICFBamPubIndexColObj instance referenced by the Prev key.
+	 *	@return	The $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the Prev key.
 	 */
-	ICFBamPubIndexColObj getOptionalLookupPrev();
+	ICFBamPubIndexColObj get$OptionalOrRequired$LookupPrev();
 
 	/**
-	 *	Get the optional ICFBamPubIndexColObj instance referenced by the Prev key.
+	 *	Get the $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the Prev key.
 	 *
-	 *	@return	The optional ICFBamPubIndexColObj instance referenced by the Prev key.
+	 *	@return	The $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the Prev key.
 	 */
-	ICFBamPubIndexColObj getOptionalLookupPrev( boolean forceRead );
+	ICFBamPubIndexColObj get$OptionalOrRequired$LookupPrev( boolean forceRead );
 
 	/**
-	 *	Get the optional ICFBamPubIndexColObj instance referenced by the Next key.
+	 *	Get the $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the Next key.
 	 *
-	 *	@return	The optional ICFBamPubIndexColObj instance referenced by the Next key.
+	 *	@return	The $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the Next key.
 	 */
-	ICFBamPubIndexColObj getOptionalLookupNext();
+	ICFBamPubIndexColObj get$OptionalOrRequired$LookupNext();
 
 	/**
-	 *	Get the optional ICFBamPubIndexColObj instance referenced by the Next key.
+	 *	Get the $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the Next key.
 	 *
-	 *	@return	The optional ICFBamPubIndexColObj instance referenced by the Next key.
+	 *	@return	The $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the Next key.
 	 */
-	ICFBamPubIndexColObj getOptionalLookupNext( boolean forceRead );
+	ICFBamPubIndexColObj get$OptionalOrRequired$LookupNext( boolean forceRead );
 
 	/**
-	 *	Get the required ICFBamPubValueObj instance referenced by the Column key.
+	 *	Get the $optionalorrequired$ ICFBamPubValueObj instance referenced by the Column key.
 	 *
-	 *	@return	The required ICFBamPubValueObj instance referenced by the Column key.
+	 *	@return	The $optionalorrequired$ ICFBamPubValueObj instance referenced by the Column key.
 	 */
-	ICFBamPubValueObj getRequiredLookupColumn();
+	ICFBamPubValueObj get$OptionalOrRequired$LookupColumn();
 
 	/**
-	 *	Get the required ICFBamPubValueObj instance referenced by the Column key.
+	 *	Get the $optionalorrequired$ ICFBamPubValueObj instance referenced by the Column key.
 	 *
-	 *	@return	The required ICFBamPubValueObj instance referenced by the Column key.
+	 *	@return	The $optionalorrequired$ ICFBamPubValueObj instance referenced by the Column key.
 	 */
-	ICFBamPubValueObj getRequiredLookupColumn( boolean forceRead );
+	ICFBamPubValueObj get$OptionalOrRequired$LookupColumn( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute IndexId.

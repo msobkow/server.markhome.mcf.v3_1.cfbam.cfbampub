@@ -68,7 +68,7 @@ public interface ICFBamPubEnumDef
 	public final static int CLASS_CODE = 0xa873;
 	public final static String S_CLASS_CODE = "a873";
 
-	public List<ICFBamPubEnumTag> getRequiredComponentsTag();
+	public List<ICFBamPubEnumTag> get$OptionalOrRequired$ComponentsTag();
 
 	public boolean equals( Object obj );
 

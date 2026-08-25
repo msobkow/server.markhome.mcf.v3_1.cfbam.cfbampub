@@ -89,32 +89,32 @@ public interface ICFBamPubPopDepObj
 	ICFBamPubPopDep getPopDepRec();
 
 	/**
-	 *	Get the required ICFBamPubRelationObj instance referenced by the Relation key.
+	 *	Get the $optionalorrequired$ ICFBamPubRelationObj instance referenced by the Relation key.
 	 *
-	 *	@return	The required ICFBamPubRelationObj instance referenced by the Relation key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationObj instance referenced by the Relation key.
 	 */
-	ICFBamPubRelationObj getRequiredLookupRelation();
+	ICFBamPubRelationObj get$OptionalOrRequired$LookupRelation();
 
 	/**
-	 *	Get the required ICFBamPubRelationObj instance referenced by the Relation key.
+	 *	Get the $optionalorrequired$ ICFBamPubRelationObj instance referenced by the Relation key.
 	 *
-	 *	@return	The required ICFBamPubRelationObj instance referenced by the Relation key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationObj instance referenced by the Relation key.
 	 */
-	ICFBamPubRelationObj getRequiredLookupRelation( boolean forceRead );
+	ICFBamPubRelationObj get$OptionalOrRequired$LookupRelation( boolean forceRead );
 
 	/**
-	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema();
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema();
 
 	/**
-	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema( boolean forceRead );
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

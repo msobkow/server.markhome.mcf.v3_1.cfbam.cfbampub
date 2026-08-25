@@ -236,60 +236,60 @@ public interface ICFBamPubChainObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable();
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable( boolean forceRead );
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable( boolean forceRead );
 
 	/**
-	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema();
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema();
 
 	/**
-	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema( boolean forceRead );
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema( boolean forceRead );
 
 	/**
-	 *	Get the required ICFBamPubRelationObj instance referenced by the PrevRel key.
+	 *	Get the $optionalorrequired$ ICFBamPubRelationObj instance referenced by the PrevRel key.
 	 *
-	 *	@return	The required ICFBamPubRelationObj instance referenced by the PrevRel key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationObj instance referenced by the PrevRel key.
 	 */
-	ICFBamPubRelationObj getRequiredLookupPrevRel();
+	ICFBamPubRelationObj get$OptionalOrRequired$LookupPrevRel();
 
 	/**
-	 *	Get the required ICFBamPubRelationObj instance referenced by the PrevRel key.
+	 *	Get the $optionalorrequired$ ICFBamPubRelationObj instance referenced by the PrevRel key.
 	 *
-	 *	@return	The required ICFBamPubRelationObj instance referenced by the PrevRel key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationObj instance referenced by the PrevRel key.
 	 */
-	ICFBamPubRelationObj getRequiredLookupPrevRel( boolean forceRead );
+	ICFBamPubRelationObj get$OptionalOrRequired$LookupPrevRel( boolean forceRead );
 
 	/**
-	 *	Get the required ICFBamPubRelationObj instance referenced by the NextRel key.
+	 *	Get the $optionalorrequired$ ICFBamPubRelationObj instance referenced by the NextRel key.
 	 *
-	 *	@return	The required ICFBamPubRelationObj instance referenced by the NextRel key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationObj instance referenced by the NextRel key.
 	 */
-	ICFBamPubRelationObj getRequiredLookupNextRel();
+	ICFBamPubRelationObj get$OptionalOrRequired$LookupNextRel();
 
 	/**
-	 *	Get the required ICFBamPubRelationObj instance referenced by the NextRel key.
+	 *	Get the $optionalorrequired$ ICFBamPubRelationObj instance referenced by the NextRel key.
 	 *
-	 *	@return	The required ICFBamPubRelationObj instance referenced by the NextRel key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationObj instance referenced by the NextRel key.
 	 */
-	ICFBamPubRelationObj getRequiredLookupNextRel( boolean forceRead );
+	ICFBamPubRelationObj get$OptionalOrRequired$LookupNextRel( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

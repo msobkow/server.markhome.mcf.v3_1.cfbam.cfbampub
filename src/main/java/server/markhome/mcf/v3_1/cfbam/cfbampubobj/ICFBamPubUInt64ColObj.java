@@ -89,18 +89,18 @@ public interface ICFBamPubUInt64ColObj
 	ICFBamPubUInt64Col getUInt64ColRec();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable();
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable( boolean forceRead );
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

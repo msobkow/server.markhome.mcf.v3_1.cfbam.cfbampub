@@ -78,28 +78,28 @@ public interface ICFBamPubClearSubDep1EditObj
 	 *
 	 *	@return	The ICFBamPubClearTopDepObj instance referenced by the ClearTopDep key.
 	 */
-	ICFBamPubClearTopDepObj getRequiredContainerClearTopDep();
+	ICFBamPubClearTopDepObj get$OptionalOrRequired$ContainerClearTopDep();
 
 	/**
-	 *	Get the required ICFBamPubClearTopDepObj instance referenced by the ClearTopDep key.
+	 *	Get the $optionalorrequired$ ICFBamPubClearTopDepObj instance referenced by the ClearTopDep key.
 	 *
-	 *	@return	The required ICFBamPubClearTopDepObj instance referenced by the ClearTopDep key.
+	 *	@return	The $optionalorrequired$ ICFBamPubClearTopDepObj instance referenced by the ClearTopDep key.
 	 */
-	ICFBamPubClearTopDepObj getRequiredContainerClearTopDep( boolean forceRead );
+	ICFBamPubClearTopDepObj get$OptionalOrRequired$ContainerClearTopDep( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubClearTopDepObj instance referenced by the ClearTopDep key.
 	 *
 	 *	@param	value	the ICFBamPubClearTopDepObj instance to be referenced by the ClearTopDep key.
 	 */
-	void setRequiredContainerClearTopDep( ICFBamPubClearTopDepObj value );
+	void set$OptionalOrRequired$ContainerClearTopDep( ICFBamPubClearTopDepObj value );
 
 	/**
 	 *	Get a list ICFBamPubClearSubDep2Obj instances referenced by the ClearDep key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubClearSubDep2Obj instances referenced by the ClearDep key.
 	 */
-	List<ICFBamPubClearSubDep2Obj> getOptionalComponentsClearDep();
+	List<ICFBamPubClearSubDep2Obj> get$OptionalOrRequired$ComponentsClearDep();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute ClearTopDepId.

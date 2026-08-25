@@ -78,21 +78,21 @@ public interface ICFBamPubServerObjFuncEditObj
 	 *
 	 *	@return	The ICFBamPubTableObj instance referenced by the RetTable key.
 	 */
-	ICFBamPubTableObj getOptionalLookupRetTable();
+	ICFBamPubTableObj get$OptionalOrRequired$LookupRetTable();
 
 	/**
-	 *	Get the optional ICFBamPubTableObj instance referenced by the RetTable key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the RetTable key.
 	 *
-	 *	@return	The optional ICFBamPubTableObj instance referenced by the RetTable key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the RetTable key.
 	 */
-	ICFBamPubTableObj getOptionalLookupRetTable( boolean forceRead );
+	ICFBamPubTableObj get$OptionalOrRequired$LookupRetTable( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubTableObj instance referenced by the RetTable key.
 	 *
 	 *	@param	value	the ICFBamPubTableObj instance to be referenced by the RetTable key.
 	 */
-	void setOptionalLookupRetTable( ICFBamPubTableObj value );
+	void set$OptionalOrRequired$LookupRetTable( ICFBamPubTableObj value );
 
 	/**
 	 *	Get the optional CFLibDbKeyHash256 attribute RetTableId.

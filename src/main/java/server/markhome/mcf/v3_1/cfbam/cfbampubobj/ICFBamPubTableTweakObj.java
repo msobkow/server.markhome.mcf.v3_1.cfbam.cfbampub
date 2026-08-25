@@ -89,18 +89,18 @@ public interface ICFBamPubTableTweakObj
 	ICFBamPubTableTweak getTableTweakRec();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the TableDef key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the TableDef key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the TableDef key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the TableDef key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTableDef();
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTableDef();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the TableDef key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the TableDef key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the TableDef key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the TableDef key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTableDef( boolean forceRead );
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTableDef( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

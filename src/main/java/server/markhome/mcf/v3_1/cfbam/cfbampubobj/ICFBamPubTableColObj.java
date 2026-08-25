@@ -89,32 +89,32 @@ public interface ICFBamPubTableColObj
 	ICFBamPubTableCol getTableColRec();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable();
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable( boolean forceRead );
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable( boolean forceRead );
 
 	/**
-	 *	Get the required ICFBamPubValueObj instance referenced by the DataType key.
+	 *	Get the $optionalorrequired$ ICFBamPubValueObj instance referenced by the DataType key.
 	 *
-	 *	@return	The required ICFBamPubValueObj instance referenced by the DataType key.
+	 *	@return	The $optionalorrequired$ ICFBamPubValueObj instance referenced by the DataType key.
 	 */
-	ICFBamPubValueObj getRequiredParentDataType();
+	ICFBamPubValueObj get$OptionalOrRequired$ParentDataType();
 
 	/**
-	 *	Get the required ICFBamPubValueObj instance referenced by the DataType key.
+	 *	Get the $optionalorrequired$ ICFBamPubValueObj instance referenced by the DataType key.
 	 *
-	 *	@return	The required ICFBamPubValueObj instance referenced by the DataType key.
+	 *	@return	The $optionalorrequired$ ICFBamPubValueObj instance referenced by the DataType key.
 	 */
-	ICFBamPubValueObj getRequiredParentDataType( boolean forceRead );
+	ICFBamPubValueObj get$OptionalOrRequired$ParentDataType( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

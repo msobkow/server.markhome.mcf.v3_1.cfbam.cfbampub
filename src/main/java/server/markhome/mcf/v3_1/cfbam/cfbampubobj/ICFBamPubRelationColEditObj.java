@@ -134,126 +134,126 @@ public interface ICFBamPubRelationColEditObj
 	 *
 	 *	@return	The ICFBamPubRelationObj instance referenced by the Relation key.
 	 */
-	ICFBamPubRelationObj getRequiredContainerRelation();
+	ICFBamPubRelationObj get$OptionalOrRequired$ContainerRelation();
 
 	/**
-	 *	Get the required ICFBamPubRelationObj instance referenced by the Relation key.
+	 *	Get the $optionalorrequired$ ICFBamPubRelationObj instance referenced by the Relation key.
 	 *
-	 *	@return	The required ICFBamPubRelationObj instance referenced by the Relation key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationObj instance referenced by the Relation key.
 	 */
-	ICFBamPubRelationObj getRequiredContainerRelation( boolean forceRead );
+	ICFBamPubRelationObj get$OptionalOrRequired$ContainerRelation( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubRelationObj instance referenced by the Relation key.
 	 *
 	 *	@param	value	the ICFBamPubRelationObj instance to be referenced by the Relation key.
 	 */
-	void setRequiredContainerRelation( ICFBamPubRelationObj value );
+	void set$OptionalOrRequired$ContainerRelation( ICFBamPubRelationObj value );
 
 	/**
 	 *	Get the ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
 	 *	@return	The ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema();
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema();
 
 	/**
-	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema( boolean forceRead );
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
 	 *	@param	value	the ICFBamPubSchemaDefObj instance to be referenced by the DefSchema key.
 	 */
-	void setOptionalLookupDefSchema( ICFBamPubSchemaDefObj value );
+	void set$OptionalOrRequired$LookupDefSchema( ICFBamPubSchemaDefObj value );
 
 	/**
 	 *	Get the ICFBamPubRelationColObj instance referenced by the Prev key.
 	 *
 	 *	@return	The ICFBamPubRelationColObj instance referenced by the Prev key.
 	 */
-	ICFBamPubRelationColObj getOptionalLookupPrev();
+	ICFBamPubRelationColObj get$OptionalOrRequired$LookupPrev();
 
 	/**
-	 *	Get the optional ICFBamPubRelationColObj instance referenced by the Prev key.
+	 *	Get the $optionalorrequired$ ICFBamPubRelationColObj instance referenced by the Prev key.
 	 *
-	 *	@return	The optional ICFBamPubRelationColObj instance referenced by the Prev key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationColObj instance referenced by the Prev key.
 	 */
-	ICFBamPubRelationColObj getOptionalLookupPrev( boolean forceRead );
+	ICFBamPubRelationColObj get$OptionalOrRequired$LookupPrev( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubRelationColObj instance referenced by the Prev key.
 	 *
 	 *	@param	value	the ICFBamPubRelationColObj instance to be referenced by the Prev key.
 	 */
-	void setOptionalLookupPrev( ICFBamPubRelationColObj value );
+	void set$OptionalOrRequired$LookupPrev( ICFBamPubRelationColObj value );
 
 	/**
 	 *	Get the ICFBamPubRelationColObj instance referenced by the Next key.
 	 *
 	 *	@return	The ICFBamPubRelationColObj instance referenced by the Next key.
 	 */
-	ICFBamPubRelationColObj getOptionalLookupNext();
+	ICFBamPubRelationColObj get$OptionalOrRequired$LookupNext();
 
 	/**
-	 *	Get the optional ICFBamPubRelationColObj instance referenced by the Next key.
+	 *	Get the $optionalorrequired$ ICFBamPubRelationColObj instance referenced by the Next key.
 	 *
-	 *	@return	The optional ICFBamPubRelationColObj instance referenced by the Next key.
+	 *	@return	The $optionalorrequired$ ICFBamPubRelationColObj instance referenced by the Next key.
 	 */
-	ICFBamPubRelationColObj getOptionalLookupNext( boolean forceRead );
+	ICFBamPubRelationColObj get$OptionalOrRequired$LookupNext( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubRelationColObj instance referenced by the Next key.
 	 *
 	 *	@param	value	the ICFBamPubRelationColObj instance to be referenced by the Next key.
 	 */
-	void setOptionalLookupNext( ICFBamPubRelationColObj value );
+	void set$OptionalOrRequired$LookupNext( ICFBamPubRelationColObj value );
 
 	/**
 	 *	Get the ICFBamPubIndexColObj instance referenced by the FromCol key.
 	 *
 	 *	@return	The ICFBamPubIndexColObj instance referenced by the FromCol key.
 	 */
-	ICFBamPubIndexColObj getRequiredLookupFromCol();
+	ICFBamPubIndexColObj get$OptionalOrRequired$LookupFromCol();
 
 	/**
-	 *	Get the required ICFBamPubIndexColObj instance referenced by the FromCol key.
+	 *	Get the $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the FromCol key.
 	 *
-	 *	@return	The required ICFBamPubIndexColObj instance referenced by the FromCol key.
+	 *	@return	The $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the FromCol key.
 	 */
-	ICFBamPubIndexColObj getRequiredLookupFromCol( boolean forceRead );
+	ICFBamPubIndexColObj get$OptionalOrRequired$LookupFromCol( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubIndexColObj instance referenced by the FromCol key.
 	 *
 	 *	@param	value	the ICFBamPubIndexColObj instance to be referenced by the FromCol key.
 	 */
-	void setRequiredLookupFromCol( ICFBamPubIndexColObj value );
+	void set$OptionalOrRequired$LookupFromCol( ICFBamPubIndexColObj value );
 
 	/**
 	 *	Get the ICFBamPubIndexColObj instance referenced by the ToCol key.
 	 *
 	 *	@return	The ICFBamPubIndexColObj instance referenced by the ToCol key.
 	 */
-	ICFBamPubIndexColObj getRequiredLookupToCol();
+	ICFBamPubIndexColObj get$OptionalOrRequired$LookupToCol();
 
 	/**
-	 *	Get the required ICFBamPubIndexColObj instance referenced by the ToCol key.
+	 *	Get the $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the ToCol key.
 	 *
-	 *	@return	The required ICFBamPubIndexColObj instance referenced by the ToCol key.
+	 *	@return	The $optionalorrequired$ ICFBamPubIndexColObj instance referenced by the ToCol key.
 	 */
-	ICFBamPubIndexColObj getRequiredLookupToCol( boolean forceRead );
+	ICFBamPubIndexColObj get$OptionalOrRequired$LookupToCol( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubIndexColObj instance referenced by the ToCol key.
 	 *
 	 *	@param	value	the ICFBamPubIndexColObj instance to be referenced by the ToCol key.
 	 */
-	void setRequiredLookupToCol( ICFBamPubIndexColObj value );
+	void set$OptionalOrRequired$LookupToCol( ICFBamPubIndexColObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute RelationId.

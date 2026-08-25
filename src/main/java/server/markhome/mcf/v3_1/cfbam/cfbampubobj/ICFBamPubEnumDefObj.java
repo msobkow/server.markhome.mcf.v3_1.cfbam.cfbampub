@@ -89,18 +89,18 @@ public interface ICFBamPubEnumDefObj
 	ICFBamPubEnumDef getEnumDefRec();
 
 	/**
-	 *	Get the array of required ICFBamPubEnumTagObj array of instances referenced by the Tag key.
+	 *	Get the array of $optionalorrequired$ ICFBamPubEnumTagObj array of instances referenced by the Tag key.
 	 *
-	 *	@return	The required ICFBamPubEnumTagObj[] array of instances referenced by the Tag key.
+	 *	@return	The $optionalorrequired$ ICFBamPubEnumTagObj[] array of instances referenced by the Tag key.
 	 */
-	List<ICFBamPubEnumTagObj> getRequiredComponentsTag();
+	List<ICFBamPubEnumTagObj> get$OptionalOrRequired$ComponentsTag();
 
 	/**
-	 *	Get the array of required ICFBamPubEnumTagObj array of instances referenced by the Tag key.
+	 *	Get the array of $optionalorrequired$ ICFBamPubEnumTagObj array of instances referenced by the Tag key.
 	 *
-	 *	@return	The required ICFBamPubEnumTagObj[] array of instances referenced by the Tag key.
+	 *	@return	The $optionalorrequired$ ICFBamPubEnumTagObj[] array of instances referenced by the Tag key.
 	 */
-	List<ICFBamPubEnumTagObj> getRequiredComponentsTag( boolean forceRead );
+	List<ICFBamPubEnumTagObj> get$OptionalOrRequired$ComponentsTag( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

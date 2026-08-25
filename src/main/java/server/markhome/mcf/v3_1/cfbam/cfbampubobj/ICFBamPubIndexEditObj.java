@@ -78,56 +78,56 @@ public interface ICFBamPubIndexEditObj
 	 *
 	 *	@return	The ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable();
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable( boolean forceRead );
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubTableObj instance referenced by the Table key.
 	 *
 	 *	@param	value	the ICFBamPubTableObj instance to be referenced by the Table key.
 	 */
-	void setRequiredContainerTable( ICFBamPubTableObj value );
+	void set$OptionalOrRequired$ContainerTable( ICFBamPubTableObj value );
 
 	/**
 	 *	Get the ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
 	 *	@return	The ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema();
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema();
 
 	/**
-	 *	Get the optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
-	 *	@return	The optional ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 */
-	ICFBamPubSchemaDefObj getOptionalLookupDefSchema( boolean forceRead );
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$LookupDefSchema( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubSchemaDefObj instance referenced by the DefSchema key.
 	 *
 	 *	@param	value	the ICFBamPubSchemaDefObj instance to be referenced by the DefSchema key.
 	 */
-	void setOptionalLookupDefSchema( ICFBamPubSchemaDefObj value );
+	void set$OptionalOrRequired$LookupDefSchema( ICFBamPubSchemaDefObj value );
 
 	/**
 	 *	Get a list ICFBamPubIndexColObj instances referenced by the Columns key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubIndexColObj instances referenced by the Columns key.
 	 */
-	List<ICFBamPubIndexColObj> getOptionalComponentsColumns();
+	List<ICFBamPubIndexColObj> get$OptionalOrRequired$ComponentsColumns();
 
 	/**
 	 *	Get a list ICFBamPubIndexTweakObj instances referenced by the Tweaks key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubIndexTweakObj instances referenced by the Tweaks key.
 	 */
-	List<ICFBamPubIndexTweakObj> getOptionalComponentsTweaks();
+	List<ICFBamPubIndexTweakObj> get$OptionalOrRequired$ComponentsTweaks();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute TableId.

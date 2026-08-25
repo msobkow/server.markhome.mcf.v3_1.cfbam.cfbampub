@@ -236,18 +236,18 @@ public interface ICFBamPubScopeObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFBamPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFBamPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFBamPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant();
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant();
 
 	/**
-	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant( boolean forceRead );
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

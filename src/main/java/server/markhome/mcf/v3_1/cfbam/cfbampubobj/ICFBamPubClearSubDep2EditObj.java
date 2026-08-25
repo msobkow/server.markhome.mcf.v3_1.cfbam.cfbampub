@@ -78,28 +78,28 @@ public interface ICFBamPubClearSubDep2EditObj
 	 *
 	 *	@return	The ICFBamPubClearSubDep1Obj instance referenced by the ClearSubDep1 key.
 	 */
-	ICFBamPubClearSubDep1Obj getRequiredContainerClearSubDep1();
+	ICFBamPubClearSubDep1Obj get$OptionalOrRequired$ContainerClearSubDep1();
 
 	/**
-	 *	Get the required ICFBamPubClearSubDep1Obj instance referenced by the ClearSubDep1 key.
+	 *	Get the $optionalorrequired$ ICFBamPubClearSubDep1Obj instance referenced by the ClearSubDep1 key.
 	 *
-	 *	@return	The required ICFBamPubClearSubDep1Obj instance referenced by the ClearSubDep1 key.
+	 *	@return	The $optionalorrequired$ ICFBamPubClearSubDep1Obj instance referenced by the ClearSubDep1 key.
 	 */
-	ICFBamPubClearSubDep1Obj getRequiredContainerClearSubDep1( boolean forceRead );
+	ICFBamPubClearSubDep1Obj get$OptionalOrRequired$ContainerClearSubDep1( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubClearSubDep1Obj instance referenced by the ClearSubDep1 key.
 	 *
 	 *	@param	value	the ICFBamPubClearSubDep1Obj instance to be referenced by the ClearSubDep1 key.
 	 */
-	void setRequiredContainerClearSubDep1( ICFBamPubClearSubDep1Obj value );
+	void set$OptionalOrRequired$ContainerClearSubDep1( ICFBamPubClearSubDep1Obj value );
 
 	/**
 	 *	Get a list ICFBamPubClearSubDep3Obj instances referenced by the ClearDep key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubClearSubDep3Obj instances referenced by the ClearDep key.
 	 */
-	List<ICFBamPubClearSubDep3Obj> getOptionalComponentsClearDep();
+	List<ICFBamPubClearSubDep3Obj> get$OptionalOrRequired$ComponentsClearDep();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute ClearSubDep1Id.

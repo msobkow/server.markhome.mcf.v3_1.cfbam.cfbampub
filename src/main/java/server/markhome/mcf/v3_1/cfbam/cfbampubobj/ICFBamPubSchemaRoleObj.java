@@ -89,18 +89,18 @@ public interface ICFBamPubSchemaRoleObj
 	ICFBamPubSchemaRole getSchemaRoleRec();
 
 	/**
-	 *	Get the required ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 *
-	 *	@return	The required ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 */
-	ICFBamPubSchemaDefObj getRequiredContainerSchemaDef();
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$ContainerSchemaDef();
 
 	/**
-	 *	Get the required ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
+	 *	Get the $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 *
-	 *	@return	The required ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
+	 *	@return	The $optionalorrequired$ ICFBamPubSchemaDefObj instance referenced by the SchemaDef key.
 	 */
-	ICFBamPubSchemaDefObj getRequiredContainerSchemaDef( boolean forceRead );
+	ICFBamPubSchemaDefObj get$OptionalOrRequired$ContainerSchemaDef( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

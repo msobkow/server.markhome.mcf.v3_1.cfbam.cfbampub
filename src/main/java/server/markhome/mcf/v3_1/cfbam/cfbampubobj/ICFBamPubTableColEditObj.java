@@ -78,42 +78,42 @@ public interface ICFBamPubTableColEditObj
 	 *
 	 *	@return	The ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable();
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable( boolean forceRead );
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubTableObj instance referenced by the Table key.
 	 *
 	 *	@param	value	the ICFBamPubTableObj instance to be referenced by the Table key.
 	 */
-	void setRequiredContainerTable( ICFBamPubTableObj value );
+	void set$OptionalOrRequired$ContainerTable( ICFBamPubTableObj value );
 
 	/**
 	 *	Get the ICFBamPubValueObj instance referenced by the DataType key.
 	 *
 	 *	@return	The ICFBamPubValueObj instance referenced by the DataType key.
 	 */
-	ICFBamPubValueObj getRequiredParentDataType();
+	ICFBamPubValueObj get$OptionalOrRequired$ParentDataType();
 
 	/**
-	 *	Get the required ICFBamPubValueObj instance referenced by the DataType key.
+	 *	Get the $optionalorrequired$ ICFBamPubValueObj instance referenced by the DataType key.
 	 *
-	 *	@return	The required ICFBamPubValueObj instance referenced by the DataType key.
+	 *	@return	The $optionalorrequired$ ICFBamPubValueObj instance referenced by the DataType key.
 	 */
-	ICFBamPubValueObj getRequiredParentDataType( boolean forceRead );
+	ICFBamPubValueObj get$OptionalOrRequired$ParentDataType( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubValueObj instance referenced by the DataType key.
 	 *
 	 *	@param	value	the ICFBamPubValueObj instance to be referenced by the DataType key.
 	 */
-	void setRequiredParentDataType( ICFBamPubValueObj value );
+	void set$OptionalOrRequired$ParentDataType( ICFBamPubValueObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute TableId.

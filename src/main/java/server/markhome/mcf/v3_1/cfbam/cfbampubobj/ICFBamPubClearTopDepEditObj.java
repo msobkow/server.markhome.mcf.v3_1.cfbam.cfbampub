@@ -78,70 +78,70 @@ public interface ICFBamPubClearTopDepEditObj
 	 *
 	 *	@return	The ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable();
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable();
 
 	/**
-	 *	Get the required ICFBamPubTableObj instance referenced by the Table key.
+	 *	Get the $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 *
-	 *	@return	The required ICFBamPubTableObj instance referenced by the Table key.
+	 *	@return	The $optionalorrequired$ ICFBamPubTableObj instance referenced by the Table key.
 	 */
-	ICFBamPubTableObj getRequiredContainerTable( boolean forceRead );
+	ICFBamPubTableObj get$OptionalOrRequired$ContainerTable( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubTableObj instance referenced by the Table key.
 	 *
 	 *	@param	value	the ICFBamPubTableObj instance to be referenced by the Table key.
 	 */
-	void setRequiredContainerTable( ICFBamPubTableObj value );
+	void set$OptionalOrRequired$ContainerTable( ICFBamPubTableObj value );
 
 	/**
 	 *	Get a list ICFBamPubClearSubDep1Obj instances referenced by the ClearDep key.
 	 *
 	 *	@return	The (potentially empty) list of ICFBamPubClearSubDep1Obj instances referenced by the ClearDep key.
 	 */
-	List<ICFBamPubClearSubDep1Obj> getOptionalComponentsClearDep();
+	List<ICFBamPubClearSubDep1Obj> get$OptionalOrRequired$ComponentsClearDep();
 
 	/**
 	 *	Get the ICFBamPubClearTopDepObj instance referenced by the Prev key.
 	 *
 	 *	@return	The ICFBamPubClearTopDepObj instance referenced by the Prev key.
 	 */
-	ICFBamPubClearTopDepObj getOptionalLookupPrev();
+	ICFBamPubClearTopDepObj get$OptionalOrRequired$LookupPrev();
 
 	/**
-	 *	Get the optional ICFBamPubClearTopDepObj instance referenced by the Prev key.
+	 *	Get the $optionalorrequired$ ICFBamPubClearTopDepObj instance referenced by the Prev key.
 	 *
-	 *	@return	The optional ICFBamPubClearTopDepObj instance referenced by the Prev key.
+	 *	@return	The $optionalorrequired$ ICFBamPubClearTopDepObj instance referenced by the Prev key.
 	 */
-	ICFBamPubClearTopDepObj getOptionalLookupPrev( boolean forceRead );
+	ICFBamPubClearTopDepObj get$OptionalOrRequired$LookupPrev( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubClearTopDepObj instance referenced by the Prev key.
 	 *
 	 *	@param	value	the ICFBamPubClearTopDepObj instance to be referenced by the Prev key.
 	 */
-	void setOptionalLookupPrev( ICFBamPubClearTopDepObj value );
+	void set$OptionalOrRequired$LookupPrev( ICFBamPubClearTopDepObj value );
 
 	/**
 	 *	Get the ICFBamPubClearTopDepObj instance referenced by the Next key.
 	 *
 	 *	@return	The ICFBamPubClearTopDepObj instance referenced by the Next key.
 	 */
-	ICFBamPubClearTopDepObj getOptionalLookupNext();
+	ICFBamPubClearTopDepObj get$OptionalOrRequired$LookupNext();
 
 	/**
-	 *	Get the optional ICFBamPubClearTopDepObj instance referenced by the Next key.
+	 *	Get the $optionalorrequired$ ICFBamPubClearTopDepObj instance referenced by the Next key.
 	 *
-	 *	@return	The optional ICFBamPubClearTopDepObj instance referenced by the Next key.
+	 *	@return	The $optionalorrequired$ ICFBamPubClearTopDepObj instance referenced by the Next key.
 	 */
-	ICFBamPubClearTopDepObj getOptionalLookupNext( boolean forceRead );
+	ICFBamPubClearTopDepObj get$OptionalOrRequired$LookupNext( boolean forceRead );
 
 	/**
 	 *	Set the ICFBamPubClearTopDepObj instance referenced by the Next key.
 	 *
 	 *	@param	value	the ICFBamPubClearTopDepObj instance to be referenced by the Next key.
 	 */
-	void setOptionalLookupNext( ICFBamPubClearTopDepObj value );
+	void set$OptionalOrRequired$LookupNext( ICFBamPubClearTopDepObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute TableId.
